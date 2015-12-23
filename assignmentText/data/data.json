@@ -8,10 +8,12 @@
         "learningobjectives": "•  Develop an understanding of the Cartesian coordinate system\n•  Develop familiarity with drawing functions to produce a modular design\n•  Gain an understanding of options for exporting raster and vector images",
         "brief": "Write code which generates a textural composition or tiling pattern, such as for wallpaper or fabric. Give consideration to aesthetic issues like symmetry, rhythm, color; details at multiple scales; and a balance between organic and geometric forms. Your pattern should be designed so that it can be infinitely tiled or extended. Make something you would actually like to put on your living room or bedroom walls, or which you could imagine yourself actually wearing. Export your pattern in a high-resolution vector format, and print. Projects will be critiqued at the pin-board.",
         "variations": "Experiment with 2D graphics transformations, such as rotate().\nUse iteration or nested iteration to develop 2D rhythms or other gridlike repetitions. \nFor more visual interest, add some subtle variation, either parametrically or by incorporating randomness or Perlin noise.\nIncorporate a helper function to render a complex visual element (such as a flower, animal, fruit, etc.) which is repeated throughout your design.\nHave your pattern printed on a real textile, wrapping paper, etc. by an online “fabrication-on-demand service” such as Constrvct, Spoonflower, or Print All Over Me.\nAdvanced students: investigate \"wallpaper group\" symmetries; aperiodic tiles; texture synthesis.",
-        "makingitmeaningful": "Iteration? Tiling? Design context?\nSee Golan archive here: http://cmuems.com/2013/a/assignments/assignment-04/ \nMake something you could imagine yourself actually wearing. Because that’s easier than ever, with “fabrication-on-demand services” such as:\nhttps://paom.com/ (“Print All Over Me” custom-printed clothing)\nhttp://constrvct.com/ (custom-printed clothing)\nhttp://www.spoonflower.com/ (custom-printed fabric, wallpaper, decals, gift wrap, etc.)\nPer your artistic inclination, you may include subtle randomness for added visual interest.\nYou are asked to produce a static (rather than dynamic, interactive or time-based) design.",
+        "makingitmeaningful": "Iteration? Tiling? Design context?\nSee Golan archive here: http://cmuems.com/2013/a/assignments/assignment-04/ ",
         "aspirationalprojects": "ToDo, Spamgetto (2009). \nM. C. Escher, Fish (1964).\nAlhambra Tiling (1300s).\nEgyptian Patterning (very old).\n        ",
         "textreferences": "Grünbaum, B., & Shephard, G. C. (1987). Tilings and patterns. Freeman.\nJones, O. (1868). The grammar of ornament. B. Quaritch.\nAperiodic Tiling (Wikipedia) https://en.wikipedia.org/wiki/Aperiodic_tiling\nWallpaper Groups (Wikipedia) https://en.wikipedia.org/wiki/Wallpaper_group ",
-        "aspirationurl": "ToDo, Spamgetto (2009). Online: http://www.todo.to.it/#projects/spamghetto and https://www.flickr.com/photos/todotoit/sets/72157616412434905/ \nAlhambra Tiling (1300s). Online: https://en.wikipedia.org/wiki/Alhambra\nEgyptian Patterning (very old). Online: "
+        "aspirationurl": "ToDo, Spamgetto (2009). Online: http://www.todo.to.it/#projects/spamghetto and https://www.flickr.com/photos/todotoit/sets/72157616412434905/ \nAlhambra Tiling (1300s). Online: https://en.wikipedia.org/wiki/Alhambra\nEgyptian Patterning (very old). Online: ",
+        "layout": 1,
+        "image": "clock/tega.png\nclock/moon.png"
     },
     {
         "titles": "Clock",
@@ -25,9 +27,10 @@
         "makingitmeaningful": "Attempts to mark time stretch back many thousands of years with some of the earliest time keeping technologies being water clocks, sun dials and gnomons. Our current conception of time with days are dividied into 24 hours, hours into 60 minutes and minutes into 60 seconds, is also a relic of ancient history and comes from the Greek's who devised this scale during the centuries following 200BC. More recently in the 19th century, the introduction of railway networks marked the beginning a still unfolding relationship between technological networks and our collective understanding of time. Both mass transport networks and computer networks alike, demand the synchronisation of time across geographical distance and drive an ongoing attempt to standardise time.\n\nYet despite the widespread adoption of a univeral machinic standard, there are many other ways to understand time. Psychological time contracts and expands, time from the perspective of non-human systems time oscillates and cycles rather than proceeds linearly, and in the case of geological or planetary time rythms can span millenia. During the early twentieth century, Einstein's revelations in theoretical physics also reformed our understanding of time, proposing that it is not a constant linear stream but is relative to the position from where it is measured. \n\nThis assignment provides an opportunity to engage with the rich history of the technological mediation of time and the arbitrary nature of its divisions in hours, minute and seconds. Students should be encouraged to explore time in ways that go beyond conventional methods of time keeping and visualization.",
         "aspirationalprojects": "John Maeda, Reactive Books (1994-1999). \nGolan Levin, Banded Clock (1999).\nJack Hughes, Color clock (2011). \nMonika, All the Minutes (2014). \nKatie Paterson, Time Pieces (2014).",
         "textreferences": "Groom, A. (2013). Time.\nFoer, J. (2008). A Minor History of Time Without Clocks. Cabinet Magazine. Issue 29, Spring.",
-        "studentwork": "http://www.openprocessing.org/classroom/1061",
         "aspirationurl": "John Maeda, Reactive Books, (1994-1999). Online: https://www.youtube.com/watch?v=nA_UTUvC4h8 \nGolan Levin, Banded Clock, (1999). Online: http://www.flong.com/storage/experience/clock/ \nJack Hughes, Color clock (2011). Online: http://thecolourclock.co.uk/\nMonika, All the Minutes (2014). Online: https://twitter.com/alltheminutes \nKatie Paterson, Time Pieces (2014). Online: http://www.katiepaterson.org/timepieces/ ",
-        "notes": "N/A"
+        "notes": "N/A",
+        "layout": 2,
+        "image": "clock/tega.png\nclock/moon.png"
     },
     {
         "titles": "Face generator",
@@ -35,14 +38,15 @@
         "level": "Introductory",
         "tagsstem": "mouse input, parameters, random, cartesian coordiate system.",
         "tagsarts": "drawing, randomness, generative, animation, portrait",
-        "learningobjectives": "Use of variables.\nCreation of a generative visual system.\nDevelop familiarity with drawing functions.\nDevelop an understanding of cartesian coordinate system.",
+        "learningobjectives": "•  Use of variables.\n•  Creation of a generative visual system.\n•  Develop familiarity with drawing functions.\n•  Develop an understanding of cartesian coordinate system.",
         "brief": "Create a face which has at least three dimensions of variability, but preferably more. These varying features may modify the face’s expression (happy, sad, angry etc.), and/or the face’s identity (John, Mary, etc.), and/or the face’s species (cat, monkey, etc.). Consider characteristics like skin color, stubble, hairstyle, piercings, etc.",
         "variations": "Preliminary exercise is to draw static self-portraits.\nFollow up intermediate exercise is to develop your face so that it responds to the microphone input.\nAdvanced follow up exercise is to create a parameterized facial puppet, governed by signals from a face tracker, such as FaceOSC. ",
         "makingitmeaningful": "Humans are equipped with an exquisit sensitivity to faces. We easily recognize faces and notice small changes without difficulty. We can obeserve very subtle shifts in facial expressions often being able to dicern the slightest change in mood and sincerity in ways that remain impossible for computers. This tasks draws inspiration from the  “Chernoff Faces\" information visualization technique which proposes to leverage this sensitivity by using facial features to represents multivariate data. In Chernoff faces, features such as eyes, ears, mouth and nose represent variables by their shape, size, placement and orientation. Chernoff used 18 variables (such as eyebrow height, jaw size, etc.) to describe a face.\nEven more detailed is Paul Ekman’s \"Facial Action Coding System\", which by comparison uses 46 variables to describe a facial expression. Each of these dimensions corresponds to the action of some muscle in the face.\n",
         "aspirationalprojects": "Weird Faces, Moka (2012)\n\nAll the Universe is Full of the Lives of Perfect Creatures, Karolina Soebecka (2012)\nre:face, Tmema (2007) Golan Levin & Zachary Lieberman\nKyle McDonald, Face Substitution (2011)\nHeather Dewey Hagborg, Stranger Visions (2012-2013)",
         "textreferences": "Chernoff face reference?\nPaul Ekman’s \"Facial Action Coding System\" reference?\nSee Kyle's github",
-        "studentwork": "http://www.openprocessing.org/classroom/2034",
-        "aspirationurl": "Weird Faces, Moka (2012). Online: http://www.mokafolio.de/works/Weird-Faces\nAll the Universe is Full of the Lives of Perfect Creatures, Karolina Soebecka (2012). Online: \nOnline: http://www.gravitytrap.com/artwork/perfect-creatures \nre:face, Tmema () Golan Levin & Zachary Lieberman (2007). Online: http://www.flong.com/projects/reface/ \nKyle McDonald, Face Substitution (2011). Online: https://vimeo.com/29348533 \nHeather Dewey Hagborg, Stranger Visions (2012-2013). Online: http://deweyhagborg.com/strangervisions/"
+        "aspirationurl": "Weird Faces, Moka (2012). Online: http://www.mokafolio.de/works/Weird-Faces\nAll the Universe is Full of the Lives of Perfect Creatures, Karolina Soebecka (2012). Online: \nOnline: http://www.gravitytrap.com/artwork/perfect-creatures \nre:face, Tmema () Golan Levin & Zachary Lieberman (2007). Online: http://www.flong.com/projects/reface/ \nKyle McDonald, Face Substitution (2011). Online: https://vimeo.com/29348533 \nHeather Dewey Hagborg, Stranger Visions (2012-2013). Online: http://deweyhagborg.com/strangervisions/",
+        "layout": 3,
+        "image": "clock/tega.png\nclock/moon.png"
     },
     {
         "titles": "Parametric Alphabet ",
@@ -50,27 +54,29 @@
         "level": "Intermediate",
         "tagsstem": "arrays, interpolation, keyboard interaction",
         "tagsarts": "type, font design",
-        "learningobjectives": "Use arrays to store geometric data\nManipulate letterforms computationally\nDemonstrate understanding of linear interpolation\nDemonstrate understanding of drawing functions",
+        "learningobjectives": "•  Use arrays to store geometric data\n•  Manipulate letterforms computationally\n•  Demonstrate understanding of linear interpolation\n•  Demonstrate understanding of drawing functions",
         "brief": "Create a typeface (using any graphic primitives you prefer), such that all of the letters of the alphabet are structured by the same underlying graphic logic. For example, you might design an alphabet in which every letter is exclusively constructed from 3 arcs, or from 4 rectangles. You might create an alphabet whose letters are formed by manipulating the control points of a Bezier curve in various ways. Or perhaps your letters are traces deposited by a system of simulated particles, which are affected by different spatial configurations of attractive and repulsive forces. \n\nAn essential technical goal is for you to store descriptive parameters for your letters in some kind of array or object-oriented data structure, and then create a single function which renders any requested letter from this data. If you're writing individual functions to draw each letter, you're doing something wrong.",
         "variations": "After you have designed all of your letters, typeset the entire alphabet on a single canvas so that all of the letters can be seen at a glance. Next, typeset a specific word (perhaps the name of your typeface) which has a special relationship to its design. Choose this word carefully. \n\nMake it possible to animate the transitions between letters, such that any letter can smoothly morph into any other. Pressing a key should initiate an animated transition (of approximately a second's duration) from the previous letter to the next desired letter. Instructors: for introductory students, provide a template for transitioning between templates.",
         "makingitmeaningful": "“By this art you may contemplate the variation of the 22 letters…”\n— Jorge Luis Borges, The Library of Babel (La biblioteca de Babel), 1941 \n\n“To create a typeface that is easily malleable in the computational medium, the constituent shapes must be reduced to compact numerical forms.”\n— John Maeda, 2000\n\nDynamic, interactive and computational typography are enormous fields. There are extensive histories of experimental typography in motion \ngraphics (especially from film titles) and shorter but  no-less-interesting histories of computational typeface design, starting with (for the sake of argument) Donald Knuth’s landmark Metafont software (developed 1977-2008) — which was possibly the world’s first parametrized typeface. \n\nSee Golan archive here: http://golancourses.net/2015/assignments/assignment-1x/11-anitype-character/ ",
         "aspirationalprojects": "Type Me, Type Me Not, Peter Cho (1997)\nLetterscapes, Peter Cho (2002)\nWordScapes, Peter Cho (2008)\nAlphabot, Nik Pashenkov (2001)\nLetter 3, David Lu (2002)\nTypeface2, Mary Huang (2010)\n",
         "textreferences": "Rune Madsen’s excellent web lecture on the history of dynamic typography, which discusses the surprisingly close relationship between typography and computation. Online: http://printingcode.runemadsen.com/lecture-typography/ \nKyuha Shim’s page, Code-Type.com http://code-type.com/about/\nJurg Lehni has written a terrific article on “Typeface as Programme“. Online: https://www.typotheque.com/articles/typeface_as_programme ",
         "aspirationurl": "Type Me, Type Me Not by Peter Cho (1997). Online: http://acg.media.mit.edu/people/pcho/typemenot/index.html\nLetterscapes by Peter Cho (2002). Online: http://www.typotopo.com/letterscapes/index.html \nWordScapes by Peter Cho (2008). Online: http://www.typotopo.com/wordscapes/wordscapes.html\nAlphabot by Nik Pashenkov (2001). Online: https://processing.org/exhibition/works/004/index_link.html \nLetter 3, David Lu (2002). Online: http://velluminous.org/portfolio/a/demos/letter3/\nTypeface2, Mary Huang (2010). Online: http://vimeo.com/9587564 ",
-        "notes": "Might need a code template?"
+        "notes": "Might need a code template?",
+        "layout": 4,
+        "image": "clock/tega.png\nclock/moon.png"
     },
     {
         "titles": "A Short Fuse",
         "shortdescription": "Designing progress",
         "level": "Intermediate ",
         "tagsstem": "timer, array, counter",
-        "tagsarts": "event, time",
-        "learningobjectives": "Implementation of a basic timer.\nCreation of an event based program.\nCreative concept development.",
+        "tagsarts": "event, time801",
+        "learningobjectives": "•  Implementation of a basic timer.\n•  Creation of an event based program.\n•  Creative concept development.",
         "brief": "Create a fuse onscreen that takes exactly 5 seconds to complete. At the end of the 5 second timed interval, trigger an interesting event, for example, fireworks. Does it have to be a “fuse”? No, the term fuse can be interpretted metaphorically. Your fuse could be a progress bar, or an ice cube melting, or a balloon inflating. Does the event have to be fireworks? No, it your final event should be a suprising moment that relates to your overall concept, for example it could be a pistol showing the word ‘Bang’, or a balloon popping, or a volcano erupting, a seed sprouting and so on. ",
         "variations": "Extra Credit. Use an array (even though it is likely that this hasn't been covered in class) to create a group of objects whose movements are triggered by the event. For example, particles in a fireworks display.",
         "makingitmeaningful": "Event based programming? \nTiming and movement in animation?",
         "aspirationalprojects": "?",
-        "studentwork": "http://www.openprocessing.org/classroom/877"
+        "layout": 5
     },
     {
         "titles": "Custom Pixel ",
@@ -78,12 +84,13 @@
         "level": "Intermediate",
         "tagsstem": "array, image, color, resolution",
         "tagsarts": "appropriation, pixel, mosaic",
-        "learningobjectives": "Demonstrated ability to load external image assets into programming environment. \nUse of a pixel array.\n",
+        "learningobjectives": "•  Demonstrated ability to load external image assets into programming environment. \n•  Use of a pixel array.\n",
         "brief": "Pick and load your favorite image. Use pixel information and transfer the image to a mozaic version. Your program should be able to convert any image into mozaic version automatically. There are some parameters you can set up.",
         "variations": "Load a 20x20 pixel image into your program and use the colors in the image as a source of data for generating a kinetic experience amplifying the original image.",
         "aspirationalprojects": "Daniel Rozin, Mirrors. ",
         "textreferences": "Learning Processing, Chapter X, example X. ",
-        "notes": "http://classes.design.ucla.edu/Fall04/28/exercises.html"
+        "notes": "http://classes.design.ucla.edu/Fall04/28/exercises.html",
+        "layout": 6
     },
     {
         "titles": "Chaos-Order",
@@ -91,12 +98,12 @@
         "level": "Intermediate",
         "tagsstem": "mouse input, parameters, random()",
         "tagsarts": "interactive, randomness, pattern, chaos",
-        "learningobjectives": "Use of interpolationation for varying visual composition.\nDevelop familiarity with functions producing randomness.\nDevelop familiarity with mouse functions.",
+        "learningobjectives": "•  Use of interpolationation for varying visual composition.\n•  Develop familiarity with functions producing randomness.\n•  Develop familiarity with mouse functions.",
         "brief": "Make a composition which depicts “order” when the mouseX is on the left side of the canvas, and “chaos” when it is on the right side. The degree of order/chaos (entropy) should vary smoothly with the position of the mouse.",
         "variations": "Animated couples. A narrower version of this assignment is to have students reproduce the example Schotter by Georg Ness.",
         "aspirationalprojects": "Schotter by Georg Nees (1968) - Georg Nees is one of the pioneers of computer art. Born in Germany in 1926, he was a pupil of Max Bense, the founder of the Information Aesthetics movement. It is believed that Nees’ solo show at the University of Stuttgart in February 1965 was the first exhibition of computer art. One of Georg Nees’ signature pieces is Schotter (“Gravel” in German), a plotter/lithograph artwork from 1968. It is now in the collection of the Victoria & Albert Museum, London.\nVera Molnar, Errance Entre Ordre Et Chaos, 1975.",
-        "studentwork": "http://www.openprocessing.org/classroom/905",
-        "aspirationurl": "George Nees, Schotter, 1968 http://www.medienkunstnetz.de/works/schotter/\nVera Molnar, Errance Entre Ordre Et Chaos, 1975, http://www.veramolnar.com/diapo.php?y=1975"
+        "aspirationurl": "George Nees, Schotter, 1968 http://www.medienkunstnetz.de/works/schotter/\nVera Molnar, Errance Entre Ordre Et Chaos, 1975, http://www.veramolnar.com/diapo.php?y=1975",
+        "layout": 7
     },
     {
         "titles": "Copy the master",
@@ -104,9 +111,10 @@
         "level": "Intermediate",
         "tagsstem": "Reverse engineering, random(),",
         "tagsarts": "Observation, drawing",
-        "learningobjectives": "Undertake careful observation",
+        "learningobjectives": "•  Undertake careful observation",
         "brief": "Vera Molnar, Mandred Mohr, Georg Nees",
-        "makingitmeaningful": "http://recodeproject.com/"
+        "makingitmeaningful": "http://recodeproject.com/",
+        "layout": 8
     },
     {
         "titles": "QWERTY Instrument",
@@ -115,12 +123,14 @@
         "tagsstem": "keyboard input, ",
         "brief": "This is group project to create a color sound instrument",
         "makingitmeaningful": "Synasthesia, color organs",
-        "aspirationalprojects": "www.patatap.com/ , processing.org/examples/keyboardfunctions.html"
+        "aspirationalprojects": "www.patatap.com/ , processing.org/examples/keyboardfunctions.html",
+        "layout": 9
     },
     {
         "titles": "Random text generator",
         "shortdescription": "- bring in objects, instruction generator to have one object act on another.",
-        "brief": "possible text to speech class to speak these results"
+        "brief": "possible text to speech class to speak these results",
+        "layout": 10
     },
     {
         "titles": "Planting Trees"
@@ -130,7 +140,7 @@
         "level": "Intermediate",
         "tagsstem": "geometry, interpolation, curves",
         "tagsarts": "drawing",
-        "learningobjectives": "Define letterforms with sets of numbers and code\nDesign a template system for parametric forms\nUse interpolation for dynamic visual outcomes",
+        "learningobjectives": "•  Define letterforms with sets of numbers and code\n•  Design a template system for parametric forms\n•  Use interpolation for dynamic visual outcomes",
         "brief": "Choose a curve from the Mathworld curves site, http://mathworld.wolfram.com/topics/Curves.html"
     },
     {
@@ -139,13 +149,12 @@
         "level": "Intermediate ",
         "tagsstem": "object-orientated, class",
         "tagsarts": "artifical life, motion, animation",
-        "learningobjectives": "Develop an application using object orientated programming techniques.\nTo write functions that produce motion.\nUse of a class table.\n",
+        "learningobjectives": "•  Develop an application using object orientated programming techniques.\n•  To write functions that produce motion.\n•  Use of a class table.\n",
         "brief": "Design a class which displays, animates, and defines the behavior of a machine or organism. Give your invention a goal (e.g. finding other creatures, searching for food, climbing the screen) and have it react when it reaches its goal. Display your class outline table as a comment in the code. Show the fields and datatypes, the methods and their return values.",
         "variations": "Pair of creatures - interesting diads. Array of creatures, each with different behaviors, motion based on emotion",
         "makingitmeaningful": "The simulation of artifical life and life systems has a long history in computational artforms. From canonical examples of computer programs such as  Game of Life",
         "aspirationalprojects": "Single Cell, Golan Levin and friends (2001). \nDouble Cell, Golan Levin and friends (2002).\nMorphogenesis Series, Jon Mccormack (2002).\nInteractive Plant Growing, Laurent Mignonneau & Christa Sommerer (1992).\nLife Writer, Laurent Mignonneau & Christa Sommerer (2006).\nDelicate Boundaries, Chris Sugrue (2007). \nKarl Sims, Evolved Virtual Creatures (1994).",
         "textreferences": "\n",
-        "studentwork": "http://classes.design.ucla.edu/Fall04/28/exercises.html",
         "aspirationurl": "Single Cell, Golan Levin and friends (2002). Online: http://www.singlecell.org/singlecell.html\nDouble Cell, Golan Levin and friends (2001). Online: http://www.singlecell.org/ \nMorphogenesis Series, Jon Mccormack (2002). Online: http://jonmccormack.info/~jonmc/sa/artworks/morphogenesis-series/\nInteractive Plant Growing, Laurent Mignonneau & Christa Sommerer (1992). Online: http://www.interface.ufg.ac.at/christa-laurent/WORKS/FRAMES/FrameSet.html \nLife Writer, Laurent Mignonneau & Christa Sommerer (2006): Online: http://www.interface.ufg.ac.at/christa-laurent/WORKS/FRAMES/FrameSet.html \nDelicate Boundaries, Chris Sugrue (2007). Online: http://csugrue.com/delicateboundaries/ \nKarl Sims, Evolved Virtual Creatures (1994), https://archive.org/details/sims_evolved_virtual_creatures_1994 .",
         "notes": "- need a class table in the appendix for reference."
     },
@@ -155,7 +164,7 @@
         "level": "Intermediate (A)",
         "tagsstem": "Perlin noise, random, looping structures, motion",
         "tagsarts": "simulation, motion, animation",
-        "learningobjectives": "Use of noise and/or random functions.\nCreation of a generative animated composition.",
+        "learningobjectives": "•  Use of noise and/or random functions.\n•  Creation of a generative animated composition.",
         "brief": "Create a program which presents an ever-changing (generative) and imaginative \"landscape\". Populate your landscape with features that are suitable for your concept: perhaps trees, buildings, vehicles, animals, people, food items, body parts, hairs, zombies etc.\n\nThe landscape should move past the 'camera', but you can elect the manner by which it does so; for example, it might appear to scroll by (as if you were looking out the window of a train); or approach from a first-person point of view (as if you were driving), or slide underneath (as if you were looking out of a glass-bottomed airplane). The camera might be viewing an outside environment, or viewing objects on a conveyor belt, etc. If you are an advanced student, you may wish to experiment with the camera() command, which allows for the specification of moving cameras.\n\nGive consideration to the depth of variation in your landscape: after how much time does your landscape become predictable? How might you extend this inevitability as much as possible? How can you make a landscape which is both consistent yet surprising? You may need to make a variety of different elements, and continually change how you clump them. Or perhaps these elements themselves are generative, and synthesized on-the-fly. Feel free to experiment with 3D (objects, terrains, etc), or mixtures of 2D & 3D.\n\nSome concepts to consider: people/trees/architecture (The 3 basic psychological features of landscapes); foreground/middleground/background \"layers\"; variation at the macro scale + variation at the meso scale + variation at the micro scale. Some stuff to see: <a href=\"http://portfolio.barbariangroup.com/nextfest/applet/index.html\">grass</a>, <a href=\"http://www.alcys.com/p5/Alcys_route_de_nuit/applet/index.html\">route de nuit by alcys</a>, etc.",
         "variations": "Make a creature, car, object traverse your landscape",
         "makingitmeaningful": "Randomness and unpredicability in both art and computation have a long and controversial history. Duchamp's early chance procedures resulted in works like Erratum musical (1913) and are exmples of early visual musial experiements exploring random or unpredicatable elements in their conception. The work of many Dada artists continued Duchamp's trajectories with Hans Arp producing compositions for paintings and drawing derived from falling paper and XX producing methods for writing poetry by cutting newspaper articles into words and then drawing them from a hat to create new verse. The Situationalists were also known for their random walks and other unpredicable way finding works. Decades later, works like 4:33 by John Cage are also celebrated for their insertion of chance and complexity into creative process. \nRandomness and unpredicability has also been a significant challenge in the evolution of computation and are useful for simulation, decision making and achieveing particular aesthetic outcomes. How to acheive a set of numbers where one is completely independent of the next, remains difficult to acheive in a precise procedural machine and throughout the hisotry of computatino many strategies have been used to do this. Look up tables of numbers where no information is passed on from one to the next were commonly used and in 1955 Rand published a book of 1 million random digits (that can be downloaded here). Jon Von Neuman developed the idea of pseudo randomness by calculating a series by taking the square of a number, and then selecting the middle 3 digits as the next number and then repeating. However, when run long enough, even this approach often leads to loops of similar values. The current Linux system uses key strokes, i/o data and voltage across certain parts as always varying inputs to its pseudorandom generator. Similarly, other systems use environmental variables. \nPerlin noise is another example of producing unpredicability in calculated systems. It was developed by Ken Perlin in 1998 during his work on the film Tron and for which he was later awarded an Academy Award. Perlin noise produces unpredicable values within a certain scope influenced by the previous value. Perlin released this work in the public domain and It has been signifcant to computer generated imagery ever since, enabling a more convincing rendering of things like flames, clouds and smoke. \n\nMore on randomness here: http://cmuems.com/2012/a/lectures/lecture-05/",
@@ -181,7 +190,7 @@
         "level": "Introductory",
         "tagsstem": "graphic, primitives modifiers, coordinate system",
         "tagsarts": "drawing, color",
-        "learningobjectives": "Develop an understanding of the Cartesian coordinate system.\nDevelop familiarity with drawing functions.\nBuild experience working in the programming environment becoming familiar with the IDE and file structure.\n",
+        "learningobjectives": "•  Develop an understanding of the Cartesian coordinate system.\n•  Develop familiarity with drawing functions.\n•  Build experience working in the programming environment becoming familiar with the IDE and file structure.\n",
         "brief": "Draw a face.\nDraw a landscape.\nDraw an emotion.\nReproduce a famous painting.\nRedesign an icon of your choosing.\nDesign three letters from the alphabet using curves.\nDesign an avatar for yourself.",
         "makingitmeaningful": "N/A"
     },
@@ -190,7 +199,7 @@
         "shortdescription": "Creatively interpretting your location data",
         "level": "Intermediate",
         "tagsstem": "data, geolocation, visualization",
-        "learningobjectives": "To collect and parse a dataset. \nMap global coordinates to screen coordinates.\nVisually analyze geolocative data. ",
+        "learningobjectives": "•  To collect and parse a dataset. \n•  Map global coordinates to screen coordinates.\n•  Visually analyze geolocative data. ",
         "brief": "Get a gps tracking application for your personal mobile device. Record your location for two weeks. Export your data in a simple tabular format such as CSV. Create an interpretation of this data.",
         "variations": "Interpret the data in sound. Collect the classes path data and interpret it",
         "makingitmeaningful": "Derive - Situationist theorist Guy Debord defines the dérive as \"a mode of experimental behavior linked to the conditions of urban society: a technique of rapid passage through varied ambiances.\" \n",
@@ -203,7 +212,6 @@
         "tagsarts": "motion, animation, architecture",
         "brief": "Make a small poetic gesture projected on a wall, corner or architectural feature in the building. Look around and find some modest features that catch your eye — such as a power outlet, doorknob, water spigot or elevator buttons. Sketch some concepts for some poetic ideas that could relate to those features. Now simplify your idea. Now simplify it again. \nYou are asked to create the equivalent of a rhyming couplet, not an epic opera. Not even a limerick or a haiku. Just get some virtual objects responding to some wall features. Simplify, simplify, simplify.\nIt is recommended you use a keystoning library in order to ensure the registration and alignment of your work is exact. You may also want to explore using a physics library to create falling objects or a particle system.",
         "aspirationalprojects": "Yesyesno, Nightlights, 2010\nKyle McDonald, Lightleaks, 2013\nMiles Peyton, Kea Flies, 2013\nKarolina Soebecka, Wildlife, 2006\nKrzysztof Wodiczko, Abraham Lincoln: War Veteran Projection, 2012\nLukas Karluk, Snake the Planet, 2012\nKimchi and Chips, Everyday Objects, 2009 \nFrieder Weiss and ChunkyMove, Mortal Engine, 2010\nJilian Mayer, Scenic Running, 2010",
-        "studentwork": "http://cmuems.com/2013/a/assignments/assignment-07/",
         "aspirationurl": "Yesyesno, Nightlights, 2010, http://www.yesyesno.com/night-lights\nKyle McDonald, Lightleaks, 2013, https://vimeo.com/66167082\nMiles Peyton, Key Fleas, 2013, https://vimeo.com/77109691\nKarolina Soebecka, Wildlife, 2006, http://www.gravitytrap.com/artwork/wildlife\nKrzysztof Wodiczko, Abraham Lincoln: War Veteran Projection, 2012, https://vimeo.com/53446621\nLukas Karluk, Snake the Planet, 2012, http://www.julapy.com/work/snake-the-planet/\nKimchi and Chips, Everyday Objects, 2009, http://www.kimchiandchips.com/#everydayobjects",
         "notes": "Do we include interactive dance examples in here? Chunky Move for example?"
     },

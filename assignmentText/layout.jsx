@@ -46,7 +46,13 @@ function draw() {
     //BRIEF
     assBrief(jsonData[i].brief);
     //META DATA
+
+    /*
+    b.textSize(7);
+    b.textLeading(9);
+    b.textAlign(Justification.LEFT_ALIGN, VerticalJustification.CENTER_ALIGN);
     assMeta(jsonData[i].level,jsonData[i].tagsstem, jsonData[i].tagsarts, jsonData[i].learningobjectives);
+    */
     //VARIATIONS
     assVariations(jsonData[i].variations);
     //b.linkTextFrames(bFrame, vFrame);
@@ -54,6 +60,16 @@ function draw() {
     assMeaningful(jsonData[i].makingitmeaningful);
     b.linkTextFrames(vFrame,makeFrame);
   };
+
+  b.textSize(7);
+  b.textLeading(9);
+  b.textAlign(Justification.LEFT_ALIGN, VerticalJustification.CENTER_ALIGN);
+  for (var i = 0; i < Math.floor(((pages+1)-assStartPage)/4); i++) {
+    b.page(((i)*4)+1+assStartPage);
+    assMeta(jsonData[i].level,jsonData[i].tagsstem, jsonData[i].tagsarts, jsonData[i].learningobjectives);
+  }
+
+
 
   //Assignment image pages
   for (var i = 0; i < Math.floor(((pages+1)-assStartPage)/4); i++) {
@@ -149,14 +165,9 @@ function assMeta(_level, _stemTags, _artTags, _learning){
   b.textSize(7);
   b.textLeading(9);
   b.textAlign(Justification.LEFT_ALIGN, VerticalJustification.CENTER_ALIGN);
-
-  var meta = "Level: "+_level+"\r"+"STEM tags: "+_stemTags+"\r"+"Art tags: "+_artTags+"\r";
-  b.textSize(7);
-  b.textLeading(9);
+  var meta = "Level: "+_level+"\r"+"STEM tags: "+_stemTags+"\r"+"Art tags: "+_artTags+"\r"+"Learning Objectives: Students will "+"\r"+_learning;
   var learning = "Learning Objectives: Students will "+"\r"+_learning;
-  var metaFull = meta + learning;
-  b.textSize(7);
-  b.textLeading(9);
+  var metaFull = meta;
   metaFrame =b.text(metaFull, 36,365,colWidth,102);
   b.typo(metaFrame, "fontStyle", "Light Italic");
   iBolding(metaFrame, 0, 0);
@@ -171,18 +182,14 @@ function assMeta(_level, _stemTags, _artTags, _learning){
   b.typo(metaFrame,"leftIndent", 10);
   b.typo(metaFrame,"rightIndent", 10);
 
-
   //make a solid frame of 0.5 thickness
-
   b.rectMode( b.CORNER ); // default
   b.noFill();
   b.stroke(0,0,0);
   b.strokeWeight(1);
-
   b.rect(36,365,colWidth,102);
   b.fill(0,0,0);
   b.stroke(0);
-
 }
 
 

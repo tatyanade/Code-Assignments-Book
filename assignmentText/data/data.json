@@ -12,7 +12,7 @@
         "aspirationalprojects": "ToDo, Spamgetto (2009). \nM. C. Escher, Fish (1964).\nAlhambra Tiling (1300s).\nEgyptian Patterning (very old).\n        ",
         "textreferences": "Grünbaum, B., & Shephard, G. C. (1987). Tilings and patterns. Freeman.\nJones, O. (1868). The grammar of ornament. B. Quaritch.\nAperiodic Tiling (Wikipedia) https://en.wikipedia.org/wiki/Aperiodic_tiling\nWallpaper Groups (Wikipedia) https://en.wikipedia.org/wiki/Wallpaper_group ",
         "aspirationurl": "ToDo, Spamgetto (2009). Online: http://www.todo.to.it/#projects/spamghetto and https://www.flickr.com/photos/todotoit/sets/72157616412434905/ \nAlhambra Tiling (1300s). Online: https://en.wikipedia.org/wiki/Alhambra\nEgyptian Patterning (very old). Online: ",
-        "layout": 1,
+        "layout": 0,
         "image": "clock/tega.png\nclock/moon.png"
     },
     {
@@ -63,7 +63,8 @@
         "aspirationurl": "Type Me, Type Me Not by Peter Cho (1997). Online: http://acg.media.mit.edu/people/pcho/typemenot/index.html\nLetterscapes by Peter Cho (2002). Online: http://www.typotopo.com/letterscapes/index.html \nWordScapes by Peter Cho (2008). Online: http://www.typotopo.com/wordscapes/wordscapes.html\nAlphabot by Nik Pashenkov (2001). Online: https://processing.org/exhibition/works/004/index_link.html \nLetter 3, David Lu (2002). Online: http://velluminous.org/portfolio/a/demos/letter3/\nTypeface2, Mary Huang (2010). Online: http://vimeo.com/9587564 ",
         "notes": "Might need a code template?",
         "layout": 4,
-        "image": "clock/tega.png\nclock/moon.png"
+        "image": "clock/tega.png\nclock/moon.png",
+        "fullpageimage": "clock/moon.png"
     },
     {
         "titles": "A Short Fuse",

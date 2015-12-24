@@ -13,9 +13,13 @@ var jsonString = b.loadString("data.json");
 var pages=25; //how many pages? Pages in addition to the 1 the template.
 var assStartPage =3; //start assignments on what page?
 var titleFrame, varFrame, desFrame, bFrame, metaFrame, makeFrame, aspFrame;
+
 //FORMATTING VARIABLES
 var colSpacing=20;
 var colWidth= (576-2*colSpacing)/3;
+
+
+
 
 function draw() {
   b.textFont("Atlas Grotesk","Regular"); // set default font

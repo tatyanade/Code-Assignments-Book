@@ -85,25 +85,25 @@ var imageLayouts = [
     [Bx, By, wthr1, hthr1],
     [Dx, Dy, wthr1, hthr1],
     [Hx, Hy, wthr1, hthr1]
-  ], 
+  ],
   [
     [Ax, Ay, wthr1, hthr1],
     [Cx, Cy, wthr2, hthr2],
     [Bx, By, wthr2, hthr2],
     [Hx, Hy, wthr1, hthr1]
-  ], 
+  ],
   [
     [Ax, Ay, wthr2, hthr2],
     [Gx, Gy, wthr1, hthr1],
     [Bx, By, wthr1, hthr1],
     [Dx, Dy, wthr2, hthr2]
-  ], 
+  ],
   [
     [Ax, Ay, wtall, htall],
     [Bx, By, wthr1, hthr1],
     [Dx, Dy, wthr1, hthr1],
     [Hx, Hy, wthr1, hthr1]
-  ], 
+  ],
   [
     [Ax, Ay, wthr1, hthr1],
     [Cx, Cy, wthr1, hthr1],
@@ -114,7 +114,7 @@ var imageLayouts = [
     [Ax, Ay, wtall, htall],
     [Bx, By, wthr1, hthr1],
     [Dx, Dy, wthr2, hthr2]
-  ], 
+  ],
   [
     [Ax, Ay, wtall, htall],
     [Bx, By, wthr2, hthr2],
@@ -186,7 +186,7 @@ var imageLayouts = [
 
 
 var selected = 1;
-var defaultImg; 
+var defaultImg;
 var imageArray;
 
 function keyPressed() {
@@ -201,8 +201,8 @@ function keyPressed() {
 
 
 function preload(){
-  defaultImg = loadImage("default.jpg"); 
-  imageArray = new Array(defaultImg, defaultImg, defaultImg, defaultImg, defaultImg, defaultImg); 
+  defaultImg = loadImage("default.jpg");
+  imageArray = new Array(defaultImg, defaultImg, defaultImg, defaultImg, defaultImg, defaultImg);
 }
 
 function setup() {
@@ -213,33 +213,33 @@ function draw() {
   background(220);
 
 
-  push(); 
+  push();
   translate(0-width, 0); 
   drawImageLayout (selected, imageArray);
-  pop(); 
-  
+  pop();
+
   drawImageLayoutFrames (selected, !mouseIsPressed);
-  
-  
-  fill (0,0,0); 
-  textSize(14); 
+
+
+  fill (0,0,0);
+  textSize(14);
   noStroke();
-  text("Use left/right arrow keys to select layout. LAYOUT ID = " + selected, 100,20); 
+  text("Use left/right arrow keys to select layout. LAYOUT ID = " + selected, 100,20);
 }
 
 //==========================================================
 function drawImageLayoutFrames (whichImageLayout, bSmall) {
-  
-  var shrink = 1.0/8.0; 
+
+  var shrink = 1.0/8.0;
   var delta = Ay;
-  
-  var lineWeight = 1.0; 
-  var numeralSize = 24; 
+
+  var lineWeight = 1.0;
+  var numeralSize = 24;
   if (bSmall){
     lineWeight = 0.25;
     numeralSize = 6;
   }
-  
+
   var nImageLayouts = imageLayouts.length;
   if ((whichImageLayout >= 0) && (whichImageLayout < nImageLayouts)) {
     var anImageLayout = imageLayouts[whichImageLayout];
@@ -252,7 +252,7 @@ function drawImageLayoutFrames (whichImageLayout, bSmall) {
       var rh = aRect[3];
       var numeralDx = 12;
       var numeralDy = 36;
-      
+
       if (bSmall){
         // drawing the miniature version of the frames
         rx = (rx - width - delta)*shrink;
@@ -263,9 +263,9 @@ function drawImageLayoutFrames (whichImageLayout, bSmall) {
         numeralDy = 9;
       } else {
         // drawing for the p5 preview only
-        rx -= width; 
+        rx -= width;
       }
-      
+
       drawRect (rx, ry, rw, rh, lineWeight);
       drawNumeral (rx+numeralDx, ry+numeralDy, i+1, numeralSize);
     }
@@ -273,7 +273,7 @@ function drawImageLayoutFrames (whichImageLayout, bSmall) {
 }
 
 function drawRect(rx, ry, rw, rh, lineWeight){
-  // p5.js version: 
+  // p5.js version:
   noFill();
   stroke(0, 0, 0);
   strokeWeight (lineWeight);
@@ -281,11 +281,11 @@ function drawRect(rx, ry, rw, rh, lineWeight){
 }
 
 function drawNumeral (nx, ny, num, numeralSize){
-  // p5.js version: 
-  fill(0,0,0); 
-  noStroke(); 
+  // p5.js version:
+  fill(0,0,0);
+  noStroke();
   textSize (numeralSize);
-  text(num, nx,ny); 
+  text(num, nx,ny);
 }
 
 
@@ -295,26 +295,16 @@ function drawImageLayout (whichImageLayout, images) {
   if ((whichImageLayout >= 0) && (whichImageLayout < nImageLayouts)) {
     var anImageLayout = imageLayouts[whichImageLayout];
     var nRectsInLayout = anImageLayout.length;
-    nRectsInLayout = min(nRectsInLayout, 6); 
-    
+    nRectsInLayout = min(nRectsInLayout, 6);
+
     for (var i = 0; i < nRectsInLayout; i++) {
       var aRect = anImageLayout[i];
       var rx = aRect[0];
       var ry = aRect[1];
       var rw = aRect[2];
       var rh = aRect[3];
-      
+
       image (imageArray[i], rx, ry, rw, rh);
     }
   }
 }
-
-
-
-
-
-
-
-
-
-

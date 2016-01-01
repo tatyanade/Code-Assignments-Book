@@ -14,29 +14,28 @@
         "fullpageimage": "wallpaper/todo_spamghetto_2_fullpage.jpg",
         "layout": 11,
         "image": "wallpaper/polya_tallhalf.png\nwallpaper/marrakech_tiles_onethird.jpg\nwallpaper/reas_pill_a_day_onethird.jpg\nwallpaper/gondek_gallifreyan_onethird.png",
-        "aspirationcaptions": "1. George Pólya's illustrations (1924) of the seventeen periodic plane symmetry groups had a profound influence on the algorithmic patternmaking of M.C. Escher.\n\n2. Zellige terracotta tiles in Marrakech (17th century) form edge-to-edge, regular and other tessellations. Photo by Ian Alexander, 2000. From Wikipedia, https://en.wikipedia.org/wiki/Tessellation.\n\n3. Casey Reas's \"One Non-Narcotic Pill A Day\" (2013) presents a dynamic collage pattern generated from a video recording.\n\n4. Alison Gondek, an introductory programming student at CMU, used JavaScript to create this pattern inspired by the “Circular Gallifreyan” language from Doctor Who.\n\nCover: In \"Spamgetto\" (2009), the Italian design agency Todo presents wallpaper whose design is computationally generated from thousands of spam emails. https://www.flickr.com/photos/todotoit/sets/72157616412434905/",
+        "aspirationcaptions": "1. In \"Spamgetto\" (2009), the Italian design agency Todo presents wallpaper whose design is computationally generated from thousands of spam emails. https://www.flickr.com/photos/todotoit/sets/72157616412434905/\n\n2. George Pólya's illustrations (1924) of the seventeen periodic plane symmetry groups had a profound influence on the algorithmic patternmaking of M.C. Escher.\n\n3. Zellige terracotta tiles in Marrakech (17th century) form edge-to-edge, regular and other tessellations. Photo by Ian Alexander, 2000. From Wikipedia, https://en.wikipedia.org/wiki/Tessellation.\n\n4. Casey Reas's \"One Non-Narcotic Pill A Day\" (2013) presents a dynamic collage pattern generated from a video recording.\n\n5. Alison Gondek, an introductory programming student at CMU, used JavaScript to create this pattern inspired by the “Circular Gallifreyan” language from Doctor Who.",
         "additionalreferences": "Aperiodic Tiling. In Wikipedia. https://en.wikipedia.org/wiki/Aperiodic_tiling\nBailey. David. \"David Bailey's World of Escher-like Tessellations\". http://www.tess-elation.co.uk/\nGrünbaum, B., & Shephard, G. C. (1987). \"Tilings and patterns\". Freeman.\nJones, O. (1868). \"The grammar of ornament\". B. Quaritch. \nSchattschneider, D. \"The Mathematical Side of M. C. Escher,\" in AMS Notices 57: 706-718, 2010. http://www.ams.org/journals/notices/201006/rtx100600706p.pdf.\nTexture Synthesis. In Wikipedia. https://en.wikipedia.org/wiki/Texture_synthesis\nWallpaper Collection, Historic New England, http://www.historicnewengland.org/collections-archives-exhibitions/collections-access/highlights/wallpaper.\nWallpaper Groups. In Wikipedia. https://en.wikipedia.org/wiki/Wallpaper_group.\n\nAlso see works by: Casey Reas, Marius Watz, Lia, Jonathan McCabe, Mitchell Whitelaw, Tina Frank, Joshua Davis, Dave Bollinger, Holger Lippmann.",
-        "aspirationalprojects": "ToDo, Spamgetto (2009). \nM. C. Escher, Fish (1964).\nAlhambra Tiling (1300s).\nEgyptian Patterning (very old).\n        ",
-        "othernotes": "ToDo, Spamgetto (2009). Online: http://www.todo.to.it/#projects/spamghetto and https://www.flickr.com/photos/todotoit/sets/72157616412434905/ \nAlhambra Tiling (1300s). Online: https://en.wikipedia.org/wiki/Alhambra\nEgyptian Patterning (very old). "
+        "notes": "ToDo, Spamgetto (2009). \nM. C. Escher, Fish (1964).\nAlhambra Tiling (1300s).\nEgyptian Patterning (very old).\n        "
     },
     {
         "titles": "Face Generator",
         "shortdescription": "Drawing parametric faces",
         "level": "Introductory",
-        "tagsstem": "parametric design, constrained randomness, graphics primitives",
+        "tagsstem": "parametric design, constrained randomness, graphics primitives, variables",
         "tagsarts": "portraiture, physiognomy, character design, puppets, avatars",
         "learningobjectives": "•  Develop familiarity with drawing functions and parametric form\n•  Apply generative principles to expressive character design\n•  Develop skills as a meta-designer",
-        "brief": "Write code to create a face design which is parameterized by at least three dimensions of variability, but preferably more. For example, you might have variables that specify the size, position, color, or other visual characteristics of the eyes, nose, and mouth. These varying features may articulate or modify the face’s expression (happy, sad, angry etc.); the face’s identity (John, Mary, etc.); and/or the face’s species (cat, monkey, zombie, alien, etc.). Give consideration to *continuous* parameters (such as nose size or eyebrow position), versus *discrete* parameters (such as the presence of piercings, or the number of eyeballs). Generate a new face whenever the user clicks the mouse.",
-        "variations": "•  Consider whether your generated faces are shown in frontal, profile, or three-quarters view.\n•  Give special consideration to the shape of face parts, such as the shape of the head, nose, or chin.\n•  Consider characteristics like skin color, stubble, hairstyle, blemishes, interpupillary distance, facial assymmetry, cephalic index, prognathism, etc.\n•  Add functionality to your face so that it responds to microphone input. \n•  This project may extend from a preliminary exercise: using code to render a static self portrait.",
-        "advancedstudents": "Create a parameterized facial puppet or avatar, potentially in 3D, which is governed by signals from a real-time face tracker (such as FaceOSC). Practice a short monologue and record a screen-captured video performance with your avatar. ",
-        "makingitmeaningful": "Humans are equipped with an exquisite sensitivity to faces. We easily recognize faces and notice small changes without difficulty. We can observe very subtle shifts in facial expressions, often being able to discern the slightest change in mood and sincerity in ways that remain impossible for computers. This task draws inspiration from the “Chernoff Faces\" information visualization technique which proposes to leverage this sensitivity by using facial features to represents multivariate data. In Chernoff faces, features such as eyes, ears, mouth and nose represent variables by their shape, size, placement and orientation. Chernoff used 18 variables (such as eyebrow height, jaw size, etc.) to describe a face.\nEven more detailed is Paul Ekman’s \"Facial Action Coding System\", which by comparison uses 46 variables to describe a facial expression. Each of these dimensions corresponds to the action of some muscle in the face.\n",
+        "brief": "Write code to create a face design which is parameterized by at least three dimensions of variability, but preferably more. For example, you might have variables that specify the size, position, color, or other visual characteristics of the eyes, nose, and mouth. The variations in these features may be used to alter the face’s expression (happy, sad, angry etc.); the face’s identity (John, Mary, etc.); and/or the face’s species (cat, monkey, zombie, alien, etc.). Give consideration to *continuous* parameters (such as nose size or eyebrow position), versus *discrete* parameters (such as the presence of piercings, or the number of eyeballs). Your system should generate a new face whenever the user clicks the mouse.",
+        "variations": "•  Consider whether your faces are generated in frontal, profile, or three-quarters view.\n•  Give special consideration to the *shape* of face parts, such as the shape of the head, nose, or chin.\n•  Consider characteristics like skin color, stubble, hairstyle, blemishes, interpupillary distance, facial assymmetry, cephalic index, prognathism, etc.\n•  Use your software to generate a deck of collectible trading cards (like Pokémon or baseball cards), featuring a group of imaginary monsters. Print out the cards.\n•  For visualization students, try using real multivariate data as the basis for generating new faces, rather than randomness.\n•  Add functionality to your face so that it responds to microphone input. \n•  This project can be used as a follow-up to a preliminary exercise: using code to render a static self portrait.",
+        "advancedstudents": "Create a parameterized facial puppet or avatar, potentially in 3D, which is controlled by signals from a real-time face tracker (such as FaceOSC). Practice a short monologue and record a screen-captured video performance with your avatar. ",
+        "makingitmeaningful": "Humans are equipped with an exquisite sensitivity to faces. From infancy we easily recognize faces, and can detect very subtle shifts in facial expressions, often being able to discern the slightest change in mood and sincerity in ways that remain impossible for computers. From faces we also are readily able to identify family resemblances, or \"strangers\" in crowds, and we are transfixed by the ways in which the lines on a face can reveal a person's life history. Kyle McDonald writes that \"faces are so important that the impairment of our face-processing ability is seen as a disorder, called prosopagnosia, while unconsciously seeing faces where there are none is an almost universal kind of pareidolia.”\n\nThis assignment draws inspiration from the “Chernoff Face\" data visualization technique, which leverages this sensitivity by using facial features to represent multivariate data. In Chernoff Faces, features such as eyes, ears, mouth and nose represent data according to their shape, size, placement and orientation. Whereas Chernoff (1973) used 18 variables to *synthesize* a face, Paul Ekman’s \"Facial Action Coding System\" uses 46 dimensions to *analyze* a facial expression, each corresponding to the action of a different facial muscle.",
         "titlegray": 0,
         "fullpageimage": "generative_face/moka_faces_1_fullpage.jpg",
         "layout": 20,
         "image": "generative_face/hdh_stranger_visions_quarter.jpg\ngenerative_face/chernoff_faces_quarter.png\ngenerative_face/macawnivore_nose_chart_onethird.png\ngenerative_face/mike_pelletier_onethird.jpg\ngenerative_face/sobecka_perfect_creatures_onethird.jpg",
-        "aspirationcaptions": "1. In Heather Dewey-Hagborg’s astounding “Stranger Visions” (2012), forensic 3D portraits are computed from found DNA fragments. http://deweyhagborg.com/strangervisions/\n\n2. *Chernoff faces* are a type of display in which multivariate data are represented by the shape, size, position and orientation of the parts of the face. From Wikipedia. https://en.wikipedia.org/wiki/Chernoff_face.\n\n3. “Nose Chart Reference” (2014) by Macawnivore. http://macawnivore.deviantart.com/art/Nose-Chart-Reference-451870046\n\n4. In Mike Pelletier’s “Parametric Expression”, values that govern the articulation of facial models are pushed beyond their normal limits. http://mikepelletier.nl/Parametric-Expression\n\n5. In Karolina Sobecka’s “All the Universe is Full of the Lives of Perfect Creatures” (2012), the visitor puppeteers an avatar through the movements of their own face. http://www.gravitytrap.com/artwork/perfect-creatures\n\nCover: Although Matthias Dörfelt’s “Weird Faces” (2012) look hand-drawn, they are entirely expressed by algorithmic rules. http://www.mokafolio.de/works/Weird-Faces",
-        "additionalreferences": "Blas, Zach. Facial Weaponization Suite. https://vimeo.com/57882032.\nFacial Action Coding System. In Wikipedia. https://en.wikipedia.org/wiki/Facial_Action_Coding_System\nMcDonald, Kyle. FaceOSC. https://github.com/kylemcdonald/ofxFaceTracker\nMcDonald, Kyle and Castro, Arturo. Face Substitution. https://vimeo.com/29348533.",
-        "aspirationalprojects": "Weird Faces, Moka (2012)\n\nAll the Universe is Full of the Lives of Perfect Creatures, Karolina Soebecka (2012)\nre:face, Tmema (2007) Golan Levin & Zachary Lieberman\nKyle McDonald, Face Substitution (2011)\nHeather Dewey Hagborg, Stranger Visions (2012-2013)"
+        "aspirationcaptions": "1. Although Matthias Dörfelt’s “Weird Faces” (2012) look hand-drawn, they are entirely expressed by algorithmic rules. http://www.mokafolio.de/works/Weird-Faces\n\n2. In Heather Dewey-Hagborg’s astounding “Stranger Visions” (2012), forensic 3D portraits are computed from found DNA fragments. http://deweyhagborg.com/strangervisions/\n\n3. *Chernoff faces* are a type of display in which multivariate data are represented by the shape, size, position and orientation of the parts of the face. From Wikipedia. https://en.wikipedia.org/wiki/Chernoff_face.\n\n4. “Nose Chart Reference” (2014) by Macawnivore. http://macawnivore.deviantart.com/art/Nose-Chart-Reference-451870046\n\n5. In Mike Pelletier’s “Parametric Expression”, values that govern the articulation of facial models are pushed beyond their normal limits. http://mikepelletier.nl/Parametric-Expression\n\n6. In Karolina Sobecka’s “All the Universe is Full of the Lives of Perfect Creatures” (2012), the visitor puppeteers an avatar through the movements of their own face. http://www.gravitytrap.com/artwork/perfect-creatures",
+        "additionalreferences": "Blas, Zach. Facial Weaponization Suite. https://vimeo.com/57882032.\nBorenstein, Greg. Machine Pareidolia. http://urbanhonking.com/ideasfordozens/2012/01/14/machine-pareidolia-hello-little-fella-meets-facetracker/.\nComputer facial animation. In Wikipedia. https://en.wikipedia.org/wiki/Computer_facial_animation.\nDarwin, Charles. The Expression of Emotions in Man and Animals. http://www.gutenberg.org/files/1227/.\nFacial Action Coding System. In Wikipedia. https://en.wikipedia.org/wiki/Facial_Action_Coding_System.\nLevin, Golan & Lieberman, Zachary. Reface [Portrait Sequencer]. http://www.flong.com/projects/reface/.\nMcDonald, Kyle. Face as Interface. https://github.com/kylemcdonald/AppropriatingNewTechnologies/wiki/Week-2.\nMcDonald, Kyle. FaceOSC. https://github.com/kylemcdonald/ofxFaceTracker.\nMcDonald, Kyle and Castro, Arturo. Face Substitution. https://vimeo.com/29348533.\nPerlin, Ken. FaceDemo (Java Applet). http://mrl.nyu.edu/~perlin/facedemo/",
+        "notes": "Weird Faces, Moka (2012)\n\nAll the Universe is Full of the Lives of Perfect Creatures, Karolina Soebecka (2012)\nre:face, Tmema (2007) Golan Levin & Zachary Lieberman\nKyle McDonald, Face Substitution (2011)\nHeather Dewey Hagborg, Stranger Visions (2012-2013)"
     },
     {
         "titles": "Clock",
@@ -54,7 +53,7 @@
         "image": "defaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg",
         "aspirationcaptions": "John Maeda, Reactive Books, (1994-1999). Online: https://www.youtube.com/watch?v=nA_UTUvC4h8 \nGolan Levin, Banded Clock, (1999). Online: http://www.flong.com/storage/experience/clock/ \nJack Hughes, Color clock (2011). Online: http://thecolourclock.co.uk/\nMonika, All the Minutes (2014). Online: https://twitter.com/alltheminutes \nKatie Paterson, Time Pieces (2014). Online: http://www.katiepaterson.org/timepieces/ ",
         "additionalreferences": "Groom, A. (2013). Time.\nFoer, J. (2008). A Minor History of Time Without Clocks. Cabinet Magazine. Issue 29, Spring.",
-        "aspirationalprojects": "John Maeda, Reactive Books (1994-1999). \nGolan Levin, Banded Clock (1999).\nJack Hughes, Color clock (2011). \nMonika, All the Minutes (2014). \nKatie Paterson, Time Pieces (2014)."
+        "notes": "John Maeda, Reactive Books (1994-1999). \nGolan Levin, Banded Clock (1999).\nJack Hughes, Color clock (2011). \nMonika, All the Minutes (2014). \nKatie Paterson, Time Pieces (2014)."
     },
     {
         "titles": "A Short Fuse",
@@ -70,7 +69,7 @@
         "fullpageimage": "defaults/default_fullpage_666x522.jpg",
         "layout": 1,
         "image": "defaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg",
-        "aspirationalprojects": "?"
+        "notes": "?"
     },
     {
         "titles": "Copy the master",
@@ -97,13 +96,12 @@
         "learningobjectives": "•  Demonstrated ability to load external image assets into programming environment. \n•  Use of a pixel array.\n",
         "brief": "Pick and load your favorite image. Use pixel information and transfer the image to a mozaic version. Your program should be able to convert any image into mozaic version automatically. There are some parameters you can set up.",
         "variations": "Load a 20x20 pixel image into your program and use the colors in the image as a source of data for generating a kinetic experience amplifying the original image.",
-        "notes": "http://classes.design.ucla.edu/Fall04/28/exercises.html",
         "titlegray": 0,
         "fullpageimage": "defaults/default_fullpage_666x522.jpg",
         "layout": 1,
         "image": "defaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg",
         "additionalreferences": "Learning Processing, Chapter X, example X. ",
-        "aspirationalprojects": "Daniel Rozin, Mirrors. "
+        "notes": "Daniel Rozin, Mirrors. \nhttp://classes.design.ucla.edu/Fall04/28/exercises.html"
     },
     {
         "titles": "Chaos-Order",
@@ -119,7 +117,7 @@
         "layout": 1,
         "image": "defaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg",
         "aspirationcaptions": "George Nees, Schotter, 1968 http://www.medienkunstnetz.de/works/schotter/\nVera Molnar, Errance Entre Ordre Et Chaos, 1975, http://www.veramolnar.com/diapo.php?y=1975",
-        "aspirationalprojects": "Schotter by Georg Nees (1968) - Georg Nees is one of the pioneers of computer art. Born in Germany in 1926, he was a pupil of Max Bense, the founder of the Information Aesthetics movement. It is believed that Nees’ solo show at the University of Stuttgart in February 1965 was the first exhibition of computer art. One of Georg Nees’ signature pieces is Schotter (“Gravel” in German), a plotter/lithograph artwork from 1968. It is now in the collection of the Victoria & Albert Museum, London.\nVera Molnar, Errance Entre Ordre Et Chaos, 1975."
+        "notes": "Schotter by Georg Nees (1968) - Georg Nees is one of the pioneers of computer art. Born in Germany in 1926, he was a pupil of Max Bense, the founder of the Information Aesthetics movement. It is believed that Nees’ solo show at the University of Stuttgart in February 1965 was the first exhibition of computer art. One of Georg Nees’ signature pieces is Schotter (“Gravel” in German), a plotter/lithograph artwork from 1968. It is now in the collection of the Victoria & Albert Museum, London.\nVera Molnar, Errance Entre Ordre Et Chaos, 1975."
     },
     {
         "titles": "Parametric Alphabet ",
@@ -131,14 +129,13 @@
         "brief": "Create a typeface (using any graphic primitives you prefer), such that all of the letters of the alphabet are structured by the same underlying graphic logic. For example, you might design an alphabet in which every letter is exclusively constructed from 3 arcs, or from 4 rectangles. You might create an alphabet whose letters are formed by manipulating the control points of a Bezier curve in various ways. Or perhaps your letters are traces deposited by a system of simulated particles, which are affected by different spatial configurations of attractive and repulsive forces. \n\nAn essential technical goal is for you to store descriptive parameters for your letters in some kind of array or object-oriented data structure, and then create a single function which renders any requested letter from this data. If you're writing individual functions to draw each letter, you're doing something wrong.",
         "variations": "After you have designed all of your letters, typeset the entire alphabet on a single canvas so that all of the letters can be seen at a glance. Next, typeset a specific word (perhaps the name of your typeface) which has a special relationship to its design. Choose this word carefully. \n\nMake it possible to animate the transitions between letters, such that any letter can smoothly morph into any other. Pressing a key should initiate an animated transition (of approximately a second's duration) from the previous letter to the next desired letter. Instructors: for introductory students, provide a template for transitioning between templates.",
         "makingitmeaningful": "“By this art you may contemplate the variation of the 22 letters…”\n— Jorge Luis Borges, The Library of Babel (La biblioteca de Babel), 1941 \n\n“To create a typeface that is easily malleable in the computational medium, the constituent shapes must be reduced to compact numerical forms.”\n— John Maeda, 2000\n\nDynamic, interactive and computational typography are enormous fields. There are extensive histories of experimental typography in motion \ngraphics (especially from film titles) and shorter but  no-less-interesting histories of computational typeface design, starting with (for the sake of argument) Donald Knuth’s landmark Metafont software (developed 1977-2008) — which was possibly the world’s first parametrized typeface. \n\nSee Golan archive here: http://golancourses.net/2015/assignments/assignment-1x/11-anitype-character/ ",
-        "notes": "Might need a code template?",
         "titlegray": 0,
         "fullpageimage": "defaults/default_fullpage_666x522.jpg",
         "layout": 1,
         "image": "defaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg",
         "aspirationcaptions": "Type Me, Type Me Not by Peter Cho (1997). Online: http://acg.media.mit.edu/people/pcho/typemenot/index.html\nLetterscapes by Peter Cho (2002). Online: http://www.typotopo.com/letterscapes/index.html \nWordScapes by Peter Cho (2008). Online: http://www.typotopo.com/wordscapes/wordscapes.html\nAlphabot by Nik Pashenkov (2001). Online: https://processing.org/exhibition/works/004/index_link.html \nLetter 3, David Lu (2002). Online: http://velluminous.org/portfolio/a/demos/letter3/\nTypeface2, Mary Huang (2010). Online: http://vimeo.com/9587564 ",
         "additionalreferences": "Rune Madsen’s excellent web lecture on the history of dynamic typography, which discusses the surprisingly close relationship between typography and computation. Online: http://printingcode.runemadsen.com/lecture-typography/ \nKyuha Shim’s page, Code-Type.com http://code-type.com/about/\nJurg Lehni has written a terrific article on “Typeface as Programme“. Online: https://www.typotheque.com/articles/typeface_as_programme ",
-        "aspirationalprojects": "Type Me, Type Me Not, Peter Cho (1997)\nLetterscapes, Peter Cho (2002)\nWordScapes, Peter Cho (2008)\nAlphabot, Nik Pashenkov (2001)\nLetter 3, David Lu (2002)\nTypeface2, Mary Huang (2010)\n"
+        "notes": "Type Me, Type Me Not, Peter Cho (1997)\nLetterscapes, Peter Cho (2002)\nWordScapes, Peter Cho (2008)\nAlphabot, Nik Pashenkov (2001)\nLetter 3, David Lu (2002)\nTypeface2, Mary Huang (2010)\n"
     },
     {
         "titles": "QWERTY Instrument",
@@ -151,7 +148,7 @@
         "fullpageimage": "defaults/default_fullpage_666x522.jpg",
         "layout": 1,
         "image": "defaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg",
-        "aspirationalprojects": "www.patatap.com/ , processing.org/examples/keyboardfunctions.html"
+        "notes": "www.patatap.com/ , processing.org/examples/keyboardfunctions.html"
     },
     {
         "titles": "Random text generator",
@@ -191,14 +188,13 @@
         "brief": "Design a class which displays, animates, and defines the behavior of a machine or organism. Give your invention a goal (e.g. finding other creatures, searching for food, climbing the screen) and have it react when it reaches its goal. Display your class outline table as a comment in the code. Show the fields and datatypes, the methods and their return values.",
         "variations": "Pair of creatures - interesting diads. Array of creatures, each with different behaviors, motion based on emotion",
         "makingitmeaningful": "The simulation of artifical life and life systems has a long history in computational artforms. From canonical examples of computer programs such as  Game of Life",
-        "notes": "- need a class table in the appendix for reference.",
         "titlegray": 0,
         "fullpageimage": "defaults/default_fullpage_666x522.jpg",
         "layout": 1,
         "image": "defaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg",
         "aspirationcaptions": "Single Cell, Golan Levin and friends (2002). Online: http://www.singlecell.org/singlecell.html\nDouble Cell, Golan Levin and friends (2001). Online: http://www.singlecell.org/ \nMorphogenesis Series, Jon Mccormack (2002). Online: http://jonmccormack.info/~jonmc/sa/artworks/morphogenesis-series/\nInteractive Plant Growing, Laurent Mignonneau & Christa Sommerer (1992). Online: http://www.interface.ufg.ac.at/christa-laurent/WORKS/FRAMES/FrameSet.html \nLife Writer, Laurent Mignonneau & Christa Sommerer (2006): Online: http://www.interface.ufg.ac.at/christa-laurent/WORKS/FRAMES/FrameSet.html \nDelicate Boundaries, Chris Sugrue (2007). Online: http://csugrue.com/delicateboundaries/ \nKarl Sims, Evolved Virtual Creatures (1994), https://archive.org/details/sims_evolved_virtual_creatures_1994 .",
         "additionalreferences": "\n",
-        "aspirationalprojects": "Single Cell, Golan Levin and friends (2001). \nDouble Cell, Golan Levin and friends (2002).\nMorphogenesis Series, Jon Mccormack (2002).\nInteractive Plant Growing, Laurent Mignonneau & Christa Sommerer (1992).\nLife Writer, Laurent Mignonneau & Christa Sommerer (2006).\nDelicate Boundaries, Chris Sugrue (2007). \nKarl Sims, Evolved Virtual Creatures (1994)."
+        "notes": "Single Cell, Golan Levin and friends (2001). \nDouble Cell, Golan Levin and friends (2002).\nMorphogenesis Series, Jon Mccormack (2002).\nInteractive Plant Growing, Laurent Mignonneau & Christa Sommerer (1992).\nLife Writer, Laurent Mignonneau & Christa Sommerer (2006).\nDelicate Boundaries, Chris Sugrue (2007). \nKarl Sims, Evolved Virtual Creatures (1994)."
     },
     {
         "titles": "A Generative Landscape",
@@ -216,7 +212,7 @@
         "image": "defaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg",
         "aspirationcaptions": "Vera Molnar, Variations St. Victoire, 1989 - 1996\nSubstrate, Jared A Tarbell, 2003\nStanza, Complexity: Endless Subdivision in Landscapes Of Labour Love and Learning.\nMichael Gondry, Train, 2010.",
         "additionalreferences": "https://www.courses.tegabrain.com/PVA1/?page_id=617",
-        "aspirationalprojects": "Vera Molnar, Variations St. Victoire, 1989 - 1996\nSubstrate, Jared A Tarbell, 2003\nStanza, Complexity: Endless Subdivision in Landscapes Of Labour Love and Learning.\nMichael Gondry, Train, 2010."
+        "notes": "Vera Molnar, Variations St. Victoire, 1989 - 1996\nSubstrate, Jared A Tarbell, 2003\nStanza, Complexity: Endless Subdivision in Landscapes Of Labour Love and Learning.\nMichael Gondry, Train, 2010."
     },
     {
         "titles": "Non-linear narrative ",
@@ -266,7 +262,7 @@
         "fullpageimage": "defaults/default_fullpage_666x522.jpg",
         "layout": 1,
         "image": "defaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg",
-        "aspirationalprojects": "Meshu"
+        "notes": "Meshu"
     },
     {
         "titles": "Augmented projection",
@@ -274,13 +270,12 @@
         "level": "Intermediate",
         "tagsarts": "motion, animation, architecture",
         "brief": "Make a small poetic gesture projected on a wall, corner or architectural feature in the building. Look around and find some modest features that catch your eye — such as a power outlet, doorknob, water spigot or elevator buttons. Sketch some concepts for some poetic ideas that could relate to those features. Now simplify your idea. Now simplify it again. \nYou are asked to create the equivalent of a rhyming couplet, not an epic opera. Not even a limerick or a haiku. Just get some virtual objects responding to some wall features. Simplify, simplify, simplify.\nIt is recommended you use a keystoning library in order to ensure the registration and alignment of your work is exact. You may also want to explore using a physics library to create falling objects or a particle system.",
-        "notes": "Do we include interactive dance examples in here? Chunky Move for example?",
         "titlegray": 0,
         "fullpageimage": "defaults/default_fullpage_666x522.jpg",
         "layout": 1,
         "image": "defaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg",
         "aspirationcaptions": "Yesyesno, Nightlights, 2010, http://www.yesyesno.com/night-lights\nKyle McDonald, Lightleaks, 2013, https://vimeo.com/66167082\nMiles Peyton, Key Fleas, 2013, https://vimeo.com/77109691\nKarolina Soebecka, Wildlife, 2006, http://www.gravitytrap.com/artwork/wildlife\nKrzysztof Wodiczko, Abraham Lincoln: War Veteran Projection, 2012, https://vimeo.com/53446621\nLukas Karluk, Snake the Planet, 2012, http://www.julapy.com/work/snake-the-planet/\nKimchi and Chips, Everyday Objects, 2009, http://www.kimchiandchips.com/#everydayobjects",
-        "aspirationalprojects": "Yesyesno, Nightlights, 2010\nKyle McDonald, Lightleaks, 2013\nMiles Peyton, Kea Flies, 2013\nKarolina Soebecka, Wildlife, 2006\nKrzysztof Wodiczko, Abraham Lincoln: War Veteran Projection, 2012\nLukas Karluk, Snake the Planet, 2012\nKimchi and Chips, Everyday Objects, 2009 \nFrieder Weiss and ChunkyMove, Mortal Engine, 2010\nJilian Mayer, Scenic Running, 2010"
+        "notes": "Yesyesno, Nightlights, 2010\nKyle McDonald, Lightleaks, 2013\nMiles Peyton, Key Fleas, 2013\nKarolina Soebecka, Wildlife, 2006\nKrzysztof Wodiczko, Abraham Lincoln: War Veteran Projection, 2012\nLukas Karluk, Snake the Planet, 2012\nKimchi and Chips, Everyday Objects, 2009 \nFrieder Weiss and ChunkyMove, Mortal Engine, 2010\nJilian Mayer, Scenic Running, 2010\nDo we include interactive dance examples in here? Chunky Move for example?"
     },
     {
         "titles": "Words from social media",
@@ -294,7 +289,7 @@
         "layout": 1,
         "image": "defaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg",
         "additionalreferences": "http://modes.io/listening-post-ten-years-on/",
-        "aspirationalprojects": "We feel fine by Jonathan Harris and Sep Kamvar - http://wefeelfine.org/\nListening Post - Mark Hansen and Ben Rubin"
+        "notes": "We feel fine by Jonathan Harris and Sep Kamvar - http://wefeelfine.org/\nListening Post - Mark Hansen and Ben Rubin"
     },
     {
         "titles": "Making Things Speak",
@@ -306,7 +301,7 @@
         "fullpageimage": "defaults/default_fullpage_666x522.jpg",
         "layout": 1,
         "image": "defaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg",
-        "aspirationalprojects": "http://www.botanicalls.com/about/\nBureau of Inverse Technology - Suicide box\nThe Frog's Nose - http://tegabrain.com/The-Frogs-Nose"
+        "notes": "http://www.botanicalls.com/about/\nBureau of Inverse Technology - Suicide box\nThe Frog's Nose - http://tegabrain.com/The-Frogs-Nose"
     },
     {
         "titles": "Camera Instrument",
@@ -316,7 +311,7 @@
         "fullpageimage": "defaults/default_fullpage_666x522.jpg",
         "layout": 1,
         "image": "defaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg",
-        "aspirationalprojects": "Very Nervous System"
+        "notes": "Very Nervous System"
     },
     {
         "titles": "Gestural Recording",
@@ -344,7 +339,7 @@
         "layout": 1,
         "image": "defaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg",
         "aspirationcaptions": "https://drawingmachines.org/\nhttp://www.graficaobscura.com/dyna/\nhttps://github.com/processing/processing-docs/blob/master/exhibition/works/dynadraw/dynadraw.pde",
-        "aspirationalprojects": "http://make8bitart.com/#what\nZach thesis"
+        "notes": "http://make8bitart.com/#what\nZach thesis"
     },
     {
         "titles": "MAYBE LIST"

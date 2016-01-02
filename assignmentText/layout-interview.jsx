@@ -14,6 +14,10 @@ var i=0; //frame name
 var colSpacing=20;
 var colWidth= (576-2*colSpacing)/3;
 
+var questionBoxHeight;
+var questionSpaceAbove =10;
+var questionSpaceBelow =10;
+
 function length(object)
 {
   var length = 0;
@@ -56,8 +60,9 @@ function draw() {
     //TEXT PAGE
     b.page(startPage);
     qtitle(jsonData[i].titles);
-    var yy=question2(jsonData[i].question);
-    answer(jsonData[i].answer, yy);
+    var yofQuestion=question2(jsonData[i].question);
+    //answer(data, and y position of text box above)
+    answer(jsonData[i].answer, yofQuestion);
 
     //CHECK IF WE NEED ADDITIONAL PAGES FOR OVERFLOW TEXT
     //==========================================================
@@ -138,7 +143,7 @@ function question1(_titles, _x, _y){
 function qtitle(_titles){
   b.textSize(24);
   b.textAlign(Justification.LEFT_ALIGN, VerticalJustification.CENTER_ALIGN);
-  titleFrame = b.text(_titles,36,36,576,27.6);
+  titleFrame = b.text(_titles,36,36,576,27);
   titleFrame.name = "title";
 
 
@@ -146,59 +151,40 @@ function qtitle(_titles){
 
 function question2(_titles){
   var desFrame, desFrame2, desFrame3, desFrame4, desFrame5;
-  var r=68;
+
+  //variable for y position coord
+  var _yy=63+questionSpaceAbove;
+  var questionFrameMax = 100;
   b.textSize(12);
   b.textLeading(14.4);
   b.textFont("Atlas Grotesk","Light Italic");
   b.textAlign(Justification.LEFT_ALIGN, VerticalJustification.TOP_ALIGN);
-  desFrame = b.text(_titles, 36,r,576,16);
+  desFrame = b.text(_titles, 36,_yy,576,questionFrameMax);
   //b.typo(desFrame,hyphenation,false);
   desFrame.name = "question";
-  if(desFrame.overflows==true){
-    r=r+15;
-    desFrame2 = b.text("",36,r,576,16);
-    b.linkTextFrames(desFrame,desFrame2);
-    b.println("BOX2!!");
-    if(desFrame2.overflows==true){
-      r=r+15;
-      desFrame3 = b.text("",36,r,576,16);
 
-      b.linkTextFrames(desFrame2,desFrame3);
-      b.println("BOX3!!");
-      if(desFrame3.overflows==true){
-        r=r+15;
-        desFrame4 = b.text("",36,r,576,16);
-        b.linkTextFrames(desFrame3,desFrame4);
-        b.println("BOX4!!");
-
-        if(desFrame4.overflows==true){
-          r=r+15;
-          desFrame5 = b.text("",36,r,576,16);
-          b.linkTextFrames(desFrame4,desFrame5);
-          b.println("BOX5!!");
-        }
-      }
-    }
+  var nQuestionTextLines = b.lines(desFrame).length;
+  b.println("nQuestionTextLines:"+nQuestionTextLines);
+  questionBoxHeight = (nQuestionTextLines ) * b.textLeading();
+  b.itemSize(desFrame,576,questionBoxHeight);
 
 
 
 
-
-  }
 
   b.textFont("Atlas Grotesk","Regular");
-  return r;
+  return _yy;
 }
 
 
-function answer(_brief, _yy){
+function answer(_brief, _questionBoxY){
   b.textSize(8);
   b.textLeading(12);
   b.textAlign(Justification.LEFT_ALIGN, VerticalJustification.TOP_ALIGN);
 
   var brief = _brief;
-  var y=23+_yy;
-  var h=432-_yy+13;
+  var y=questionSpaceBelow+_questionBoxY+questionBoxHeight;
+  var h=432-questionBoxHeight-questionSpaceBelow-questionSpaceAbove-27;
   aFrame =b.text(brief, 36,y,colWidth,h);
 
 

@@ -5,7 +5,7 @@
 #include "basiljs/bundle/basil.js";
 
 // to load an external json file use
-var jsonString = b.loadString("interview.json");
+var jsonString = b.loadString("data-interview.json");
 //PAGES
 var pages=6 ; //how many pages? Pages in addition to the 1 the template.
 var startPage =1; //start assignments on what page?

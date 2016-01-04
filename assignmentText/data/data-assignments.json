@@ -1,7 +1,7 @@
 [
     {
         "titles": "Iterative Pattern (Wallpaper)",
-        "shortdescription": "A generative texture or textile design\n",
+        "shortdescription": "Generating a texture or textile design\n",
         "level": "All levels ",
         "tagsstem": "iteration, functional abstraction, coordinates, graphics primitives, graphics transforms, tesselation, symmetries",
         "tagsarts": "pattern, texture, rhythm, shape, curves",
@@ -15,8 +15,7 @@
         "layout": 11,
         "image": "wallpaper/polya_tallhalf.png\nwallpaper/marrakech_tiles_onethird.jpg\nwallpaper/reas_pill_a_day_onethird.jpg\nwallpaper/gondek_gallifreyan_onethird.png",
         "aspirationcaptions": "1. In *Spamgetto* (2009), the Italian design agency Todo presents wallpaper whose design is computationally generated from thousands of spam emails. https://www.flickr.com/photos/todotoit/sets/72157616412434905/\n\n2. George Pólya's illustrations (1924) of the seventeen periodic plane symmetry groups had a profound influence on the algorithmic patternmaking of M.C. Escher.\n\n3. Zellige terracotta tiles in Marrakech (17th century) form edge-to-edge, regular and other tessellations. Photo by Ian Alexander, 2000. From Wikipedia. https://en.wikipedia.org/wiki/Tessellation.\n\n4. Casey Reas's *One Non-Narcotic Pill A Day* (2013) presents a dynamic collage pattern generated from a video recording.\n\n5. Alison Gondek, an introductory programming student at CMU, used JavaScript to create this pattern inspired by the “Circular Gallifreyan” language from *Doctor Who*.",
-        "additionalreferences": "\"Aperiodic Tiling\". In Wikipedia. https://en.wikipedia.org/wiki/Aperiodic_tiling\nBailey, David. *David Bailey's World of Escher-like Tessellations*. http://www.tess-elation.co.uk/\nGrünbaum, B., & Shephard, G. C. (1987). *Tilings and patterns*. Freeman.\nJones, O. (1868). *The grammar of ornament*. B. Quaritch.\nSchattschneider, D. \"The Mathematical Side of M. C. Escher,\" in *AMS Notices* 57: 706-718, 2010. http://www.ams.org/journals/notices/201006/rtx100600706p.pdf.\n\"Texture Synthesis\". In Wikipedia. https://en.wikipedia.org/wiki/Texture_synthesis\n\"Wallpaper Collection\", Historic New England. http://www.historicnewengland.org/collections-archives-exhibitions/collections-access/highlights/wallpaper.\n\"Wallpaper Groups\". In Wikipedia. https://en.wikipedia.org/wiki/Wallpaper_group.\n\nAlso see works by: Casey Reas, Marius Watz, Lia, Jonathan McCabe, Mitchell Whitelaw, Tina Frank, Joshua Davis, Dave Bollinger, Holger Lippmann.",
-        "notes": "M. C. Escher, Fish (1964).\nAlhambra Tiling (1300s).\n        "
+        "additionalreferences": "\"Aperiodic Tiling\". In Wikipedia. https://en.wikipedia.org/wiki/Aperiodic_tiling\nBailey, David. *David Bailey's World of Escher-like Tessellations*. http://www.tess-elation.co.uk/\nGrünbaum, B., & Shephard, G. C. (1987). *Tilings and patterns*. Freeman.\nJones, O. (1868). *The grammar of ornament*. B. Quaritch.\nSchattschneider, D. \"The Mathematical Side of M. C. Escher,\" in *AMS Notices* 57: 706-718, 2010. http://www.ams.org/journals/notices/201006/rtx100600706p.pdf.\n\"Texture Synthesis\". In Wikipedia. https://en.wikipedia.org/wiki/Texture_synthesis\n\"Wallpaper Collection\", Historic New England. http://www.historicnewengland.org/collections-archives-exhibitions/collections-access/highlights/wallpaper.\n\"Wallpaper Groups\". In Wikipedia. https://en.wikipedia.org/wiki/Wallpaper_group.\n\nAlso see works by: Casey Reas, Marius Watz, Lia, Jonathan McCabe, Mitchell Whitelaw, Tina Frank, Joshua Davis, Dave Bollinger, Holger Lippmann."
     },
     {
         "titles": "Face Generator",
@@ -26,7 +25,7 @@
         "tagsarts": "portraiture, physiognomy, character design, puppets, avatars",
         "learningobjectives": "•  Develop familiarity with drawing functions and parametric form\n•  Apply generative principles to expressive character design\n•  Develop skills as a meta-designer",
         "brief": "Write code to create a face design which is parameterized by at least three dimensions of variability, but preferably more. For example, you might have variables that specify the size, position, color, or other visual characteristics of the eyes, nose, and mouth. The variations in these features may be used to alter the face’s expression (happy, sad, angry, etc.); the face’s identity (John, Mary, etc.); and/or the face’s species (cat, monkey, zombie, alien, etc.). Give consideration to *continuous* parameters (such as nose size or eyebrow position), versus *discrete* parameters (such as the presence of piercings, or the number of eyeballs). Your system should generate a new face whenever the user clicks the mouse.",
-        "variations": "•  Consider whether your faces are 2D or 3D, and whether they are generated in frontal, profile, or three-quarters view.\n•  Give special consideration to controlling the *shape* of face parts, such as the curves of the nose, chin, ears, and jowls.\n•  Consider characteristics like skin color, stubble, hairstyle, blemishes, interpupillary distance, facial assymmetry, cephalic index, prognathism, etc.\n•  Use your software to generate a deck of collectible trading cards (like Pokémon or baseball cards), featuring a group of imaginary monsters. Print out the cards.\n•  For visualization students, try using actual multivariate data as the basis for generating new faces, rather than randomness.\n•  Add functionality to your face so that it responds to microphone input. \n•  This project can be used as a follow-up to a preliminary exercise: using code to render a static self portrait.",
+        "variations": "•  Consider whether your faces are 2D or 3D, and whether they are generated in frontal, profile, or three-quarters view.\n•  Give special consideration to controlling the *shape* of face parts, such as the curves of the nose, chin, ears, and jowls.\n•  Consider characteristics like skin color, stubble, hairstyle, blemishes, interpupillary distance, facial assymmetry, cephalic index, prognathism, etc.\n•  Use your software to generate a deck of collectible trading cards (like Pokémon or baseball cards), featuring a group of imaginary monsters. Print out the cards.\n•  For visualization students, try using actual multivariate data as the basis for generating new faces, rather than randomness.\n•  Add functionality to your face so that it responds to microphone input. \n•  This project can be used as a follow-up to a preliminary exercise: using code to render a static self-portrait.",
         "advancedstudents": "Create a parameterized facial puppet which is controlled by signals from a real-time face tracker (such as FaceOSC). Practice a short monologue and record a screen-captured video performance with your avatar.",
         "makingitmeaningful": "Humans are equipped with an exquisite sensitivity to faces. From infancy we easily recognize faces, and can detect very subtle shifts in facial expressions, often being able to discern the slightest change in mood and sincerity in ways that remain impossible for computers. From faces we also are readily able to identify family resemblances, or \"strangers\" in crowds, and we are transfixed by the ways in which the lines on a face can reveal a person's life history. Kyle McDonald writes that \"faces are so important that the impairment of our face-processing ability is seen as a disorder, called *prosopagnosia*, while unconsciously seeing faces where there are none is an almost universal kind of *pareidolia*.\"\n\nThis assignment draws inspiration from the “Chernoff Face\" data visualization technique, which leverages this sensitivity by using facial features to represent multivariate data. In Chernoff Faces, features such as eyes, ears, mouth and nose represent data according to their shape, size, placement and orientation. Whereas Chernoff (1973) used 18 variables to *synthesize* a face, Paul Ekman’s \"Facial Action Coding System\" uses 46 dimensions to *analyze* a facial expression, each corresponding to the action of a different facial muscle.",
         "titlegray": 0,
@@ -34,8 +33,26 @@
         "layout": 20,
         "image": "generative_face/hdh_stranger_visions_quarter.jpg\ngenerative_face/chernoff_faces_quarter.png\ngenerative_face/macawnivore_nose_chart_onethird.png\ngenerative_face/mike_pelletier_onethird.jpg\ngenerative_face/sobecka_perfect_creatures_onethird.jpg",
         "aspirationcaptions": "1. Although Matthias Dörfelt’s *Weird Faces* (2012) look hand-drawn, they are entirely expressed by algorithmic rules. http://www.mokafolio.de/works/Weird-Faces\n\n2. In Heather Dewey-Hagborg’s astounding *Stranger Visions* (2012), forensic 3D portraits are computed from found DNA fragments. http://deweyhagborg.com/strangervisions/\n\n3. \"Chernoff faces\" are a type of display in which multivariate data are represented by the shape, size, position and orientation of the parts of the face. From Wikipedia. https://en.wikipedia.org/wiki/Chernoff_face\n\n4. *Nose Chart Reference* (2014) by Macawnivore. http://macawnivore.deviantart.com/art/Nose-Chart-Reference-451870046\n\n5. In Mike Pelletier’s *Parametric Expression*, values that govern the articulation of facial models are pushed beyond their normal limits. http://mikepelletier.nl/Parametric-Expression\n\n6. In Karolina Sobecka’s *All the Universe is Full of the Lives of Perfect Creatures* (2012), the visitor puppeteers an avatar through the movements of their own face. http://www.gravitytrap.com/artwork/perfect-creatures",
-        "additionalreferences": "Blas, Zach. *Facial Weaponization Suite*. https://vimeo.com/57882032.\nBorenstein, Greg. *Machine Pareidolia*. http://urbanhonking.com/ideasfordozens/2012/01/14/machine-pareidolia-hello-little-fella-meets-facetracker/.\n\"Computer facial animation\". In Wikipedia. https://en.wikipedia.org/wiki/Computer_facial_animation.\nDarwin, Charles. *The Expression of Emotions in Man and Animals*. http://darwin-online.org.uk/.\n\"Facial Action Coding System\". In Wikipedia. https://en.wikipedia.org/wiki/Facial_Action_Coding_System.\nLevin, Golan & Lieberman, Zachary. *Reface [Portrait Sequencer]*. http://www.flong.com/projects/reface/.\nMcDonald, Kyle. *Face as Interface*. https://github.com/kylemcdonald/AppropriatingNewTechnologies/wiki/Week-2.\nMcDonald, Kyle. *FaceOSC*. https://github.com/kylemcdonald/ofxFaceTracker.\nMcDonald, Kyle and Castro, Arturo. *Face Substitution*. https://vimeo.com/29348533.\nPerlin, Ken. *FaceDemo* (Java Applet). http://mrl.nyu.edu/~perlin/facedemo/.",
-        "notes": "No remarks"
+        "additionalreferences": "Blas, Zach. *Facial Weaponization Suite*. https://vimeo.com/57882032.\nBorenstein, Greg. *Machine Pareidolia*. http://urbanhonking.com/ideasfordozens/2012/01/14/machine-pareidolia-hello-little-fella-meets-facetracker/.\n\"Computer facial animation\". In Wikipedia. https://en.wikipedia.org/wiki/Computer_facial_animation.\nDarwin, Charles. *The Expression of Emotions in Man and Animals*. http://darwin-online.org.uk/.\n\"Facial Action Coding System\". In Wikipedia. https://en.wikipedia.org/wiki/Facial_Action_Coding_System.\nLevin, Golan & Lieberman, Zachary. *Reface [Portrait Sequencer]*. http://www.flong.com/projects/reface/.\nMcDonald, Kyle. *Face as Interface*. https://github.com/kylemcdonald/AppropriatingNewTechnologies/wiki/Week-2.\nMcDonald, Kyle. *FaceOSC*. https://github.com/kylemcdonald/ofxFaceTracker.\nMcDonald, Kyle and Castro, Arturo. *Face Substitution*. https://vimeo.com/29348533.\nPerlin, Ken. *FaceDemo* (Java Applet). http://mrl.nyu.edu/~perlin/facedemo/."
+    },
+    {
+        "titles": "Parametric Alphabet",
+        "shortdescription": "Structuring letterforms with a common model",
+        "level": "Intermediate",
+        "tagsstem": "data structures, parametric design, interpolation",
+        "tagsarts": "dynamic typography, letterforms",
+        "learningobjectives": "•  Use arrays to store geometric data\n•  Apply principles of meta-design to fonts\n•  Conceive and appraise graphical concepts for dynamic typography\n•  Manipulate and/or animate letterforms computationally",
+        "brief": "Create a typeface (using any graphic primitives you prefer), such that all of the letters of the alphabet are structured by the same underlying graphic logic. For example, you might design an alphabet in which every letter is exclusively constructed from 3 arcs, or from 4 rectangles, or from a small grid of squares. After you have designed all of your letters, typeset the entire alphabet on a single canvas so that it can be seen at a glance.\n\nAn essential technical goal is for you to store descriptive parameters for your letters in some kind of array or object-oriented data structure, and then create a single function which renders any requested letter from this data. If you're writing individual functions to draw each letter, you're doing something wrong.",
+        "variations": "•  Typeset a carefully chosen word which has a special relationship to your letterforms’ design. \n•  Give your letters inherently unstable properties. Animate your letterforms by deflecting their control points with a sinusoidal wiggle, Perlin noise, or cursor interactivity. \n•  With a single character onscreen, make it possible to animate the transitions between letters, such that any letter can smoothly morph into any other. Pressing a key should initiate an animated transition (of approximately a second's duration) from the previous letter to the next desired letter. *Instructors: for introductory students, it may be helpful to provide a template for transitioning between letterforms.* ",
+        "advancedstudents": "•  Consider a design in which letters are traces deposited by moving particles —whose paths are affected by forces from different spatial configurations of attractors and repulsors.\n•  A \"forced aligner\" is a computer program that takes audio files and their transcripts, and returns extremely precise timing information. Using your typeface and a forced aligner (such as *Gentle* by Ochshorn & Hawkins), create time-synced dynamic typography that not only synchronizes perfectly with a speech file, but also responds parametrically to the sound of the speaker's voice.",
+        "makingitmeaningful": "The creative value of contraints is foregrounded in this prompt. With limited means, students are compelled to think with modularity, economy and ingenuity about forms whose variety and complexity they often take for granted. Ask each student to name the letters where their structuring pattern succeeds best and fails hardest. Compare and contrast. ",
+        "titlegray": 0,
+        "fullpageimage": "alphabet/pashenkov_alphabot_fullpage.png",
+        "layout": 21,
+        "image": "alphabet/huang_typeface_onethird.jpg\nalphabet/lu_alphabet_twothirds.png\nalphabet/cho_typemenot_quarter.png\nalphabet/nimoy_davenport_quarter.jpg",
+        "aspirationcaptions": "1. Nikita Pashenkov's *Alphabot* (2000) is a Transformer-like robot \"that communicates with humans by changing its shape to form characters of the English alphabet.\" Each letter can fold into any other. http://tdctokyo.org/eng/?award=01_nikita-pashenkov\n\n2. Mary Huang's *Typeface2: a Typographic Photobooth* (2010) is a font whose parameters are governed by signals from a real-time face-tracker. http://www.creativeapplications.net/processing/typeface-processing/\n\n3. David Lu's *Letter 3* (2002) presents an interactive alphabet whose letters are formed by manipulating the control points of a single springy curve. Each letter can smoothly transform into any other. http://velluminous.org/portfolio/a/demos/letter3/\n\n4. In Peter Cho's classic *Type Me, Type Me Not* (1997), each letter is constructed from two \"Pac-Man\" filled arcs, and is represented by just 10 numbers. http://acg.media.mit.edu/people/pcho/typemenot/index.html\n\n5. As keys are pressed in Josh Nimoy's *Robotic Type* systems (2004), mechanical elements shift into place, forming the requested characters. http://cdn.jtn.im/robotictype/",
+        "additionalreferences": "Flückiger, Michael and Kunz, Nicolas. *LAIKA: a dynamic typeface* (2009) http://laikafont.ch/index.html.\nKnoth, Christoph. *Computed Type*. https://vimeo.com/60651938.\nKnuth, Donald. \"A Punk Meta-Font\". *TUGboat*, Volume 9 (1988). http://www.tug.org/TUGboat/Articles/tb09-2/tb21knut.pdf.\nKnuth, Donald. \"The Concept of a Meta-Font\" (1982). *Visible Language* 16. http://www.zigzaganimal.be/elements/the-concept-of-metafont.pdf.\nLehni, Jürg, et al. *Lego Font Creator* (2001). http://lineto.com/The+Projects/Nicolai.+A+New+Font./.\nLehni, Jürg. *Typeface as Programme* (2009). https://www.typotheque.com/articles/typeface_as_programme.\nMadsen, Rune. *Printing Code: Typography.* http://printingcode.runemadsen.com/lecture-typography/.\nMaeda, John. *Tangram Font* (1993). http://www.maedastudio.com/1997/imda/index.php.\nShim, Kyuha. *Code & Type.* http://code-type.com/about/.",
+        "notes": "“By this art you may contemplate the variation of the 22 letters…”\n— Jorge Luis Borges, The Library of Babel (La biblioteca de Babel), 1941 \n\n“To create a typeface that is easily malleable in the computational medium, the constituent shapes must be reduced to compact numerical forms.”\n— John Maeda, 2000\n\nDynamic, interactive and computational typography are enormous fields. There are extensive histories of experimental typography in motion \ngraphics (especially from film titles) and shorter but  no-less-interesting histories of computational typeface design, starting with (for the sake of argument) Donald Knuth’s landmark Metafont software (developed 1977-2008) — which was possibly the world’s first parametrized typeface. \n\nSee Golan archive here: http://golancourses.net/2015/assignments/assignment-1x/11-anitype-character/ "
     },
     {
         "titles": "Clock",
@@ -54,38 +71,6 @@
         "aspirationcaptions": "John Maeda, Reactive Books, (1994-1999). Online: https://www.youtube.com/watch?v=nA_UTUvC4h8 \nGolan Levin, Banded Clock, (1999). Online: http://www.flong.com/storage/experience/clock/ \nJack Hughes, Color clock (2011). Online: http://thecolourclock.co.uk/\nMonika, All the Minutes (2014). Online: https://twitter.com/alltheminutes \nKatie Paterson, Time Pieces (2014). Online: http://www.katiepaterson.org/timepieces/ ",
         "additionalreferences": "Groom, A. (2013). Time.\nFoer, J. (2008). A Minor History of Time Without Clocks. Cabinet Magazine. Issue 29, Spring.",
         "notes": "John Maeda, Reactive Books (1994-1999). \nGolan Levin, Banded Clock (1999).\nJack Hughes, Color clock (2011). \nMonika, All the Minutes (2014). \nKatie Paterson, Time Pieces (2014)."
-    },
-    {
-        "titles": "A Short Fuse",
-        "shortdescription": "Designing progress",
-        "level": "Intermediate ",
-        "tagsstem": "timer, array, counter",
-        "tagsarts": "event, time801",
-        "learningobjectives": "•  Implementation of a basic timer.\n•  Creation of an event based program.\n•  Creative concept development.",
-        "brief": "Create a fuse onscreen that takes exactly 5 seconds to complete. At the end of the 5 second timed interval, trigger an interesting event, for example, fireworks. Does it have to be a “fuse”? No, the term fuse can be interpretted metaphorically. Your fuse could be a progress bar, or an ice cube melting, or a balloon inflating. Does the event have to be fireworks? No, it your final event should be a suprising moment that relates to your overall concept, for example it could be a pistol showing the word ‘Bang’, or a balloon popping, or a volcano erupting, a seed sprouting and so on. ",
-        "variations": "Extra Credit. Use an array (even though it is likely that this hasn't been covered in class) to create a group of objects whose movements are triggered by the event. For example, particles in a fireworks display.",
-        "makingitmeaningful": "Event based programming? \nTiming and movement in animation?",
-        "titlegray": 0,
-        "fullpageimage": "defaults/default_fullpage_666x522.jpg",
-        "layout": 1,
-        "image": "defaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg",
-        "notes": "?"
-    },
-    {
-        "titles": "Copy the master",
-        "shortdescription": "Reproduce a historic media artwork in code. Are you copying the way it looks, or the way it was generated",
-        "level": "Intermediate",
-        "tagsstem": "Reverse engineering, random(),",
-        "tagsarts": "Observation, drawing",
-        "learningobjectives": "•  Undertake careful observation",
-        "brief": "Vera Molnar, Mandred Mohr, Georg Nees",
-        "variations": "Some variations here",
-        "advancedstudents": "Tips for Advanced students here",
-        "makingitmeaningful": "http://recodeproject.com/",
-        "titlegray": 0,
-        "fullpageimage": "defaults/default_fullpage_666x522.jpg",
-        "layout": 1,
-        "image": "defaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg"
     },
     {
         "titles": "Custom Pixel ",
@@ -120,22 +105,35 @@
         "notes": "Schotter by Georg Nees (1968) - Georg Nees is one of the pioneers of computer art. Born in Germany in 1926, he was a pupil of Max Bense, the founder of the Information Aesthetics movement. It is believed that Nees’ solo show at the University of Stuttgart in February 1965 was the first exhibition of computer art. One of Georg Nees’ signature pieces is Schotter (“Gravel” in German), a plotter/lithograph artwork from 1968. It is now in the collection of the Victoria & Albert Museum, London.\nVera Molnar, Errance Entre Ordre Et Chaos, 1975."
     },
     {
-        "titles": "Parametric Alphabet ",
-        "shortdescription": "Structuring letterforms with a common model.",
-        "level": "Intermediate",
-        "tagsstem": "arrays, interpolation, keyboard interaction",
-        "tagsarts": "type, font design",
-        "learningobjectives": "•  Use arrays to store geometric data\n•  Manipulate letterforms computationally\n•  Demonstrate understanding of linear interpolation\n•  Demonstrate understanding of drawing functions",
-        "brief": "Create a typeface (using any graphic primitives you prefer), such that all of the letters of the alphabet are structured by the same underlying graphic logic. For example, you might design an alphabet in which every letter is exclusively constructed from 3 arcs, or from 4 rectangles. You might create an alphabet whose letters are formed by manipulating the control points of a Bezier curve in various ways. Or perhaps your letters are traces deposited by a system of simulated particles, which are affected by different spatial configurations of attractive and repulsive forces. \n\nAn essential technical goal is for you to store descriptive parameters for your letters in some kind of array or object-oriented data structure, and then create a single function which renders any requested letter from this data. If you're writing individual functions to draw each letter, you're doing something wrong.",
-        "variations": "After you have designed all of your letters, typeset the entire alphabet on a single canvas so that all of the letters can be seen at a glance. Next, typeset a specific word (perhaps the name of your typeface) which has a special relationship to its design. Choose this word carefully. \n\nMake it possible to animate the transitions between letters, such that any letter can smoothly morph into any other. Pressing a key should initiate an animated transition (of approximately a second's duration) from the previous letter to the next desired letter. Instructors: for introductory students, provide a template for transitioning between templates.",
-        "makingitmeaningful": "“By this art you may contemplate the variation of the 22 letters…”\n— Jorge Luis Borges, The Library of Babel (La biblioteca de Babel), 1941 \n\n“To create a typeface that is easily malleable in the computational medium, the constituent shapes must be reduced to compact numerical forms.”\n— John Maeda, 2000\n\nDynamic, interactive and computational typography are enormous fields. There are extensive histories of experimental typography in motion \ngraphics (especially from film titles) and shorter but  no-less-interesting histories of computational typeface design, starting with (for the sake of argument) Donald Knuth’s landmark Metafont software (developed 1977-2008) — which was possibly the world’s first parametrized typeface. \n\nSee Golan archive here: http://golancourses.net/2015/assignments/assignment-1x/11-anitype-character/ ",
+        "titles": "A Short Fuse",
+        "shortdescription": "Designing progress",
+        "level": "Intermediate ",
+        "tagsstem": "timer, array, counter",
+        "tagsarts": "event, time801",
+        "learningobjectives": "•  Implementation of a basic timer.\n•  Creation of an event based program.\n•  Creative concept development.",
+        "brief": "Create a fuse onscreen that takes exactly 5 seconds to complete. At the end of the 5 second timed interval, trigger an interesting event, for example, fireworks. Does it have to be a “fuse”? No, the term fuse can be interpretted metaphorically. Your fuse could be a progress bar, or an ice cube melting, or a balloon inflating. Does the event have to be fireworks? No, it your final event should be a suprising moment that relates to your overall concept, for example it could be a pistol showing the word ‘Bang’, or a balloon popping, or a volcano erupting, a seed sprouting and so on. ",
+        "variations": "Extra Credit. Use an array (even though it is likely that this hasn't been covered in class) to create a group of objects whose movements are triggered by the event. For example, particles in a fireworks display.",
+        "makingitmeaningful": "Event based programming? \nTiming and movement in animation?",
         "titlegray": 0,
         "fullpageimage": "defaults/default_fullpage_666x522.jpg",
         "layout": 1,
-        "image": "defaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg",
-        "aspirationcaptions": "Type Me, Type Me Not by Peter Cho (1997). Online: http://acg.media.mit.edu/people/pcho/typemenot/index.html\nLetterscapes by Peter Cho (2002). Online: http://www.typotopo.com/letterscapes/index.html \nWordScapes by Peter Cho (2008). Online: http://www.typotopo.com/wordscapes/wordscapes.html\nAlphabot by Nik Pashenkov (2001). Online: https://processing.org/exhibition/works/004/index_link.html \nLetter 3, David Lu (2002). Online: http://velluminous.org/portfolio/a/demos/letter3/\nTypeface2, Mary Huang (2010). Online: http://vimeo.com/9587564 ",
-        "additionalreferences": "Rune Madsen’s excellent web lecture on the history of dynamic typography, which discusses the surprisingly close relationship between typography and computation. Online: http://printingcode.runemadsen.com/lecture-typography/ \nKyuha Shim’s page, Code-Type.com http://code-type.com/about/\nJurg Lehni has written a terrific article on “Typeface as Programme“. Online: https://www.typotheque.com/articles/typeface_as_programme ",
-        "notes": "Type Me, Type Me Not, Peter Cho (1997)\nLetterscapes, Peter Cho (2002)\nWordScapes, Peter Cho (2008)\nAlphabot, Nik Pashenkov (2001)\nLetter 3, David Lu (2002)\nTypeface2, Mary Huang (2010)\n"
+        "image": "defaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg"
+    },
+    {
+        "titles": "Copy the master",
+        "shortdescription": "Reproduce a historic media artwork in code. Are you copying the way it looks, or the way it was generated",
+        "level": "Intermediate",
+        "tagsstem": "Reverse engineering, random(),",
+        "tagsarts": "Observation, drawing",
+        "learningobjectives": "•  Undertake careful observation",
+        "brief": "Vera Molnar, Mandred Mohr, Georg Nees",
+        "variations": "Some variations here",
+        "advancedstudents": "Tips for Advanced students here",
+        "makingitmeaningful": "http://recodeproject.com/",
+        "titlegray": 0,
+        "fullpageimage": "defaults/default_fullpage_666x522.jpg",
+        "layout": 1,
+        "image": "defaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg"
     },
     {
         "titles": "QWERTY Instrument",
@@ -148,6 +146,7 @@
         "fullpageimage": "defaults/default_fullpage_666x522.jpg",
         "layout": 1,
         "image": "defaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg",
+        "aspirationcaptions": "http://works.jonobr1.com/Typatone",
         "notes": "www.patatap.com/ , processing.org/examples/keyboardfunctions.html"
     },
     {

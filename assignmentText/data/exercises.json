@@ -1,0 +1,109 @@
+[
+    {
+        "heading": "Exercises: Iteration",
+        "exercisetitle": "A Mini-Calendar",
+        "descriptions": "Use a for() loop to generate a row of 31 visual elements; these will represent the 31 days of January [i.e., the current month]. All of the elements should be drawn identically — except for the one whose index corresponds to the current day. That one should be differentiated in some way.",
+        "codes": "for(), if(), day()"
+    },
+    {
+        "heading": "Exercises: Iteration",
+        "exercisetitle": "Color Gradient I",
+        "descriptions": "Using a series of vertical lines, create a gradient from one color to another. ",
+        "codes": "linear interpolation, map(), lerp(), lerpColor()"
+    },
+    {
+        "heading": "Exercises: Iteration",
+        "exercisetitle": "Color Gradient II",
+        "descriptions": "Generate a gradient that interpolates between two colors across 17 rectangles. Use a for() loop to calculate the sizes, positions and fill-colors of the rectangles. Implement some code that randomizes the two colors whenever the user clicks the mouse. ",
+        "codes": "linear interpolation, map(), lerp(), lerpColor(), mousePressed()"
+    },
+    {
+        "heading": "Exercises: Iteration",
+        "exercisetitle": "Geometric Progression I",
+        "descriptions": "Use a for() loop to visualize a geometric progression. Some aspect of each element in the progression should come from series of numbers where each term after the first is computed by multiplying the previous one by a fixed multiplier (or \"common ratio\").",
+        "codes": "for()"
+    },
+    {
+        "heading": "Exercises: Iteration",
+        "exercisetitle": "Geometric Progression II",
+        "descriptions": "Transform graphic elements along the x- and y-axis; use shape and/or colour."
+    },
+    {
+        "heading": "Exercises: Color",
+        "exercisetitle": "Basic Color",
+        "descriptions": "Overlap some semi-transparent shapes to create at least seven different colors onscreen. Draw the shapes without outlines.",
+        "imagename": "exercises/color/color_three_grey.tif"
+    },
+    {
+        "heading": "Exercises: Color",
+        "exercisetitle": "Color and Iteration",
+        "descriptions": "Create a gradient from one color to another using iteration.",
+        "imagename": "exercises/color/color_gradient.tif"
+    },
+    {
+        "heading": "Exercises: Color",
+        "exercisetitle": "Color and Perception",
+        "descriptions": "Create a composition showing the smallest interval between colors distinguishable by the human eye. \r",
+        "imagename": "exercises/color/twoColor.png"
+    },
+    {
+        "heading": "Exercises: Color",
+        "exercisetitle": "Every Color",
+        "descriptions": "Create a sketch that displays every possible color over time. Choose either the RGB or HSB color models.",
+        "codes": "colorMode()"
+    },
+    {
+        "heading": "Exercises: Color",
+        "exercisetitle": "Interactive Color I",
+        "descriptions": "Create an interaction in which the cursor position controls the color of the canvas. Use this to illustrate the use of different color models (RGB, HSB).",
+        "codes": "background(), colorMode(), mouseX, mouseY"
+    },
+    {
+        "heading": "Exercises: Color",
+        "exercisetitle": "Interactive Color II",
+        "descriptions": "Split the canvas into two equal-sized rectangles, side-by-side. Create an interaction such that one rectangle’s color is controlled by the cursor position, and the other contains its complement.\n",
+        "codes": "fill(), mouseX, mouseY"
+    },
+    {
+        "heading": "Exercises: Drawing",
+        "descriptions": "Create a simple drawing program."
+    },
+    {
+        "heading": "Exercises: Drawing",
+        "descriptions": "Select a crop of Julie Mehretu’s Stadia II (at least 320×240 px of the source image) and replicate it in Processing as a 640 x 480 pixel program. First select an interesting/ambitious crop, then load it into a program such as Photoshop or Illustrator to read the color and coordinate data. Re-size and move the image in photoshop as needed to fit your 640×480 window. Use “float” values for coordinates and begin with the shape primitives we learned in class: line(), triangle(), quad(), rect(), ellipse(), and arc(). On your own, investigate beginShape(), endShape() with curves and bezier curves. Feel free to look ahead if you encounter obstacles and have ideas about how to solve them. (Link to image of \"Stadia II\": http://slowmuse.files.wordpress.com/2010/04/stadia_ii_med.jpg)",
+        "undefined": "Ryan D’Orazi"
+    },
+    {
+        "descriptions": "\"Create a sketch inwhich you write a custom shape/object function. Have that shape/object distributed over a grid (use a nested loop, as discussed in class). At least one argument of the function must have some kind of logical mathematical progression (i.e. a pattern) and another must be random.\n\n\""
+    },
+    {
+        "heading": "Transformer",
+        "descriptions": "This exercise focuses on parameterized form. Use the mouseX variable as the input to a function (or group of functions) to transform from one thing to another. The two extreme states must be when the mouse is at the far left and right of the screen and the other mouseX values between should create a continuous transition linking the farthest states.",
+        "undefined": "Michael Kontopoulos"
+    },
+    {
+        "heading": "Exercises: Images",
+        "descriptions": "Write a Processing program that generates a collage of images. The collage should be created by applying image processing techniques to draw modified copies of the same image (or same set of images) at multiple locations on your sketch window. At least four distinct modifications of the source image(s) should be used to create your collage. For example, you may load your source image four times into separate PImage objects and then modify the colors of one to create distinct appearance, i.e. creating Warhol-esque variations, or draw each pixel as a square of a certain size with colors from the original image. Each modified PImage can then be drawn multiple times on your sketch at various locations, rotations and sizes to form your collage.",
+        "undefined": "Paul Ruvolo"
+    },
+    {
+        "heading": "Exercises: Images",
+        "descriptions": "Transition between two images with the mouse. "
+    },
+    {
+        "heading": "Exercises: Arrays",
+        "descriptions": "Declare, allocate and initialize an array of 5 floats. Init them with random numbers between 0-255. Use these floats to control the gray-level color of 5 corresponding circles. Now create a time-based program in which, on each time-step (draw() call), the values in these arrays are increased by 1. When the value stored in each position is greater than 255, have it reset to 0. See http://cmuems.com/2012/a/assignments/assignment-08/"
+    },
+    {
+        "heading": "Exercises: Conditionals",
+        "descriptions": "Draw an ellipse which increases its size as long as the mouseButton is pressed. Variaton: Make other visual variables dependent on the size (strokeWeight, colour, transparency...)"
+    },
+    {
+        "heading": "Exercises: Animation",
+        "descriptions": "Make an animated shape or composition that grows (or shrinks) and changes color on its own."
+    },
+    {
+        "heading": "Exercises: Text",
+        "descriptions": "Draw a running text, which is moving uniformly across the workspace (window).\n"
+    }
+]

@@ -1,3 +1,6 @@
+// Basil.js generator for "Interview" pages
+// Tega Brain & Golan Levin, 2015-2016
+
 #includepath "~/Documents/;%USERPROFILE%Documents";
 #include "basiljs/bundle/basil.js";
 

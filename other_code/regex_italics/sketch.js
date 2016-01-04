@@ -48,14 +48,14 @@ function computeWordsToItalicizeInParagraphs (someText) {
   // Initialize the (global) array of indices of words to italicize.
   indicesOfWordsToItalicize = [];
 
-  // Find all matches: of phrases that occur between asterisks: 
+  // Find all matches: of phrases that occur between asterisks:
   var myRegExForStuffBetweenAsterisks = /\*([^*]*)\*/g;
   var results = someText.match(myRegExForStuffBetweenAsterisks);
 
   if (results === null) {
     // There are no results.
     return someText;
-    
+
   } else {
 
     // Find the indices of the words that are between asterisks
@@ -75,12 +75,12 @@ function computeWordsToItalicizeInParagraphs (someText) {
         // Find the character at which this particular match occurs, in the original
         var charOfResulti = someText.indexOf(cleanedResulti);
         var portionOfOriginalTextBeforeResulti = someText.substring(0, charOfResulti);
-        
-        // Find the last newline character just prior to that point. 
+
+        // Find the last newline character just prior to that point.
         var indexOfImmediatelyPriorNewline = portionOfOriginalTextBeforeResulti.lastIndexOf("\n");
         var paragraphBeforeResulti = someText.substring(indexOfImmediatelyPriorNewline+1, charOfResulti);
 
-        // Find the number of words up to that point. 
+        // Find the number of words up to that point.
         var nWordsInParagraphBeforeResulti = paragraphBeforeResulti.split(" ").length - 1;
         var nWordsInCleanedResulti = cleanedResulti.split(" ").length;
         var nParagraphsBeforeResulti = portionOfOriginalTextBeforeResulti.split("\n").length - 1;
@@ -94,7 +94,7 @@ function computeWordsToItalicizeInParagraphs (someText) {
       }
     }
   }
-  
+
   return someText;
 }
 
@@ -103,21 +103,21 @@ function computeWordsToItalicizeInParagraphs (someText) {
 function computeWordsToItalicize(someText) {
   // NOTE: This has the side-effect of stripping out the escape codes (*) that
   // indicate italicization (as in, " *words to italicize* ") from someText
-  
+
   // Get rid of a troublesome pattern that causes omitted results in basil.js.
   someText.replace("\n\n", "\n \n");
 
   // Initialize the (global) array of indices of words to italicize.
   indicesOfWordsToItalicize = [];
 
-  // Find all matches: of phrases that occur between asterisks: 
+  // Find all matches: of phrases that occur between asterisks:
   var myRegExForStuffBetweenAsterisks = /\*([^*]*)\*/g;
   var results = someText.match(myRegExForStuffBetweenAsterisks);
 
   if (results === null) {
     // There are no results.
     return someText;
-    
+
   } else {
 
     // Find the indices of the words that are between asterisks
@@ -135,10 +135,10 @@ function computeWordsToItalicize(someText) {
         // Strip out the asterisks from the string that was passed in
         someText = someText.replace(results[i], cleanedResulti);
 
-        // Find the character at which this particular match occurs. 
+        // Find the character at which this particular match occurs.
         var charOfResulti = someText.indexOf(cleanedResulti);
 
-        // Find the number of words up to that point. 
+        // Find the number of words up to that point.
         var portionOfMyTextBeforeResulti = someText.substring(0, charOfResulti);
         var nWordsBeforeResulti = portionOfMyTextBeforeResulti.split(" ").length - 1;
         var nWordsInCleanedResulti = cleanedResulti.split(" ").length;
@@ -151,7 +151,7 @@ function computeWordsToItalicize(someText) {
       }
     }
   }
-  
+
   return someText;
 }
 
@@ -163,5 +163,7 @@ function draw() {
   background(255);
   fill(0);
   noStroke(0);
+
+
   text(myText2, 20, 20, 400, 400);
 }

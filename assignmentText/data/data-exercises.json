@@ -3,7 +3,7 @@
         "heading": "Exercises: Iteration",
         "exercisetitle": "Checkers",
         "descriptions": "Use a nested for loop to create a checkers board. Remember a checkers board is a 8 x 8 grid of alternating black and white squares, starting with white in the top left.",
-        "codes": "*for(), fill(), rect(), conditional statements.*",
+        "codes": "*for(), fill(), rect(), conditional statements*",
         "imagename": "exercises/iteration/checkers.jpg"
     },
     {
@@ -17,42 +17,42 @@
         "heading": "Exercises: Iteration",
         "exercisetitle": "A Receding Horizon",
         "descriptions": "Use a for loop to create a series of vertical lines across the screen. Modify the values within the for loop to shift the lines so that they give the appearance of a receding horizon.",
-        "codes": "for(), line()",
+        "codes": "*for(), line()*",
         "imagename": "exercises/iteration/horizon.jpg"
     },
     {
         "heading": "Exercises: Iteration",
         "exercisetitle": "Color Gradient I",
         "descriptions": "Using a series of vertical lines, create a gradient from one color to another. ",
-        "codes": "linear interpolation, map(), lerp(), lerpColor()",
+        "codes": "*linear interpolation, map(), lerp(), lerpColor()*",
         "imagename": "exercises/iteration/gradient.jpg"
     },
     {
         "heading": "Exercises: Iteration",
         "exercisetitle": "Color Gradient II",
         "descriptions": "Generate a gradient that interpolates between two colors across 17 rectangles. Use a for() loop to calculate the sizes, positions and fill-colors of the rectangles. Implement some code that randomizes the two colors whenever the user clicks the mouse. ",
-        "codes": "linear interpolation, map(), lerp(), lerpColor(), mousePressed()",
+        "codes": "*linear interpolation, map(), lerp(), lerpColor(), mousePressed()*",
         "imagename": "exercises/iteration/gradient2.jpg"
     },
     {
         "heading": "Exercises: Iteration",
         "exercisetitle": "Geometric Progression I",
         "descriptions": "Use a for() loop to visualize a geometric progression. Some aspect of each element in the progression should come from series of numbers where each term after the first is computed by multiplying the previous one by a fixed multiplier (or common ratio).",
-        "codes": "for(), color(), shape functions",
+        "codes": "*for(), color(), shape functions*",
         "imagename": "exercises/iteration/progression.jpg"
     },
     {
         "heading": "Exercises: Iteration",
         "exercisetitle": "Geometric Progression II",
         "descriptions": "Layout your graphic elements in two dimensions, and vary them both along the x- and y-axis. For example, change their shape and/or colour progressively.",
-        "codes": "for(), color(), shape functions",
+        "codes": "*for(), color(), shape functions*",
         "imagename": "exercises/iteration/progression2.jpg"
     },
     {
         "heading": "Exercises: Iteration",
         "exercisetitle": "Iteration with functions",
         "descriptions": "Write a function to draw a simple element (a leaf, a face etc.) with arguments that determine its position. Call this function in one or more loops to arrange 100 of the elements on the screen.",
-        "codes": "for(), void function(), shape functions",
+        "codes": "*for(), void function(), shape functions*",
         "imagename": "exercises/iteration/function.jpg"
     },
     {
@@ -77,19 +77,19 @@
         "heading": "Exercises: Color",
         "exercisetitle": "Every Color",
         "descriptions": "Create a sketch that displays every possible color over time. Choose either the RGB or HSB color models.",
-        "codes": "colorMode()"
+        "codes": "*colorMode()*"
     },
     {
         "heading": "Exercises: Color",
         "exercisetitle": "Interactive Color I",
         "descriptions": "Create an interaction in which the cursor position controls the color of the canvas. Use this to illustrate the use of different color models (RGB, HSB).",
-        "codes": "background(), colorMode(), mouseX, mouseY"
+        "codes": "*background(), colorMode(), mouseX, mouseY*"
     },
     {
         "heading": "Exercises: Color",
         "exercisetitle": "Interactive Color II",
         "descriptions": "Split the canvas into two equal-sized rectangles, side-by-side. Create an interaction such that one rectangle’s color is controlled by the cursor position, and the other contains its complement.\n",
-        "codes": "fill(), mouseX, mouseY"
+        "codes": "*fill(), mouseX, mouseY*"
     },
     {
         "heading": "Exercises: Drawing",

@@ -2,7 +2,7 @@
     {
         "heading": "Exercises: Iteration",
         "exercisetitle": "Checkers",
-        "descriptions": "Use a nested for loop to create a checkers board, remember a checkers board is a 10 x 10 grid.",
+        "descriptions": "Use a nested for loop to create a checkers board. Remember a checkers board is a 8 x 8 grid of alternating black and white squares, starting with white in the top left.",
         "codes": "*for(), fill(), rect(), conditional statements.*",
         "imagename": "exercises/iteration/checkers.jpg"
     },

@@ -59,37 +59,52 @@
         "heading": "Exercises: Color",
         "exercisetitle": "Basic Color",
         "descriptions": "Overlap some semi-transparent shapes to create at least seven different colors onscreen. Draw the shapes without outlines.",
-        "imagename": "exercises/color/color_three_grey.tif"
+        "imagename": "exercises/color/overlap.jpg"
     },
     {
         "heading": "Exercises: Color",
         "exercisetitle": "Color and Iteration",
         "descriptions": "Create a gradient from one color to another using iteration.",
-        "imagename": "exercises/color/color_gradient.tif"
+        "imagename": "exercises/color/twoColorGradient.jpg"
     },
     {
         "heading": "Exercises: Color",
         "exercisetitle": "Color and Perception",
         "descriptions": "Create a composition showing the smallest interval between colors distinguishable by the human eye. \r",
-        "imagename": "exercises/color/twoColor.png"
+        "imagename": "exercises/color/perception.jpg"
     },
     {
         "heading": "Exercises: Color",
         "exercisetitle": "Every Color",
+        "descriptions": "Using the HSB color model, create a program where every hue is displayed on the screen.",
+        "imagename": "exercises/color/HSBgradient.jpg"
+    },
+    {
+        "heading": "Exercises: Color",
+        "exercisetitle": "Every Color Animated",
         "descriptions": "Create a sketch that displays every possible color over time. Choose either the RGB or HSB color models.",
-        "codes": "*colorMode()*"
+        "codes": "*colorMode()*",
+        "imagename": "exercises/color/everyColor.jpg"
     },
     {
         "heading": "Exercises: Color",
         "exercisetitle": "Interactive Color I",
         "descriptions": "Create an interaction in which the cursor position controls the color of the canvas. Use this to illustrate the use of different color models (RGB, HSB).",
-        "codes": "*background(), colorMode(), mouseX, mouseY*"
+        "codes": "*background(), colorMode(), mouseX, mouseY*",
+        "imagename": "exercises/color/mouseColor.jpg"
     },
     {
         "heading": "Exercises: Color",
         "exercisetitle": "Interactive Color II",
         "descriptions": "Split the canvas into two equal-sized rectangles, side-by-side. Create an interaction such that one rectangle’s color is controlled by the cursor position, and the other contains its complement.\n",
-        "codes": "*fill(), mouseX, mouseY*"
+        "codes": "*fill(), mouseX, mouseY*",
+        "imagename": "exercises/color/complement.jpg"
+    },
+    {
+        "heading": "Exercises: Color",
+        "exercisetitle": "Color breakdown",
+        "descriptions": "Display an image so that it fully covers the display window and draw three ellipses to the screen that show the RGB channel for each pixel of the image under the mouse.",
+        "imagename": "exercises/color/get.jpg"
     },
     {
         "heading": "Exercises: Drawing",

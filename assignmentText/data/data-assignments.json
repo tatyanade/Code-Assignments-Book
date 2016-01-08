@@ -43,8 +43,8 @@
         "tagsarts": "dynamic typography, letterforms",
         "learningobjectives": "•  Use arrays to store geometric data\n•  Apply principles of meta-design to fonts\n•  Conceive and appraise graphical concepts for dynamic typography\n•  Manipulate and/or animate letterforms computationally",
         "brief": "Create a typeface (using any graphic primitives you prefer), such that all of the letters of the alphabet are structured by the same underlying graphic logic. For example, you might design an alphabet in which every letter is exclusively constructed from 3 arcs, or from 4 rectangles, or from a small grid of squares. After you have designed all of your letters, typeset the entire alphabet on a single canvas so that it can be seen at a glance.\n\nAn essential technical goal is for you to store descriptive parameters for your letters in some kind of array or object-oriented data structure, and then create a single function which renders any requested letter from this data. If you're writing individual functions to draw each letter, you're doing something wrong.",
-        "variations": "•  Typeset a carefully chosen word that has a special relationship to your letterforms’ design. \n•  Give your letters inherently unstable properties. Animate your letterforms by deflecting their control points with a sinusoidal wiggle, Perlin noise, or cursor interactivity. \n•  With a single character onscreen, make it possible to animate the transitions between letters, such that any letter can smoothly morph into any other. Pressing a key should initiate an animated transition (of approximately a second's duration) from the previous letter to the next desired letter. *Instructors: for introductory students, it may be helpful to provide a template for transitioning between letterforms.* ",
-        "advancedstudents": "•  Consider a design in which letters are traces deposited by moving particles — whose paths are affected by forces from different spatial configurations of attractors and repulsors.\n•  A \"forced aligner\" is a computer program that takes audio files and their transcripts, and returns extremely precise timing information. Using your typeface and a forced aligner (such as *Gentle* by Ochshorn & Hawkins), create time-synced dynamic typography that not only synchronizes perfectly with a speech file, but also responds parametrically to the sound of the speaker's voice.",
+        "variations": "•  Typeset a carefully chosen word that has a special relationship to your letterforms’ design. \n•  Give your letters inherently unstable properties. Animate your letterforms by deflecting their control points with a sinusoidal wiggle, Perlin noise, or real-time interactivity. \n•  With a single character onscreen, make it possible to animate the transitions between letters, such that any letter can smoothly morph into any other. Pressing a key should initiate an animated transition (of approximately a second's duration) from the previous letter to the next desired letter. *Instructors: for introductory students, it may be helpful to provide a template for transitioning between letterforms.* ",
+        "advancedstudents": "•  Consider a design in which letters are traces deposited by moving particles —whose paths are affected by forces from different spatial configurations of attractors and repulsors.\n•  A \"forced aligner\" is a computer program that takes audio files and their transcripts, and returns extremely precise timing information. Using your typeface and a forced aligner (such as *Gentle* by Ochshorn & Hawkins), create time-synced dynamic typography that not only synchronizes perfectly with a speech file, but also responds parametrically to the sound of the speaker's voice.",
         "makingitmeaningful": "Extending from Adrian Frutiger's Univers (1954), Donald Knuth's computational MetaFont (1977), and Adobe's \"Multiple Master\" fonts (1994), it has become increasingly common practice to design highly adaptable type *systems* that go far beyond the rigid limits of static type *faces*. Peter Biľak writes: \"Prior to Univers, type designers concerned themselves with the relationships between letters of the same set, how an 'A' is different from a 'B'. Univers goes beyond the quest to design individual letters, attempting instead to create a system of relationships between different sets of shapes which share distinctive parameters.\" \n\nThe creative value of constraints is foregrounded in this prompt. Restricted to designing letterforms with shared parameters, students are compelled to think with modularity, economy and ingenuity about shapes whose variety and complexity they often take for granted. The expressive potential for contingent, interactive and subtly *time-varying* form systems should not be overlooked. Ask each student to name the letters where their structuring pattern succeeds best and fails hardest. Compare and contrast. ",
         "titlegray": 0,
         "fullpageimage": "alphabet/pashenkov_alphabot_fullpage.png",
@@ -52,7 +52,24 @@
         "image": "alphabet/huang_typeface_onethird.jpg\nalphabet/lu_alphabet_twothirds.png\nalphabet/cho_typemenot_quarter.png\nalphabet/nimoy_davenport_quarter.jpg",
         "aspirationcaptions": "1. Nikita Pashenkov's *Alphabot* (2000) is a Transformer-like robot \"that communicates with humans by changing its shape to form characters of the English alphabet.\" Each letter can fold into any other. http://tdctokyo.org/eng/?award=01_nikita-pashenkov\n\n2. Mary Huang's *Typeface2: a Typographic Photobooth* (2010) is a font whose parameters are governed by signals from a real-time face-tracker. http://www.creativeapplications.net/processing/typeface-processing/\n\n3. David Lu's *Letter 3* (2002) presents an interactive alphabet whose letters are formed by manipulating the control points of a single springy curve. Each letter can smoothly transform into any other. http://velluminous.org/portfolio/a/demos/letter3/\n\n4. In Peter Cho's classic *Type Me, Type Me Not* (1997), each letter is constructed from two \"Pac-Man\" filled arcs, and is represented by just 10 numbers. http://acg.media.mit.edu/people/pcho/typemenot/index.html\n\n5. As keys are pressed in Josh Nimoy's *Robotic Type* systems (2004), mechanical elements shift into place, forming the requested characters. http://cdn.jtn.im/robotictype/",
         "additionalreferences": "Biľak, Peter. *Designing Type Systems* (2012). https://www.typotheque.com/articles/designing_type_systems.\nFlückiger, Michael and Kunz, Nicolas. *LAIKA: a dynamic typeface* (2009). http://laikafont.ch/index.html.\nKnoth, Christoph. *Computed Type*. https://vimeo.com/60651938.\nKnuth, Donald. \"A Punk Meta-Font\". *TUGboat*, Volume 9 (1988). http://www.tug.org/TUGboat/Articles/tb09-2/tb21knut.pdf.\nKnuth, Donald. \"The Concept of a Meta-Font\" (1982). *Visible Language* 16. http://www.zigzaganimal.be/elements/the-concept-of-metafont.pdf.\nLehni, Jürg, et al. *Lego Font Creator* (2001). http://lineto.com/The+Projects/Nicolai.+A+New+Font./.\nLehni, Jürg. *Typeface as Programme* (2009). https://www.typotheque.com/articles/typeface_as_programme.\nMadsen, Rune. *Printing Code: Typography.* http://printingcode.runemadsen.com/lecture-typography/.\nMaeda, John. *Tangram Font* (1993). http://www.maedastudio.com/1997/imda/index.php.\nShim, Kyuha. *Code & Type.* http://code-type.com/about/.",
-        "notes": "“By this art you may contemplate the variation of the 22 letters…”\n— Jorge Luis Borges, The Library of Babel (La biblioteca de Babel), 1941 \n\n“To create a typeface that is easily malleable in the computational medium, the constituent shapes must be reduced to compact numerical forms.”\n— John Maeda, 2000\n\nDynamic, interactive and computational typography are enormous fields. There are extensive histories of experimental typography in motion \ngraphics (especially from film titles) and shorter but  no-less-interesting histories of computational typeface design, starting with (for the sake of argument) Donald Knuth’s landmark Metafont software (developed 1977-2008) — which was possibly the world’s first parametrized typeface. \n\nSee Golan archive here: http://golancourses.net/2015/assignments/assignment-1x/11-anitype-character/ "
+        "notes": "“To create a typeface that is easily malleable in the computational medium, the constituent shapes must be reduced to compact numerical forms.”\n— John Maeda, 2000\n\n“By this art you may contemplate the variation of the 22 letters…”\n— Jorge Luis Borges, The Library of Babel (La biblioteca de Babel), 1941 "
+    },
+    {
+        "titles": "Generative Landscape",
+        "shortdescription": "World-making and terraforming",
+        "level": "Intermediate",
+        "tagsstem": "Probability, randomness, fractals, Perlin noise",
+        "tagsarts": "landscape, virtual environment",
+        "learningobjectives": "•  Apply principles of generative design to terrain, scenery, and worlds of their own imagination.\n•  Understand how to bias randomness in order to carefully regulate probabilities.",
+        "brief": "Write a program which presents an imaginative, ever-changing \"landscape\". Populate your landscape with features that are suitable for your concept: perhaps trees, buildings, vehicles, animals, people, food items, body parts, hairs, seaweed, space junk, zombies etc.\n\nGive consideration to the *depth of variation* in your landscape: after how much time does your landscape become predictable? How might you forestall this as long as possible? How can you generate a landscape which is both consistent and engaging?\n\nConsider: foreground, middleground, and background “layers”; variation at the macro- scale, meso-scale, and micro-scale; natural and human-made features; utopia, dystopia, and heterotopia; and the potential for *surprise*, through the placement of *infrequent* features.",
+        "variations": "•  Give consideration to the manner in which the landscape moves past the “camera”. For example, it might appear to scroll by (as if you were looking out the window of a train); or approach from a first-person point of view (as if you were driving, or riding a roller coaster), or slide underneath (as if you were looking out of a glass-bottomed airplane). Consider too a moving or even *roving* camera, capable of rotation as well as translation. \n•  Your project could depict an outside scene, an interior one (such as objects on a conveyor belt), or an altogether dreamlike one. \n•  Consider experimenting with 3D (as in noise terrains); 2D (as in side-scrolling video games); “2.5D” layered spaces; orthographic views; or even nonlinear, non-Cartesian geometries.\n•  Give consideration to *sound*, and the possibilty for audiovisual synchronicities (as in *Guitar Hero*).\n•  Make an autonomous creature, vehicle, or other character traverse your landscape.\n•  Implement features in your landscape which grow, evolve or erode over time.\n•  Populate your landscape with one or more of the “three verticals” (people, trees, and buildings): according to Jungian psychology, the defining psychological features of landscapes.",
+        "makingitmeaningful": "We are a migrant species, instilled with a *wanderlust* that continually clamors for new horizons. Before the modern era of mobility, landscape paintings were often the primary means by which people could visualize and escape, in their minds, to faraway lands. \n\nToday, eight-year olds trade “seeds” for favored Minecraft worlds, and computer-generated environments have become commonplace in video games, where the algorithmic generation of novel landscapes is an economic necessity for inexhaustible play. For the meta-designer and artist-programmer, there is assuredly something godlike about calling forth world upon world. It is probably not a coincidence that the first all-CGI sequence in a feature film depicted the synthesis of an entire planet, in the triumphant “Genesis Sequence” of *Star Trek II* (1982).\n\nThis assignment asks the student to write the rules that bring forth a world from their imagination. But it could equally well ask them to create an accurate computational representation of a very real place—and to generate “more” of it. ",
+        "titlegray": 255,
+        "fullpageimage": "landscape/mandelbrot_voss_fullpage.jpg",
+        "layout": 1,
+        "image": "landscape/tarbell_substrate_quarter.jpg\nlandscape/nullpointer_landscape_quarter.jpg\nlandscape/pipkin_mirrorlake_quarter.png\nlandscape/kyttenjanae_lonelyplanets_quarter.png",
+        "aspirationcaptions": "1. \"Fractional noise\" mountains (c. 1982) developed by Benoît Mandelbrot and Richard F. Voss at IBM were a landmark in mathematical terrain synthesis. http://www.wired.com/2013/01/mandelbrot-images/\n\n2. In Jared Tarbell's classic *Substrate* (2003), simulated urban tectonics arise from elementary principles of accretion, branching, and feedback. http://www.complexification.net/gallery/machines/substrate/\n\n3. Tom Betts, also known as Nullpointer, developed a \"British Countryside Generator\" for the Big Robot game, *Sir, You Are Being Hunted.* https://www.flickr.com/photos/tomnullpointer/albums/72157644542312590/\n\n4. Katie Rose Pipkin generates barren flowerpot landscapes in her poetic and mysterious browser work, *Mirror Lake* (2015). http://katierose.itch.io/mirrorlake\n\n5. Kristyn Janae Solie's *Lonely Planets* (2013) is a stylized 3D terrain that shifts between minimalism and psychedelia. The work was created for Casey Reas' undergraduate course, *Live Cinema through Creative Coding*. http://www.kyttenjanae.com/",
+        "additionalreferences": "Akten, Memo and Berio, Daniel. *Bozork Quest* (2013). https://vimeo.com/113106061.\nBeddard, Tom. *Surface Detail* (2011). http://sub.blue/surface-detail.\nField.io. *Interim Camp* (2009). http://www.field.io/project/interim-camp/.\nGeilfus, Simon. *Muon glNext* (2014). https://vimeo.com/108393262.\nHart, Vi et al. *Float* (2015). https://vimeo.com/147908916.\nHodgin, Robert. *Audio-generated landscape* (2008). https://vimeo.com/2094557.\nHoff, Anders. *Isopleth* (2015). http://inconvergent.net/isopleth/.\nLemercier, Joanie. *Landforms* (2014). http://joanielemercier.com/landforms/.\nMcCormack, Jon. *Morphogenesis Series* (2001). http://jonmccormack.info/.\nMcKay, Joe. *Sunset Solitaire* (2010). http://www.joemckaystudio.com/sunset.php.\nMolnar, Vera. *Variations St. Victoire* (1989-1996). http://veramolnar.com/.\nPlanetside Software. *Terragen* (2008-). http://www.planetside.co.uk/.\nQuayola, Davide. *Pleasant Places* (2015). http://www.quayola.com/pleasant-places/.\nZawada, Jonathan. *Over Time* (2011). http://www.zawada.com.au/2013/01/02/over-time/."
     },
     {
         "titles": "Clock",
@@ -71,6 +88,24 @@
         "aspirationcaptions": "John Maeda, Reactive Books, (1994-1999). Online: https://www.youtube.com/watch?v=nA_UTUvC4h8 \nGolan Levin, Banded Clock, (1999). Online: http://www.flong.com/storage/experience/clock/ \nJack Hughes, Color clock (2011). Online: http://thecolourclock.co.uk/\nMonika, All the Minutes (2014). Online: https://twitter.com/alltheminutes \nKatie Paterson, Time Pieces (2014). Online: http://www.katiepaterson.org/timepieces/ ",
         "additionalreferences": "Groom, A. (2013). Time.\nFoer, J. (2008). A Minor History of Time Without Clocks. Cabinet Magazine. Issue 29, Spring.",
         "notes": "John Maeda, Reactive Books (1994-1999). \nGolan Levin, Banded Clock (1999).\nJack Hughes, Color clock (2011). \nMonika, All the Minutes (2014). \nKatie Paterson, Time Pieces (2014)."
+    },
+    {
+        "titles": "Virtual Creature",
+        "shortdescription": "Create an organism that lives on the screen",
+        "level": "Intermediate ",
+        "tagsstem": "object-orientated, class",
+        "tagsarts": "artifical life, motion, animation",
+        "learningobjectives": "•  Develop an application using object orientated programming techniques.\n•  To write functions that produce motion.\n•  Use of a class table.\n",
+        "brief": "Design a class which displays, animates, and defines the behavior of a machine or organism. Give your invention a goal (e.g. finding other creatures, searching for food, climbing the screen) and have it react when it reaches its goal. Display your class outline table as a comment in the code. Show the fields and datatypes, the methods and their return values.",
+        "variations": "Pair of creatures - interesting diads. Array of creatures, each with different behaviors, motion based on emotion",
+        "makingitmeaningful": "The simulation of artifical life and life systems has a long history in computational artforms. From canonical examples of computer programs such as  Game of Life",
+        "titlegray": 0,
+        "fullpageimage": "defaults/default_fullpage_666x522.jpg",
+        "layout": 1,
+        "image": "defaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg",
+        "aspirationcaptions": "Single Cell, Golan Levin and friends (2002). Online: http://www.singlecell.org/singlecell.html\nDouble Cell, Golan Levin and friends (2001). Online: http://www.singlecell.org/ \nMorphogenesis Series, Jon Mccormack (2002). Online: http://jonmccormack.info/~jonmc/sa/artworks/morphogenesis-series/\nInteractive Plant Growing, Laurent Mignonneau & Christa Sommerer (1992). Online: http://www.interface.ufg.ac.at/christa-laurent/WORKS/FRAMES/FrameSet.html \nLife Writer, Laurent Mignonneau & Christa Sommerer (2006): Online: http://www.interface.ufg.ac.at/christa-laurent/WORKS/FRAMES/FrameSet.html \nDelicate Boundaries, Chris Sugrue (2007). Online: http://csugrue.com/delicateboundaries/ \nKarl Sims, Evolved Virtual Creatures (1994), https://archive.org/details/sims_evolved_virtual_creatures_1994 .",
+        "additionalreferences": "\n",
+        "notes": "Single Cell, Golan Levin and friends (2001). \nDouble Cell, Golan Levin and friends (2002).\nMorphogenesis Series, Jon Mccormack (2002).\nInteractive Plant Growing, Laurent Mignonneau & Christa Sommerer (1992).\nLife Writer, Laurent Mignonneau & Christa Sommerer (2006).\nDelicate Boundaries, Chris Sugrue (2007). \nKarl Sims, Evolved Virtual Creatures (1994)."
     },
     {
         "titles": "Custom Pixel ",
@@ -102,22 +137,8 @@
         "layout": 1,
         "image": "defaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg",
         "aspirationcaptions": "George Nees, Schotter, 1968 http://www.medienkunstnetz.de/works/schotter/\nVera Molnar, Errance Entre Ordre Et Chaos, 1975, http://www.veramolnar.com/diapo.php?y=1975",
-        "notes": "Schotter by Georg Nees (1968) - Georg Nees is one of the pioneers of computer art. Born in Germany in 1926, he was a pupil of Max Bense, the founder of the Information Aesthetics movement. It is believed that Nees’ solo show at the University of Stuttgart in February 1965 was the first exhibition of computer art. One of Georg Nees’ signature pieces is Schotter (“Gravel” in German), a plotter/lithograph artwork from 1968. It is now in the collection of the Victoria & Albert Museum, London.\nVera Molnar, Errance Entre Ordre Et Chaos, 1975."
-    },
-    {
-        "titles": "A Short Fuse",
-        "shortdescription": "Designing progress",
-        "level": "Intermediate ",
-        "tagsstem": "timer, array, counter",
-        "tagsarts": "event, time801",
-        "learningobjectives": "•  Implementation of a basic timer.\n•  Creation of an event based program.\n•  Creative concept development.",
-        "brief": "Create a fuse onscreen that takes exactly 5 seconds to complete. At the end of the 5 second timed interval, trigger an interesting event, for example, fireworks. Does it have to be a “fuse”? No, the term fuse can be interpretted metaphorically. Your fuse could be a progress bar, or an ice cube melting, or a balloon inflating. Does the event have to be fireworks? No, it your final event should be a suprising moment that relates to your overall concept, for example it could be a pistol showing the word ‘Bang’, or a balloon popping, or a volcano erupting, a seed sprouting and so on. ",
-        "variations": "Extra Credit. Use an array (even though it is likely that this hasn't been covered in class) to create a group of objects whose movements are triggered by the event. For example, particles in a fireworks display.",
-        "makingitmeaningful": "Event based programming? \nTiming and movement in animation?",
-        "titlegray": 0,
-        "fullpageimage": "defaults/default_fullpage_666x522.jpg",
-        "layout": 1,
-        "image": "defaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg"
+        "additionalreferences": "Schotter by Georg Nees (1968) - Georg Nees is one of the pioneers of computer art. Born in Germany in 1926, he was a pupil of Max Bense, the founder of the Information Aesthetics movement. It is believed that Nees’ solo show at the University of Stuttgart in February 1965 was the first exhibition of computer art. One of Georg Nees’ signature pieces is Schotter (“Gravel” in German), a plotter/lithograph artwork from 1968. It is now in the collection of the Victoria & Albert Museum, London.",
+        "notes": "Randomness and unpredicability in both art and computation have a long and controversial history. Duchamp's early chance procedures resulted in works like Erratum musical (1913) and are exmples of early visual musial experiements exploring random or unpredicatable elements in their conception. The work of many Dada artists continued Duchamp's trajectories with Hans Arp producing compositions for paintings and drawing derived from falling paper and XX producing methods for writing poetry by cutting newspaper articles into words and then drawing them from a hat to create new verse. The Situationalists were also known for their random walks and other unpredicable way finding works. Decades later, works like 4:33 by John Cage are also celebrated for their insertion of chance and complexity into creative process. \nRandomness and unpredicability has also been a significant challenge in the evolution of computation and are useful for simulation, decision making and achieveing particular aesthetic outcomes. How to acheive a set of numbers where one is completely independent of the next, remains difficult to acheive in a precise procedural machine and throughout the hisotry of computatino many strategies have been used to do this. Look up tables of numbers where no information is passed on from one to the next were commonly used and in 1955 Rand published a book of 1 million random digits (that can be downloaded here). Jon Von Neuman developed the idea of pseudo randomness by calculating a series by taking the square of a number, and then selecting the middle 3 digits as the next number and then repeating. However, when run long enough, even this approach often leads to loops of similar values. The current Linux system uses key strokes, i/o data and voltage across certain parts as always varying inputs to its pseudorandom generator. Similarly, other systems use environmental variables. \nPerlin noise is another example of producing unpredicability in calculated systems. It was developed by Ken Perlin in 1998 during his work on the film Tron and for which he was later awarded an Academy Award. Perlin noise produces unpredicable values within a certain scope influenced by the previous value. Perlin released this work in the public domain and It has been signifcant to computer generated imagery ever since, enabling a more convincing rendering of things like flames, clouds and smoke. \n\nMore on randomness here: \nhttp://cmuems.com/2012/a/lectures/lecture-05/\nhttps://www.courses.tegabrain.com/PVA1/?page_id=617 "
     },
     {
         "titles": "Copy the master",
@@ -130,6 +151,22 @@
         "variations": "Some variations here",
         "advancedstudents": "Tips for Advanced students here",
         "makingitmeaningful": "http://recodeproject.com/",
+        "titlegray": 0,
+        "fullpageimage": "defaults/default_fullpage_666x522.jpg",
+        "layout": 1,
+        "image": "defaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg",
+        "additionalreferences": "Vera Molnar, Errance Entre Ordre Et Chaos, 1975."
+    },
+    {
+        "titles": "A Short Fuse",
+        "shortdescription": "Designing progress",
+        "level": "Intermediate ",
+        "tagsstem": "timer, array, counter",
+        "tagsarts": "event, time801",
+        "learningobjectives": "•  Implementation of a basic timer.\n•  Creation of an event based program.\n•  Creative concept development.",
+        "brief": "Create a fuse onscreen that takes exactly 5 seconds to complete. At the end of the 5 second timed interval, trigger an interesting event, for example, fireworks. Does it have to be a “fuse”? No, the term fuse can be interpretted metaphorically. Your fuse could be a progress bar, or an ice cube melting, or a balloon inflating. Does the event have to be fireworks? No, it your final event should be a suprising moment that relates to your overall concept, for example it could be a pistol showing the word ‘Bang’, or a balloon popping, or a volcano erupting, a seed sprouting and so on. ",
+        "variations": "Extra Credit. Use an array (even though it is likely that this hasn't been covered in class) to create a group of objects whose movements are triggered by the event. For example, particles in a fireworks display.",
+        "makingitmeaningful": "Event based programming? \nTiming and movement in animation?",
         "titlegray": 0,
         "fullpageimage": "defaults/default_fullpage_666x522.jpg",
         "layout": 1,
@@ -176,42 +213,6 @@
         "fullpageimage": "defaults/default_fullpage_666x522.jpg",
         "layout": 1,
         "image": "defaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg"
-    },
-    {
-        "titles": "Virtual Creature",
-        "shortdescription": "Create an organism that lives on the screen",
-        "level": "Intermediate ",
-        "tagsstem": "object-orientated, class",
-        "tagsarts": "artifical life, motion, animation",
-        "learningobjectives": "•  Develop an application using object orientated programming techniques.\n•  To write functions that produce motion.\n•  Use of a class table.\n",
-        "brief": "Design a class which displays, animates, and defines the behavior of a machine or organism. Give your invention a goal (e.g. finding other creatures, searching for food, climbing the screen) and have it react when it reaches its goal. Display your class outline table as a comment in the code. Show the fields and datatypes, the methods and their return values.",
-        "variations": "Pair of creatures - interesting diads. Array of creatures, each with different behaviors, motion based on emotion",
-        "makingitmeaningful": "The simulation of artifical life and life systems has a long history in computational artforms. From canonical examples of computer programs such as  Game of Life",
-        "titlegray": 0,
-        "fullpageimage": "defaults/default_fullpage_666x522.jpg",
-        "layout": 1,
-        "image": "defaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg",
-        "aspirationcaptions": "Single Cell, Golan Levin and friends (2002). Online: http://www.singlecell.org/singlecell.html\nDouble Cell, Golan Levin and friends (2001). Online: http://www.singlecell.org/ \nMorphogenesis Series, Jon Mccormack (2002). Online: http://jonmccormack.info/~jonmc/sa/artworks/morphogenesis-series/\nInteractive Plant Growing, Laurent Mignonneau & Christa Sommerer (1992). Online: http://www.interface.ufg.ac.at/christa-laurent/WORKS/FRAMES/FrameSet.html \nLife Writer, Laurent Mignonneau & Christa Sommerer (2006): Online: http://www.interface.ufg.ac.at/christa-laurent/WORKS/FRAMES/FrameSet.html \nDelicate Boundaries, Chris Sugrue (2007). Online: http://csugrue.com/delicateboundaries/ \nKarl Sims, Evolved Virtual Creatures (1994), https://archive.org/details/sims_evolved_virtual_creatures_1994 .",
-        "additionalreferences": "\n",
-        "notes": "Single Cell, Golan Levin and friends (2001). \nDouble Cell, Golan Levin and friends (2002).\nMorphogenesis Series, Jon Mccormack (2002).\nInteractive Plant Growing, Laurent Mignonneau & Christa Sommerer (1992).\nLife Writer, Laurent Mignonneau & Christa Sommerer (2006).\nDelicate Boundaries, Chris Sugrue (2007). \nKarl Sims, Evolved Virtual Creatures (1994)."
-    },
-    {
-        "titles": "A Generative Landscape",
-        "shortdescription": "An Ever-Changing Terrain",
-        "level": "Intermediate (A)",
-        "tagsstem": "Perlin noise, random, looping structures, motion",
-        "tagsarts": "simulation, motion, animation",
-        "learningobjectives": "•  Use of noise and/or random functions.\n•  Creation of a generative animated composition.",
-        "brief": "Create a program which presents an ever-changing (generative) and imaginative \"landscape\". Populate your landscape with features that are suitable for your concept: perhaps trees, buildings, vehicles, animals, people, food items, body parts, hairs, zombies etc.\n\nThe landscape should move past the 'camera', but you can elect the manner by which it does so; for example, it might appear to scroll by (as if you were looking out the window of a train); or approach from a first-person point of view (as if you were driving), or slide underneath (as if you were looking out of a glass-bottomed airplane). The camera might be viewing an outside environment, or viewing objects on a conveyor belt, etc. If you are an advanced student, you may wish to experiment with the camera() command, which allows for the specification of moving cameras.\n\nGive consideration to the depth of variation in your landscape: after how much time does your landscape become predictable? How might you extend this inevitability as much as possible? How can you make a landscape which is both consistent yet surprising? You may need to make a variety of different elements, and continually change how you clump them. Or perhaps these elements themselves are generative, and synthesized on-the-fly. Feel free to experiment with 3D (objects, terrains, etc), or mixtures of 2D & 3D.",
-        "variations": "Make a creature, car, object traverse your landscape.\nSome concepts to consider: people/trees/architecture (The 3 basic psychological features of landscapes); foreground/middleground/background \"layers\"; variation at the macro scale + variation at the meso scale + variation at the micro scale. Some stuff to see: <a href=\"http://portfolio.barbariangroup.com/nextfest/applet/index.html\">grass</a>, <a href=\"http://www.alcys.com/p5/Alcys_route_de_nuit/applet/index.html\">route de nuit by alcys</a>, etc.",
-        "makingitmeaningful": "Randomness and unpredicability in both art and computation have a long and controversial history. Duchamp's early chance procedures resulted in works like Erratum musical (1913) and are exmples of early visual musial experiements exploring random or unpredicatable elements in their conception. The work of many Dada artists continued Duchamp's trajectories with Hans Arp producing compositions for paintings and drawing derived from falling paper and XX producing methods for writing poetry by cutting newspaper articles into words and then drawing them from a hat to create new verse. The Situationalists were also known for their random walks and other unpredicable way finding works. Decades later, works like 4:33 by John Cage are also celebrated for their insertion of chance and complexity into creative process. \nRandomness and unpredicability has also been a significant challenge in the evolution of computation and are useful for simulation, decision making and achieveing particular aesthetic outcomes. How to acheive a set of numbers where one is completely independent of the next, remains difficult to acheive in a precise procedural machine and throughout the hisotry of computatino many strategies have been used to do this. Look up tables of numbers where no information is passed on from one to the next were commonly used and in 1955 Rand published a book of 1 million random digits (that can be downloaded here). Jon Von Neuman developed the idea of pseudo randomness by calculating a series by taking the square of a number, and then selecting the middle 3 digits as the next number and then repeating. However, when run long enough, even this approach often leads to loops of similar values. The current Linux system uses key strokes, i/o data and voltage across certain parts as always varying inputs to its pseudorandom generator. Similarly, other systems use environmental variables. \nPerlin noise is another example of producing unpredicability in calculated systems. It was developed by Ken Perlin in 1998 during his work on the film Tron and for which he was later awarded an Academy Award. Perlin noise produces unpredicable values within a certain scope influenced by the previous value. Perlin released this work in the public domain and It has been signifcant to computer generated imagery ever since, enabling a more convincing rendering of things like flames, clouds and smoke. \n\nMore on randomness here: \nhttp://cmuems.com/2012/a/lectures/lecture-05/\nhttps://www.courses.tegabrain.com/PVA1/?page_id=617 ",
-        "titlegray": 0,
-        "fullpageimage": "defaults/default_fullpage_666x522.jpg",
-        "layout": 1,
-        "image": "defaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg",
-        "aspirationcaptions": "Vera Molnar, Variations St. Victoire, 1989 - 1996\nSubstrate, Jared A Tarbell, 2003\nStanza, Complexity: Endless Subdivision in Landscapes Of Labour Love and Learning.\nMichael Gondry, Train, 2010.",
-        "additionalreferences": "https://www.courses.tegabrain.com/PVA1/?page_id=617",
-        "notes": "Vera Molnar, Variations St. Victoire, 1989 - 1996\nSubstrate, Jared A Tarbell, 2003\nStanza, Complexity: Endless Subdivision in Landscapes Of Labour Love and Learning.\nMichael Gondry, Train, 2010."
     },
     {
         "titles": "Non-linear narrative ",
@@ -323,8 +324,9 @@
         "image": "defaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg"
     },
     {
-        "titles": "3D Assignment",
+        "titles": "Physical Visualization",
         "brief": "TBA",
+        "variations": "Encoding information in a physical object",
         "titlegray": 0,
         "fullpageimage": "defaults/default_fullpage_666x522.jpg",
         "layout": 1,
@@ -339,6 +341,9 @@
         "image": "defaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg",
         "aspirationcaptions": "https://drawingmachines.org/\nhttp://www.graficaobscura.com/dyna/\nhttps://github.com/processing/processing-docs/blob/master/exhibition/works/dynadraw/dynadraw.pde",
         "notes": "http://make8bitart.com/#what\nZach thesis"
+    },
+    {
+        "titles": "Twitter Bot"
     },
     {
         "titles": "MAYBE LIST"
@@ -361,12 +366,6 @@
         "titles": "Custom paint or drawing program"
     },
     {
-        "titles": "Create wallpaper",
-        "level": "Introductory ",
-        "tagsstem": "http://www.openprocessing.org/classroom/905",
-        "brief": "Create a composition which generates a pattern of tiling wallpaper."
-    },
-    {
         "titles": "Data viz with levels of intimacy?"
     },
     {
@@ -386,9 +385,6 @@
         "titles": "Importing Images",
         "level": "Clement Valla",
         "brief": "Import scans or photographs of your paintings from class to create a new processing composition"
-    },
-    {
-        "titles": "Draw a living creature"
     },
     {
         "titles": "Branched narrative"

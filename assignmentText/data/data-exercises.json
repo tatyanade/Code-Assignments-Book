@@ -103,7 +103,7 @@
     {
         "heading": "Exercises: Color",
         "exercisetitle": "Color breakdown",
-        "descriptions": "Display an image so that it fully covers the display window and draw three ellipses to the screen that show the RGB channel for each pixel of the image under the mouse.",
+        "descriptions": "Display an image so that it fully covers the display window. Draw three ellipses to the screen and fill each ellipse with the R value, the G value and the B value respectively for each pixel of the image under the mouse.",
         "imagename": "exercises/color/get.jpg"
     },
     {

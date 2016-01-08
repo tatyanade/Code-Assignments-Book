@@ -10,6 +10,7 @@ var jsonString = b.loadString("data-interview.json");
 var pages=6 ; //how many pages? Pages in addition to the 1 the template.
 var startPage =1; //start assignments on what page?
 var aFrame, bFrame, cFrame;
+var pageCount=0;
 
 var i=0; //frame name
 
@@ -52,16 +53,18 @@ function draw() {
   for (var i = 0; i < jLength; i++) {
     //TITLE PAGE
     //==========================================================
-    b.page(startPage);
+    b.addPage();
+    pageCount++;
+    b.page(pageCount);
     question1(jsonData[i].titles, 36, 410);
     b.addPage();
-    startPage++;
+    pageCount++;
 
 
 
     //==========================================================
     //TEXT PAGE
-    b.page(startPage);
+    b.page(pageCount);
     qtitle(jsonData[i].titles);
     var yofQuestion=question2(jsonData[i].question);
     //answer(data, and y position of text box above)
@@ -84,6 +87,27 @@ function draw() {
 
 //FORMATTING--------------------------------------
 
+//FORMATTING
+function italicizeWordsInFrame(whichFrame, startParagraphIndex){
+  for (var j=0; j<(indicesOfWordsToItalicize.length); j++){
+    var aWord = indicesOfWordsToItalicize[j];
+    italicizing(whichFrame, startParagraphIndex, aWord);
+  }
+}
+function italicizeBoldWordsInFrame(whichFrame, startParagraphIndex){
+  for (var j=0; j<(indicesOfWordsToItalicize.length); j++){
+    var aWord = indicesOfWordsToItalicize[j];
+    iBolding(whichFrame, startParagraphIndex, aWord);
+  }
+}
+
+function italicizing(tFrame, pNumber, wNumber){
+  var paraV = b.paragraphs(tFrame);
+  var wordsV = b.words(paraV[pNumber]);
+  b.typo(wordsV[wNumber], "fontStyle", "Regular Italic");
+}
+
+
 function bolding(tFrame, pNumber, wNumber){
   var paraV = b.paragraphs(tFrame);
   var wordsV = b.words(paraV[pNumber]);
@@ -95,6 +119,129 @@ function iBolding(tFrame, pNumber, wNumber){
   var wordsV = b.words(paraV[pNumber]);
   b.typo(wordsV[wNumber], "fontStyle", "Bold Italic");
 }
+
+
+function typesetURLs (theFrame, theString){
+  // Set the URLs in a light-colored thin font.
+
+  // Extract the URLs
+  var urlRegex = /http(.*?)\n/g;
+  var extractedURLs = theString.match(urlRegex);
+  if (extractedURLs !== null) {
+
+    var allTheCharactersInThisFrame = b.characters(theFrame);
+    var nURLs = extractedURLs.length;
+
+    // For each URL
+    for (var i = 0; i < nURLs; i++) {
+
+      // Get the start and end character indices
+      var aURL = extractedURLs[i];
+      var startCharIndex = theString.indexOf(aURL);
+      var endCharIndex = startCharIndex + aURL.length;
+
+      // For each of those characters, color it.
+      for(var j = startCharIndex; j < endCharIndex; j++){
+        b.typo(allTheCharactersInThisFrame[j], "fontStyle", "Thin Italic");
+        b.typo(allTheCharactersInThisFrame[j], 'fillColor', b.color(96,96,96));
+      }
+    }
+  }
+}
+
+//==================================================================
+// Usage:
+// 1. myText = computeWordsToItalicize(myText);
+// 2. then loop through the indicesOfWordsToItalicize array
+function computeWordsToItalicize(someText) {
+  // NOTE: This function has the beneficial side-effect of stripping out the escape codes
+  // (*) that indicate italicization (as in, " *words to italicize* ") from someText
+
+  // Initialize the (global) array of indices of words to italicize.
+  indicesOfWordsToItalicize = [];
+
+  // Get rid of a troublesome pattern that causes omitted results in basil.js.
+  someText = someText.replace("\n\n", "\n \n");
+
+  // Find all matches: of phrases that occur between asterisks:
+  var myRegExForStuffBetweenAsterisks = /\*([^*]*)\*/g;
+  var results = someText.match(myRegExForStuffBetweenAsterisks);
+
+  if (results === null) {
+    // There are no words to italicize.
+    return someText;
+
+  } else {
+
+    // Find the indices of the words that are between asterisks
+    var nResults = results.length;
+    for (var i = 0; i < nResults; i++) {
+
+      // Clean up the i'th result: remove asterisks and trim.
+      var cleanedResulti = results[i].substring(1, results[i].length - 1);
+      if (typeof cleanedResulti === 'string'){
+
+        // Select the correct line below depending on the environment:
+        // cleanedResulti = cleanedResulti.trim(); // trim() for p5.js
+        cleanedResulti = b.trim(cleanedResulti);   // trim() for basil.js
+
+        // Strip out the asterisks from the string that was passed in
+        someText = someText.replace(results[i], cleanedResulti);
+
+        // Find the character at which this particular match occurs.
+        var charOfResulti = someText.indexOf(cleanedResulti);
+
+        // Find the number of words up to that point.
+        var portionOfMyTextBeforeResulti = someText.substring(0, charOfResulti);
+        var nWordsBeforeResulti = getNumberOfWordsInString (portionOfMyTextBeforeResulti);
+        var nWordsInCleanedResulti = getNumberOfWordsInString (cleanedResulti);
+
+        // Accrue the indices (in the original text) of the individual result words.
+        // print(i + ".\t" + nWordsInCleanedResulti + "\t|" + cleanedResulti + "|\t" + nWordsInResulti);
+        for (var j = 0; j < nWordsInCleanedResulti; j++) {
+          indicesOfWordsToItalicize.push(nWordsBeforeResulti + j);
+        }
+      }
+    }
+  }
+
+  return someText;
+}
+
+
+
+//CONTENT------------------------------------------
+
+function isEmpty(str) {
+  // Order matters for these tests!
+  return (!str || (0 === str.length));
+}
+
+function getNumberOfWordsInString(inputStr){
+  // Note: We use a regex, because split()ting on " "
+  // ( i.e.: myStr.split(" ").length ) doesn't catch all breaks!
+  var arrayOfWordsInString = inputStr.match(/\S+/g);
+  return (arrayOfWordsInString.length);
+}
+
+
+// It would be nice to get an extendscript dropshadow on the Title.
+// Unfortunately, Basil.js does not expose this functionality, but it does seem possible.
+// See the following links:
+// http://tomkrcha.com/?p=3779
+// http://www.tonton-pixel.com/blog/tutorials/layer-styles-quick-tutorial/
+// Also see // b.inspect(metaFrame, 2);
+//
+// There appears to be a way to make a dropshadow if an Object Style is saved.
+// https://delfeld.wordpress.com/2012/12/19/ai-script-example/
+/*
+// "myTextStyle" has to exist in the inDesign document.
+var myTextStyle = doc.graphicStyles.getByName ("myTextStyle");
+maintext = lyr.textFrames.add();
+maintext.name = "text, main";
+myTextStyle.applyTo( maintext ); // copy previously created style:
+*/
+
 
 function iFormat(tFrame){
 
@@ -181,32 +328,44 @@ function question2(_titles){
 
 
 function answer(_brief, _questionBoxY){
-  b.textSize(8);
-  b.textLeading(12);
-  b.textAlign(Justification.LEFT_ALIGN, VerticalJustification.TOP_ALIGN);
+  //b.println(_brief);
+  if (!isEmpty(_brief)){
+    // Note: we do this FIRST in order to strip out the markup tags.
+    _brief = computeWordsToItalicize(_brief);
+    //_codes = computeWordsToItalicize(_codes);
+    b.textSize(8);
+    b.textLeading(12);
+    b.textFont("Atlas Grotesk","Regular");
+    b.textAlign(Justification.LEFT_ALIGN, VerticalJustification.TOP_ALIGN);
+    b.fill (0,0,0);
 
-  var brief = _brief;
-  var y=questionSpaceBelow+_questionBoxY+questionBoxHeight;
-  var h=432-questionBoxHeight-questionSpaceBelow-questionSpaceAbove-27;
-  aFrame =b.text(brief, 36,y,colWidth,h);
+    var y=questionSpaceBelow+_questionBoxY+questionBoxHeight;
+    var h=432-questionBoxHeight-questionSpaceBelow-questionSpaceAbove-27;
+    aFrame =b.text(_brief, 36,y,colWidth,h);
 
 
-  bFrame =b.text(" ", colWidth+colSpacing+36,y,colWidth,h);
+    bFrame =b.text("", colWidth+colSpacing+36,y,colWidth,h);
 
-  cFrame =b.text(" ", colWidth+colSpacing+colWidth+colSpacing+36,y,colWidth,h);
-  b.linkTextFrames(aFrame,bFrame);
-  b.linkTextFrames(bFrame,cFrame);
+    cFrame =b.text("", colWidth+colSpacing+colWidth+colSpacing+36,y,colWidth,h);
+    b.linkTextFrames(aFrame,bFrame);
+    b.linkTextFrames(bFrame,cFrame);
 
-  //  bolding(bFrame, 0, 0);
+    //  bolding(bFrame, 0, 0);
 
-  iFormat(aFrame);
-  iFormat(bFrame);
-  iFormat(cFrame);
+    // iFormat(aFrame);
+    // iFormat(bFrame);
+    // iFormat(cFrame);
 
+    italicizeBoldWordsInFrame (aFrame, 0);
+    italicizeBoldWordsInFrame (bFrame, 0);
+    italicizeBoldWordsInFrame (cFrame, 0);
+  }
 
 }
 
 function textBoxes(_linkFrame){
+
+
 
   b.textSize(8);
   b.textLeading(12);
@@ -233,9 +392,6 @@ function textBoxes(_linkFrame){
     addPage(_frame3);
 
   }
-  iFormat(_frame1);
-  iFormat(_frame2);
-  iFormat(_frame3);
 
 
 
@@ -247,15 +403,118 @@ function textBoxes(_linkFrame){
 
 function addPage(_frame){
   b.addPage(); //add new page
-  startPage++;
-  b.page(startPage); //go to new page
+  pageCount++;
+  b.page(pageCount); //go to new page
   textBoxes(_frame); //add text boxes
 
-  b.addPage();
-  startPage++;
+  // b.addPage();
+  // pageCount++;
 
 }
+//==================================================================
+// Usage:
+// 1. myText = computeWordsToItalicize(myText);
+// 2. then loop through the indicesOfWordsToItalicize array
+function computeWordsToItalicize(someText) {
+  // NOTE: This function has the beneficial side-effect of stripping out the escape codes
+  // (*) that indicate italicization (as in, " *words to italicize* ") from someText
 
+  // Initialize the (global) array of indices of words to italicize.
+  indicesOfWordsToItalicize = [];
+
+  // Get rid of a troublesome pattern that causes omitted results in basil.js.
+  someText = someText.replace("\n\n", "\n \n");
+
+  // Find all matches: of phrases that occur between asterisks:
+  var myRegExForStuffBetweenAsterisks = /\*([^*]*)\*/g;
+  var results = someText.match(myRegExForStuffBetweenAsterisks);
+
+  if (results === null) {
+    // There are no words to italicize.
+    return someText;
+
+  } else {
+
+    // Find the indices of the words that are between asterisks
+    var nResults = results.length;
+    for (var i = 0; i < nResults; i++) {
+
+      // Clean up the i'th result: remove asterisks and trim.
+      var cleanedResulti = results[i].substring(1, results[i].length - 1);
+      if (typeof cleanedResulti === 'string'){
+
+        // Select the correct line below depending on the environment:
+        // cleanedResulti = cleanedResulti.trim(); // trim() for p5.js
+        cleanedResulti = b.trim(cleanedResulti);   // trim() for basil.js
+
+        // Strip out the asterisks from the string that was passed in
+        someText = someText.replace(results[i], cleanedResulti);
+
+        // Find the character at which this particular match occurs.
+        var charOfResulti = someText.indexOf(cleanedResulti);
+    b.println("charOfResulti"+charOfResulti);
+        // Find the number of words up to that point.
+        var portionOfMyTextBeforeResulti;
+        var nWordsBeforeResulti;
+        if(charOfResulti==0){
+          nWordsBeforeResulti=0;
+        }else{
+          // Find the number of words up to that point.
+          var portionOfMyTextBeforeResulti = someText.substring(0, charOfResulti);
+          b.println("portionOfMyTextBeforeResulti:"+portionOfMyTextBeforeResulti);
+          var nWordsBeforeResulti = getNumberOfWordsInString (portionOfMyTextBeforeResulti);
+          b.println("nWordsBeforeResulti:"+nWordsBeforeResulti);
+        }
+
+
+
+        var nWordsInCleanedResulti = getNumberOfWordsInString (cleanedResulti);
+        b.println("nWordsInCleanedResulti:"+nWordsInCleanedResulti);
+        // Accrue the indices (in the original text) of the individual result words.
+        // print(i + ".\t" + nWordsInCleanedResulti + "\t|" + cleanedResulti + "|\t" + nWordsInResulti);
+        for (var j = 0; j < nWordsInCleanedResulti; j++) {
+          indicesOfWordsToItalicize.push(nWordsBeforeResulti + j);
+        }
+      }
+    }
+  }
+
+  return someText;
+}
+
+
+
+//CONTENT------------------------------------------
+
+function isEmpty(str) {
+  // Order matters for these tests!
+  return (!str || (0 === str.length));
+}
+
+function getNumberOfWordsInString(inputStr){
+  // Note: We use a regex, because split()ting on " "
+  // ( i.e.: myStr.split(" ").length ) doesn't catch all breaks!
+  var arrayOfWordsInString = inputStr.match(/\S+/g);
+  return (arrayOfWordsInString.length);
+}
+
+
+// It would be nice to get an extendscript dropshadow on the Title.
+// Unfortunately, Basil.js does not expose this functionality, but it does seem possible.
+// See the following links:
+// http://tomkrcha.com/?p=3779
+// http://www.tonton-pixel.com/blog/tutorials/layer-styles-quick-tutorial/
+// Also see // b.inspect(metaFrame, 2);
+//
+// There appears to be a way to make a dropshadow if an Object Style is saved.
+// https://delfeld.wordpress.com/2012/12/19/ai-script-example/
+/*
+// "myTextStyle" has to exist in the inDesign document.
+var myTextStyle = doc.graphicStyles.getByName ("myTextStyle");
+maintext = lyr.textFrames.add();
+maintext.name = "text, main";
+myTextStyle.applyTo( maintext ); // copy previously created style:
+*/
 
 
 b.go();

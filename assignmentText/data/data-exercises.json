@@ -107,8 +107,11 @@
         "imagename": "exercises/color/get.jpg"
     },
     {
-        "heading": "Exercises: Drawing",
-        "descriptions": "Create a simple drawing program."
+        "exercisetitle": "Split complement"
+    },
+    {
+        "heading": "Simple draw - level 0 workshop",
+        "descriptions": "Draw initials"
     },
     {
         "heading": "Exercises: Drawing",
@@ -119,9 +122,12 @@
         "descriptions": "\"Create a sketch inwhich you write a custom shape/object function. Have that shape/object distributed over a grid (use a nested loop, as discussed in class). At least one argument of the function must have some kind of logical mathematical progression (i.e. a pattern) and another must be random.\""
     },
     {
-        "heading": "Transformer",
+        "exercisetitle": "Transformer",
         "descriptions": "This exercise focuses on parameterized form. Use the mouseX variable as the input to a function (or group of functions) to transform from one thing to another. The two extreme states must be when the mouse is at the far left and right of the screen and the other mouseX values between should create a continuous transition linking the farthest states.",
         "undefined": "Michael Kontopoulos"
+    },
+    {
+        "descriptions": "Draw"
     },
     {
         "heading": "Exercises: Images",
@@ -133,6 +139,10 @@
         "descriptions": "Transition between two images with the mouse. "
     },
     {
+        "heading": "Exercises: Drawing",
+        "descriptions": "Create a simple drawing program."
+    },
+    {
         "heading": "Exercises: Arrays",
         "descriptions": "Declare, allocate and initialize an array of 5 floats. Init them with random numbers between 0-255. Use these floats to control the gray-level color of 5 corresponding circles. Now create a time-based program in which, on each time-step (draw() call), the values in these arrays are increased by 1. When the value stored in each position is greater than 255, have it reset to 0. See http://cmuems.com/2012/a/assignments/assignment-08/"
     },
@@ -141,11 +151,20 @@
         "descriptions": "Draw an ellipse which increases its size as long as the mouseButton is pressed. Variaton: Make other visual variables dependent on the size (strokeWeight, colour, transparency...)"
     },
     {
-        "heading": "Exercises: Animation",
+        "exercisetitle": "Buttons"
+    },
+    {
+        "heading": "Events"
+    },
+    {
+        "heading": "Animation",
         "descriptions": "Make an animated shape or composition that grows (or shrinks) and changes color on its own."
     },
     {
-        "heading": "Exercises: Text",
+        "heading": "Text",
         "descriptions": "Draw a running text, which is moving uniformly across the workspace (window).\n"
+    },
+    {
+        "heading": "Mouse interaction?"
     }
 ]

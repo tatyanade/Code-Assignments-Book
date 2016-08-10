@@ -13,13 +13,19 @@
     },
     {
         "title": "Contributors",
+        "name": "Taeyoon Choi",
+        "biography": "*Taeyoon Choi* is an artist and educator based in New York City. He’s the co-founder of School for Poetic Computation and a faculty researcher at NYU ITP. He has an extensive experience of teaching art and technology to youth and community, including Making Lab and Poetic Science Fair. His collaboration with Christine Sun Kim was presented at the Whitney Museum of American Art. He was an artist in residence at Eyebeam Art and Technology Center, Lower Manhattan Cultural Council, the Frank-Ratchye Studio for Creative Inquiry at CMU, Art + Technology Lab, and Los Angeles County Museum of Art.",
+        "image": "heads/taeyoon.jpg"
+    },
+    {
+        "title": "Contributors",
         "name": "Heather Dewey-Hagborg",
         "biography": "*Heather Dewey-Hagborg* is a Chicago-based transdisciplinary artist and educator who is interested in art as research and critical practice. She has shown work internationally at events and venues including the World Economic Forum, Shenzhen Urbanism and Architecture Biennale, the New Museum, and PS1 MOMA. Her work has been widely discussed in the media, from the New York Times and the BBC to TED and WIRED. She is an Assistant Professor of Art and Technology Studies at the School of the Art Institute of Chicago and a 2016 Creative Capital award grantee in the area of Emerging Fields.",
         "image": "heads/heather.jpg"
     },
     {
         "title": "Contributors",
-        "name": "R. Luke DeBois",
+        "name": "R. Luke DuBois",
         "biography": "*R. Luke DuBois* is a composer, artist, and performer who explores the temporal, verbal, and visual structures of cultural and personal ephemera. He holds a doctorate in music composition from Columbia University, and has lectured and taught worldwide on interactive sound and video performance. An active visual and musical collaborator, DuBois is the co-author of Jitter, a software suite for the real-time manipulation of matrix data developed by San Francisco-based software company Cycling'74. DuBois is the director of the Brooklyn Experimental Media Center at the NYU Tandon School of Engineering, and is on the Board of Directors of the ISSUE Project Room.",
         "image": "heads/luke.jpg"
     },
@@ -70,11 +76,5 @@
         "name": "Jer Thorp",
         "biography": "*Jer Thorp* is an artist and educator from Vancouver, Canada, currently living in New York. Coming from a background in genetics, his digital art practice explores the many-folded boundaries between science, data, art, and culture. Jer is an adjunct Professor in New York University’s ITP program, and a member of the World Economic Forum’s Global Agenda Council on Design Innovation. He is a co-founder of The Office For Creative Research, a multi-disciplinary research group exploring new modes of engagement with data. From 2010 to 2012, Jer was the Data Artist in Residence at the New York Times.",
         "image": "heads/jer.jpg"
-    },
-    {
-        "title": "Contributors",
-        "name": "Taeyoon Choi",
-        "biography": "*Taeyoon Choi* is an artist and educator based in New York City. He’s the co-founder of School for Poetic Computation and a faculty researcher at NYU ITP. He has an extensive experience of teaching art and technology to youth and community, including Making Lab and Poetic Science Fair. His collaboration with Christine Sun Kim was presented at the Whitney Museum of American Art. He was an artist in residence at Eyebeam Art and Technology Center, Lower Manhattan Cultural Council, the Frank-Ratchye Studio for Creative Inquiry at CMU, Art + Technology Lab, and Los Angeles County Museum of Art.",
-        "image": "heads/taeyoon.jpg"
     }
 ]

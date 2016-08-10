@@ -1,0 +1,80 @@
+[
+    {
+        "title": "Authors",
+        "name": "Golan Levin",
+        "biography": "*Golan Levin* is Associate Professor of Computation Arts at Carnegie Mellon University, where he also holds courtesy appointments in Computer Science, Entertainment Technology, and Design. Since 2009 he has served as Director of the Frank-Ratchye STUDIO for Creative Inquiry, a laboratory for atypical and anti-disciplinary research across the arts, science, technology and culture. Through digital artifacts, online tools, and virtual environments, often created with a variety of collaborators, Levin applies creative twists to digital technologies that highlight our relationship with machines, reveal hidden aspects of communication, and explore new intersections of machine code and visual culture.",
+        "image": "heads/golan.jpg"
+    },
+    {
+        "title": "Authors",
+        "name": "Tega Brain",
+        "biography": "*Tega Brain* is an Australian-born artist and environmental engineer whose ‘eccentric engineering’ intersects art, ecology and engineering. Tega reimagines technologies to address their scope and politics, with a focus on systems that enact more-than-only-human agendas; in so doing, her work takes the form of site specific installations, dysfunctional devices, experimental infrastructures and information systems. She is an Assistant Professor of New Media at SUNY Purchase and also works with the School for Poetic Computation, NYC. In 2013 she was awarded a Creative Australia Fellowship for early career artists from the Australia Council for the Arts. Tega is a 2016 Fellow with the Processing Foundation and contributes to the p5.js project.",
+        "image": "heads/tega.jpg"
+    },
+    {
+        "title": "Contributors",
+        "name": "Heather Dewey-Hagborg",
+        "biography": "*Heather Dewey-Hagborg* is a Chicago-based transdisciplinary artist and educator who is interested in art as research and critical practice. She has shown work internationally at events and venues including the World Economic Forum, Shenzhen Urbanism and Architecture Biennale, the New Museum, and PS1 MOMA. Her work has been widely discussed in the media, from the New York Times and the BBC to TED and WIRED. She is an Assistant Professor of Art and Technology Studies at the School of the Art Institute of Chicago and a 2016 Creative Capital award grantee in the area of Emerging Fields.",
+        "image": "heads/heather.jpg"
+    },
+    {
+        "title": "Contributors",
+        "name": "R. Luke DeBois",
+        "biography": "*R. Luke DuBois* is a composer, artist, and performer who explores the temporal, verbal, and visual structures of cultural and personal ephemera. He holds a doctorate in music composition from Columbia University, and has lectured and taught worldwide on interactive sound and video performance. An active visual and musical collaborator, DuBois is the co-author of Jitter, a software suite for the real-time manipulation of matrix data developed by San Francisco-based software company Cycling'74. DuBois is the director of the Brooklyn Experimental Media Center at the NYU Tandon School of Engineering, and is on the Board of Directors of the ISSUE Project Room.",
+        "image": "heads/luke.jpg"
+    },
+    {
+        "title": "Contributors",
+        "name": "De Angela L. Duff",
+        "biography": "*De Angela L. Duff* is a designer, photographer, web developer and DJ. She is also the Co-Director of Integrated Digital Media & Industry Associate Professor at NYU Tandon School of Engineering in Brooklyn. De Angela has spoken at EYEO, NYC Creative Tech Week, Black Portraitures II & II: Revisited, NYC Raising The Bar, AIGA’s Social Studies and Massaging Media 2 Conferences, and HOW’s Annual Design Conference. De Angela holds a MFA in Studio Art (Photography) from MiCA, a BFA in Graphic Design from Georgia State University and a BS in Textile Engineering from Georgia Tech. Her research currently combines music, photography, and technology.",
+        "image": "heads/deangela.jpg"
+    },
+    {
+        "title": "Contributors",
+        "name": "Zachary Lieberman",
+        "biography": "*Zachary Lieberman* is an artist, researcher and hacker with a simple goal: he wants you surprised. He creates performances and installations that take human gesture as input and amplifies it in different ways—making drawings come to life, imagining what the voice would look like, transforming silhouettes into music. He's been listed as one of Fast Company's Most Creative People and he been awarded the Golden Nica from Ars Electronica, Interactive Design of the Year from Design Museum London as well as listed in Time Magazine's Best Inventions of the Year. He creates artwork through writing software and is a co-creator of openFrameworks, an open source C++ toolkit for creative coding and helped co-found the School for Poetic Computation, a school examining the lyrical possibilities of code.",
+        "image": "heads/zach.jpg"
+    },
+    {
+        "title": "Contributors",
+        "name": "John Maeda",
+        "biography": "*John Maeda* is an American executive, designer, and technologist. His work explores the area where business, design, and technology merge. He was a Professor at the MIT Media Lab for 12 years, and then became the President of the Rhode Island School of Design from 2008 to 2013. As an artist, Maeda’s early work redefined the use of electronic media as a tool for expression by combining computer programming with traditional artistic techniques, laying the groundwork for the interactive motion graphics that are taken for granted on the web today.",
+        "image": "heads/john.jpg"
+    },
+    {
+        "title": "Contributors",
+        "name": "Lauren McCarthy",
+        "biography": "*Lauren McCarthy* is an artist based in Los Angeles whose work explores current social and technological systems and structures for being a person and interacting with other people. Lauren has exhibited at Ars Electronica, Conflux Festival, SIGGRAPH, LACMA, and the Japan Media Arts Festival, and worked on installations for the London Eye, US Holocaust Memorial Museum, and the Metropolitan Museum of Art. She holds an MFA from UCLA and a BS Computer Science and BS Art and Design from MIT. She is an Assistant Professor at UCLA Design Media Arts, and was previously a resident at CMU STUDIO for Creative Inquiry and Eyebeam.",
+        "image": "heads/lauren.jpg"
+    },
+    {
+        "title": "Contributors",
+        "name": "Allison Parrish",
+        "biography": "*Allison Parrish* is a computer programmer, poet, educator and game designer who lives in Brooklyn. Her teaching and practice address the unusual phenomena that blossom when language and computers meet. She holds a masters degree from NYU’s Interactive Telecommunications program and BA in Linguistics from UC Berkeley. Allison’s recent book, “@Everyword: The Book” (Instar Books, 2015), collects every tweet from @everyword, a Twitter bot she made that tweeted every word in the English language over the course of seven years—attracting over 100,000 followers along the way. She is currently an adjunct professor at ITP, where she teaches a course on writing computer programs that generate poetry.",
+        "image": "heads/allison.jpg"
+    },
+    {
+        "title": "Contributors",
+        "name": "Phoenix Perry",
+        "biography": "*Phoenix Perry* creates physical games and user experiences. Her work looks for opportunities to bring people together to raise awareness of our collective interconnectivity. A consummate advocate for women in game development, she founded Code Liberation Foundation. Currently, she is a Lecturer in Physical Computing at Goldsmiths, University of London. She has also curated since 1996 in a range of cultural venues, the most recent of which is her own gallery, Devotion Gallery until 2014. Devotion was a Williamsburg gallery focused on the intersection of art, science, new media, and design.",
+        "image": "heads/phoenix.jpg"
+    },
+    {
+        "title": "Contributors",
+        "name": "Daniel Shiffman",
+        "biography": "*Daniel Shiffman* is an Associate Arts Professor at the Interactive Telecommunications Program at NYU’s Tisch School of the Arts. He works on developing tutorials, examples, and libraries for Processing, the open source programming language and environment created by Casey Reas and Ben Fry. He is the author of Learning Processing: A Beginner’s Guide to Programming Images, Animation, and Interaction and The Nature of Code, an open source book about simulating natural phenomenon in Processing.",
+        "image": "heads/shiffman.jpg"
+    },
+    {
+        "title": "Contributors",
+        "name": "Jer Thorp",
+        "biography": "*Jer Thorp* is an artist and educator from Vancouver, Canada, currently living in New York. Coming from a background in genetics, his digital art practice explores the many-folded boundaries between science, data, art, and culture. Jer is an adjunct Professor in New York University’s ITP program, and a member of the World Economic Forum’s Global Agenda Council on Design Innovation. He is a co-founder of The Office For Creative Research, a multi-disciplinary research group exploring new modes of engagement with data. From 2010 to 2012, Jer was the Data Artist in Residence at the New York Times.",
+        "image": "heads/jer.jpg"
+    },
+    {
+        "title": "Contributors",
+        "name": "Taeyoon Choi",
+        "biography": "*Taeyoon Choi* is an artist and educator based in New York City. He’s the co-founder of School for Poetic Computation and a faculty researcher at NYU ITP. He has an extensive experience of teaching art and technology to youth and community, including Making Lab and Poetic Science Fair. His collaboration with Christine Sun Kim was presented at the Whitney Museum of American Art. He was an artist in residence at Eyebeam Art and Technology Center, Lower Manhattan Cultural Council, the Frank-Ratchye Studio for Creative Inquiry at CMU, Art + Technology Lab, and Los Angeles County Museum of Art.",
+        "image": "heads/taeyoon.jpg"
+    }
+]

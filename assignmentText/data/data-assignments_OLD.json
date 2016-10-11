@@ -1,22 +1,5 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Gist
- @tegacodes
- Unwatch 3
-  Star 3
- Fork 0 tegacodes/Code-Assignments-Book
- Code  Issues 0  Pull requests 0  Projects 0  Wiki  Pulse  Graphs  Settings
-Branch: master Find file Copy pathCode-Assignments-Book/assignmentText/data/data-assignments.json
-194a579  17 hours ago
-@golanlevin golanlevin Added clock assignment
-1 contributor
-RawBlameHistory     454 lines (454 sloc)  61.1 KB
 [
     {
-        "in": 1,
         "titles": "Iterative Pattern (Wallpaper)",
         "shortdescription": "Generating a texture or textile design\n",
         "level": "All levels ",
@@ -25,7 +8,7 @@ RawBlameHistory     454 lines (454 sloc)  61.1 KB
         "learningobjectives": "•  Develop an understanding of drawing functions and the Cartesian coordinate system\n•  Use functional abstraction to encapsulate the code for a modular design element\n•  Gain experience generating high-resolution raster and/or vector designs",
         "brief": "Write code to generate a tiling pattern or textural composition, such as for wallpaper or fabric. Give consideration to aesthetic issues like symmetry, rhythm, color; detail at multiple scales; precise control of shape; and the balance between organic and geometric forms. Your pattern should be designed so that it could be infinitely tiled or extended. Design something you would actually like to put on the walls of your home, or which you could imagine yourself actually wearing. Export your pattern in a high-resolution format, and print it as large as possible. Projects will be critiqued at the pin-board. Remember to sketch first.",
         "variations": "•  Experiment with 2D graphics transformations, such as rotate(), scale(), and mirror reflections.\n•  Use *nested iteration* to develop 2D rhythms or other gridlike visual structures.\n•  Create a *helper function* to encapsulate the way in which a complex visual element (such as a flower, animal, fruit, fleur-de-lys, etc.) is rendered throughout your design.\n•  Strictly using code, reproduce a pre-existing textile or wallpaper design.\n•  Make a kaleidoscope, by incorporating a photographic image or video feed into the pattern.\n•  Have your pattern printed on a real textile, wrapping paper, etc. by an online fabrication service such as Spoonflower, Constrvct, or Print All Over Me. Consider other output devices for realizing your pattern, such as computer-controlled laser cutters, knitting machines, and lace-making services.",
-        "advancedstudents": "Think beyond the rectangular grid. Investigate \"wallpaper group\" symmetries; convex uniform tilings; aperiodic tiles; texture synthesis and re-synthesis. Experiment with the use of particle systems for placing elements.",
+        "advancedstudents": "Think beyond the rectangular grid. Investigate \"wallpaper group\" symmetries; convex uniform tilings; aperiodic tiles; texture synthesis and re-synthesis.",
         "makingitmeaningful": "Pattern is the starting point from which we perceive and impose order in the world. The art of visual pattern-making is as old as humankind itself, and countless examples abound, whether functional, decorative or expressive, in forms like mosaics, calendars, tapestry, quilting, jewelry, calligraphy, furniture, architecture, and more. There is an intimate connection between pattern design, visual rhythm, geometry, mathematics, and iterative algorithms; this prompt invites students to hone their understanding of these relationships in purely formal terms. Realizing a design *physically*, especially through digital printing or fabrication in an unusual material or size, can be a watershed moment of synthesis for students who crave \"something real\". ",
         "titlegray": 255,
         "fullpageimage": "wallpaper/todo_spamghetto_2_fullpage.jpg",
@@ -35,7 +18,6 @@ RawBlameHistory     454 lines (454 sloc)  61.1 KB
         "additionalreferences": "\"Aperiodic Tiling\". In Wikipedia. https://en.wikipedia.org/wiki/Aperiodic_tiling\nBailey, David. *David Bailey's World of Escher-like Tessellations*. http://www.tess-elation.co.uk/\nGrünbaum, B., & Shephard, G. C. (1987). *Tilings and patterns*. Freeman.\nJones, O. (1868). *The grammar of ornament*. B. Quaritch.\nSchattschneider, D. \"The Mathematical Side of M. C. Escher,\" in *AMS Notices* 57: 706-718, 2010. http://www.ams.org/journals/notices/201006/rtx100600706p.pdf\n\"Texture Synthesis\". In Wikipedia. https://en.wikipedia.org/wiki/Texture_synthesis\n\"Wallpaper Collection\", Historic New England. http://www.historicnewengland.org/collections-archives-exhibitions/collections-access/highlights/wallpaper\n\"Wallpaper Groups\". In Wikipedia. https://en.wikipedia.org/wiki/Wallpaper_group\n\nAlso see works by: Casey Reas, Marius Watz, Lia, Jonathan McCabe, Mitchell Whitelaw, Tina Frank, Joshua Davis, Dave Bollinger, Holger Lippmann."
     },
     {
-        "in": 1,
         "titles": "Face Generator",
         "shortdescription": "Drawing parametric faces",
         "level": "All levels",
@@ -54,7 +36,6 @@ RawBlameHistory     454 lines (454 sloc)  61.1 KB
         "additionalreferences": "Blas, Zach. *Facial Weaponization Suite*.\nhttps://vimeo.com/57882032\nBravi, Lorenzo et al. *Bla Bla Bla*.\nhttp://goo.gl/2w4CfC\nBorenstein, Greg. *Machine Pareidolia*.\nhttp://urbanhonking.com/ideasfordozens/2012/01/14/machine-pareidolia-hello-little-fella-meets-facetracker/\n\"Computer facial animation\". In Wikipedia. https://en.wikipedia.org/wiki/Computer_facial_animation\nDarwin, Charles. *The Expression of Emotions in Man and Animals*. http://darwin-online.org.uk/\n\"Facial Action Coding System\". In Wikipedia. https://en.wikipedia.org/wiki/Facial_Action_Coding_System\nLevin, Golan and Lieberman, Zachary. *Re:Face*. http://www.flong.com/projects/reface/\nLieberman, Zachary. *Masquelacara*. https://www.instagram.com/p/BDxsVZ0JNpm/\nMcDonald, Kyle. *Face as Interface*. https://github.com/kylemcdonald/AppropriatingNewTechnologies/wiki/Week-2\nMcDonald, Kyle. *FaceOSC*. https://github.com/kylemcdonald/ofxFaceTracker\nMcDonald, Kyle and Castro, Arturo. *Face Substitution*. https://vimeo.com/29348533\nMunari, Bruno. *Design as Art*. (1971)\nPerlin, Ken. *FaceDemo* (Java Applet).\nhttp://mrl.nyu.edu/~perlin/facedemo/"
     },
     {
-        "in": 1,
         "titles": "Parametric Alphabet",
         "shortdescription": "Structuring letterforms with a common model",
         "level": "Intermediate",
@@ -69,12 +50,11 @@ RawBlameHistory     454 lines (454 sloc)  61.1 KB
         "fullpageimage": "alphabet/pashenkov_alphabot_fullpage.png",
         "layout": 21,
         "image": "alphabet/huang_typeface_onethird.jpg\nalphabet/lu_alphabet_twothirds.png\nalphabet/cho_typemenot_quarter.png\nalphabet/nimoy_davenport_quarter.jpg",
-        "aspirationcaptions": "1. Nikita Pashenkov's *Alphabot* (2000) is a Transformer-like robot \"that communicates with humans by changing its shape to form characters of the English alphabet.\" Each letter can fold into any other. http://tdctokyo.org/eng/?award=01_nikita-pashenkov\n\n2. Mary Huang's *Typeface2: a Typographic Photobooth* (2010) is a font whose parameters are governed by signals from a real-time face-tracker. http://www.creativeapplications.net/processing/typeface-processing/\n\n3. David Lu's *Letter 3* (2002) presents an interactive alphabet whose letters are formed by manipulating the control points of a single springy curve. Each letter can smoothly transform into any other. http://velluminous.org/portfolio/a/demos/letter3/\n\n4. In Peter Cho's classic *Type Me, Type Me Not* (1997), each letter is constructed from two \"Pac-Man\" filled arcs, and is represented by just 10 numbers. http://acg.media.mit.edu/people/pcho/typemenot/index.html\n\n5. As keys are pressed in Josh Nimoy's *Robotic Type* systems (2004), mechanical elements shift into place, forming the requested characters. http://cdn.jtn.im/robotictype/",
-        "additionalreferences": "Biľak, Peter. *Designing Type Systems* (2012). https://www.typotheque.com/articles/designing_type_systems\nFlückiger, Michael and Kunz, Nicolas. *LAIKA: a dynamic typeface* (2009). http://laikafont.ch/index.html\nHofstadter, Douglas. *Fluid Concepts and Creative Analogies.* (1995).\nJones, C.S. \"What Is Algorithmic Typography?\" (2015). https://crmrkt.com/jyVEO\nKnoth, Christoph. *Computed Type*.\nhttps://vimeo.com/60651938\nKnuth, Donald. \"A Punk Meta-Font\". *TUGboat*, Volume 9 (1988). http://www.tug.org/TUGboat/Articles/tb09-2/tb21knut.pdf\nKnuth, Donald. \"The Concept of a Meta-Font\" (1982). *Visible Language* 16. http://www.zigzaganimal.be/elements/the-concept-of-metafont.pdf\nLehni, Jürg, et al. *Lego Font Creator* (2001). http://lineto.com/The+Projects/Nicolai.+A+New+Font./\nLehni, Jürg. *Typeface as Programme* (2009). https://www.typotheque.com/articles/typeface_as_programme\nMadsen, Rune. *Printing Code: Typography.* http://printingcode.runemadsen.com/lecture-typography/\nMaeda, John. *Tangram Font* (1993). http://www.maedastudio.com/1997/imda/index.php\nShim, Kyuha. *Code & Type.* http://code-type.com/about/",
-        "notes": "“To create a typeface that is easily malleable in the computational medium, the constituent shapes must be reduced to compact numerical forms.”\n— John Maeda, 2000\n\n“By this art you may contemplate the variation of the 22 letters…”\n— Jorge Luis Borges, The Library of Babel (La biblioteca de Babel), 1941 "
+        "aspirationcaptions": "1. Nikita Pashenkov's *Alphabot* (2000) is a Transformer-like robot \"that communicates with humans by changing its shape to form characters of the English alphabet.\" Each letter can fold into any other. http://tdctokyo.org/eng/?award=01_nikita-pashenkov\n\n2. Mary Huang's *Typeface2: a Typographic Photobooth* (2010) is a font whose parameters are governed by signals from a real-time face-tracker. http://www.creativeapplications.net/processing/typeface-processing/\n\n3. David Lu's *Letter 3* (2002) presents an interactive alphabet whose letters are formed by manipulating the control points of a single springy curve. Each letter can smoothly transform into any other. http://velluminous.org/portfolio/a/demos/letter3/\n\n4. In Peter Cho's classic *Type Me, Type Me Not* (1997), each letter is constructed from two \"Pac-Man\" filled arcs, and is represented by just 10 numbers. http://acg.media.mit.edu/people/pcho/typemenot/index.html\n\n5. As keys are pressed in Josh Nimoy's *Robotic Type* systems (2004), mechanical elements shift into place, forming the requested characters. http://cdn.jtn.im/robotictype/",
+        "additionalreferences": "Biľak, Peter. *Designing Type Systems* (2012). https://www.typotheque.com/articles/designing_type_systems\nFlückiger, Michael and Kunz, Nicolas. *LAIKA: a dynamic typeface* (2009). http://laikafont.ch/index.html\nHofstadter, Douglas. *Fluid Concepts and Creative Analogies.* (1995).\nKnoth, Christoph. *Computed Type*.\nhttps://vimeo.com/60651938\nKnuth, Donald. \"A Punk Meta-Font\". *TUGboat*, Volume 9 (1988). http://www.tug.org/TUGboat/Articles/tb09-2/tb21knut.pdf\nKnuth, Donald. \"The Concept of a Meta-Font\" (1982). *Visible Language* 16. http://www.zigzaganimal.be/elements/the-concept-of-metafont.pdf\nLehni, Jürg, et al. *Lego Font Creator* (2001). http://lineto.com/The+Projects/Nicolai.+A+New+Font./\nLehni, Jürg. *Typeface as Programme* (2009). https://www.typotheque.com/articles/typeface_as_programme\nMadsen, Rune. *Printing Code: Typography.* http://printingcode.runemadsen.com/lecture-typography/\nMaeda, John. *Tangram Font* (1993). http://www.maedastudio.com/1997/imda/index.php\nShim, Kyuha. *Code & Type.* http://code-type.com/about/",
+        "notes": "“To create a typeface that is easily malleable in the computational medium, the constituent shapes must be reduced to compact numerical forms.”\n— John Maeda, 2000\n\n“By this art you may contemplate the variation of the 22 letters…”\n— Jorge Luis Borges, The Library of Babel (La biblioteca de Babel), 1941 "
     },
     {
-        "in": 1,
         "titles": "Generative Landscape",
         "shortdescription": "World-making and terraforming",
         "level": "Intermediate",
@@ -89,44 +69,27 @@ RawBlameHistory     454 lines (454 sloc)  61.1 KB
         "layout": 1,
         "image": "landscape/tarbell_substrate_quarter.jpg\nlandscape/nullpointer_landscape_quarter.jpg\nlandscape/pipkin_mirrorlake_quarter.png\nlandscape/kyttenjanae_lonelyplanets_quarter.png",
         "aspirationcaptions": "1. \"Fractional noise\" mountains (c. 1982) developed by Benoît Mandelbrot and Richard F. Voss at IBM were a landmark in mathematical terrain synthesis. http://www.wired.com/2013/01/mandelbrot-images/\n\n2. In Jared Tarbell's classic *Substrate* (2003), simulated urban tectonics arise from elementary principles of accretion, branching, and feedback. http://www.complexification.net/gallery/machines/substrate/\n\n3. Tom Betts, also known as Nullpointer, developed a \"British Countryside Generator\" for the Big Robot game, *Sir, You Are Being Hunted.* https://www.flickr.com/photos/tomnullpointer/albums/72157644542312590/\n\n4. Katie Rose Pipkin generates barren flowerpot landscapes in her poetic and mysterious browser work, *Mirror Lake* (2015). http://katierose.itch.io/mirrorlake\n\n5. Kristyn Janae Solie's *Lonely Planets* (2013) is a stylized 3D terrain that shifts between minimalism and psychedelia. The work was created for Casey Reas' undergraduate course, *Live Cinema through Creative Coding*. http://www.kyttenjanae.com/",
-        "additionalreferences": "Akten, Memo and Berio, Daniel. *Bozork Quest* (2013). https://vimeo.com/113106061\nBeddard, Tom. *Surface Detail* (2011). http://sub.blue/surface-detail\nBrown, Daniel. *Travelling by Numbers* (2016). http://flic.kr/s/aHskyNR2Tz\nField.io. *Interim Camp* (2009). http://www.field.io/project/interim-camp/\nGeilfus, Simon. *Muon glNext* (2014). https://vimeo.com/108393262\nHart, Vi et al. *Float* (2015). https://vimeo.com/147908916\nHodgin, Robert. *Audio-generated landscape* (2008). https://vimeo.com/2094557\nHoff, Anders. *Isopleth* (2015). http://inconvergent.net/isopleth/\nLemercier, Joanie. *Landforms* (2014). http://joanielemercier.com/landforms/\nMcCormack, Jon. *Morphogenesis Series* (2001). http://jonmccormack.info/\nMcKay, Joe. *Sunset Solitaire* (2010). http://www.joemckaystudio.com/sunset.php\nMolnar, Vera. *Variations St. Victoire* (1989-1996). http://veramolnar.com/\nPlanetside Software. *Terragen* (2008-). http://www.planetside.co.uk/\nQuayola, Davide. *Pleasant Places* (2015). http://www.quayola.com/pleasant-places/\nZawada, Jonathan. *Over Time* (2011). http://www.zawada.com.au/2013/01/02/over-time/"
+        "additionalreferences": "Akten, Memo and Berio, Daniel. *Bozork Quest* (2013). https://vimeo.com/113106061.\nBeddard, Tom. *Surface Detail* (2011). http://sub.blue/surface-detail.\nField.io. *Interim Camp* (2009). http://www.field.io/project/interim-camp/.\nGeilfus, Simon. *Muon glNext* (2014). https://vimeo.com/108393262.\nHart, Vi et al. *Float* (2015). https://vimeo.com/147908916.\nHodgin, Robert. *Audio-generated landscape* (2008). https://vimeo.com/2094557.\nHoff, Anders. *Isopleth* (2015). http://inconvergent.net/isopleth/.\nLemercier, Joanie. *Landforms* (2014). http://joanielemercier.com/landforms/.\nMcCormack, Jon. *Morphogenesis Series* (2001). http://jonmccormack.info/.\nMcKay, Joe. *Sunset Solitaire* (2010). http://www.joemckaystudio.com/sunset.php.\nMolnar, Vera. *Variations St. Victoire* (1989-1996). http://veramolnar.com/.\nPlanetside Software. *Terragen* (2008-). http://www.planetside.co.uk/.\nQuayola, Davide. *Pleasant Places* (2015). http://www.quayola.com/pleasant-places/.\nZawada, Jonathan. *Over Time* (2011). http://www.zawada.com.au/2013/01/02/over-time/."
     },
     {
-        "in": 1,
         "titles": "Clock",
-        "shortdescription": "Representing time",
-        "level": "All levels",
-        "tagsstem": "timekeeping, measurement",
-        "tagsarts": "time, rhythm, dynamism, animation",
-        "learningobjectives": "•  Become acquainted with the history of systems and devices for timekeeping\n•  Devise technologies and graphic concepts for representing time that go beyond conventional methods of visualization and mediation\n•  Refine craft skills in the use of programming to control shape, color, form, and motion",
-        "brief": "Design a ‘visual clock’ that displays a novel or unconventional representation of the time. It is not essential that the time of day be literally readable from it, but your clock should appear different at all times of the day, and it should repeat its appearance every 24 hours (or other relevant cycle, if desired).\n\nYou are encouraged to seriously question basic assumptions about how time is mediated and represented. Ponder things like biological time (chronobiology), ultradian and infradian rhythms, solar and lunar cycles, celestial time, decimal time, metric time, geological time, historical time, psychological time, and subjective time. Inform your design by reading about the history of timekeeping systems and devices, and their transformative effects on society.",
-        "variations": "•  Feel free to experiment with any of the tools at your disposal, including transparency, color, sound, dynamism, and physical actuation. Reactivity to the cursor is optional. \n•  You're strictly prohibited from using Roman, Arabic, or Chinese numerals. However, you may still make the time literally readable through other means, such as by visualizing numeric bit patterns, or presenting countable graphic elements.\n•  Your code will need to access the current hour(), minute(), second(), and potentially the millis(). However, you could also access the day(), month(), and year(), for a clock which changes over the seasons or human lifespans.\n•  Develop your clock for a portable or wearable device, such as a mobile phone, smart watch, fitness tracker, or other standalone computer with a small display. Consider incorporating data from your device’s other sensors into your design, such as a user’s image, movements, body temperature, heartbeat, etc.\n•  Free yourself from the desktop or laptop screen, and design your clock for a context of your own choosing. If you could place your clock anywhere, where would it be? On the side of a building? As a piece of furniture? In someone’s pocket? Or as a digital tattoo? Include a drawing, rendering or other mockup showing your clock as you imagine it *in situ.* ",
-        "makingitmeaningful": "Attempts to mark time stretch back many thousands of years, with some of the earliest timekeeping technologies being gnomons, sundials, water clocks, and lunar calendars. Even today’s standard representation of time, with hours and minutes divided into 60 parts, is a legacy inherited from the ancient Sumerians, who used a sexagesimal counting system.\n\nThe history of timekeeping is the history of a still unfolding relationship between technological developments and a social pressure for greater precision, accuracy, and synchronization. Every increase in our ability to precisely measure time has had a profound impact on our mastery of science, agriculture, navigation, communications, and as always, warcraft.\n\nDespite the widespread adoption of machinic standards, there are many other ways to understand time. Psychological time contracts and expands with attention; biological cycles affect our moods and behavior; geological or planetary rhythms can span millenia. In the 20th century, Einstein’s theory of relativity further upturned our understanding of time, showing that it does not flow in a constant way, but rather in relation to the position from which it is measured, a possibly surprising return to the significance of the observer.",
-        "titlegray": 255,
-        "fullpageimage": "clock/lee_byron_fullpage_666x522.png",
-        "layout": 8,
-        "image": "defaults/default_onethird_282x136.jpg\ndefaults/default_onethird_282x136.jpg\ndefaults/default_onethird_282x136.jpg\ndefaults/default_onethird_282x136.jpg\ndefaults/default_onethird_282x136.jpg\ndefaults/default_onethird_282x136.jpg",
-        "aspirationcaptions": "1. Lee Byron's *Center Clock* (2007) presents the time as countable, bouncy circles. Sixty white \"second\" circles will coalesce to form a violet \"minute\" circle, and so on. http://leebyron.com/centerclock/\n\n2. Linnaeus’s flower clock (1751).\n\n3. Maeda, John. *12 O’Clocks* (1996).\n\n4. Studio Moniker. *All the Minutes* (2014). https://twitter.com/alltheminutes \n\n5. Formanek, Mark. *Standard Time.*\n\n6. Diaz, Oscar. *Ink Calendar.*\n\n7. Angesleva, Jussi & Ross Cooper. *Last Clock* (2002).",
-        "additionalreferences": "Biegert & Funk. *Qlocktwo.*\nCharity, Mitchell N. *Dot Clock,* 2001.\nDrucker, Johanna. \"Timekeeping\". In *Graphesis: Visual Forms of Knowledge Production.* Harvard, 2014.\nFoer, Joshua. \"A Minor History of Time Without Clocks\". *Cabinet Magazine,* Issue 29, 2008.\nGiffen, Daniel Craig. *Human Clock,* 2001.\nGroom, Amelia. *Time (Documents of Contemporary Art.* MIT Press, 2013.\nHillis, Danny et al. *The Clock of the Long Now.*\nHumansSince1982. *The Clock Clock.*\nLevin, Golan. *Clocks in New Media.* 2016.\nMarclay, Christian. *The Clock,* 2010.\nMorzier, Eric. *Horloge Tactile,* 2005.\nMulder, Sander. *Continue Time,* 2007.\nMulder, Sander. *Pong Clock,* 2005.\nNakamura, Yugo. *Industrious Clock,* 2001.\nPaterson, Katie. Time Pieces, 2014. http://www.katiepaterson.org/timepieces/\nSaqoosha. *Sonicode Clock,* 2008.\nTseng, Yen-Wen. *Hand in Hand.*"
-    },
-    {
-        "in": 1,
-        "titles": "Browser Extension",
-        "shortdescription": "Lens for the internet",
-        "level": "Intermediate",
-        "tagsstem": "web, internet, browser, extension, add-on",
-        "tagsarts": "detournment, intervention, network, interactivity",
-        "learningobjectives": "•  Develop an understanding of basic website structure and functionality.\n•  Develop an understanding of basic browser functionality.\n•  Creation of a browser based creative intervention.",
-        "brief": "Build a browser extension that either alters the appearance of the internet or augments or estranges the browsing experience in a poetic or critical way. A browser extension is a software intervention that alters the behavior of a browser application. Extensions can do things like change the way specific online content appears, add additional content layers, redirect the audience to different URLs or change browser behaviors. At the time of writing both Chrome and Firefox offered thorough documentation for the development of extensions so it is recommended to choose either of these browsers to work with.\n",
-        "variations": "Students who are inexperienced with web design can be introduced to online interventions through the preliminary exercise of modifying website code in the console of the browser. The styling and content of a page can be edited temporarily by changing the css or html of a page directly or algorithmically by adding lines of javascript. This introductory step introduces students to the console, and will help them to develop an understanding of the basic structure and function of a website. Their experiments at this stage can scaffold the creation of an extension. \nThis assignment brief can also be tailored to be more constrained by asking students to carry out a specific intervention such as a text based modification, an image find and replace, a style based css change or a content augmentation, where an extra layer of information is added to webpages, usually through the use of an external API or dataset.. Requiring students to submit their extensions to a public repository like the Chrome store can also be included as a final step for publishing this assignment. ",
-        "advancedstudents": "Multiuser extensions. Use of data from an external API.",
-        "makingitmeaningful": "Like a window mediates our view of the physical world, the browser mediates our experience of the internet. It is a small but critical piece of infrastructure in the complex system that underlies all of our online activities. Building a creative extension therefore, is an opportunity for intervening at either a systems, protocol or content level, or a combination. Software studies texts such as the now canonical Protocol by Alex Galloway offer ways to approach the internet from the perspective of infrastructure and protocol, opening the way for creative interventions that modify or reveal the browser's function and the contruction of the web.\n\nThis assignment can be conceptually scaffolded with ideas and strategies drawn from the history of conceptual art. Online interventions that manipulate everyday web content extend ideas from the Situationalists who were working in the 1950s and 1960s, into an online context. Situationalist strategies such as detournment and derive aim to estrange the mundane and everyday experience of life and are conceptually prescient to contemporary examples of extensions that modify user navigation across the web such as We See in Every Direction by Jonas Lund, or those that find and replace specific content like Rose Colored Window by Katie Rose Pipkin. Extensions can also be tools for activism and critical and tactical art. By layering additional information onto the browsing experience, they can reveal and explicate otherwise obscure relationships and connections. Examples of this include the Sunlight Foundation's Influence Explorer, Allison Burtch's Internet Illuminator, BookIndy's Browse Amazon, Buy Local.",
+        "shortdescription": "Visualizing time",
+        "level": "Introductory",
+        "tagsstem": "time functions, parameters",
+        "tagsarts": "visual clock, animation, time",
+        "learningobjectives": "•  Develop an understanding of time functions\n•  Create of a dynamic visual system to represent information\n•  Development creative concept and prototype in code",
+        "brief": "Make a 'visual clock'. It is not essential that the time of day be literally readable from it, but your clock should appear different at all times of the day, and it should repeat its appearance every 24 hours. (You can make a 12-hour clock if you prefer). If you do decide to make the time literally readable (e.g. by counting graphic elements, visualizing numeric bit patterns, etc.), you are not permitted to use conventional Roman/Arabic/Chinese numerals.",
+        "variations": "Produce a clock that keeps an unconventional perception of time.",
+        "makingitmeaningful": "Attempts to mark time stretch back many thousands of years with some of the earliest time keeping technologies being water clocks, sun dials and gnomons. Our current conception of time with days are divided into 24 hours, hours into 60 minutes and minutes into 60 seconds, is also a relic of ancient history and comes from the Greek's who devised this scale during the centuries following 200BC. More recently in the 19th century, the introduction of railway networks marked the beginning a still unfolding relationship between technological networks and our collective understanding of time. Both mass transport networks and computer networks alike, demand the synchronisation of time across geographical distance and drive an ongoing attempt to standardise time.\n\nYet despite the widespread adoption of a univeral machinic standard, there are many other ways to understand time. Psychological time contracts and expands, time from the perspective of non-human systems time oscillates and cycles rather than proceeds linearly, and in the case of geological or planetary time rythms can span millenia. During the early twentieth century, Einstein's revelations in theoretical physics also reformed our understanding of time, proposing that it is not a constant linear stream but is relative to the position from where it is measured. \n\nThis assignment provides an opportunity to engage with the rich history of the technological mediation of time and the arbitrary nature of its divisions in hours, minute and seconds. Students should be encouraged to explore time in ways that go beyond conventional methods of time keeping and visualization.",
+        "titlegray": 0,
         "fullpageimage": "defaults/default_fullpage_666x522.jpg",
-        "aspirationcaptions": "1. Steve Lambert's Add Art (2008) replaces online advertisements with curated art exhibitions.\n2. Jonas Lund's, We See in Every Direction (2013). http://ineverydirection.net/\n3. Julian Oliver and Daniil Vasiliev (2011), News Tweak https://julianoliver.com/output/newstweek\n4. Melanie Hoff, Decodelia. https://melanie-hoff.com/DECODELIA/\n5. Joanne Mcneil, Emotional Labor. http://www.joannemcneil.com/ga®llery/emotional-labor/\n\n",
-        "additionalreferences": "Debord, Guy. \"A User’s Guide to Détournement (1).\" (1956).\nKen Goldsmith, 2011, Uncreative Writing, Chapter 2, Language as material.\nKatie Rose Pipkin Rose Colored Window (2015).\nAllison Burtch Internet Illuminator. http://www.allisonburtch.net/illuminator/\nDavid Nicholls, BookIndy, Browse Amazon, Buy Independent addon. http://bookindy.com/\nDan Phiffer and Mushon Zer Aviv, Shiftspace (2007). \nSam Lavigne and Tega Brain, The Intergovernmental Panel on Capitalism, (2015). http://intergovernmentalpaneloncapitalism.org/\nThe New York Time Special Edition. http://nytimes-se.com/\nSunlight Foundation, Influence Explorer (2013).\nFB Graffiti by Joel Simon. http://www.joelsimon.net/fb-graffiti.html\nLauren Mccarthy and Kyle Mcdonald. Us+. http://lauren-mccarthy.com/us\n"
+        "layout": 1,
+        "image": "defaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg",
+        "aspirationcaptions": "John Maeda, Reactive Books, (1994-1999). Online: https://www.youtube.com/watch?v=nA_UTUvC4h8 \nGolan Levin, Banded Clock, (1999). Online: http://www.flong.com/storage/experience/clock/ \nJack Hughes, Color clock (2011). Online: http://thecolourclock.co.uk/\nMonika, All the Minutes (2014). Online: https://twitter.com/alltheminutes \nKatie Paterson, Time Pieces (2014). Online: http://www.katiepaterson.org/timepieces/ ",
+        "additionalreferences": "Groom, A. (2013). Time.\nFoer, J. (2008). A Minor History of Time Without Clocks. Cabinet Magazine. Issue 29, Spring.",
+        "notes": "John Maeda, Reactive Books (1994-1999). \nGolan Levin, Banded Clock (1999).\nJack Hughes, Color clock (2011). \nMonika, All the Minutes (2014). \nKatie Paterson, Time Pieces (2014)."
     },
     {
-        "in": 1,
         "titles": "Virtual Creature",
         "shortdescription": "Create an organism that lives on the screen",
         "level": "Intermediate ",
@@ -145,7 +108,6 @@ RawBlameHistory     454 lines (454 sloc)  61.1 KB
         "notes": "Single Cell, Golan Levin and friends (2001). \nDouble Cell, Golan Levin and friends (2002).\nMorphogenesis Series, Jon Mccormack (2002).\nInteractive Plant Growing, Laurent Mignonneau & Christa Sommerer (1992).\nLife Writer, Laurent Mignonneau & Christa Sommerer (2006).\nDelicate Boundaries, Chris Sugrue (2007). \nKarl Sims, Evolved Virtual Creatures (1994)."
     },
     {
-        "in": 1,
         "titles": "Custom Pixel ",
         "shortdescription": "Chuck Close generator",
         "level": "Intermediate",
@@ -162,7 +124,6 @@ RawBlameHistory     454 lines (454 sloc)  61.1 KB
         "notes": "Daniel Rozin, Mirrors. \nhttp://classes.design.ucla.edu/Fall04/28/exercises.html"
     },
     {
-        "in": "E",
         "titles": "Chaos-Order",
         "shortdescription": "Create a composition that transforms from order to chaos",
         "level": "Intermediate",
@@ -180,7 +141,6 @@ RawBlameHistory     454 lines (454 sloc)  61.1 KB
         "notes": "Randomness and unpredicability in both art and computation have a long and controversial history. Duchamp's early chance procedures resulted in works like Erratum musical (1913) and are exmples of early visual musial experiements exploring random or unpredicatable elements in their conception. The work of many Dada artists continued Duchamp's trajectories with Hans Arp producing compositions for paintings and drawing derived from falling paper and XX producing methods for writing poetry by cutting newspaper articles into words and then drawing them from a hat to create new verse. The Situationalists were also known for their random walks and other unpredicable way finding works. Decades later, works like 4:33 by John Cage are also celebrated for their insertion of chance and complexity into creative process. \nRandomness and unpredicability has also been a significant challenge in the evolution of computation and are useful for simulation, decision making and achieveing particular aesthetic outcomes. How to acheive a set of numbers where one is completely independent of the next, remains difficult to acheive in a precise procedural machine and throughout the hisotry of computatino many strategies have been used to do this. Look up tables of numbers where no information is passed on from one to the next were commonly used and in 1955 Rand published a book of 1 million random digits (that can be downloaded here). Jon Von Neuman developed the idea of pseudo randomness by calculating a series by taking the square of a number, and then selecting the middle 3 digits as the next number and then repeating. However, when run long enough, even this approach often leads to loops of similar values. The current Linux system uses key strokes, i/o data and voltage across certain parts as always varying inputs to its pseudorandom generator. Similarly, other systems use environmental variables. \nPerlin noise is another example of producing unpredicability in calculated systems. It was developed by Ken Perlin in 1998 during his work on the film Tron and for which he was later awarded an Academy Award. Perlin noise produces unpredicable values within a certain scope influenced by the previous value. Perlin released this work in the public domain and It has been signifcant to computer generated imagery ever since, enabling a more convincing rendering of things like flames, clouds and smoke. \n\nMore on randomness here: \nhttp://cmuems.com/2012/a/lectures/lecture-05/\nhttps://www.courses.tegabrain.com/PVA1/?page_id=617 "
     },
     {
-        "in": 1,
         "titles": "Copy the master",
         "shortdescription": "Reproduce a historic media artwork in code. Are you copying the way it looks, or the way it was generated",
         "level": "Intermediate",
@@ -198,7 +158,6 @@ RawBlameHistory     454 lines (454 sloc)  61.1 KB
         "additionalreferences": "Vera Molnar, Errance Entre Ordre Et Chaos, 1975."
     },
     {
-        "in": "E",
         "titles": "A Short Fuse",
         "shortdescription": "Designing progress",
         "level": "Intermediate ",
@@ -214,7 +173,6 @@ RawBlameHistory     454 lines (454 sloc)  61.1 KB
         "image": "defaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg"
     },
     {
-        "in": 1,
         "titles": "QWERTY Instrument",
         "shortdescription": "Color organs, visual keyboards, and typewriter performance tools",
         "level": "Intermediate",
@@ -229,8 +187,7 @@ RawBlameHistory     454 lines (454 sloc)  61.1 KB
         "notes": "www.patatap.com/ , processing.org/examples/keyboardfunctions.html"
     },
     {
-        "in": 1,
-        "titles": "Generative Text",
+        "titles": "Random text generator",
         "shortdescription": "- bring in objects, instruction generator to have one object act on another.",
         "brief": "possible text to speech class to speak these results",
         "titlegray": 0,
@@ -246,7 +203,6 @@ RawBlameHistory     454 lines (454 sloc)  61.1 KB
         "image": "defaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg"
     },
     {
-        "in": "E",
         "titles": "Curves",
         "level": "Intermediate",
         "tagsstem": "geometry, interpolation, curves",
@@ -309,7 +265,6 @@ RawBlameHistory     454 lines (454 sloc)  61.1 KB
         "notes": "Meshu"
     },
     {
-        "in": 1,
         "titles": "Augmented projection",
         "shortdescription": "Create an projected architectural intervention",
         "level": "Intermediate",
@@ -378,7 +333,6 @@ RawBlameHistory     454 lines (454 sloc)  61.1 KB
         "image": "defaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg\ndefaults/default_quarter_282x210.jpg"
     },
     {
-        "in": 1,
         "titles": "Drawing Machine",
         "shortdescription": "Create a machine for drawing.",
         "titlegray": 0,
@@ -389,25 +343,7 @@ RawBlameHistory     454 lines (454 sloc)  61.1 KB
         "notes": "http://make8bitart.com/#what\nZach thesis"
     },
     {
-        "in": 1,
-        "titles": "Measuring Device ",
-        "brief": "http://cmuems.com/2013/a/assignments/assignment-08/"
-    },
-    {
-        "in": 1,
-        "titles": "Bot"
-    },
-    {
-        "in": 1,
-        "titles": "Notification for 1"
-    },
-    {
-        "in": 1,
-        "titles": "Bird/Frog SoundViz"
-    },
-    {
-        "in": 1,
-        "titles": "Decorated Skeleton/Puppet"
+        "titles": "Twitter Bot"
     },
     {
         "titles": "MAYBE LIST"
@@ -468,5 +404,3 @@ RawBlameHistory     454 lines (454 sloc)  61.1 KB
         "brief": "Write a program which records data from the mouse into an array and converts this data into visual form. Either record and display the data continuously or build a structure for separate recording and playback modes."
     }
 ]
-Contact GitHub API Training Shop Blog About
-© 2016 GitHub, Inc. Terms Privacy Security Status Help

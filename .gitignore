@@ -2,4 +2,5 @@
 *.idlk
 *.pdf
 *.zip
+*.json
 resources/*

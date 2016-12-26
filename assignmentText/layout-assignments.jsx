@@ -23,10 +23,12 @@ var jsonData;
 var jLength=0;
 
 //FORMATTING VARIABLES
-var colSpacing=20;
-var colWidth= (576-2*colSpacing)/3;
-var colTop = 100;
-var addrefx=36+colWidth+colSpacing;
+var colSpacing = 20;
+var colWidth   = (576-2*colSpacing)/3;
+var colTop     = 100;
+var halfInch   = 36;
+var addrefx    = halfInch+colWidth+colSpacing;
+
 
 var briefHeading      = "Brief";
 var advancedHeading   = "Advanced Students";
@@ -40,8 +42,7 @@ var stemHeading  = "STEM topics: ";
 var artsHeading  = "Arts topics: ";
 var learnHeading = "Learning Objectives - Students will: ";
 
-  var bVerbose = false;
-
+var bVerbose = false;
 
 //-------------------------------------------------------------------
 /*
@@ -80,7 +81,7 @@ var Fx = Bx;
 var Hx = Bx;
 var xfull = 639;
 
-var Ay = 36;
+var Ay = halfInch;
 var By = Ay;
 var Cy = 184;
 var Dy = Cy;
@@ -248,7 +249,6 @@ function setup(){
 
   b.textFont("Atlas Grotesk","Regular"); // set default font
 
-
   // parse JSON
   jsonData = b.JSON.decode( jsonString );
     jLength = objLength(jsonData);
@@ -256,10 +256,8 @@ function setup(){
 
   //b.println("jsonLength:"+jLength);
   b.page(pCounter);
-
-
-
 }
+
 
 //==========================================================
 function draw() {
@@ -276,7 +274,7 @@ function draw() {
 
   //to auto generate doc length based on json
   pages = (jLength*4);
- b.println("pages: "+pages);
+  b.println("pages: "+pages);
 
   // add new pages
   for (var i = 1; i < pages; i++) {
@@ -292,37 +290,43 @@ function draw() {
     b.page((i*4)+assStartPage);
           //ADD PAGE
 
-
-
-
+    // Get the i'th full-page image, using default if N/A
     var fullImage = "defaults/default_fullpage_666x522.jpg";
     if(jsonData[i].fullpageimage != null){
       fullImage=jsonData[i].fullpageimage;
       if (bVerbose) {b.println("fullImage = " + fullImage);}
     }
+
+    // Render the full-page image. 
     b.pushMatrix();
     b.translate(0-b.width, 0);
     var fullImageArray = [fullImage];
     drawImageLayout (0, fullImageArray);
     b.popMatrix();
-    assTitle1(jsonData[i].titles, 36, 441, jsonData[i].titlegray);
-      b.println("New page: "+assTitle1);
+
+    // Render the main title, overlaying the full-page image. 
+    assTitle1(jsonData[i].titles, halfInch, 441, jsonData[i].titlegray);
+    b.println("New page: "+assTitle1);
   };
 
-  for (var i = 0; i < Math.floor(((pages+1)-assStartPage)/4); i++) {
-    b.page((i*4)+assStartPage);
-    assTitle1(jsonData[i].titles, 36, 441, jsonData[i].titlegray);
-  };
+  // Not sure why this was here; it was placing a redundant copy of the title text.
+  // Disabled by GL on 12/25/2016.  
+  var bPlaceSecondCopyOfTitleText = false; 
+  if (bPlaceSecondCopyOfTitleText){
+    for (var i = 0; i < Math.floor(((pages+1)-assStartPage)/4); i++) {
+      b.page((i*4)+assStartPage);
+      assTitle1(jsonData[i].titles, halfInch, 441, jsonData[i].titlegray);
+    };
+  }
 
   //==========================================================
-  //Assignment brief page
+  // Assignment brief page
     for (var i = 0; i < (pCounter/4); i++) {
     b.page((i*4+1)+assStartPage);
 
-
     //TITLE
     if (bVerbose) {b.println("Rendering Assignment: " + jsonData[i].titles);}
-    assTitle2(jsonData[i].titles, 36, 36);
+    assTitle2(jsonData[i].titles, halfInch, halfInch);
 
     //DESCRIPTION
     if (bVerbose) {b.println("--- Description");}
@@ -570,7 +574,7 @@ function assTitle1(_titles, _x, _y, _titlegray){
     b.textFont("Atlas Grotesk","Medium");
     b.textAlign(Justification.RIGHT_ALIGN, VerticalJustification.CENTER_ALIGN);
     b.fill(_titlegray);
-    titleFrame = b.text(_titles, _x,_y,576,27.6);
+    titleFrame = b.text(_titles, _x,_y, 576,27.6);
     titleFrame.name = "title";
   }
 }
@@ -632,13 +636,15 @@ function assMeta(_level, _stemTags, _artsTags, _learning){
   b.textFont("Atlas Grotesk","Regular");
   b.textAlign(Justification.LEFT_ALIGN, VerticalJustification.BOTTOM_ALIGN);
 
-  var metaText = levelHeading + _level + "\r"; //+"\r"+"STEM tags: "+_stemTags+"\r"+"Arts tags: "+_artsTags+"\r"+"Learning Objectives - Students will: "+"\n"+_learning;
-  metaText += stemHeading + _stemTags + "\r";
+  // var metaText = levelHeading + _level + "\r"; 
+  // +"\r"+"STEM tags: "+_stemTags+"\r"+"Arts tags: "+_artsTags+"\r"+"Learning Objectives - Students will: "+"\n"+_learning;
+  var metaText = stemHeading + _stemTags + "\r";
   metaText += artsHeading + _artsTags + "\r";
   metaText += learnHeading + "\r" + _learning + "\n\r";
 
-  metaLeastDy = 100;
-  metaFrame = b.text(metaText, 36,colTop+metaLeastDy,colWidth,(fullHeight-colTop)-metaLeastDy);
+  var yAdjustment = 5; 
+  metaLeastDy = 240;
+  metaFrame = b.text(metaText, 36,colTop+metaLeastDy+yAdjustment,colWidth,(fullHeight-colTop)-metaLeastDy);
   b.typo(metaFrame, "fontStyle", "Light Italic");
   b.typo(metaFrame, 'hyphenation', false);
 
@@ -651,11 +657,11 @@ function assMeta(_level, _stemTags, _artsTags, _learning){
   iBolding(metaFrame, 3, 1);
 
   metaFrame.name = "meta";
-  b.typo(metaFrame,"leftIndent", 10);
+  b.typo(metaFrame,"leftIndent",  10);
   b.typo(metaFrame,"rightIndent", 10);
 
   var nMetaTextLines = b.lines(metaFrame).length;
-  var metaBoxHeight = (nMetaTextLines + 2) * b.textLeading();
+  var metaBoxHeight = (nMetaTextLines + 2) * b.textLeading() - yAdjustment;
 
   // Make a solid frame of 0.5 thickness
   b.rectMode( b.CORNER ); // default
@@ -752,15 +758,16 @@ function assAspiration(_aspiration){
     b.typo(aspFrame, 'hyphenation', false);
     italicizeWordsInFrame (aspFrame, 1);
     typesetURLs (aspFrame, aspirationString);
-      if (aspFrame.overflows == true){
-    aspFrame2 =b.text(" ", colWidth+colSpacing+36,colTop,colWidth,fullHeight-colTop);
-    b.linkTextFrames(aspFrame,aspFrame2);
-        bolding(aspFrame2, 0, 0);
-    bolding(aspFrame2, 0, 1);
+
+    if (aspFrame.overflows == true){
+      aspFrame2 =b.text(" ", colWidth+colSpacing+36,colTop,colWidth,fullHeight-colTop);
+      b.linkTextFrames(aspFrame,aspFrame2);
+      bolding(aspFrame2, 0, 0);
+      bolding(aspFrame2, 0, 1);
       b.typo(aspFrame2, 'hyphenation', false);
-          typesetURLs (aspFrame2, aspirationString);
-          addrefx=36+colWidth+colSpacing+colWidth+colSpacing;
-        }
+      typesetURLs (aspFrame2, aspirationString);
+      addrefx=36+colWidth+colSpacing+colWidth+colSpacing;
+    }
   }
 }
 
@@ -786,8 +793,6 @@ function assAdditionalReferences (_references){
 }
 
 
-
-
 function objLength(obj){
   var i=0;
   for (var x in obj){
@@ -798,12 +803,15 @@ function objLength(obj){
   return i;
 }
 
+
 //IMAGE LAYOUT FUNCTIONS
 //==========================================================
 // Draw the Aspirational images, arranged according to the layout ID.
 function drawImageLayout (whichImageLayout, images) {
+  
   var nImageLayouts = imageLayouts.length;
   if ((whichImageLayout >= 0) && (whichImageLayout < nImageLayouts)) {
+    
     var anImageLayout = imageLayouts[whichImageLayout];
     var nRectsInLayout = anImageLayout.length;
     nRectsInLayout = b.min(nRectsInLayout, 6);
@@ -872,7 +880,6 @@ function drawSmallImageLayoutFrames (whichImageLayout){
   }
 
   b.popMatrix();
-
 }
 
 
@@ -897,8 +904,8 @@ function drawImageFrameNumeral (nx, ny, num, numeralSize){
 }
 
 //===================================
-// DO IT!
-b.go(b.MODESILENT);
+// DO IT! (*quietly!*)
+b.go (b.MODESILENT);
 
 
 

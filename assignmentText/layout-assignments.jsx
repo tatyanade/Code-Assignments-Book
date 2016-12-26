@@ -251,10 +251,9 @@ function setup(){
 
   // parse JSON
   jsonData = b.JSON.decode( jsonString );
-    jLength = objLength(jsonData);
-  b.println("jLength:"+jLength);
+  jLength = objLength(jsonData);
 
-  //b.println("jsonLength:"+jLength);
+  if (bVerbose) { b.println("jLength:"+jLength);}
   b.page(pCounter);
 }
 
@@ -262,7 +261,7 @@ function setup(){
 //==========================================================
 function draw() {
 
-  b.println(jsonData);
+  if (bVerbose) { b.println(jsonData);}
 
   //images
   imageArray = new Array(jLength);
@@ -274,23 +273,24 @@ function draw() {
 
   //to auto generate doc length based on json
   pages = (jLength*4);
-  b.println("pages: "+pages);
+  if (bVerbose) { b.println("pages: "+pages);}
 
   // add new pages
   for (var i = 1; i < pages; i++) {
     b.addPage();
-          //RESET EVERYTHING
-      pCounter=pCounter+1; //page counter
-      b.println("pageCounter:"+pCounter);
+    
+    //RESET EVERYTHING
+    pCounter=pCounter+1; //page counter
+    if (bVerbose) { b.println("pageCounter:"+pCounter);}
   };
 
   //==========================================================
   //Assignment title page add image
   for (var i = 0; i < (pCounter/4); i++) {
     b.page((i*4)+assStartPage);
-          //ADD PAGE
+    //ADD PAGE
 
-    // Get the i'th full-page image, using default if N/A
+    // Get the i'th full-page image, using the default image if N/A
     var fullImage = "defaults/default_fullpage_666x522.jpg";
     if(jsonData[i].fullpageimage != null){
       fullImage=jsonData[i].fullpageimage;
@@ -306,7 +306,7 @@ function draw() {
 
     // Render the main title, overlaying the full-page image. 
     assTitle1(jsonData[i].titles, halfInch, 441, jsonData[i].titlegray);
-    b.println("New page: "+assTitle1);
+    if (bVerbose) { b.println("New page: "+assTitle1); }
   };
 
   // Not sure why this was here; it was placing a redundant copy of the title text.
@@ -367,7 +367,7 @@ function draw() {
 
   //==========================================================
   //Assignment image pages
-    for (var i = 0; i < (pCounter/4); i++) {
+  for (var i = 0; i < (pCounter/4); i++) {
     b.page((i*4+2)+assStartPage);
 
     var imagesString = jsonData[i].image;
@@ -504,21 +504,20 @@ function computeWordsToItalicize(someText) {
 
         // Find the character at which this particular match occurs.
         var charOfResulti = someText.indexOf(cleanedResulti);
-    b.println("charOfResulti"+charOfResulti);
+        b.println("charOfResulti"+charOfResulti);
+
         // Find the number of words up to that point.
         var portionOfMyTextBeforeResulti;
         var nWordsBeforeResulti;
         if(charOfResulti==0){
           nWordsBeforeResulti=0;
-        }else{
+        } else{
           // Find the number of words up to that point.
           var portionOfMyTextBeforeResulti = someText.substring(0, charOfResulti);
           b.println("portionOfMyTextBeforeResulti:"+portionOfMyTextBeforeResulti);
           var nWordsBeforeResulti = getNumberOfWordsInString (portionOfMyTextBeforeResulti);
           b.println("nWordsBeforeResulti:"+nWordsBeforeResulti);
         }
-
-
 
         var nWordsInCleanedResulti = getNumberOfWordsInString (cleanedResulti);
         b.println("nWordsInCleanedResulti:"+nWordsInCleanedResulti);
@@ -751,7 +750,6 @@ function assAspiration(_aspiration){
     var aspirationString = aspirationHeading+"\r"+_aspiration+"\n";
     aspFrame =b.text(aspirationString, 36,colTop,colWidth,fullHeight-colTop);
 
-
     bolding(aspFrame, 0, 0);
     bolding(aspFrame, 0, 1);
 
@@ -770,7 +768,6 @@ function assAspiration(_aspiration){
     }
   }
 }
-
 
 
 function assAdditionalReferences (_references){
@@ -796,7 +793,7 @@ function assAdditionalReferences (_references){
 function objLength(obj){
   var i=0;
   for (var x in obj){
-    if(obj.hasOwnProperty(x)){
+    if (obj.hasOwnProperty(x)){
       i++;
     }
   }
@@ -906,7 +903,6 @@ function drawImageFrameNumeral (nx, ny, num, numeralSize){
 //===================================
 // DO IT! (*quietly!*)
 b.go (b.MODESILENT);
-
 
 
 

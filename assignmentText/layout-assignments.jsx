@@ -42,17 +42,17 @@ var stemHeading  = "STEM topics: ";
 var artsHeading  = "Arts topics: ";
 var learnHeading = "Learning Objectives - Students will: ";
 
-var bVerbose = false;
+var bVerbose = true;
 
 //-------------------------------------------------------------------
 /*
-  IMAGE LAYOUTS (Do not delete):
-  default_fullpage_666x522.jpg
-  default_onethird_282x136.jpg
-  default_quarter_282x210.jpg
-  default_shorthalf_576x210.jpg
-  default_tallhalf_282x432.jpg
-  default_twothirds_282x284.jpg
+IMAGE LAYOUTS (Do not delete):
+default_fullpage_666x522.jpg
+default_onethird_282x136.jpg
+default_quarter_282x210.jpg
+default_shorthalf_576x210.jpg
+default_tallhalf_282x432.jpg
+default_twothirds_282x284.jpg
 */
 
 // Point (1/72 in.) dimensions for default images:
@@ -242,6 +242,7 @@ var imageLayouts = [
 
 var defaultImg;
 var imageArray =[];
+var imageBorderArray =[];
 var indicesOfWordsToItalicize = [];
 
 //==========================================================
@@ -253,7 +254,7 @@ function setup(){
   jsonData = b.JSON.decode( jsonString );
   jLength = objLength(jsonData);
 
-  if (bVerbose) { b.println("jLength:"+jLength);}
+  if (bVerbose) {b.println("jLength:"+jLength);}
   b.page(pCounter);
 }
 
@@ -261,28 +262,29 @@ function setup(){
 //==========================================================
 function draw() {
 
-  if (bVerbose) { b.println(jsonData);}
+  if (bVerbose) {b.println(jsonData);}
 
   //images
   imageArray = new Array(jLength);
+  imageBorderArray = new Array(jLength);
   for(var j =0; j<imageArray.length;j++){
     imageArray[j]="defaults/default_fullpage_666x522.jpg";
-    //if (bVerbose) {b.println(imageArray[j]);}
+    if (bVerbose) {b.println(imageArray[j]);}
   }
 
 
   //to auto generate doc length based on json
   pages = (jLength*4);
-  if (bVerbose) { b.println("pages: "+pages);}
+  if (bVerbose) {b.println("pages: "+pages);}
 
   // add new pages
   for (var i = 1; i < pages; i++) {
     b.addPage();
-    
+
     //RESET EVERYTHING
     pCounter=pCounter+1; //page counter
-    if (bVerbose) { b.println("pageCounter:"+pCounter);}
-  };
+    if (bVerbose) {b.println("pageCounter:"+pCounter);}
+  }
 
   //==========================================================
   //Assignment title page add image
@@ -297,31 +299,31 @@ function draw() {
       if (bVerbose) {b.println("fullImage = " + fullImage);}
     }
 
-    // Render the full-page image. 
+    // Render the full-page image.
     b.pushMatrix();
     b.translate(0-b.width, 0);
     var fullImageArray = [fullImage];
-    drawImageLayout (0, fullImageArray);
+    drawImageLayout (0, fullImageArray,[0]);
     b.popMatrix();
 
-    // Render the main title, overlaying the full-page image. 
+    // Render the main title, overlaying the full-page image.
     assTitle1(jsonData[i].titles, halfInch, 441, jsonData[i].titlegray);
-    if (bVerbose) { b.println("New page: "+assTitle1); }
-  };
+    if (bVerbose) {b.println("New page: "+jsonData[i].titles);}
+  }
 
   // Not sure why this was here; it was placing a redundant copy of the title text.
-  // Disabled by GL on 12/25/2016.  
-  var bPlaceSecondCopyOfTitleText = false; 
+  // Disabled by GL on 12/25/2016.
+  var bPlaceSecondCopyOfTitleText = false;
   if (bPlaceSecondCopyOfTitleText){
     for (var i = 0; i < Math.floor(((pages+1)-assStartPage)/4); i++) {
       b.page((i*4)+assStartPage);
       assTitle1(jsonData[i].titles, halfInch, 441, jsonData[i].titlegray);
-    };
+    }
   }
 
   //==========================================================
   // Assignment brief page
-    for (var i = 0; i < (pCounter/4); i++) {
+  for (var i = 0; i < (pCounter/4); i++) {
     b.page((i*4+1)+assStartPage);
 
     //TITLE
@@ -352,17 +354,17 @@ function draw() {
     // If the "Making it Meaningful" text is VERY long,
     // advance its visual position, by linking it
     // into the bottom of the text frame for "Variations".
-//     if (bVerbose) {b.println("--- Meaningful (Linking 1)");}
-//     if (!isEmpty(meaningfulText)){
-//       var nMeaningfulWords = getNumberOfWordsInString (meaningfulText);
-//       if (nMeaningfulWords > 200){
-//         if (bVerbose) {b.println("--- Meaningful (Linking 2)");}
-//         b.linkTextFrames(varFrame,makeFrame);
-//       }
-//     }
+    //     if (bVerbose) {b.println("--- Meaningful (Linking 1)");}
+    //     if (!isEmpty(meaningfulText)){
+    //       var nMeaningfulWords = getNumberOfWordsInString (meaningfulText);
+    //       if (nMeaningfulWords > 200){
+    //         if (bVerbose) {b.println("--- Meaningful (Linking 2)");}
+    //         b.linkTextFrames(varFrame,makeFrame);
+    //       }
+    //     }
 
     if (bVerbose) {b.println("--- End: " + jsonData[i].titles);}
-  };
+  }
 
 
   //==========================================================
@@ -371,23 +373,32 @@ function draw() {
     b.page((i*4+2)+assStartPage);
 
     var imagesString = jsonData[i].image;
+
     if (imagesString != null){
       var stringArray= b.split(imagesString,"\n");
       for(var n=0;n<stringArray.length;n++){
         imageArray[n]= b.trim (stringArray[n]);
       }
-    }
+      var imagesborderString = jsonData[i].imageborders;
+      if (imagesborderString != null){
+        var stringArray2= b.split(imagesborderString,"\n");
+        for(var n=0;n<stringArray2.length;n++){
+          imageBorderArray[n]= parseInt(b.trim(stringArray2[n]));
+        }
+      }
 
-    // Render the images of aspirational projects for this Assignment.
-    b.pushMatrix();
-    b.translate(0-b.width, 0);
-    drawImageLayout (jsonData[i].layout, imageArray);
-    b.popMatrix();
-  };
+      // Render the images of aspirational projects for this Assignment.
+      b.pushMatrix();
+      b.translate(0-b.width, 0);
+      b.println("imageBorderArray:"+imageBorderArray);
+      drawImageLayout (jsonData[i].layout, imageArray, imageBorderArray);
+      b.popMatrix();
+    }
+  }
 
   //==========================================================
   //Image reference page
-    for (var i = 0; i < (pCounter/4); i++) {
+  for (var i = 0; i < (pCounter/4); i++) {
     b.page((i*4+3)+assStartPage);
 
     // Draw the miniature version of the aspirational-image frames (rects and text only):
@@ -400,11 +411,10 @@ function draw() {
     assAspiration(jsonData[i].aspirationcaptions);
 
     // ADDITIONAL REFERENCES
-    assAdditionalReferences (jsonData[i].additionalreferences);
-  };
+    assAdditionalReferences(jsonData[i].additionalreferences);
+  }
+
 };
-
-
 
 //==========================================================
 //FORMATTING
@@ -504,7 +514,7 @@ function computeWordsToItalicize(someText) {
 
         // Find the character at which this particular match occurs.
         var charOfResulti = someText.indexOf(cleanedResulti);
-        b.println("charOfResulti"+charOfResulti);
+        //b.println("charOfResulti"+charOfResulti);
 
         // Find the number of words up to that point.
         var portionOfMyTextBeforeResulti;
@@ -514,13 +524,13 @@ function computeWordsToItalicize(someText) {
         } else{
           // Find the number of words up to that point.
           var portionOfMyTextBeforeResulti = someText.substring(0, charOfResulti);
-          b.println("portionOfMyTextBeforeResulti:"+portionOfMyTextBeforeResulti);
+          //b.println("portionOfMyTextBeforeResulti:"+portionOfMyTextBeforeResulti);
           var nWordsBeforeResulti = getNumberOfWordsInString (portionOfMyTextBeforeResulti);
-          b.println("nWordsBeforeResulti:"+nWordsBeforeResulti);
+        //  b.println("nWordsBeforeResulti:"+nWordsBeforeResulti);
         }
 
         var nWordsInCleanedResulti = getNumberOfWordsInString (cleanedResulti);
-        b.println("nWordsInCleanedResulti:"+nWordsInCleanedResulti);
+      //  b.println("nWordsInCleanedResulti:"+nWordsInCleanedResulti);
         // Accrue the indices (in the original text) of the individual result words.
         // print(i + ".\t" + nWordsInCleanedResulti + "\t|" + cleanedResulti + "|\t" + nWordsInResulti);
         for (var j = 0; j < nWordsInCleanedResulti; j++) {
@@ -635,13 +645,13 @@ function assMeta(_level, _stemTags, _artsTags, _learning){
   b.textFont("Atlas Grotesk","Regular");
   b.textAlign(Justification.LEFT_ALIGN, VerticalJustification.BOTTOM_ALIGN);
 
-  // var metaText = levelHeading + _level + "\r"; 
+  // var metaText = levelHeading + _level + "\r";
   // +"\r"+"STEM tags: "+_stemTags+"\r"+"Arts tags: "+_artsTags+"\r"+"Learning Objectives - Students will: "+"\n"+_learning;
   var metaText = stemHeading + _stemTags + "\r";
   metaText += artsHeading + _artsTags + "\r";
   metaText += learnHeading + "\r" + _learning + "\n\r";
 
-  var yAdjustment = 5; 
+  var yAdjustment = 5;
   metaLeastDy = 240;
   metaFrame = b.text(metaText, 36,colTop+metaLeastDy+yAdjustment,colWidth,(fullHeight-colTop)-metaLeastDy);
   b.typo(metaFrame, "fontStyle", "Light Italic");
@@ -804,11 +814,11 @@ function objLength(obj){
 //IMAGE LAYOUT FUNCTIONS
 //==========================================================
 // Draw the Aspirational images, arranged according to the layout ID.
-function drawImageLayout (whichImageLayout, images) {
-  
+function drawImageLayout (whichImageLayout, images, imageBorders) {
+
   var nImageLayouts = imageLayouts.length;
   if ((whichImageLayout >= 0) && (whichImageLayout < nImageLayouts)) {
-    
+
     var anImageLayout = imageLayouts[whichImageLayout];
     var nRectsInLayout = anImageLayout.length;
     nRectsInLayout = b.min(nRectsInLayout, 6);
@@ -822,8 +832,18 @@ function drawImageLayout (whichImageLayout, images) {
       b.println(images[i]);
 
       b.noFill();
-      b.noStroke();
+
+      //if 1 in array for image border
+      if(imageBorders[i] == 1){
+        b.strokeWeight(0.5);
+        b.stroke(204,204,204);
+      } else{
+        //put stroke if 0 no stroke
+        b.noStroke();
+      }
+
       b.image (String(images[i]), rx, ry, rw, rh);
+
     }
   }
 }

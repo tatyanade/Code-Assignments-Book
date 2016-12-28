@@ -345,7 +345,13 @@ function draw() {
     //MAKING IT MEANINGFUL.
     if (bVerbose) {b.println("--- Meaningful");}
     var meaningfulText = jsonData[i].makingitmeaningful;
-    assMeaningful(meaningfulText);
+    if (meaningfulText != null){
+      var bDoHyphenation = false; 
+      if (jsonData[i].hyphenatemim != null){
+        bDoHyphenation = (jsonData[i].hyphenatemim == 1);
+      }
+      assMeaningful(meaningfulText, bDoHyphenation);
+    }
 
     // If the "Making it Meaningful" text is VERY long,
     // advance its visual position, by linking it
@@ -723,7 +729,7 @@ function assVariations(_variations, _advancedstudents){
 }
 
 
-function assMeaningful(_meaningful){
+function assMeaningful(_meaningful, _bDoHyphenation){
   if (!isEmpty(_meaningful)){
 
     // Note: we do this FIRST in order to strip out the markup tags.
@@ -733,13 +739,14 @@ function assMeaningful(_meaningful){
     b.textLeading(12);
     b.textFont("Atlas Grotesk","Regular");
     b.textAlign(Justification.LEFT_ALIGN, VerticalJustification.TOP_ALIGN);
-    var making = meaningfulHeading +"\r"+_meaningful;
-    makeFrame = b.text(making, 36+ colWidth*2+colSpacing*2,colTop,colWidth,fullHeight-colTop);
+    var making = meaningfulHeading + "\r" +_meaningful;
+    makeFrame = b.text(making, 36+colWidth*2+colSpacing*2, colTop,colWidth,fullHeight-colTop);
     bolding(makeFrame, 0, 0);
     bolding(makeFrame, 0, 1);
     bolding(makeFrame, 0, 2);
 
-    b.typo(makeFrame, 'hyphenation', false);
+    // hyphenatemim
+    b.typo(makeFrame, 'hyphenation', _bDoHyphenation);
     italicizeWordsInFrame (makeFrame, 1);
   }
 }

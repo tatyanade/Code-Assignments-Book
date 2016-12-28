@@ -306,20 +306,16 @@ function draw() {
     drawImageLayout (0, fullImageArray,[0]);
     b.popMatrix();
 
-    // Render the main title, overlaying the full-page image.
-    assTitle1(jsonData[i].titles, halfInch, 441, jsonData[i].titlegray);
+    // Render the main title, which overlays the full-page image.
+    // (Fetch the gray level of the title text color from the JSON.)
+    var titleTextGrayLevel = 128; 
+    if (jsonData[i].titlegray != null){
+      titleTextGrayLevel = jsonData[i].titlegray;
+    }
+    assTitle1(jsonData[i].titles, halfInch, 441, titleTextGrayLevel);
     if (bVerbose) {b.println("New page: "+jsonData[i].titles);}
   }
 
-  // Not sure why this was here; it was placing a redundant copy of the title text.
-  // Disabled by GL on 12/25/2016.
-  var bPlaceSecondCopyOfTitleText = false;
-  if (bPlaceSecondCopyOfTitleText){
-    for (var i = 0; i < Math.floor(((pages+1)-assStartPage)/4); i++) {
-      b.page((i*4)+assStartPage);
-      assTitle1(jsonData[i].titles, halfInch, 441, jsonData[i].titlegray);
-    }
-  }
 
   //==========================================================
   // Assignment brief page

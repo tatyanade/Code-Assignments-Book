@@ -1,15 +1,15 @@
 // Basil.js generator for "Assignment" pages
-// Tega Brain & Golan Levin, 2015-2016
+// Tega Brain & Golan Levin, 2015-2017
 
 // References:
+// http://basiljs.ch/download/
 // http://basiljs.ch/reference/
 // http://basiljs.ch/wp-content/uploads/2013/03/basiljs_b_typo_cheatsheet_v0_2.pdf
-// http://basiljs.ch/download/
 #includepath "~/Documents/;%USERPROFILE%Documents";
 #include "basiljs/bundle/basil.js";
 
-// to load an external json file. 
 // See b.loadString("data-assignments.json") in setup(), where it belongs.
+// Warnings are thrown if variables dependent on b. are initialized outside of setup.
 var jsonString;
 
 // Note: using advice from the following to check for null: 
@@ -32,7 +32,6 @@ var colWidth   = (576-2*colSpacing)/3;
 var colTop     = 100;
 var halfInch   = 36;
 var addrefx    = halfInch+colWidth+colSpacing;
-
 
 var briefHeading      = "Brief";
 var advancedHeading   = "Advanced Students";
@@ -274,7 +273,6 @@ function draw() {
     if (bVerbose) {b.println(imageArray[j]);}
   }
 
-
   //to auto generate doc length based on json
   pages = (jLength*4);
   if (bVerbose) {b.println("pages: "+pages);}
@@ -288,7 +286,7 @@ function draw() {
     if (bVerbose) {b.println("pageCounter:"+pCounter);}
   }
 
-  //==========================================================
+  //-------------------------------------------------------
   //Assignment title page add image
   for (var i = 0; i < (pCounter/4); i++) {
     b.page((i*4)+assStartPage);
@@ -319,7 +317,7 @@ function draw() {
   }
 
 
-  //==========================================================
+  //-------------------------------------------------------
   // Assignment brief page
   for (var i = 0; i < (pCounter/4); i++) {
     b.page((i*4+1)+assStartPage);
@@ -650,6 +648,7 @@ function assBrief(_brief){
   if (!isEmpty(_brief)){
 
     // Note: we do this FIRST in order to strip out the markup tags.
+    if(_brief){_brief = _brief.replace("\r", "");}
     _brief = computeWordsToItalicize(_brief);
 
     b.textSize(8);
@@ -659,7 +658,7 @@ function assBrief(_brief){
     b.fill (0,0,0);
 
     var brief = briefHeading + "\r" + _brief; 
-    briefFrame = b.text(brief, 36,colTop,colWidth,246);
+    briefFrame = b.text(brief, 36,colTop,colWidth,250);
 
     bolding(briefFrame, 0, 0);
     briefFrame.name = "brief";

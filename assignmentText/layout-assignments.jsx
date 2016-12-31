@@ -8,8 +8,12 @@
 #includepath "~/Documents/;%USERPROFILE%Documents";
 #include "basiljs/bundle/basil.js";
 
-// to load an external json file use
-var jsonString = b.loadString("data-assignments.json");
+// to load an external json file. 
+// See b.loadString("data-assignments.json") in setup(), where it belongs.
+var jsonString;
+
+// Note: using advice from the following to check for null: 
+// http://stackoverflow.com/questions/5515310/is-there-a-standard-function-to-check-for-null-undefined-or-blank-variables-in
 
 //PAGES
 //var pages=14;/*26;*/ //how many pages? Pages in addition to the 1 the template.
@@ -38,8 +42,8 @@ var aspirationHeading = "Noteworthy Examples";
 var referenceHeading  = "Additional References";
 
 var levelHeading = "Level: ";
-var stemHeading  = "STEM topics: ";
-var artsHeading  = "Arts topics: ";
+var stemHeading  = "STEM Topics: ";
+var artsHeading  = "Arts Topics: ";
 var learnHeading = "Learning Objectives - Students will: ";
 
 var bVerbose = true;
@@ -91,8 +95,6 @@ var Gy = 332;
 var Hy = Gy;
 var yfull = -9;
 
-//color list
-var grey = b.color(96,96,96);
 
 // Layout templates for the illustration pages:
 var imageLayouts = [
@@ -248,14 +250,14 @@ var indicesOfWordsToItalicize = [];
 //==========================================================
 function setup(){
 
-  b.textFont("Atlas Grotesk","Regular"); // set default font
-
-  // parse JSON
-  jsonData = b.JSON.decode( jsonString );
-  jLength = objLength(jsonData);
+  // Load & parse the JSON exported from the Google spreadsheet.
+  jsonString = b.loadString("data-assignments.json");
+  jsonData   = b.JSON.decode( jsonString );
+  jLength    = objLength(jsonData);
 
   if (bVerbose) {b.println("jLength:"+jLength);}
   b.page(pCounter);
+  b.textFont("Atlas Grotesk","Regular"); // set default font
 }
 
 
@@ -336,7 +338,9 @@ function draw() {
 
     //META DATA
     if (bVerbose) {b.println("--- Meta");}
-    assMeta(jsonData[i].level,jsonData[i].tagsstem, jsonData[i].tagsarts, jsonData[i].learningobjectives);
+    assMeta(jsonData[i].tagsstem, 
+            jsonData[i].tagsarts, 
+            jsonData[i].learningobjectives);
 
     //VARIATIONS & ADVANCED STUDENTS
     if (bVerbose) {b.println("--- Variations & Advanced");}
@@ -345,10 +349,10 @@ function draw() {
     //MAKING IT MEANINGFUL.
     if (bVerbose) {b.println("--- Meaningful");}
     var meaningfulText = jsonData[i].makingitmeaningful;
-    if (meaningfulText != null){
+    if (!isEmpty(meaningfulText)) { 
       var bDoHyphenation = false; 
       if (jsonData[i].hyphenatemim != null){
-        bDoHyphenation = (jsonData[i].hyphenatemim == 1);
+        bDoHyphenation = (jsonData[i].hyphenatemim === 1);
       }
       assMeaningful(meaningfulText, bDoHyphenation);
     }
@@ -429,25 +433,43 @@ function italicizeWordsInFrame(whichFrame, startParagraphIndex){
 
 function italicizing(tFrame, pNumber, wNumber){
   var paraV = b.paragraphs(tFrame);
-  var wordsV = b.words(paraV[pNumber]);
-  b.typo(wordsV[wNumber], "fontStyle", "Regular Italic");
+  if (paraV != null){
+    var wordsV = b.words(paraV[pNumber]);
+    if (wordsV != null){
+      if (wordsV[wNumber] != null){
+        b.typo(wordsV[wNumber], "fontStyle", "Regular Italic");
+      }
+    }
+  }
 }
 
 function bolding(tFrame, pNumber, wNumber){
   var paraV = b.paragraphs(tFrame);
-  var wordsV = b.words(paraV[pNumber]);
-  b.typo(wordsV[wNumber], "fontStyle", "Bold");
+  if (paraV != null){
+    var wordsV = b.words(paraV[pNumber]);
+    if (wordsV != null){
+      if (wordsV[wNumber] != null){
+        b.typo(wordsV[wNumber], "fontStyle", "Bold");
+      }
+    }
+  }
 }
 
 function iBolding(tFrame, pNumber, wNumber){
   var paraV = b.paragraphs(tFrame);
-  var wordsV = b.words(paraV[pNumber]);
-  b.typo(wordsV[wNumber], "fontStyle", "Bold Italic");
+  if (paraV != null){
+    var wordsV = b.words(paraV[pNumber]);
+    if (wordsV != null){
+      if (wordsV[wNumber] != null){
+        b.typo(wordsV[wNumber], "fontStyle", "Bold Italic");
+      }
+    }
+  }
 }
 
 
 function typesetURLs (theFrame, theString){
-  // Set the URLs in a light-colored thin font.
+  // Set the URLs in a thin, light-colored Italic font.
 
   // Extract the URLs
   var urlRegex = /http(.*?)\n/g;
@@ -455,20 +477,29 @@ function typesetURLs (theFrame, theString){
   if (extractedURLs !== null) {
 
     var allTheCharactersInThisFrame = b.characters(theFrame);
-    var nURLs = extractedURLs.length;
+    if (allTheCharactersInThisFrame != null){
 
-    // For each URL
-    for (var i = 0; i < nURLs; i++) {
+      var nURLs = extractedURLs.length;
+      var urlGrey = b.color(96,96,96);
 
-      // Get the start and end character indices
-      var aURL = extractedURLs[i];
-      var startCharIndex = theString.indexOf(aURL);
-      var endCharIndex = startCharIndex + aURL.length;
+      // For each URL
+      for (var i = 0; i < nURLs; i++) {
 
-      // For each of those characters, color it.
-      for(var j = startCharIndex; j < endCharIndex; j++){
-        b.typo(allTheCharactersInThisFrame[j], "fontStyle", "Light Italic");
-        b.typo(allTheCharactersInThisFrame[j], 'fillColor', grey);
+        // Get the start and end character indices
+        var aURL = extractedURLs[i];
+        if (aURL.length > 0){
+          var startCharIndex = theString.indexOf(aURL);
+          var endCharIndex = startCharIndex + aURL.length;
+
+          // For each of those characters, color it.
+          for (var j = startCharIndex; j < endCharIndex; j++){
+            var jthCharacterObject = allTheCharactersInThisFrame[j];
+            if (jthCharacterObject != null){
+              b.typo(jthCharacterObject, "fontStyle", "Light Italic");
+              b.typo(jthCharacterObject, 'fillColor', urlGrey);
+            }
+          }
+        }
       }
     }
   }
@@ -532,7 +563,7 @@ function computeWordsToItalicize(someText) {
         }
 
         var nWordsInCleanedResulti = getNumberOfWordsInString (cleanedResulti);
-      //  b.println("nWordsInCleanedResulti:"+nWordsInCleanedResulti);
+        // b.println("nWordsInCleanedResulti:"+nWordsInCleanedResulti);
         // Accrue the indices (in the original text) of the individual result words.
         // print(i + ".\t" + nWordsInCleanedResulti + "\t|" + cleanedResulti + "|\t" + nWordsInResulti);
         for (var j = 0; j < nWordsInCleanedResulti; j++) {
@@ -603,13 +634,13 @@ function assTitle2(_titles, _x, _y){
 }
 
 
-function assDescription(description){
-  if (!isEmpty(description)){
+function assDescription(_description){
+  if (!isEmpty(_description)){
     b.textSize(12);
     b.textFont("Atlas Grotesk","Regular");
     b.textAlign(Justification.LEFT_ALIGN, VerticalJustification.TOP_ALIGN);
     b.fill(0,0,0);
-    desFrame = b.text(description, 36,68,550,16);
+    desFrame = b.text(_description, 36,68,550,16);
     desFrame.name = "description";
   }
 }
@@ -627,105 +658,125 @@ function assBrief(_brief){
     b.textAlign(Justification.LEFT_ALIGN, VerticalJustification.TOP_ALIGN);
     b.fill (0,0,0);
 
-    var brief = briefHeading+"\r"+_brief+"\n"+"\r";
-    briefFrame =b.text(brief, 36,colTop,colWidth,280);
+    var brief = briefHeading + "\r" + _brief; 
+    briefFrame = b.text(brief, 36,colTop,colWidth,246);
 
     bolding(briefFrame, 0, 0);
     briefFrame.name = "brief";
 
-    b.typo(briefFrame, 'hyphenation', false);
-    italicizeWordsInFrame (briefFrame, 1);
+    if (briefFrame != null){
+      b.typo(briefFrame, "hyphenation", false);
+      italicizeWordsInFrame (briefFrame, 1);
+    }
   }
 }
 
 
-function assMeta(_level, _stemTags, _artsTags, _learning){
-  // Note: \r, (not \n) is used to distinguish new paragraphs by Basil.js.
+function assMeta(_stemTags, _artsTags, _learning){
+  if ((!isEmpty(_stemTags)) || 
+      (!isEmpty(_artsTags)) ||
+      (!isEmpty(_learning))) {
 
-  b.textSize(7);
-  b.textLeading(9);
-  b.textFont("Atlas Grotesk","Regular");
-  b.textAlign(Justification.LEFT_ALIGN, VerticalJustification.BOTTOM_ALIGN);
+    // Note: \r, (not \n) is used by Basil.js to distinguish new paragraphs.
+    if(_stemTags){_stemTags = _stemTags.replace("\r", "");}
+    if(_artsTags){_artsTags = _artsTags.replace("\r", "");}
+    if(_learning){_learning = _learning.replace("\r", "");}
 
-  // var metaText = levelHeading + _level + "\r";
-  // +"\r"+"STEM tags: "+_stemTags+"\r"+"Arts tags: "+_artsTags+"\r"+"Learning Objectives - Students will: "+"\n"+_learning;
-  var metaText = stemHeading + _stemTags + "\r";
-  metaText += artsHeading + _artsTags + "\r";
-  metaText += learnHeading + "\r" + _learning + "\n\r";
+    b.textSize(7);
+    b.textLeading(9);
+    b.textFont("Atlas Grotesk","Regular");
+    b.textAlign(Justification.LEFT_ALIGN, VerticalJustification.BOTTOM_ALIGN);
 
-  var yAdjustment = 5;
-  metaLeastDy = 240;
-  metaFrame = b.text(metaText, 36,colTop+metaLeastDy+yAdjustment,colWidth,(fullHeight-colTop)-metaLeastDy);
-  b.typo(metaFrame, "fontStyle", "Light Italic");
-  b.typo(metaFrame, 'hyphenation', false);
+    var metaText = ""; 
+    metaText += stemHeading + _stemTags + "\r";
+    metaText += artsHeading + _artsTags + "\r";
+    metaText += learnHeading + "\n" + _learning;
+    metaText += "\n"; // (adds a space below bottom-justified text)
 
-  iBolding(metaFrame, 0, 0); // bold levelHeading
-  iBolding(metaFrame, 1, 0); // bold stemHeading
-  iBolding(metaFrame, 1, 1);
-  iBolding(metaFrame, 2, 0); // bold artsHeading
-  iBolding(metaFrame, 2, 1);
-  iBolding(metaFrame, 3, 0); // bold learnHeading
-  iBolding(metaFrame, 3, 1);
+    metaLeastDy = 240;
+    metaFrame = b.text(metaText, 
+      36, colTop+metaLeastDy-5,
+      colWidth, (fullHeight-colTop)-metaLeastDy);
+    
+    b.typo(metaFrame, "fontStyle", "Light Italic");
+    b.typo(metaFrame, "hyphenation", false);
+    b.typo(metaFrame, "leftIndent",  10);
+    b.typo(metaFrame, "rightIndent", 10);
 
-  metaFrame.name = "meta";
-  b.typo(metaFrame,"leftIndent",  10);
-  b.typo(metaFrame,"rightIndent", 10);
+    // Bold the 0'th and 1'st words in the 0th, 1st, and 2nd
+    // paragraphs -- corresponding to the words "STEM Topics:",
+    // "Arts Topics:", and "Learning Objectives": 
+    //
+    iBolding(metaFrame, 0, 0); // bold stemHeading
+    iBolding(metaFrame, 0, 1);
+    iBolding(metaFrame, 1, 0); // bold artsHeading
+    iBolding(metaFrame, 1, 1);
+    iBolding(metaFrame, 2, 0); // bold learnHeading
+    iBolding(metaFrame, 2, 1);
 
-  var nMetaTextLines = b.lines(metaFrame).length;
-  var metaBoxHeight = (nMetaTextLines + 2) * b.textLeading() - yAdjustment;
+    metaFrame.name = "meta";
+    var nMetaTextLines = b.lines(metaFrame).length;
+    var metaBoxHeight = (nMetaTextLines + 3) * b.textLeading() - 4;
 
-  // Make a solid frame of 0.5 thickness
-  b.rectMode( b.CORNER ); // default
-  b.noFill();
-  b.stroke(0,0,0);
-  b.strokeWeight(1);
-  b.rect(36,fullHeight,colWidth,0-metaBoxHeight);
-  b.fill(0,0,0);
-  b.stroke(0);
+    // Make a solid frame border.
+    b.rectMode( b.CORNER ); // default
+    b.noFill();
+    b.stroke(0,0,0);
+    b.strokeWeight(1); 
+    b.rect(36,fullHeight,colWidth,0-metaBoxHeight);
+    b.fill(0,0,0);
+    b.stroke(0);
+  }
 }
 
 
 function assVariations(_variations, _advancedstudents){
-  b.textSize(8);
-  b.textLeading(12);
-  b.textFont("Atlas Grotesk","Regular");
-  b.textAlign(Justification.LEFT_ALIGN, VerticalJustification.TOP_ALIGN);
+  if ((!isEmpty(_variations)) || (!isEmpty(_advancedstudents))) {
 
-  var outputString = "";
-  var nVariationWords = 0;
+    if (_variations){_variations = _variations.replace("\r", "");}
+    if (_advancedstudents){_advancedstudents = _advancedstudents.replace("\r", "");}
 
-  if (!isEmpty(_variations)){
-    outputString += variationsHeading + "\n" + _variations;
-    // nVariationWords = outputString.split(" ").length;
-    nVariationWords = getNumberOfWordsInString (outputString);
+    b.textSize(8);
+    b.textLeading(12);
+    b.textFont("Atlas Grotesk","Regular");
+    b.textAlign(Justification.LEFT_ALIGN, VerticalJustification.TOP_ALIGN);
+
+    var outputString = "";
+    var nVariationWords = 0;
+
+    if (!isEmpty(_variations)){
+      outputString += variationsHeading + "\n" + _variations;
+      // nVariationWords = outputString.split(" ").length;
+      nVariationWords = getNumberOfWordsInString (outputString);
+    }
+    if (!isEmpty(_advancedstudents)){
+      outputString += "\n \n" + advancedHeading + "\n" + _advancedstudents + "\n";
+    }
+
+    // Note: we do this FIRST in order to strip out the markup tags.
+    outputString = computeWordsToItalicize(outputString);
+
+    if ((!isEmpty(_variations)) || (!isEmpty(_advancedstudents))){
+      varFrame = b.text(outputString, 36+colWidth+colSpacing,colTop,colWidth,fullHeight-colTop);
+    } else {
+      // We must *create* the frame, even if the string is empty, because the
+      // b.linkTextFrames(varFrame,makeFrame) under some circumstances.
+      varFrame = b.text(" ", 36+colWidth+colSpacing,colTop,colWidth,fullHeight-colTop);
+    }
+
+    if (!isEmpty(_variations)){
+      bolding(varFrame, 0, 0);
+      bolding(varFrame, 0, 1);
+      bolding(varFrame, 0, 2);
+    }
+    if (!isEmpty(_advancedstudents)){
+      bolding(varFrame, 0, nVariationWords+0);
+      bolding(varFrame, 0, nVariationWords+1);
+    }
+
+    b.typo(varFrame, "hyphenation", false);
+    italicizeWordsInFrame (varFrame, 0);
   }
-  if (!isEmpty(_advancedstudents)){
-    outputString += "\n \n" + advancedHeading + "\n" + _advancedstudents + "\n";
-  }
-
-  // Note: we do this FIRST in order to strip out the markup tags.
-  outputString = computeWordsToItalicize(outputString);
-
-  if ((!isEmpty(_variations)) || (!isEmpty(_advancedstudents))){
-    varFrame = b.text(outputString, 36+colWidth+colSpacing,colTop,colWidth,fullHeight-colTop);
-  } else {
-    // We must *create* the frame, even if the string is empty, because the
-    // b.linkTextFrames(varFrame,makeFrame) under some circumstances.
-    varFrame = b.text(" ", 36+colWidth+colSpacing,colTop,colWidth,fullHeight-colTop);
-  }
-
-  if (!isEmpty(_variations)){
-    bolding(varFrame, 0, 0);
-    bolding(varFrame, 0, 1);
-    bolding(varFrame, 0, 2);
-  }
-  if (!isEmpty(_advancedstudents)){
-    bolding(varFrame, 0, nVariationWords+0);
-    bolding(varFrame, 0, nVariationWords+1);
-  }
-
-  b.typo(varFrame, 'hyphenation', false);
-  italicizeWordsInFrame (varFrame, 0);
 }
 
 
@@ -733,20 +784,22 @@ function assMeaningful(_meaningful, _bDoHyphenation){
   if (!isEmpty(_meaningful)){
 
     // Note: we do this FIRST in order to strip out the markup tags.
+    if (_meaningful){_meaningful = _meaningful.replace("\r", "");}
     _meaningful = computeWordsToItalicize(_meaningful);
 
     b.textSize(8);
     b.textLeading(12);
     b.textFont("Atlas Grotesk","Regular");
     b.textAlign(Justification.LEFT_ALIGN, VerticalJustification.TOP_ALIGN);
+    
     var making = meaningfulHeading + "\r" +_meaningful;
     makeFrame = b.text(making, 36+colWidth*2+colSpacing*2, colTop,colWidth,fullHeight-colTop);
     bolding(makeFrame, 0, 0);
     bolding(makeFrame, 0, 1);
     bolding(makeFrame, 0, 2);
 
-    // hyphenatemim
-    b.typo(makeFrame, 'hyphenation', _bDoHyphenation);
+    // hyphenate 'Making it Meaningful'
+    b.typo(makeFrame, "hyphenation", _bDoHyphenation);
     italicizeWordsInFrame (makeFrame, 1);
   }
 }
@@ -754,6 +807,8 @@ function assMeaningful(_meaningful, _bDoHyphenation){
 
 function assAspiration(_aspiration){
   if (!isEmpty(_aspiration)){
+
+    if(_aspiration){_aspiration = _aspiration.replace("\r", "");}
     _aspiration = computeWordsToItalicize(_aspiration); // Do this first.
 
     b.textSize(8);
@@ -761,21 +816,21 @@ function assAspiration(_aspiration){
     b.textFont("Atlas Grotesk","Regular");
     b.textAlign(Justification.LEFT_ALIGN, VerticalJustification.TOP_ALIGN);
     var aspirationString = aspirationHeading+"\r"+_aspiration+"\n";
-    aspFrame =b.text(aspirationString, 36,colTop,colWidth,fullHeight-colTop);
+    aspFrame = b.text(aspirationString, 36,colTop,colWidth,fullHeight-colTop);
 
     bolding(aspFrame, 0, 0);
     bolding(aspFrame, 0, 1);
 
-    b.typo(aspFrame, 'hyphenation', false);
+    b.typo(aspFrame, "hyphenation", false);
     italicizeWordsInFrame (aspFrame, 1);
     typesetURLs (aspFrame, aspirationString);
 
     if (aspFrame.overflows == true){
-      aspFrame2 =b.text(" ", colWidth+colSpacing+36,colTop,colWidth,fullHeight-colTop);
+      aspFrame2 = b.text(" ", colWidth+colSpacing+36,colTop,colWidth,fullHeight-colTop);
       b.linkTextFrames(aspFrame,aspFrame2);
       bolding(aspFrame2, 0, 0);
       bolding(aspFrame2, 0, 1);
-      b.typo(aspFrame2, 'hyphenation', false);
+      b.typo(aspFrame2, "hyphenation", false);
       typesetURLs (aspFrame2, aspirationString);
       addrefx=36+colWidth+colSpacing+colWidth+colSpacing;
     }
@@ -785,6 +840,8 @@ function assAspiration(_aspiration){
 
 function assAdditionalReferences (_references){
   if (!isEmpty(_references)){
+
+    if(_references){_references = _references.replace("\r", "");}
     _references = computeWordsToItalicize(_references); // Do this first.
 
     b.textSize(8);
@@ -796,7 +853,7 @@ function assAdditionalReferences (_references){
     bolding(addRefFrame, 0, 0);
     bolding(addRefFrame, 0, 1);
 
-    b.typo(addRefFrame, 'hyphenation', false);
+    b.typo(addRefFrame, "hyphenation", false);
     italicizeWordsInFrame (addRefFrame, 1);
     typesetURLs (addRefFrame, theReferencesStrings);
   }

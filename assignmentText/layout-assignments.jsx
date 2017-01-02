@@ -295,7 +295,7 @@ function draw() {
     // Get the i'th full-page image, using the default image if N/A
     var fullImage = "defaults/default_fullpage_666x522.jpg";
     if(jsonData[i].fullpageimage != null){
-      fullImage=jsonData[i].fullpageimage;
+      fullImage = jsonData[i].fullpageimage;
       if (bVerbose) {b.println("fullImage = " + fullImage);}
     }
 
@@ -377,8 +377,8 @@ function draw() {
     b.page((i*4+2)+assStartPage);
 
     var imagesString = jsonData[i].image;
-
     if (imagesString != null){
+
       var stringArray= b.split(imagesString,"\n");
       for(var n=0;n<stringArray.length;n++){
         imageArray[n]= b.trim (stringArray[n]);
@@ -394,8 +394,11 @@ function draw() {
       // Render the images of aspirational projects for this Assignment.
       b.pushMatrix();
       b.translate(0-b.width, 0);
-      b.println("imageBorderArray:"+imageBorderArray);
-      drawImageLayout (jsonData[i].layout, imageArray, imageBorderArray);
+      if (bVerbose){b.println("imageBorderArray:"+imageBorderArray);}
+
+      if (jsonData[i].layout !== null){
+        drawImageLayout (jsonData[i].layout, imageArray, imageBorderArray);
+      }
       b.popMatrix();
     }
   }
@@ -896,7 +899,7 @@ function drawImageLayout (whichImageLayout, images, imageBorders) {
       var ry = aRect[1];
       var rw = aRect[2];
       var rh = aRect[3];
-      b.println(images[i]);
+      if (bVerbose){b.println(images[i]);}
 
       b.noFill();
 
@@ -918,54 +921,56 @@ function drawImageLayout (whichImageLayout, images, imageBorders) {
 
 // Draw the miniature version of the image frames, as a 'key'.
 function drawSmallImageLayoutFrames (whichImageLayout){
-  var shrink = 1.0/8.0;
-  var delta = Ay;
-  var lineWeight = 0.5;
-  var numeralSize = 7;
-  var numeralDx = 4;
-  var numeralDy = 5;
+  if (whichImageLayout){ // null test
 
-  // translate (inset) to top left corner, after margins.
-  b.pushMatrix();
-  b.translate(36,Ay);
+    var shrink = 1.0/8.0;
+    var delta = Ay;
+    var lineWeight = 0.5;
+    var numeralSize = 7;
+    var numeralDx = 4;
+    var numeralDy = 5;
 
-  //--------------
-  // Draw the rectangle that represents the "Cover" image.
-  var rx = (Ax - b.width - delta)*shrink;
-  var ry = (Ay - delta)*shrink;
-  var rw = wshor * shrink;
-  var rh = htall * shrink;
-  drawImageFrameRect (rx,ry, rw,rh, lineWeight);
-  drawImageFrameNumeral (rx+numeralDx, ry+numeralDy, 1, numeralSize);
+    // translate (inset) to top left corner, after margins.
+    b.pushMatrix();
+    b.translate(36,Ay);
 
-  //--------------
-  // Draw the rectangles for the multi-image page
-  var xOffset = wshor+(12*4);
-  var nImageLayouts = imageLayouts.length;
-  if ((whichImageLayout >= 0) && (whichImageLayout < nImageLayouts)) {
-    var anImageLayout = imageLayouts[whichImageLayout];
-    var nRectsInLayout = anImageLayout.length;
+    //--------------
+    // Draw the rectangle that represents the "Cover" image.
+    var rx = (Ax - b.width - delta)*shrink;
+    var ry = (Ay - delta)*shrink;
+    var rw = wshor * shrink;
+    var rh = htall * shrink;
+    drawImageFrameRect (rx,ry, rw,rh, lineWeight);
+    drawImageFrameNumeral (rx+numeralDx, ry+numeralDy, 1, numeralSize);
 
-    for (var i = 0; i < nRectsInLayout; i++) {
-      var aRect = anImageLayout[i];
-      rx = aRect[0];
-      ry = aRect[1];
-      rw = aRect[2];
-      rh = aRect[3];
+    //--------------
+    // Draw the rectangles for the multi-image page
+    var xOffset = wshor+(12*4);
+    var nImageLayouts = imageLayouts.length;
+    if ((whichImageLayout >= 0) && (whichImageLayout < nImageLayouts)) {
+      var anImageLayout = imageLayouts[whichImageLayout];
+      var nRectsInLayout = anImageLayout.length;
 
-      rx = (rx + xOffset - b.width - delta)*shrink;
-      ry = (ry - delta)*shrink;
-      rw = rw * shrink;
-      rh = rh * shrink;
+      for (var i = 0; i < nRectsInLayout; i++) {
+        var aRect = anImageLayout[i];
+        rx = aRect[0];
+        ry = aRect[1];
+        rw = aRect[2];
+        rh = aRect[3];
 
-      drawImageFrameRect (rx, ry, rw, rh, lineWeight);
-      drawImageFrameNumeral (rx+numeralDx, ry+numeralDy, i+2, numeralSize);
+        rx = (rx + xOffset - b.width - delta)*shrink;
+        ry = (ry - delta)*shrink;
+        rw = rw * shrink;
+        rh = rh * shrink;
+
+        drawImageFrameRect (rx, ry, rw, rh, lineWeight);
+        drawImageFrameNumeral (rx+numeralDx, ry+numeralDy, i+2, numeralSize);
+      }
     }
+
+    b.popMatrix();
   }
-
-  b.popMatrix();
 }
-
 
 // Helper function for drawSmallImageLayoutFrames().
 function drawImageFrameRect(rx, ry, rw, rh, lineWeight){
@@ -974,7 +979,6 @@ function drawImageFrameRect(rx, ry, rw, rh, lineWeight){
   b.strokeWeight (lineWeight);
   b.rect(rx, ry, rw, rh);
 }
-
 
 // Helper function for drawSmallImageLayoutFrames().
 function drawImageFrameNumeral (nx, ny, num, numeralSize){
@@ -994,6 +998,7 @@ b.go (b.MODESILENT);
 
 
 // GRAVEYARD:
+// Sample Basil.js program to load & render JSON. 
 // function setup() {
 //   // parse JSON
 //   var jsonData = b.JSON.decode( jsonString );

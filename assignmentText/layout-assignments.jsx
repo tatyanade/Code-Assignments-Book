@@ -12,14 +12,14 @@
 // Warnings are thrown if variables dependent on b. are initialized outside of setup.
 var jsonString;
 
-// Note: using advice from the following to check for null: 
+// Note: using advice from the following to check for null:
 // http://stackoverflow.com/questions/5515310/is-there-a-standard-function-to-check-for-null-undefined-or-blank-variables-in
 
 //PAGES
 //var pages=14;/*26;*/ //how many pages? Pages in addition to the 1 the template.
 var pageCount=0;
 var assStartPage =1; //start assignments on what page?
-var titleFrame, varFrame, desFrame, briefFrame, metaFrame, makeFrame, aspFrame, aspFrame2, addRefFrame;
+var titleFrame, varFrame, desFrame, briefFrame, metaFrame, makeFrame, aspFrame, aspFrame2, addRefFrame, addRefFrame2;
 
 //PAGE COUNTER
 var pCounter=assStartPage; //start page variable
@@ -308,7 +308,7 @@ function draw() {
 
     // Render the main title, which overlays the full-page image.
     // (Fetch the gray level of the title text color from the JSON.)
-    var titleTextGrayLevel = 128; 
+    var titleTextGrayLevel = 128;
     if (jsonData[i].titlegray != null){
       titleTextGrayLevel = jsonData[i].titlegray;
     }
@@ -336,8 +336,8 @@ function draw() {
 
     //META DATA
     if (bVerbose) {b.println("--- Meta");}
-    assMeta(jsonData[i].tagsstem, 
-            jsonData[i].tagsarts, 
+    assMeta(jsonData[i].tagsstem,
+            jsonData[i].tagsarts,
             jsonData[i].learningobjectives);
 
     //VARIATIONS & ADVANCED STUDENTS
@@ -347,8 +347,8 @@ function draw() {
     //MAKING IT MEANINGFUL.
     if (bVerbose) {b.println("--- Meaningful");}
     var meaningfulText = jsonData[i].makingitmeaningful;
-    if (!isEmpty(meaningfulText)) { 
-      var bDoHyphenation = false; 
+    if (!isEmpty(meaningfulText)) {
+      var bDoHyphenation = false;
       if (jsonData[i].hyphenatemim != null){
         bDoHyphenation = (jsonData[i].hyphenatemim === 1);
       }
@@ -657,7 +657,7 @@ function assBrief(_brief){
     b.textAlign(Justification.LEFT_ALIGN, VerticalJustification.TOP_ALIGN);
     b.fill (0,0,0);
 
-    var brief = briefHeading + "\r" + _brief; 
+    var brief = briefHeading + "\r" + _brief;
     briefFrame = b.text(brief, 36,colTop,colWidth,250);
 
     bolding(briefFrame, 0, 0);
@@ -672,7 +672,7 @@ function assBrief(_brief){
 
 
 function assMeta(_stemTags, _artsTags, _learning){
-  if ((!isEmpty(_stemTags)) || 
+  if ((!isEmpty(_stemTags)) ||
       (!isEmpty(_artsTags)) ||
       (!isEmpty(_learning))) {
 
@@ -686,17 +686,17 @@ function assMeta(_stemTags, _artsTags, _learning){
     b.textFont("Atlas Grotesk","Regular");
     b.textAlign(Justification.LEFT_ALIGN, VerticalJustification.BOTTOM_ALIGN);
 
-    var metaText = ""; 
+    var metaText = "";
     metaText += stemHeading + _stemTags + "\r";
     metaText += artsHeading + _artsTags + "\r";
     metaText += learnHeading + "\n" + _learning;
     metaText += "\n"; // (adds a space below bottom-justified text)
 
     metaLeastDy = 240;
-    metaFrame = b.text(metaText, 
+    metaFrame = b.text(metaText,
       36, colTop+metaLeastDy-5,
       colWidth, (fullHeight-colTop)-metaLeastDy);
-    
+
     b.typo(metaFrame, "fontStyle", "Light Italic");
     b.typo(metaFrame, "hyphenation", false);
     b.typo(metaFrame, "leftIndent",  10);
@@ -704,7 +704,7 @@ function assMeta(_stemTags, _artsTags, _learning){
 
     // Bold the 0'th and 1'st words in the 0th, 1st, and 2nd
     // paragraphs -- corresponding to the words "STEM Topics:",
-    // "Arts Topics:", and "Learning Objectives": 
+    // "Arts Topics:", and "Learning Objectives":
     //
     iBolding(metaFrame, 0, 0); // bold stemHeading
     iBolding(metaFrame, 0, 1);
@@ -721,7 +721,7 @@ function assMeta(_stemTags, _artsTags, _learning){
     b.rectMode( b.CORNER ); // default
     b.noFill();
     b.stroke(0,0,0);
-    b.strokeWeight(1); 
+    b.strokeWeight(1);
     b.rect(36,fullHeight,colWidth,0-metaBoxHeight);
     b.fill(0,0,0);
     b.stroke(0);
@@ -790,7 +790,7 @@ function assMeaningful(_meaningful, _bDoHyphenation){
     b.textLeading(12);
     b.textFont("Atlas Grotesk","Regular");
     b.textAlign(Justification.LEFT_ALIGN, VerticalJustification.TOP_ALIGN);
-    
+
     var making = meaningfulHeading + "\r" +_meaningful;
     makeFrame = b.text(making, 36+colWidth*2+colSpacing*2, colTop,colWidth,fullHeight-colTop);
     bolding(makeFrame, 0, 0);
@@ -855,6 +855,14 @@ function assAdditionalReferences (_references){
     b.typo(addRefFrame, "hyphenation", false);
     italicizeWordsInFrame (addRefFrame, 1);
     typesetURLs (addRefFrame, theReferencesStrings);
+
+    if(addRefFrame.overflows){
+      addRefFrame2 =b.text(" ", addrefx+colWidth+colSpacing,colTop,colWidth,fullHeight-colTop);
+      b.linkTextFrames(addRefFrame,addRefFrame2);
+    }
+
+
+
   }
 }
 

@@ -998,7 +998,7 @@ b.go (b.MODESILENT);
 
 
 // GRAVEYARD:
-// Sample Basil.js program to load & render JSON. 
+// Sample Basil.js program to load & render JSON.
 // function setup() {
 //   // parse JSON
 //   var jsonData = b.JSON.decode( jsonString );

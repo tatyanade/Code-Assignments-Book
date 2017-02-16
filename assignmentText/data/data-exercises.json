@@ -18,7 +18,7 @@
     {
         "heading": "Exercises: Iteration",
         "exercisetitle": "A Receding Horizon",
-        "descriptions": "Use a for loop to create a series of vertical lines across the screen. Modify the values within the for loop to shift the lines so that they give the appearance of a receding horizon.",
+        "descriptions": "Use iteration to create a series of vertical lines across the screen. Modify the values within the iteration loop to shift the lines so that they give the appearance of a receding horizon.",
         "codes": "*for(), line()*",
         "imagename": "exercises/iteration/horizon.jpg",
         "verticalspace": 1
@@ -26,7 +26,7 @@
     {
         "heading": "Exercises: Iteration",
         "exercisetitle": "Color Gradient I",
-        "descriptions": "Using a series of vertical lines, create a gradient from one color to another. ",
+        "descriptions": "Using a series of vertical lines, create a gradient from one color to another. Learn about: map(), lerp().",
         "codes": "*linear interpolation, map(), lerp(), lerpColor()*",
         "imagename": "exercises/iteration/gradient.jpg",
         "verticalspace": 1
@@ -60,7 +60,7 @@
         "exercisetitle": "Iteration with functions",
         "descriptions": "Write a function to draw a simple element (a leaf, a face etc.) with arguments that determine its position. Call this function in one or more loops to arrange 100 of the elements on the screen.",
         "codes": "*for(), void function(), shape functions*",
-        "imagename": "exercises/iteration/function.jpg",
+        "imagename": "exercises/iteration/iterWithFuns/interactionWithFunctions.png",
         "verticalspace": 1
     },
     {

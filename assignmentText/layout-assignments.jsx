@@ -468,6 +468,10 @@ function iBolding(tFrame, pNumber, wNumber){
   }
 }
 
+function paragraphSpacing(frame){
+  b.typo(frame, 'spaceAfter', 7);
+}
+
 
 function typesetURLs (theFrame, theString){
   // Set the URLs in a thin, light-colored Italic font.
@@ -643,6 +647,7 @@ function assDescription(_description){
     b.fill(0,0,0);
     desFrame = b.text(_description, 36,68,550,16);
     desFrame.name = "description";
+
   }
 }
 
@@ -670,6 +675,7 @@ function assBrief(_brief){
       b.typo(briefFrame, "hyphenation", false);
       italicizeWordsInFrame (briefFrame, 1);
     }
+    paragraphSpacing(briefFrame);
   }
 }
 
@@ -778,6 +784,7 @@ function assVariations(_variations, _advancedstudents){
 
     b.typo(varFrame, "hyphenation", false);
     italicizeWordsInFrame (varFrame, 0);
+  paragraphSpacing(varFrame);
   }
 }
 
@@ -803,6 +810,7 @@ function assMeaningful(_meaningful, _bDoHyphenation){
     // hyphenate 'Making it Meaningful'
     b.typo(makeFrame, "hyphenation", _bDoHyphenation);
     italicizeWordsInFrame (makeFrame, 1);
+      paragraphSpacing(makeFrame);
   }
 }
 

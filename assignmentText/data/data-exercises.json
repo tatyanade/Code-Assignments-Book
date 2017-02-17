@@ -2,24 +2,21 @@
     {
         "heading": "Exercises: Iteration",
         "exercisetitle": "Checkers",
-        "descriptions": "Use a nested for loop to create a checkers board. Remember a checkers board is a 8 x 8 grid of alternating black and white squares, starting with white in the top left.",
-        "codes": "*for(), fill(), rect(), conditional statements*",
+        "descriptions": "Create a checker board using a nested loop. Remember a checker board is a 8 x 8 grid of alternating black and white squares, starting with white in the top left corner. ",
         "imagename": "exercises/iteration/checkers.jpg",
-        "verticalspace": 3
+        "verticalspace": 1
     },
     {
         "heading": "Exercises: Iteration",
         "exercisetitle": "A Mini-Calendar",
-        "descriptions": "Use a for() loop to generate a row of 31 visual elements; these will represent the current months. All of the elements should be drawn identically — except for the one whose index corresponds to the current day. That one should be differentiated in some way.",
-        "codes": "*for(), if(), day()*",
+        "descriptions": "Use a for() loop to generate a row of 31 visual elements; these will represent the current months. All of the elements should be drawn identically — except for the one whose index corresponds to the current day. Differentiate this one in some way.",
         "imagename": "exercises/iteration/calendar.jpg",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Iteration",
         "exercisetitle": "A Receding Horizon",
-        "descriptions": "Use iteration to create a series of vertical lines across the screen. Modify the values within the iteration loop to shift the lines so that they give the appearance of a receding horizon.",
-        "codes": "*for(), line()*",
+        "descriptions": "Use iteration to create a series of vertical lines across the screen. Modify the values within the iteration loop to shift the lines so that they have the appearance of a receding horizon.",
         "imagename": "exercises/iteration/horizon.jpg",
         "verticalspace": 1
     },
@@ -27,15 +24,13 @@
         "heading": "Exercises: Iteration",
         "exercisetitle": "Color Gradient I",
         "descriptions": "Using a series of vertical lines, create a gradient from one color to another. Learn about: map(), lerp().",
-        "codes": "*linear interpolation, map(), lerp(), lerpColor()*",
         "imagename": "exercises/iteration/gradient.jpg",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Iteration",
         "exercisetitle": "Color Gradient II",
-        "descriptions": "Generate a gradient that interpolates between two colors across 17 rectangles. Use a for() loop to calculate the sizes, positions and fill-colors of the rectangles. Implement some code that randomizes the two colors whenever the user clicks the mouse. ",
-        "codes": "*linear interpolation, map(), lerp(), lerpColor(), mousePressed()*",
+        "descriptions": "Generate a gradient interpolating from one color to another across 17 rectangles. Use a for() loop to calculate the sizes, positions and fill-colors of the rectangles. Implement some code that randomizes the two colors whenever the user clicks the mouse. ",
         "imagename": "exercises/iteration/gradient2.jpg",
         "verticalspace": 1
     },
@@ -43,23 +38,20 @@
         "heading": "Exercises: Iteration",
         "exercisetitle": "Geometric Progression I",
         "descriptions": "Use a for() loop to visualize a geometric progression. Some aspect of each element in the progression should come from series of numbers where each term after the first is computed by multiplying the previous one by a fixed multiplier (or common ratio).",
-        "codes": "*for(), color(), shape functions*",
         "imagename": "exercises/iteration/progression.jpg",
-        "verticalspace": 3
+        "verticalspace": 1
     },
     {
         "heading": "Exercises: Iteration",
         "exercisetitle": "Geometric Progression II",
         "descriptions": "Layout your graphic elements in two dimensions, and vary them both along the x- and y-axis. For example, change their shape and/or colour progressively.",
-        "codes": "*for(), color(), shape functions*",
         "imagename": "exercises/iteration/progression2.jpg",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Iteration",
         "exercisetitle": "Iteration with functions",
-        "descriptions": "Write a function to draw a simple element (a leaf, a face etc.) with arguments that determine its position. Call this function in one or more loops to arrange 100 of the elements on the screen.",
-        "codes": "*for(), void function(), shape functions*",
+        "descriptions": "Write a function which encapsulates several drawing commands in order to render a simple element (a leaf, a face etc.). Give your function two arguments that determine where the element will be positioned. Using iteration, call your function to display a grid of these elements.",
         "imagename": "exercises/iteration/iterWithFuns/interactionWithFunctions.png",
         "verticalspace": 1
     },
@@ -95,7 +87,6 @@
         "heading": "Exercises: Color",
         "exercisetitle": "Every Color Animated",
         "descriptions": "Create a sketch that displays every possible color over time. Choose either the RGB or HSB color models.",
-        "codes": "*colorMode()*",
         "imagename": "exercises/color/everyColor.jpg",
         "verticalspace": 1
     },
@@ -103,7 +94,6 @@
         "heading": "Exercises: Color",
         "exercisetitle": "Interactive Color I",
         "descriptions": "Create an interaction in which the cursor position controls the color of the canvas. Use this to illustrate the use of different color models (RGB, HSB).",
-        "codes": "*background(), colorMode(), mouseX, mouseY*",
         "imagename": "exercises/color/mouseColor.jpg",
         "verticalspace": 1
     },
@@ -111,15 +101,77 @@
         "heading": "Exercises: Color",
         "exercisetitle": "Interactive Color II",
         "descriptions": "Split the canvas into two equal-sized rectangles, side-by-side. Create an interaction such that one rectangle’s color is controlled by the cursor position, and the other contains its complement.\n",
-        "codes": "*fill(), mouseX, mouseY*",
-        "imagename": "exercises/color/complement.jpg",
+        "imagename": "exercises/color/complement.tif",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Color",
-        "exercisetitle": "Color breakdown",
+        "exercisetitle": "Color Breakdown",
         "descriptions": "Display an image so that it fully covers the display window. Draw three ellipses to the screen and fill each ellipse with the R value, the G value and the B value respectively for each pixel of the image under the mouse.",
-        "imagename": "exercises/color/get.jpg",
+        "imagename": "exercises/color/colorpicker.tif",
+        "verticalspace": 1
+    },
+    {
+        "heading": "Exercises: Drawing",
+        "exercisetitle": "Drawing",
+        "descriptions": "Draw your initials with primative shapes and lines. ",
+        "imagename": "exercises/drawing/initials.png",
+        "verticalspace": 1
+    },
+    {
+        "heading": "Exercises: Drawing",
+        "exercisetitle": "Draw, then Code",
+        "descriptions": "Spend at least 30 minutes drawing a scene, a still life, a portrait or a design on paper. Take care to create this image with adequate care and detail. Take your drawing and reinterpret it in code.",
+        "imagename": "exercises/drawing/kyla.png",
+        "verticalspace": 1
+    },
+    {
+        "heading": "Exercises: Drawing",
+        "exercisetitle": "Coding Mondrian",
+        "descriptions": "Convert a Mondrian painting into code. This is an exercise in observation, pay attention to detail.",
+        "imagename": "exercises/drawing/mondrian.png",
+        "verticalspace": 1
+    },
+    {
+        "heading": "Exercises: Drawing",
+        "exercisetitle": "Coding Stadia II",
+        "descriptions": "Select a crop of Julie Mehretu’s Stadia II. Load a large version of the image into a program such as Photoshop or Illustrator and select a crop. Read the color and coordinate data in this program and then this to recreate it with shapes, lines, curve and custom shape functinos. Try to do so as faithfully as possible.",
+        "imagename": "exercises/drawing/stadia.png",
+        "verticalspace": 2
+    },
+    {
+        "heading": "Exercises: Drawing",
+        "exercisetitle": "Recoding Schotter",
+        "descriptions": "Schotter is a computational artwork from the 1960s made by Georg Nees. Recode this work paying attention to detail.",
+        "imagename": "exercises/drawing/schotter.png",
+        "verticalspace": 1
+    },
+    {
+        "heading": "Exercises: Drawing",
+        "exercisetitle": "Drawing with the Mouse I",
+        "descriptions": "Create a sketch that draws a line along the path of the mouse. ",
+        "imagename": "exercises/drawing/draw_mouse.png",
+        "verticalspace": 1
+    },
+    {
+        "heading": "Exercises: Drawing",
+        "exercisetitle": "Drawing with the Mouse II",
+        "descriptions": "Modify your sketch so that the thickness of the line is relative to the speed of the mouse.",
+        "imagename": "exercises/drawing/draw_mouse2.png",
+        "verticalspace": 1
+    },
+    {
+        "heading": "Exercises: Drawing",
+        "exercisetitle": "Drawing with the Mouse III",
+        "descriptions": "Create a sketch that draws a line using the past 100 mouse positions. Replace your line with ellipses.",
+        "imagename": "exercises/drawing/draw_mouse3.png",
+        "verticalspace": 1
+    },
+    {
+        "heading": "Exercises: Drawing",
+        "exercisetitle": "Living line",
+        "descriptions": "Create a living line from the past 100 mouse positions adding some randomness to each point. Make it so that the older the point, the more random it's location will be.",
+        "imagename": "exercises/drawing/draw_mouse4.png",
         "verticalspace": 1
     }
 ]

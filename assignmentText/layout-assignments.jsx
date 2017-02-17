@@ -675,7 +675,7 @@ function assBrief(_brief){
       b.typo(briefFrame, "hyphenation", false);
       italicizeWordsInFrame (briefFrame, 1);
     }
-    paragraphSpacing(briefFrame);
+
   }
 }
 
@@ -784,7 +784,7 @@ function assVariations(_variations, _advancedstudents){
 
     b.typo(varFrame, "hyphenation", false);
     italicizeWordsInFrame (varFrame, 0);
-  paragraphSpacing(varFrame);
+
   }
 }
 

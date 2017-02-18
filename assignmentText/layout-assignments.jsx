@@ -468,10 +468,6 @@ function iBolding(tFrame, pNumber, wNumber){
   }
 }
 
-function paragraphSpacing(frame){
-  b.typo(frame, 'spaceAfter', 7);
-}
-
 
 function typesetURLs (theFrame, theString){
   // Set the URLs in a thin, light-colored Italic font.
@@ -810,7 +806,7 @@ function assMeaningful(_meaningful, _bDoHyphenation){
     // hyphenate 'Making it Meaningful'
     b.typo(makeFrame, "hyphenation", _bDoHyphenation);
     italicizeWordsInFrame (makeFrame, 1);
-      paragraphSpacing(makeFrame);
+
   }
 }
 

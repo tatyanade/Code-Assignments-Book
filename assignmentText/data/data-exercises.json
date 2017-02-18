@@ -113,16 +113,9 @@
     },
     {
         "heading": "Exercises: Drawing",
-        "exercisetitle": "Drawing",
+        "exercisetitle": "Draw you Initials",
         "descriptions": "Draw your initials with primative shapes and lines. ",
         "imagename": "exercises/drawing/initials.png",
-        "verticalspace": 1
-    },
-    {
-        "heading": "Exercises: Drawing",
-        "exercisetitle": "Draw, then Code",
-        "descriptions": "Spend at least 30 minutes drawing a scene, a still life, a portrait or a design on paper. Take care to create this image with adequate care and detail. Take your drawing and reinterpret it in code.",
-        "imagename": "exercises/drawing/kyla.png",
         "verticalspace": 1
     },
     {
@@ -130,20 +123,27 @@
         "exercisetitle": "Coding Mondrian",
         "descriptions": "Convert a Mondrian painting into code. This is an exercise in observation, pay attention to detail.",
         "imagename": "exercises/drawing/mondrian.png",
-        "verticalspace": 1
+        "verticalspace": 2
     },
     {
         "heading": "Exercises: Drawing",
         "exercisetitle": "Coding Stadia II",
-        "descriptions": "Select a crop of Julie Mehretu’s Stadia II. Load a large version of the image into a program such as Photoshop or Illustrator and select a crop. Read the color and coordinate data in this program and then this to recreate it with shapes, lines, curve and custom shape functinos. Try to do so as faithfully as possible.",
+        "descriptions": "Select a crop of Julie Mehretu’s Stadia II. Load a large version of the image into a program like Photoshop or Illustrator. Read the color and coordinate data and recreate a crop with shapes, lines, curves and custom shape functinons. Try to do this as faithfully as possible. A variation of this is to divide the work into sections and allocate these to individual students. Recombine the crops in the following class.",
         "imagename": "exercises/drawing/stadia.png",
-        "verticalspace": 2
+        "verticalspace": 1
     },
     {
         "heading": "Exercises: Drawing",
         "exercisetitle": "Recoding Schotter",
         "descriptions": "Schotter is a computational artwork from the 1960s made by Georg Nees. Recode this work paying attention to detail.",
         "imagename": "exercises/drawing/schotter.png",
+        "verticalspace": 1
+    },
+    {
+        "heading": "Exercises: Drawing",
+        "exercisetitle": "Draw, then Code",
+        "descriptions": "Spend at least 30 minutes drawing a scene, a still life, a portrait or a design using pen or pencil on paper. Take care to create this image with adequate care and detail. Take your drawing and reinterpret it in code.",
+        "imagename": "exercises/drawing/kyla.png",
         "verticalspace": 1
     },
     {
@@ -163,14 +163,14 @@
     {
         "heading": "Exercises: Drawing",
         "exercisetitle": "Drawing with the Mouse III",
-        "descriptions": "Create a sketch that draws a line using the past 100 mouse positions. Replace your line with ellipses.",
+        "descriptions": "Create a sketch that draws a line using the past 100 mouse positions. Replace your line with transparent ellipses.",
         "imagename": "exercises/drawing/draw_mouse3.png",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Drawing",
         "exercisetitle": "Living line",
-        "descriptions": "Create a living line from the past 100 mouse positions adding some randomness to each point. Make it so that the older the point, the more random it's location will be.",
+        "descriptions": "Create a living line from using the past 100 mouse positions and by adding some randomness to each point. Increase the randomness as the mouse positions get older. ",
         "imagename": "exercises/drawing/draw_mouse4.png",
         "verticalspace": 1
     }

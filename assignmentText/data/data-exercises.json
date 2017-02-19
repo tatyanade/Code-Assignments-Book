@@ -58,7 +58,7 @@
     {
         "heading": "Exercises: Color",
         "exercisetitle": "Overlapping color",
-        "descriptions": "Overlap some semi-transparent shapes to create at least seven different colors onscreen. Experiment with different *pixel transfer modes* (also called *blend modes*). Draw the shapes without outlines. ",
+        "descriptions": "Overlap some semi-transparent shapes to create at least seven different colors on screen. Experiment with different *pixel transfer modes* (also called *blend modes*). Draw the shapes without outlines. ",
         "imagename": "exercises/color/overlap.png",
         "verticalspace": 1
     },
@@ -114,7 +114,7 @@
     {
         "heading": "Exercises: Drawing",
         "exercisetitle": "Draw your Initials",
-        "descriptions": "Draw your initials with primative shapes and lines. ",
+        "descriptions": "Draw your initials with primitive shapes and lines. ",
         "imagename": "exercises/drawing/initials.png",
         "verticalspace": 1
     },
@@ -141,6 +141,12 @@
     },
     {
         "heading": "Exercises: Drawing",
+        "exercisetitle": "Pi Chart",
+        "descriptions": "Generate a pie chart which displays the breakdown of what you spent on breakfast, lunch, dinner and coffee yesterday. You will need to use a function that produced a filled arc. Include a key.",
+        "imagename": "exercises/drawing/pie.png"
+    },
+    {
+        "heading": "Exercises: Drawing",
         "exercisetitle": "Drawing with the Mouse I",
         "descriptions": "Create a sketch that draws a line along the path of the mouse. ",
         "imagename": "exercises/drawing/draw_mouse.png",
@@ -151,20 +157,6 @@
         "exercisetitle": "Drawing with the Mouse II",
         "descriptions": "Modify your sketch so that the thickness of the line is relative to the speed of the mouse.",
         "imagename": "exercises/drawing/draw_mouse2.png",
-        "verticalspace": 1
-    },
-    {
-        "heading": "Exercises: Drawing",
-        "exercisetitle": "Drawing with the Mouse III",
-        "descriptions": "Create a sketch that draws a line using the past 100 mouse positions. Replace your line with transparent ellipses.",
-        "imagename": "exercises/drawing/draw_mouse3.png",
-        "verticalspace": 1
-    },
-    {
-        "heading": "Exercises: Drawing",
-        "exercisetitle": "Living line",
-        "descriptions": "Create a line using the past 100 mouse positions. Bring your line to life by adding some randomness to each point. The randomness at each shouolder mouse positions.",
-        "imagename": "exercises/drawing/draw_mouse4.png",
         "verticalspace": 1
     },
     {
@@ -224,16 +216,48 @@
         "verticalspace": 1
     },
     {
+        "heading": "Exercises: Arrays",
+        "exercisetitle": "Array of Ellipses",
+        "descriptions": "Create a sketch that stores the past 100 mouse positions. Draw a trail of ellipses at each of the mouse positions. Change their transparency depending on their position.",
+        "imagename": "exercises/arrays/draw_mouse3.png",
+        "verticalspace": 1
+    },
+    {
+        "heading": "Exercises: Arrays",
+        "exercisetitle": "Living line",
+        "descriptions": "Create a line using the past 100 mouse positions. Bring your line to life by adding some randomness to each point. The randomness at each shoulder mouse positions.",
+        "imagename": "exercises/arrays/draw_mouse4.png",
+        "verticalspace": 1
+    },
+    {
+        "heading": "Exercises: Arrays",
+        "exercisetitle": "Animated walk cycle",
+        "descriptions": "Take an animated walk cycle of a character, store each frame in an array and then loop through them to display the character in motion.",
+        "imagename": "exercises/arrays/walkcycle.png"
+    },
+    {
+        "heading": "Exercises: Arrays",
+        "exercisetitle": "Place the flag",
+        "descriptions": "Take the example of a Perlin noise landscape provided and plant a flag on the highest point. *Instructor: Provide students with a sketch of a landscape made up of adjacent vertical lines drawn from the bottom of the screen to a y values deterimined by the Perlin noise function.*",
+        "imagename": "exercises/arrays/flag.png"
+    },
+    {
+        "heading": "Exercises: Arrays",
+        "exercisetitle": "Searching for the brightest point",
+        "descriptions": "Find the brightest point on the screen in the video feed captured from your web cam. Place a star at this point.",
+        "imagename": "exercises/arrays/brightest.png"
+    },
+    {
         "heading": "Exercises: Time and Interactivity",
         "exercisetitle": "Typewriter",
-        "descriptions": "Create an expressive typewiter. Each key should trigger, an animation, image, sound or characters. Consider the aesthetic experience of playing your response.",
+        "descriptions": "Create an expressive typewriter. Each key should trigger, an animation, image, sound or characters. Consider the aesthetic experience of playing your response.",
         "imagename": "exercises/interactivity/typewriter.png",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Time and Interactivity",
         "exercisetitle": "Fuse or Progress Bar",
-        "descriptions": "Make a fuse onscreen that takes exactly 5 seconds to complete its timer. Trigger an interesting event when it finishes eg. fireworks, a volcano errupting. Think laterally, your fuse could be a progress bar, or an ice cube melting, a balloon inflating etc. etc.",
+        "descriptions": "Make a fuse on screen that takes exactly 5 seconds to complete its timer. Trigger an interesting event when it finishes eg. fireworks, a volcano erupting. Think laterally, your fuse could be a progress bar, or an ice cube melting, a balloon inflating etc. etc.",
         "imagename": "exercises/interactivity/fuse.png"
     },
     {
@@ -253,13 +277,13 @@
     {
         "heading": "Exercises: Time and Interactivity",
         "exercisetitle": "Ripples in a Pond",
-        "descriptions": "Create a an animated ripple that eminates outwards from the cursor everytime the mouse is clicked. Consider the speed at which your ripples expand. You will likely need to create a ripple class.",
+        "descriptions": "Create a an animated ripple that emanates outwards from the cursor everytime the mouse is clicked. Consider the speed at which your ripples expand. You will likely need to create a ripple class.",
         "imagename": "exercises/interactivity/ripple.png"
     },
     {
         "heading": "Exercises: Time and Interactivity",
         "exercisetitle": "Raindrops",
-        "descriptions": "Animate a rainy day. Make a sketch where numerous drops appear at the top of your screen and fall at a random interval. You will need to create a rain drop and timer class.",
+        "descriptions": "Animate a rainy day. Make a sketch where numerous drops appear at the top of your screen and fall at a random interval. You will need to create a raindrop and timer class.",
         "imagename": "exercises/interactivity/rain.png"
     },
     {
@@ -334,5 +358,10 @@
         "exercisetitle": "References",
         "descriptions": "1. See Dan Shiffman’s *Coding Challenge #14,* “Fractal Trees”, and research the ‘algorithmic botany’ work of Dr. Przemyslaw Prusinkiewicz.\n2. See Dan Shiffman's *Nature of Code #7.3.*\n3. See Dan Shiffman’s *Nature of Code #6,* “Autonomous Agents and Steering”, and Craig Reynolds’ research into steering behaviors and ‘boids’.\n4. See Dan Shiffman's *Coding Challenge #50.*\n5. See Dan Shiffman's *Coding Challenge #34.* ",
         "verticalspace": 2
+    },
+    {
+        "heading": "Simulation",
+        "exercisetitle": "Spring ",
+        "verticalspace": 1
     }
 ]

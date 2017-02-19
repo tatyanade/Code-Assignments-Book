@@ -823,23 +823,24 @@ function assAspiration(_aspiration){
     b.textAlign(Justification.LEFT_ALIGN, VerticalJustification.TOP_ALIGN);
     var aspirationString = aspirationHeading+"\r"+_aspiration+"\n";
     aspFrame = b.text(aspirationString, 36,colTop,colWidth,fullHeight-colTop);
+    if (aspFrame.overflows == true){
+      aspFrame2 = b.text(" ", colWidth+colSpacing+36,colTop,colWidth,fullHeight-colTop);
+      b.linkTextFrames(aspFrame,aspFrame2);
 
+      addrefx=36+colWidth+colSpacing+colWidth+colSpacing;
+    }
     bolding(aspFrame, 0, 0);
     bolding(aspFrame, 0, 1);
 
     b.typo(aspFrame, "hyphenation", false);
     italicizeWordsInFrame (aspFrame, 1);
     typesetURLs (aspFrame, aspirationString);
+    bolding(aspFrame2, 0, 0);
+    bolding(aspFrame2, 0, 1);
+    b.typo(aspFrame2, "hyphenation", false);
+    typesetURLs (aspFrame2, aspirationString);
 
-    if (aspFrame.overflows == true){
-      aspFrame2 = b.text(" ", colWidth+colSpacing+36,colTop,colWidth,fullHeight-colTop);
-      b.linkTextFrames(aspFrame,aspFrame2);
-      bolding(aspFrame2, 0, 0);
-      bolding(aspFrame2, 0, 1);
-      b.typo(aspFrame2, "hyphenation", false);
-      typesetURLs (aspFrame2, aspirationString);
-      addrefx=36+colWidth+colSpacing+colWidth+colSpacing;
-    }
+
   }
 }
 

@@ -403,6 +403,7 @@ function draw() {
     }
   }
 
+ 
   //==========================================================
   //Image reference page
   for (var i = 0; i < (pCounter/4); i++) {
@@ -416,10 +417,12 @@ function draw() {
 
     // IMAGE CAPTIONS FOR NOTEWORTHY EXAMPLE IMAGES
     assAspiration(jsonData[i].aspirationcaptions);
-
+    
     // ADDITIONAL REFERENCES
     assAdditionalReferences(jsonData[i].additionalreferences);
+
   }
+  
 
 };
 
@@ -823,23 +826,13 @@ function assAspiration(_aspiration){
     b.textAlign(Justification.LEFT_ALIGN, VerticalJustification.TOP_ALIGN);
     var aspirationString = aspirationHeading+"\r"+_aspiration+"\n";
     aspFrame = b.text(aspirationString, 36,colTop,colWidth,fullHeight-colTop);
-    if (aspFrame.overflows == true){
-      aspFrame2 = b.text(" ", colWidth+colSpacing+36,colTop,colWidth,fullHeight-colTop);
-      b.linkTextFrames(aspFrame,aspFrame2);
 
-      addrefx=36+colWidth+colSpacing+colWidth+colSpacing;
-    }
     bolding(aspFrame, 0, 0);
     bolding(aspFrame, 0, 1);
 
     b.typo(aspFrame, "hyphenation", false);
     italicizeWordsInFrame (aspFrame, 1);
     typesetURLs (aspFrame, aspirationString);
-    bolding(aspFrame2, 0, 0);
-    bolding(aspFrame2, 0, 1);
-    b.typo(aspFrame2, "hyphenation", false);
-    typesetURLs (aspFrame2, aspirationString);
-
 
   }
 }
@@ -848,28 +841,34 @@ function assAspiration(_aspiration){
 function assAdditionalReferences (_references){
   if (!isEmpty(_references)){
 
-    if(_references){_references = _references.replace("\r", "");}
-    _references = computeWordsToItalicize(_references); // Do this first.
+    if(_references){
+      _references = _references.replace("\r", "");
+      _references = computeWordsToItalicize(_references); // Do this first.
 
-    b.textSize(8);
-    b.textLeading(12);
-    b.textFont("Atlas Grotesk","Regular");
-    b.textAlign(Justification.LEFT_ALIGN, VerticalJustification.TOP_ALIGN);
-    var theReferencesStrings = referenceHeading +"\r"+_references+"\n";
-    addRefFrame =b.text(theReferencesStrings, addrefx,colTop,colWidth,fullHeight-colTop);
-    bolding(addRefFrame, 0, 0);
-    bolding(addRefFrame, 0, 1);
+      b.textSize(8);
+      b.textLeading(12);
+      b.textFont("Atlas Grotesk","Regular");
+      b.textAlign(Justification.LEFT_ALIGN, VerticalJustification.TOP_ALIGN);
+      var theReferencesStrings = referenceHeading +"\r"+_references+"\n";
+      addRefFrame = b.text(theReferencesStrings, addrefx,colTop,colWidth,fullHeight-colTop);
+      bolding(addRefFrame, 0, 0);
+      bolding(addRefFrame, 0, 1);
 
-    b.typo(addRefFrame, "hyphenation", false);
-    italicizeWordsInFrame (addRefFrame, 1);
-    typesetURLs (addRefFrame, theReferencesStrings);
+      b.typo(addRefFrame, "hyphenation", false);
+      italicizeWordsInFrame (addRefFrame, 1);
+      typesetURLs (addRefFrame, theReferencesStrings);
 
-    if(addRefFrame.overflows){
-      addRefFrame2 =b.text(" ", addrefx+colWidth+colSpacing,colTop,colWidth,fullHeight-colTop);
-      b.linkTextFrames(addRefFrame,addRefFrame2);
+      if (addRefFrame.overflows){
+        addRefFrame2 = b.text(" ", addrefx+colWidth+colSpacing,colTop,colWidth,fullHeight-colTop);
+        b.linkTextFrames(addRefFrame,addRefFrame2);
+
+        /* // bug appears to be in here, typesetting the overflow frame...
+        b.typo(addRefFrame2, "hyphenation", false);
+        italicizeWordsInFrame (addRefFrame2, 1);
+        typesetURLs (addRefFrame2, theReferencesStrings);
+        */
+      }
     }
-
-
 
   }
 }

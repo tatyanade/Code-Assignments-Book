@@ -3,7 +3,7 @@ void setup() {
   size(300, 300);
   smooth();
   background(255);
-  fill(253, 189, 137);
+  fill(252, 186, 273);
   noStroke();
 
   bezier(70, 128, 50, 226, 150, 233, 170, 186 );

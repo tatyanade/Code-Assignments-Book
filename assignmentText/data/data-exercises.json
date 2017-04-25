@@ -1,367 +1,64 @@
 [
     {
-        "heading": "Exercises: Iteration",
-        "exercisetitle": "Checkers",
-        "descriptions": "Create a checkerboard using a nested loop. Recall that a checkerboard is an 8x8 grid of alternating black and white squares, starting with white in the top left corner.",
-        "imagename": "exercises/iteration/checkers.jpg",
+        "heading": "Exercises: Curves",
+        "exercisetitle": "A circle in three ways.",
+        "descriptions": "There are an infinite amound of ways that you can render curves. Plot a circle in three different ways, you might combine several curves, lines or other geometric elements to do this. Be creative, there are no wrong answers. (1)",
+        "imagename": "exercises/curves/circle.png",
         "verticalspace": 1
     },
     {
-        "heading": "Exercises: Iteration",
-        "exercisetitle": "A Mini-Calendar",
-        "descriptions": "Use a for() loop to generate a row of 31 visual elements; these will represent the current months. All of the elements should be drawn identically — except for the one whose index corresponds to the current day. Differentiate this one in some way.",
-        "imagename": "exercises/iteration/calendar.jpg",
+        "heading": "Exercises: Curves",
+        "exercisetitle": "Spiral",
+        "descriptions": "Plot a spiral in code.",
+        "imagename": "exercises/curves/spiral.png",
         "verticalspace": 1
     },
     {
-        "heading": "Exercises: Iteration",
-        "exercisetitle": "A Receding Horizon",
-        "descriptions": "Use iteration to create a series of vertical lines across the screen. Modify the values within the iteration loop to shift the lines so that they have the appearance of a receding horizon.",
-        "imagename": "exercises/iteration/horizon.jpg",
-        "verticalspace": 1
-    },
-    {
-        "heading": "Exercises: Iteration",
-        "exercisetitle": "Color Gradient ",
-        "descriptions": "Generate a gradient interpolating from one color to another across 17 rectangles. Use a for() loop to calculate the sizes, positions and fill-colors of the rectangles. Implement some code that randomizes the two colors whenever the user clicks the mouse. ",
-        "imagename": "exercises/iteration/gradient2.jpg",
-        "verticalspace": 1
-    },
-    {
-        "heading": "Exercises: Iteration",
-        "exercisetitle": "Geometric Progression I",
-        "descriptions": "Use a for() loop to visualize a geometric progression. Some aspect of each element in the progression should come from series of numbers where each term after the first is computed by multiplying the previous one by a fixed multiplier (or common ratio).",
-        "imagename": "exercises/iteration/progression.jpg",
-        "verticalspace": 1
-    },
-    {
-        "heading": "Exercises: Iteration",
-        "exercisetitle": "Geometric Progression II",
-        "descriptions": "Layout your graphic elements in two dimensions, and vary them both along the x- and y-axis. For example, change their shape and/or colour progressively.",
-        "imagename": "exercises/iteration/progression2.jpg",
-        "verticalspace": 1
-    },
-    {
-        "heading": "Exercises: Iteration",
-        "exercisetitle": "Iteration with Functions",
-        "descriptions": "Write a function which encapsulates several drawing commands in order to render a simple element (a leaf, a face, etc). Give your function arguments that determine where the element will be positioned. Using iteration, call your function to display a grid of these elements.",
-        "imagename": "exercises/iteration/iterWithFuns/interactionWithFunctions.png",
-        "verticalspace": 1
-    },
-    {
-        "heading": "Exercises: Iteration",
-        "exercisetitle": "Recoding Schotter",
-        "descriptions": "*Schotter* (1965) is a computational artwork from the 1960s made by Georg Nees. Recode this work paying attention to detail.",
-        "imagename": "exercises/iteration/schotter.png",
-        "verticalspace": 1
-    },
-    {
-        "heading": "Exercises: Color",
-        "exercisetitle": "Overlapping color",
-        "descriptions": "Overlap some semi-transparent shapes to create at least seven different colors on screen. Experiment with different *pixel transfer modes* (also called *blend modes*). Draw the shapes without outlines. ",
-        "imagename": "exercises/color/overlap.png",
-        "verticalspace": 1
-    },
-    {
-        "heading": "Exercises: Color",
-        "exercisetitle": "Color and Iteration",
-        "descriptions": "Create a gradient from one color to another. *Hint:* use iteration and the *map()* function to render many thin parallel lines, each with subtly different colors.",
-        "imagename": "exercises/color/twoColorGradient.png",
-        "verticalspace": 1
-    },
-    {
-        "heading": "Exercises: Color",
-        "exercisetitle": "Every Color",
-        "descriptions": "Using the HSB color model, create a program where every hue is displayed on the screen.",
-        "imagename": "exercises/color/HSBgradient.png",
-        "verticalspace": 1
-    },
-    {
-        "heading": "Exercises: Color",
-        "exercisetitle": "Every Color, Animated",
-        "descriptions": "Create a sketch that (eventually) displays every possible color over time. Choose either the RGB or HSB color models.",
-        "imagename": "exercises/color/everyColor.png",
-        "verticalspace": 1
-    },
-    {
-        "heading": "Exercises: Color",
-        "exercisetitle": "Color and Perception",
-        "descriptions": "Create a composition showing the smallest interval between colors that you can distinguish. \n",
-        "imagename": "exercises/color/perception.png",
-        "verticalspace": 1
-    },
-    {
-        "heading": "Exercises: Color",
-        "exercisetitle": "Interactive Color I",
-        "descriptions": "Create an interaction in which the cursor position controls the color of the canvas. Use this to explore and illustrate the use of different color models (RGB, HSB).",
-        "imagename": "exercises/color/mouseColor.png",
-        "verticalspace": 1
-    },
-    {
-        "heading": "Exercises: Color",
-        "exercisetitle": "Interactive Color II",
-        "descriptions": "Split the canvas into two equal-sized rectangles, side-by-side. Create an interaction such that one rectangle’s color is controlled by the cursor position, and the other contains its complement.\n",
-        "imagename": "exercises/color/complement.png",
-        "verticalspace": 1
-    },
-    {
-        "heading": "Exercises: Color",
-        "exercisetitle": "Interactive Color Breakdown",
-        "descriptions": "Load and display an image so that it fully covers the canvas. Draw three ellipses to the screen, and fill them with the red value, the green value, and the blue value, respectively, of the pixel under the cursor.",
-        "imagename": "exercises/color/colorpicker.png",
-        "verticalspace": 1
-    },
-    {
-        "heading": "Exercises: Drawing",
-        "exercisetitle": "Draw your Initials",
-        "descriptions": "Draw your initials with primitive shapes and lines. ",
-        "imagename": "exercises/drawing/initials.png",
-        "verticalspace": 1
-    },
-    {
-        "heading": "Exercises: Drawing",
-        "exercisetitle": "Coding Mondrian",
-        "descriptions": "Convert a Mondrian painting into code. This is an exercise in observation, pay attention to detail.",
-        "imagename": "exercises/drawing/mondrian.png",
-        "verticalspace": 1
-    },
-    {
-        "heading": "Exercises: Drawing",
-        "exercisetitle": "Coding *Stadia II*",
-        "descriptions": "Select and crop a small rectangular region from Julie Mehretu’s painting, *Stadia II*. Using a program such as Photoshop, read out the colors and coordinate data from this fragment. Use this to faithfully recreate it with shapes, lines, curves, and custom shape functions.",
-        "imagename": "exercises/drawing/stadia.png",
-        "verticalspace": 1
-    },
-    {
-        "heading": "Exercises: Drawing",
-        "exercisetitle": "Draw, then Code",
-        "descriptions": "Spend at least 20 minutes creating a drawing on paper: a scene, a still life, a portrait or some other design. Take care to create this image with adequate care and detail. Now recreate your drawing using code. ",
-        "imagename": "exercises/drawing/kyla.png",
-        "verticalspace": 1
-    },
-    {
-        "heading": "Exercises: Drawing",
-        "exercisetitle": "Pi Chart",
-        "descriptions": "Generate a pie chart which displays the breakdown of what you spent on breakfast, lunch, dinner and coffee yesterday. You will need to use a function that produced a filled arc. Include a key.",
-        "imagename": "exercises/drawing/pie.png"
-    },
-    {
-        "heading": "Exercises: Drawing",
-        "exercisetitle": "Drawing with the Mouse I",
-        "descriptions": "Create a sketch that draws a line along the path of the mouse. ",
-        "imagename": "exercises/drawing/draw_mouse.png",
-        "verticalspace": 1
-    },
-    {
-        "heading": "Exercises: Drawing",
-        "exercisetitle": "Drawing with the Mouse II",
-        "descriptions": "Modify your sketch so that the thickness of the line is relative to the speed of the mouse.",
-        "imagename": "exercises/drawing/draw_mouse2.png",
-        "verticalspace": 1
-    },
-    {
-        "heading": "Exercises: Conditional Testing",
-        "exercisetitle": "Conditional background",
-        "descriptions": "Create a sketch where the background changes color when the mouse moves into the right half of the screen.",
-        "imagename": "exercises/conditional/cond-1.png",
-        "verticalspace": 1
-    },
-    {
-        "heading": "Exercises: Conditional Testing",
-        "exercisetitle": "A Button using IF",
-        "descriptions": "Place a white square on a grey background. Create an interaction where a click in the square turns it black, and it stays that way.",
-        "imagename": "exercises/conditional/button1.png",
-        "verticalspace": 1
-    },
-    {
-        "heading": "Exercises: Conditional Testing",
-        "exercisetitle": "State machine I",
-        "descriptions": "Place a white square on a grey background. Create an interaction where each click in the square flips its color. It should flip from white to black (if it is white), or from black to white (if it is black).",
-        "imagename": "exercises/conditional/state1.png",
-        "verticalspace": 1
-    },
-    {
-        "heading": "Exercises: Conditional Testing",
-        "exercisetitle": "State machine II",
-        "descriptions": "Place a white square on a grey background. Create an interaction where two clicks in the square are required to turn it from white to black, but three clicks are required to turn it from black to white.",
-        "imagename": "exercises/conditional/state2.png",
-        "verticalspace": 1
-    },
-    {
-        "heading": "Exercises: Conditional Testing",
-        "exercisetitle": "State machine III",
-        "descriptions": "Place a white square on a grey background. Create an interaction where the square turns black only the mousebutton is down, AND the cursor is inside the square. If the cursor exits the area or the button is released, the square reverts to white. Does it feel better if the initial click is inside the square or anywhere in the frame.",
-        "imagename": "exercises/conditional/state3.png",
-        "verticalspace": 1
-    },
-    {
-        "heading": "Exercises: Conditional Testing",
-        "exercisetitle": "State machine IV",
-        "descriptions": "Place a white square on a grey background. Turn the square into a button with a “hover” state: Make it white when inactive; Yellow when the user is hovering over it (mouseDown is false); Black when the user is holding the mouse down inside of it; and turn it back to white thereafter.",
-        "imagename": "exercises/conditional/state4.png",
-        "verticalspace": 1
-    },
-    {
-        "heading": "Exercises: Conditional Testing",
-        "exercisetitle": "Bouncing Ball",
-        "descriptions": "Create a sketch with moving ball that bounces off the edges of the canvas. How would you develop your solution so that the ball loses some energy with each bounce and gradually comes to a halt.",
-        "imagename": "exercises/conditional/ball.png",
-        "verticalspace": 1
-    },
-    {
-        "heading": "Exercises: Conditional Testing",
-        "exercisetitle": "One-Person Pong",
-        "descriptions": "Create a sketch that recreates the game of Pong for a single user.  Can you add a scoring system?",
-        "imagename": "exercises/conditional/pong.png",
-        "verticalspace": 1
-    },
-    {
-        "heading": "Exercises: Arrays",
-        "exercisetitle": "Array of Ellipses",
-        "descriptions": "Create a sketch that stores the past 100 mouse positions. Draw a trail of ellipses at each of the mouse positions. Change their transparency depending on their position.",
-        "imagename": "exercises/arrays/draw_mouse3.png",
-        "verticalspace": 1
-    },
-    {
-        "heading": "Exercises: Arrays",
-        "exercisetitle": "Living line",
-        "descriptions": "Create a line using the past 100 mouse positions. Bring your line to life by adding some randomness to each point. The randomness at each shoulder mouse positions.",
-        "imagename": "exercises/arrays/draw_mouse4.png",
-        "verticalspace": 1
-    },
-    {
-        "heading": "Exercises: Arrays",
-        "exercisetitle": "Animated walk cycle",
-        "descriptions": "Take an animated walk cycle of a character, store each frame in an array and then loop through them to display the character in motion.",
-        "imagename": "exercises/arrays/walkcycle.png"
-    },
-    {
-        "heading": "Exercises: Arrays",
-        "exercisetitle": "Place the flag",
-        "descriptions": "Take the example of a Perlin noise landscape provided and plant a flag on the highest point. *Instructor: Provide students with a sketch of a landscape made up of adjacent vertical lines drawn from the bottom of the screen to a y values deterimined by the Perlin noise function.*",
-        "imagename": "exercises/arrays/flag.png"
-    },
-    {
-        "heading": "Exercises: Arrays",
-        "exercisetitle": "Searching for the brightest point",
-        "descriptions": "Find the brightest point on the screen in the video feed captured from your web cam. Place a star at this point.",
-        "imagename": "exercises/arrays/brightest.png"
-    },
-    {
-        "heading": "Exercises: Time and Interactivity",
-        "exercisetitle": "Typewriter",
-        "descriptions": "Create an expressive typewriter. Each key should trigger, an animation, image, sound or characters. Consider the aesthetic experience of playing your response.",
-        "imagename": "exercises/interactivity/typewriter.png",
-        "verticalspace": 1
-    },
-    {
-        "heading": "Exercises: Time and Interactivity",
-        "exercisetitle": "Fuse or Progress Bar",
-        "descriptions": "Make a fuse on screen that takes exactly 5 seconds to complete its timer. Trigger an interesting event when it finishes eg. fireworks, a volcano erupting. Think laterally, your fuse could be a progress bar, or an ice cube melting, a balloon inflating etc. etc.",
-        "imagename": "exercises/interactivity/fuse.png"
-    },
-    {
-        "heading": "Exercises: Time and Interactivity",
-        "exercisetitle": "Eyes Following Mouse",
-        "descriptions": "Draw one or more eyes with pupils that follow the mouse. Constrain each pupil to stay within its eyeball.",
-        "imagename": "exercises/interactivity/eyes.png",
-        "verticalspace": 1
-    },
-    {
-        "heading": "Exercises: Time and Interactivity",
-        "exercisetitle": "Audio-Sensitive Animation",
-        "descriptions": "Create a sound responsive animation. Your visuals may respond to amplitude and/or frequency of sound.",
-        "imagename": "exercises/interactivity/visualizer.png",
-        "verticalspace": 1
-    },
-    {
-        "heading": "Exercises: Time and Interactivity",
-        "exercisetitle": "Ripples in a Pond",
-        "descriptions": "Create a an animated ripple that emanates outwards from the cursor everytime the mouse is clicked. Consider the speed at which your ripples expand. You will likely need to create a ripple class.",
-        "imagename": "exercises/interactivity/ripple.png"
-    },
-    {
-        "heading": "Exercises: Time and Interactivity",
-        "exercisetitle": "Raindrops",
-        "descriptions": "Animate a rainy day. Make a sketch where numerous drops appear at the top of your screen and fall at a random interval. You will need to create a raindrop and timer class.",
-        "imagename": "exercises/interactivity/rain.png"
-    },
-    {
-        "heading": "Exercises: Time and Interactivity",
-        "exercisetitle": "Easing: Filtering a variable",
-        "descriptions": "Objects rarely move at a constant speed in the real world. Create a sketch in which an ellipse follows the position of the mouse, but decelerates on approach. This requires an easing function or a filter for the mouse x and y variables.",
-        "imagename": "exercises/interactivity/easing.png"
-    },
-    {
-        "heading": "Exercises: Time and Interactivity",
-        "exercisetitle": "Smoothing Data",
-        "descriptions": "Create a line from stored mouse positions then smooth it by progressively averaging each point along the line with its neighbours. Pay attention to the end values of the array. ",
-        "imagename": "exercises/interactivity/smoothing.png"
-    },
-    {
-        "heading": "Exercises: Simulation",
-        "exercisetitle": "Recursive Tree",
-        "descriptions": "Use recursion to create a tree-like branching structure. Start with a symmetrical design that repeatedly bifurcates. Introduce a variable which proportionally reduces the length of each iterations' branches. Use randomness to vary the length, angular orientation, and number of divisions. Add termini: leaves, alveoli, etc. Explore your design's expressive range by connecting its internal variables to the cursor, sliders, or time-varying sinusoids.(1)",
-        "imagename": "exercises/simulation/recursive-tree.png",
+        "heading": "Exercises: Curves",
+        "exercisetitle": "Mathworld curves.",
+        "descriptions": "Browse the website: http://mathworld.wolfram.com/topics/Curves.html and select a curve. Please note that not every Mathworld curve comes with a helpful diagram or an easy-to-implement equation.  We recommend selecting curves whose equations take one of the following standard forms: the standard explicit form y = f(x), or curves which take the parametric form y = f(t), x = g(t), or curves with the polar form r = f(theta). Create a simple interaction in which the mouseX and mouseY are used to continuously govern at least one (and preferably at least two) parameters of the curve.",
+        "imagename": "exercises/curves/mathworld.png",
         "verticalspace": 2
     },
     {
-        "heading": "Exercises: Simulation",
-        "exercisetitle": "Conway's Life",
-        "descriptions": "Create an implementation of “Conway’s Game of Life”. This classic *cellular automaton* is one of the simplest and best illustrations of the way in which complex patterns of self-organization can emerge from simple rules.(2)",
-        "imagename": "exercises/simulation/conways-life.png",
+        "heading": "Exercises: Curves",
+        "exercisetitle": "Butt Generator",
+        "descriptions": "Code a program that generates animations of a butt. It should change shape, size and color. How variable can a butt be before it's not a butt? (3)",
+        "imagename": "exercises/curves/butt.png",
         "verticalspace": 1
     },
     {
-        "heading": "Exercises: Simulation",
-        "exercisetitle": "Particle System",
-        "descriptions": "Create a particle class, which stores a speck’s 2D position and velocity. Add a method that enables a particle’s motion to be affected by simulated forces. (See ‘Euler integration’ and Newton’s 2nd Law). Create an array of particles which are attracted or repelled by the cursor.",
-        "imagename": "exercises/simulation/cursor-particles.png",
+        "heading": "Exercises: Curves",
+        "exercisetitle": "Text along a curve",
+        "descriptions": "Code a program that displays a phrase to the screen, where each letter follows the curve of a line. You will need to treat each character individually. (4)",
+        "imagename": "exercises/curves/textcurve.png",
         "verticalspace": 1
     },
     {
-        "heading": "Exercises: Simulation",
-        "exercisetitle": "Fireworks (Particle Shower)",
-        "descriptions": "Bla bla",
-        "verticalspace": 1
-    },
-    {
-        "heading": "Exercises: Simulation",
-        "exercisetitle": "Flow Field",
-        "descriptions": "Use 2D Perlin noise to compute a “flow field”, such that every location on the canvas has an associated x-force and y-force. Place particles into this field, impelling them with the forces at their locations. Make recordings of their traces. Confine the particles with *periodic boundaries.*",
-        "imagename": "exercises/simulation/perlin-flow-field-2.png",
-        "verticalspace": 1
-    },
-    {
-        "heading": "Exercises: Simulation",
-        "exercisetitle": "Flocking",
-        "descriptions": "Create a two-dimensional flock of creatures, modeling your animals as particles that exert (and are affected by) forces of mutual *separation* (to prevent collision), *cohesion* (to stick together as a group), and *alignment* (to orient towards similar directions as their neighbors). Observe how changing the relative strengths of these forces alters the behavior of the flock or swarm. Include other forces, such as the desire to flee from a predator, hunt for food, etc. Be sure to use a representation for your creatures that makes their orientation visible.(3)",
-        "imagename": "exercises/simulation/flocking2.png",
+        "heading": "Exercises: Curves",
+        "exercisetitle": "Phyllotaxis",
+        "descriptions": "Use Turtle Graphics to generate a phyllotactic spiral comprised of small geometric elements. Have your turtle start drawing at the center of the canvas.\nAt each step in the spiral, your turtle should draw a small regular polygon, such as a small hexagon. Be sure to have your turtle use the Golden Angle, ~137.507764°, to reckon where to place the next seed. (5)",
+        "imagename": "exercises/curves/phyll.png",
         "verticalspace": 2
     },
     {
-        "heading": "Exercises: Simulation",
-        "exercisetitle": "Circle Packing",
-        "descriptions": "Generate a “circle packing”: an arrangement of circles such that none overlap, and some (or all) are mutually tangent. In one approach, randomly placed circles are added to the canvas, and grow until they collide with any previous circles.(4)",
-        "imagename": "exercises/simulation/circle-packing.png",
+        "heading": "Exercises: Curves",
+        "exercisetitle": "Continuity of Bezier Curves",
+        "descriptions": "Creating a curve by joining two Bezier curves. Position the control points of each curve so that their slope continuity is not disrupted at the point of the join.",
+        "imagename": "exercises/curves/bezier.png",
         "verticalspace": 1
     },
     {
-        "heading": "Exercises: Simulation",
-        "exercisetitle": "Diffusion-Limited Aggregation",
-        "descriptions": "Implement and explore the coral forms that arise from diffusion-limited aggregation: a simulation in which meandering particles become fixed in place when they collide with previously fixed particles (or an initial \"seed\").(5)",
-        "imagename": "exercises/simulation/dla.png",
+        "heading": "Exercises: Curves",
+        "exercisetitle": "Circle Morphing",
+        "descriptions": "Create a program that interpolates between a circle and a square (or triangle). ",
+        "imagename": "exercises/curves/circlesquare.png",
         "verticalspace": 1
     },
     {
-        "heading": "Exercises: Simulation",
+        "heading": "Exercises: Curves",
         "exercisetitle": "References",
-        "descriptions": "1. See Dan Shiffman’s *Coding Challenge #14,* “Fractal Trees”, and research the ‘algorithmic botany’ work of Dr. Przemyslaw Prusinkiewicz.\n2. See Dan Shiffman's *Nature of Code #7.3.*\n3. See Dan Shiffman’s *Nature of Code #6,* “Autonomous Agents and Steering”, and Craig Reynolds’ research into steering behaviors and ‘boids’.\n4. See Dan Shiffman's *Coding Challenge #50.*\n5. See Dan Shiffman's *Coding Challenge #34.* ",
+        "descriptions": "1. Yuki Yoshida, Drawing a Circle Code Repository. Online: https://github.com/yukiy/drawCircle\n2. See the mathworld website: http://mathworld.wolfram.com/topics/Curves.html\n3. See http://www.buttgenerator.com/ \n4. See the Daniel Shiffman tutorial, Strings and Drawing Text on the Processing website: https://processing.org/tutorials/text/\n5. See Assignment 90-B: Turtle’s Phyllotactic Spiral from Golan Levin's Compuation for Creative Practices syllabus. Online: http://cmuems.com/2015c/deliverables/deliverables-09/#spiral",
         "verticalspace": 2
-    },
-    {
-        "heading": "Simulation",
-        "exercisetitle": "Spring ",
-        "verticalspace": 1
     }
 ]

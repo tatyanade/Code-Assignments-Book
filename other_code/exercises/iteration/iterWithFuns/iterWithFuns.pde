@@ -28,5 +28,5 @@ void drawFace(float x, float y){
 }
 
 void keyPressed(){
-  saveFrame("interactionWithFunctions.png"); 
+  saveFrame("iterationWithFunctions.png"); 
 }

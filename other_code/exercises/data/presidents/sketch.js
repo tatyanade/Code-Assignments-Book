@@ -1,27 +1,11 @@
 // Practice lab exam 2, problem 1 (Presidents)
 // POSSIBLE SOLUTION
 
-function tallest(presidents) {
-  // given p, a list of president objects, find the president with
-  // the greatest height
-  // return the name of the tallest president
-  var tallestName = "none";
-  var tallestHeight = 0;
-  for (var i = 0; i < presidents.length; i++) {
-    var p = presidents[i];
-    if (p.height > tallestHeight) {
-      tallestHeight = p.height;
-      tallestName = p.name;
-    }
-  }
-  return tallestName;
-}
-
 
 function setup() {
   createCanvas(400, 400);
-  saveCanvas('myCanvas9', 'png');
-  background(255);
+  
+  background(200,200,200);
   var presidents = getPresidents();
   var name = tallest(presidents);
   if (typeof name === "number") {
@@ -49,15 +33,37 @@ function setup() {
       } else {
         fill(0);
       }
-      rect(x, y, 20, -pres.height * 0.3);
+      rect(x, y-10, 20, -pres.height * 0.3);
     }
   }
 
-  noLoop();
+//  noLoop();
 
 }
 
+
 function draw() {}
+
+function keyPressed(){
+  saveCanvas('myCanvas', 'png');
+}
+
+function tallest(presidents) {
+  // given p, a list of president objects, find the president with
+  // the greatest height
+  // return the name of the tallest president
+  var tallestName = "none";
+  var tallestHeight = 0;
+  for (var i = 0; i < presidents.length; i++) {
+    var p = presidents[i];
+    if (p.height > tallestHeight) {
+      tallestHeight = p.height;
+      tallestName = p.name;
+    }
+  }
+  return tallestName;
+}
+
 
 
 function getPresidents() {

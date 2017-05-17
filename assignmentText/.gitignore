@@ -1,0 +1,7 @@
+*.indd
+*.idlk
+*.pdf
+*.zip
+*.json
+*.DS_Store
+resources/*

@@ -1,5 +1,4 @@
-// tega's cool life sequencer
-// <3 rld
+//life sequencer
 
 // sequencer stuff:
 var ncols = 21; // how many 'steps' in the sequence

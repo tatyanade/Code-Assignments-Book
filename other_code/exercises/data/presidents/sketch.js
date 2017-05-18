@@ -1,54 +1,100 @@
-// Practice lab exam 2, problem 1 (Presidents)
-// POSSIBLE SOLUTION
-
+// Display of the height of the presidents
 
 function setup() {
   createCanvas(400, 400);
+  background(180);
   
-  background(200,200,200);
   var presidents = getPresidents();
-  var name = tallest(presidents);
-  if (typeof name === "number") {
-    name = "Oops: your tallest() function returned a number";
-  } else if (typeof name === "object") {
-    name = "Oops: your tallest() function returned an object or nothing";
-  } else if (name === "tall guy") {
-    name = "Oops: you did not implement the tallest() function.";
-  }
-  text(name, 10, 20);
+  var name = getNameOfTallest (presidents);
+  textSize(20);
+  textAlign(CENTER); 
+  text("Tallest: " + name, width/2, 30);
 
-  for (var i = 0; i < 4; i++) { // draw rows
-    for (var j = 0; j < 10; j++) { // draw columns
-      var x = 10 + j * 40;
-      var y = 100 + i * 100;
+  var barMarginX = 8; 
+  var barMarginY = 250; 
+  var barSeparationX = (width - barMarginX*2)/presidents.length;
+  var barWidthX = barSeparationX -1;
+  var barMaxHeightY = height/3;
+  var minPresHeight = 0;//150; 
+  var maxPresHeight = 200; 
+  
+  for (var i = 0; i < presidents.length; i++) { 
+    var aPresident = presidents[i];
+    
+    var x = barMarginX + (i * barSeparationX);
+    var y = barMarginY;
+    var w = barWidthX; 
+    var h = map(aPresident.height, minPresHeight,maxPresHeight, 0,0-barMaxHeightY);
+    
+    if (name === aPresident.name) {
+      stroke(0);
+      strokeWeight(2);
+      line (width/2,35, x+w/2, y+h-5);
+      fill("yellow");
+    } else {
       fill(0);
-      var presIndex = i * 10 + j; // 10 per row and add column to
-      // get the index of the president we want to draw next
-      if (presIndex >= presidents.length) {
-        break; // quit when we run out of presidents to draw
-      }
-      var pres = presidents[i * 10 + j];
-      if (name === pres.name) {
-        fill("red");
-      } else {
-        fill(0);
-      }
-      rect(x, y-10, 20, -pres.height * 0.3);
     }
+    noStroke(); 
+    rect(x, y, w, h);
   }
-
-//  noLoop();
-
+  noLoop();
+  saveCanvas(); 
 }
 
 
-function draw() {}
 
-function keyPressed(){
-  saveCanvas('myCanvas', 'png');
+
+function getPresidents() {
+    return [
+      {name: "George Washington", height: 188},
+      {name: "John Adams", height: 170},
+      {name: "Thomas Jefferson", height: 189},
+      {name: "James Madison", height: 163},
+      {name: "James Monroe", height: 183},
+      {name: "John Q. Adams", height: 171},
+      {name: "Andrew Jackson", height: 185},
+      {name: "Martin Van Buren", height: 168},
+      {name: "William H. Harrison", height: 173},
+      {name: "John Tyler", height: 183},
+      {name: "James K. Polk", height: 173},
+      {name: "Zachary Taylor", height: 173},
+      {name: "Millard Fillmore", height: 175},
+      {name: "Franklin Pierce", height: 178},
+      {name: "James Buchanan", height: 183},
+      {name: "Abraham Lincoln", height: 193},
+      {name: "Andrew Johnson", height: 178},
+      {name: "Ulysses S. Grant", height: 173},
+      {name: "Rutherford B. Hayes", height: 174},
+      {name: "James A. Garfield", height: 183},
+      {name: "Chester A. Arthur", height: 188},
+      {name: "Grover Cleveland", height: 180},
+      {name: "Benjamin Harrison", height: 168},
+      {name: "William McKinley", height: 170},
+      {name: "Theodore Roosevelt", height: 178},
+      {name: "William H. Taft", height: 182},
+      {name: "Woodrow Wilson", height: 180},
+      {name: "Warren G. Harding", height: 183},
+      {name: "Calvin Coolidge", height: 178},
+      {name: "Herbert Hoover", height: 182},
+      {name: "Franklin D. Roosevelt", height: 188},
+      {name: "Harry S. Truman", height: 175},
+      {name: "Dwight D. Eisenhower", height: 179},
+      {name: "John F. Kennedy", height: 183},
+      {name: "Lyndon Johnson", height: 192},
+      {name: "Richard Nixon", height: 182},
+      {name: "Gerald Ford", height: 183},
+      {name: "Jimmy Carter", height: 177},
+      {name: "Ronald Reagan", height: 185},
+      {name: "George H. W. Bush", height: 188},
+      {name: "Bill Clinton", height: 188},
+      {name: "George W. Bush", height: 182},
+      {name: "Barack Obama", height: 185},
+      {name: "Donald J. Trump", height: 188}
+  ];
 }
 
-function tallest(presidents) {
+
+function getNameOfTallest(presidents) {
   // given p, a list of president objects, find the president with
   // the greatest height
   // return the name of the tallest president
@@ -66,135 +112,4 @@ function tallest(presidents) {
 
 
 
-function getPresidents() {
-  return [{
-    name: "Washington, George",
-    height: 188
-  }, {
-    name: "Adams, John",
-    height: 170
-  }, {
-    name: "Jefferson, Thomas",
-    height: 189
-  }, {
-    name: "Madison, James",
-    height: 163
-  }, {
-    name: "Monroe, James",
-    height: 183
-  }, {
-    name: "Adams, John Q.",
-    height: 171
-  }, {
-    name: "Jackson, Andrew",
-    height: 185
-  }, {
-    name: "Van Buren, Martin",
-    height: 168
-  }, {
-    name: "Harrison, William H.",
-    height: 173
-  }, {
-    name: "Tyler, John",
-    height: 183
-  }, {
-    name: "Polk, James K.",
-    height: 173
-  }, {
-    name: "Taylor, Zachary",
-    height: 173
-  }, {
-    name: "Fillmore, Millard",
-    height: 175
-  }, {
-    name: "Pierce, Franklin",
-    height: 178
-  }, {
-    name: "Buchanan, James",
-    height: 183
-  }, {
-    name: "Lincoln, Abraham",
-    height: 193
-  }, {
-    name: "Johnson, Andrew",
-    height: 178
-  }, {
-    name: "Grant, Ulysses S.",
-    height: 173
-  }, {
-    name: "Hayes, Rutherford B.",
-    height: 174
-  }, {
-    name: "Garfield, James A.",
-    height: 183
-  }, {
-    name: "Arthur, Chester A.",
-    height: 188
-  }, {
-    name: "Cleveland, Grover",
-    height: 180
-  }, {
-    name: "Harrison, Benjamin",
-    height: 168
-  }, {
-    name: "McKinley, William",
-    height: 170
-  }, {
-    name: "Roosevelt, Theodore",
-    height: 178
-  }, {
-    name: "Taft, William H.",
-    height: 182
-  }, {
-    name: "Wilson, Woodrow",
-    height: 180
-  }, {
-    name: "Harding, Warren G.",
-    height: 183
-  }, {
-    name: "Coolidge, Calvin",
-    height: 178
-  }, {
-    name: "Hoover, Herbert",
-    height: 182
-  }, {
-    name: "Roosevelt, Franklin D.",
-    height: 188
-  }, {
-    name: "Truman, Harry S.",
-    height: 175
-  }, {
-    name: "Eisenhower, Dwight D.",
-    height: 179
-  }, {
-    name: "Kennedy, John F.",
-    height: 183
-  }, {
-    name: "Johnson, Lyndon",
-    height: 192
-  }, {
-    name: "Nixon, Richard",
-    height: 182
-  }, {
-    name: "Ford, Gerald",
-    height: 183
-  }, {
-    name: "Carter, Jimmy",
-    height: 177
-  }, {
-    name: "Reagan, Ronald",
-    height: 185
-  }, {
-    name: "Bush, George H. W.",
-    height: 188
-  }, {
-    name: "Clinton, Bill",
-    height: 188
-  }, {
-    name: "Bush, George W.",
-    height: 182
-  }, {
-    name: "Obama, Barack",
-    height: 185
-  }];
-}
+function draw() {}

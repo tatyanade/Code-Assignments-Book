@@ -11,7 +11,7 @@ import processing.video.*;
 Capture video;
 
 void setup() {
-  size(640, 480);
+  size(300, 300);
   // Uses the default video input, see the reference if this causes an error
   video = new Capture(this, width, height);
   video.start();  

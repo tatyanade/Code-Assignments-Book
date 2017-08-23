@@ -77,7 +77,8 @@
     {
         "heading": "Exercises: Iteration",
         "exercisetitle": "String art",
-        "descriptions": "Consider some examples of string art and recreate one in code. "
+        "descriptions": "Consider some examples of string art and recreate one in code. ",
+        "imagename": "exercises/iteration/string_art.png"
     },
     {
         "heading": "Exercises: Color",
@@ -103,7 +104,7 @@
     {
         "heading": "Exercises: Color",
         "exercisetitle": "Every Color, Animated",
-        "descriptions": "Create a sketch that (eventually) displays every possible hue and brightness over time. Choose either the RGB or HSB color models.",
+        "descriptions": "Create a sketch that (eventually) displays every possible hue and brightness over time. Choose either the RGB or HSB color models. (1)",
         "imagename": "exercises/color/everyColor.png",
         "verticalspace": 1
     },
@@ -152,21 +153,21 @@
     {
         "heading": "Exercises: Color",
         "exercisetitle": "Josef Albers Color Relativity I",
-        "descriptions": "Research the work of Josef Albers' color relativity exercises and create a sketch that makes 3 colors look like 4. (1)",
+        "descriptions": "Research the work of Josef Albers' color relativity exercises and create a sketch that makes 3 colors look like 4. (2)",
         "imagename": "exercises/color/color_relativity_1.png",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Color",
         "exercisetitle": "Josef Albers Color Relativity II",
-        "descriptions": "Using similar techniques as above, create a sketch that makes 4 colors look like 3. Write the color values somewhere on your sketch. For an extra challenge, make 5 colors look like 3. (1)",
+        "descriptions": "Using similar techniques as above, create a sketch that makes 4 colors look like 3. Write the color values somewhere on your sketch. For an extra challenge, make 5 colors look like 3. (2)",
         "imagename": "exercises/color/color_relativity_2.png",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Color",
         "exercisetitle": "References",
-        "descriptions": "(1) See https://strangerbedfellows.files.wordpress.com/2015/12/the-colorist-cookbook.pdf \nAdditional References:\n- https://earthobservatory.nasa.gov/blogs/elegantfigures/2013/08/05/subtleties-of-color-part-1-of-6/\n- http://taubaauerbach.com/view.php?id=286&alt=696\n",
+        "descriptions": "(1) http://taubaauerbach.com/view.php?id=286 \n(2) See https://strangerbedfellows.files.wordpress.com/2015/12/the-colorist-cookbook.pdf \nAdditional References:\n- https://earthobservatory.nasa.gov/blogs/elegantfigures/2013/08/05/subtleties-of-color-part-1-of-6/\n- http://taubaauerbach.com/view.php?id=286&alt=696\n",
         "verticalspace": 1
     },
     {
@@ -354,14 +355,14 @@
     {
         "heading": "Exercises: Curves",
         "exercisetitle": "A circle in three ways",
-        "descriptions": "Plot a circle in three different ways. For example, you might: use the trigonometric functions sin() and cos() to plot a series of points; approximate a circle with several Bézier curves; or construct a circle with so-called \"Turtle Graphics\", using a series of alternating forward steps and small rotations. (1)",
+        "descriptions": "Plot a circle in three different ways. For example, you might: use the trigonometric functions sin() and cos() to plot a series of points; approximate a circle with several Bézier \\xE1        &#225;        &aacute;        %E1        %C3%A1 curves; or construct a circle with so-called \\\\\"Turtle Graphics\\\", using a series of alternating forward steps and small rotations. (1)",
         "imagename": "exercises/curves/circle.png",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Curves",
         "exercisetitle": "Butt Generator",
-        "descriptions": "Write a program that uses arcs or Bézier curves to generate animations of a butt.",
+        "descriptions": "Write a program that uses arcs or Bézier curves to generate images of one or more butts.",
         "imagename": "exercises/curves/butt.png",
         "verticalspace": 1
     },
@@ -438,6 +439,7 @@
         "heading": "Exercises: Simulation",
         "exercisetitle": "Fireworks (Particle Shower)",
         "descriptions": "Create a particle class, which stores a speck's 2D position and velocity. Add methods to give the particle an initial, randomly generated velocity and constant acceleration. Create an array of particles to simulate a firework. Each one in your array will need to start from the same position.",
+        "imagename": "exercises/simulation/fireworks.png",
         "verticalspace": 1
     },
     {
@@ -480,7 +482,7 @@
         "descriptions": "A *theremin* is a monophonic instrument whose volume and pitch are controlled by the positions of a player's hands, relative to two antennae. Using the x and y positions of the cursor, create a simple theremin in code. You may not use mouse clicks or the keyboard. ",
         "imagename": "exercises/sound/theremin.png",
         "verticalspace": 1,
-        "attribution": "Contributed by R. Luke DuBois"
+        "attribution": "With contributions from R. Luke DuBois"
     },
     {
         "heading": "Exercises: Sound",
@@ -671,7 +673,7 @@
         "descriptions": "Choose an existing text and make a Dada style poem randomizing its words or lines. ",
         "imagename": "exercises/text/cutup1.jpg",
         "verticalspace": 1,
-        "attribution": "Contributed by Allison Parrish"
+        "attribution": "With contributions from Allison Parrish"
     },
     {
         "heading": "Text and Language",
@@ -690,7 +692,7 @@
     {
         "heading": "Text and Language",
         "exercisetitle": "Sorting words",
-        "descriptions": "Read in a text file and print out the words (a) in alphabetical order, (b) in order detirmined by length and (c) detirmined by their frequency in the text.",
+        "descriptions": "Read in a text file and print out the words (a) in alphabetical order, (b) in order dermined by length and (c) determined by their frequency in the text.",
         "imagename": "exercises/text/sorting.jpg",
         "verticalspace": 1
     },
@@ -704,14 +706,14 @@
     {
         "heading": "Text and Language",
         "exercisetitle": "People, places, things",
-        "descriptions": "Read in a text and replace each noun with a randomly selected noun taken from a second text. You will need to use an additional library identify parts of speech (3).",
+        "descriptions": "Read in a text and replace each noun with a randomly selected noun taken from a second text. You will need to use an additional library to identify parts of speech (3).",
         "imagename": "exercises/text/people.jpg",
         "verticalspace": 1
     },
     {
         "heading": "Text and Language",
-        "exercisetitle": "Syllable counter",
-        "descriptions": "Write a program that finds all words in a text file of a particular number of syllables. Use the output of this program create a poem. Consider the structure of sonnets, limericks or haikus.",
+        "exercisetitle": "Haiku Finder (after Jonathan Feinberg)",
+        "descriptions": "Write a program which automatically discovers \"inadvertent haikus\"—sentences in a chosen text whose words happen to fall in groups of 5, 7, and 5 syllables. Advanced students: a naive solution will discover haikus with awkward breaks; add heuristics to improve the quality of your results. ",
         "imagename": "exercises/text/syllable.jpg",
         "verticalspace": 1
     },
@@ -732,7 +734,7 @@
     {
         "heading": "Text and Language",
         "exercisetitle": "Rhyming couplets",
-        "descriptions": "Choose a source text such as text from a book, Twitter's public timeline etc. and create a program that finds rhyming couplets to produce poems. You will need to use an additional library to identify parts of speech (3).",
+        "descriptions": "Choose a source text such as text from a book, Twitter's public timeline etc. and create a program that finds rhyming couplets to produce poems. You will need to use an additional library to tell you what the words sound like (3).",
         "imagename": "exercises/text/rhyme.jpg",
         "verticalspace": 1
     },
@@ -753,7 +755,7 @@
     {
         "heading": "Text and Language",
         "exercisetitle": "References",
-        "descriptions": "(1) For Python see the lxml library\n(2) For python see nltk, the natural language tool kit\n(3) For python see the Textblob libary. For javascript see Rita.js\n(4) For python see Markovify. For javasript see Rita.js\n \nAlso consider libraries such as Tracery to produce grammar structures. Online: http://www.crystalcodepalace.com/tracery.html \rFor lists of nouns in JSON format, see Darius Kazemi’s repository of structured corpora. Online: https://github.com/dariusk/corpora ",
+        "descriptions": "(1) For Python see the lxml library\n(2) For python see nltk, the natural language tool kit\n(3) See the CMU Pronouncing dictionary http://www.speech.cs.cmu.edu/cgi-bin/cmudict or for  Python see the Pronouncing library, http://www.speech.cs.cmu.edu/cgi-bin/cmudict) or for Javascript see Rita.js\n(4) For python see Markovify. For javasript see Rita.js\n \nAlso consider libraries such as Tracery to produce grammar structures. Online: http://www.crystalcodepalace.com/tracery.html For lists of nouns in JSON format, see Darius Kazemi’s repository of structured corpora. Online: https://github.com/dariusk/corpora ",
         "verticalspace": 2
     },
     {
@@ -780,12 +782,14 @@
         "heading": "Exercises: Typography",
         "exercisetitle": "Typewriter",
         "descriptions": "Create a sketch that displays letters as they are typed. For an extra challenge, program it so that letters are deleted when the backspace key is pressed.",
+        "imagename": "exercises/typography/typewriter.png",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Typography",
         "exercisetitle": "Text with feeling",
         "descriptions": "Choose a word describing a bodily action such as grow, shiver or jump. Animate this word on your screen in way that represents its meaning. For example the word grow, could get larger over time.",
+        "imagename": "exercises/typography/text_with_feeling.png",
         "verticalspace": 1
     },
     {
@@ -840,18 +844,21 @@
         "heading": "Exercises: Unpredicability",
         "exercisetitle": "Exquisite Corpse",
         "descriptions": "Recreate the surrealist game exquisite corpse, where the legs, torso and head of a figure are recombined randomly from different options every time the mouse is clicked.",
+        "imagename": "/exercises/unpredictability/exquisite_corpse.png",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Unpredicability",
         "exercisetitle": "Noise animations",
         "descriptions": "Use the noise function to control the scale and motion of an ellipse. ",
+        "imagename": "/exercises/unpredictability/noise_animations.png",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Unpredicability",
         "exercisetitle": "Coin toss",
         "descriptions": "Create a sketch of coin that is tossed every time the mouse is clicked. Your coin should be evenly weighted and heads and tails should have an even chance of appearing. Test your program over 20 tosses, how well does it perform?",
+        "imagename": "/exercises/unpredictability/coin_toss.png",
         "verticalspace": 1
     }
 ]

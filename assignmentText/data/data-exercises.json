@@ -1,51 +1,93 @@
 [
     {
         "heading": "Exercises: Iteration",
-        "exercisetitle": "Checkers",
-        "descriptions": "Create a checkerboard using a nested loop. Recall that a checkerboard is an 8x8 grid of alternating black and white squares, starting with white in the top left corner.",
-        "imagename": "exercises/iteration/checkers.jpg",
+        "exercisetitle": "Simple Iteration: Seven Circles",
+        "descriptions": "Use iteration to copy the figure at left, in which seven circles are positioned across the canvas. The position of each circle should be computed using your loop’s counting variable. Make sure the first circle is inset by a margin; it should not lie on the edge of the canvas.",
+        "imagename": "exercises/iteration/simple_iteration.png",
+        "verticalspace": 1
+    },
+    {
+        "heading": "Exercises: Iteration",
+        "exercisetitle": "Transitioning Rectangles",
+        "descriptions": "Remember that *any* visual property can be linked to a loop variable, not just position. Here, use iteration to generate a series of rectangles. Your code should simultaneously control *several* of the rectangles' visual properties, including their position, height, and fill-color.",
+        "imagename": "exercises/iteration/transitioning_rectangles.png",
+        "verticalspace": 1
+    },
+    {
+        "heading": "Exercises: Iteration",
+        "exercisetitle": "String Art Challenge",
+        "descriptions": "Use iteration to re-create the figure at left. Your code should draw exactly 8 lines.",
+        "imagename": "exercises/iteration/string_art_challenge.png",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Iteration",
         "exercisetitle": "A Mini-Calendar",
-        "descriptions": "Use a for() loop to generate a row of visual elements: one for each of the days of the current month. All of the elements should be drawn identically, except for the one whose index corresponds to the current day. Differentiate this one in some way.",
-        "imagename": "exercises/iteration/calendar.jpg",
+        "descriptions": "Use iteration to render a row of visual elements: one for each of the days of the current month. All of the elements should be drawn identically, *except* for the one whose index corresponds to the current day. Differentiate this one in some way.",
+        "imagename": "exercises/iteration/mini_calendar.png",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Iteration",
-        "exercisetitle": "A Receding Horizon",
-        "descriptions": "Use iteration to create a series of vertical lines across the screen. Modify the values within the iteration loop to shift the lines so that they have the appearance of a receding horizon.",
-        "imagename": "exercises/iteration/horizon.jpg",
+        "exercisetitle": "A Receding Landscape",
+        "descriptions": "Use iteration to create a series of vertical lines across the screen. Modify the values controlling the placement of the lines’ endpoints, shifting the lines so that they suggest the appearance of a receding landscape.",
+        "imagename": "exercises/iteration/receding_landscape.png",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Iteration",
-        "exercisetitle": "Color Gradient ",
-        "descriptions": "Generate a gradient interpolating from one color to another across 17 rectangles. Use a for() loop to calculate the sizes, positions and fill-colors of the rectangles. Implement some code that randomizes the two colors whenever the user clicks the mouse. ",
-        "imagename": "exercises/iteration/gradient2.jpg",
+        "exercisetitle": "Iteration + Interaction: Lines to the Cursor",
+        "descriptions": "Use iteration to create an interactive display featuring a series of 10 lines. Each of the lines should be drawn from the cursor, to a point whose location is a simple mathematical function of the iteration counting variable.",
+        "imagename": "exercises/iteration/lines_to_the_cursor.png",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Iteration",
-        "exercisetitle": "Geometric Progression I",
-        "descriptions": "Use a for() loop to visualize a geometric progression. Some aspect of each element in the progression should come from series of numbers where each term after the first is computed by multiplying the previous one by a fixed multiplier (or common ratio).",
-        "imagename": "exercises/iteration/progression.jpg",
+        "exercisetitle": "Color-Bar Gradient ",
+        "descriptions": "Using iteration, generate a gradient that interpolates from one fill color to another across exactly 17 rectangles. You may find it helpful to learn about your environment’s lerp() function. Implement some code that randomizes the two end-colors whenever the user clicks the mouse. ",
+        "imagename": "exercises/iteration/color_bar_gradient.png",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Iteration",
-        "exercisetitle": "Geometric Progression II",
-        "descriptions": "Layout your graphic elements in two dimensions, and vary them both along the x- and y-axis. For example, change their shape and/or colour progressively.",
-        "imagename": "exercises/iteration/progression2.jpg",
+        "exercisetitle": "Dashed Line",
+        "descriptions": "Write a program that generates a dashed line between two points. (You may not use a “readymade” dashed line.) Your dashes should always have a fixed length, such as 10 pixels, so that *longer lines require more dashes*. Connect one of your line’s endpoints to the cursor.",
+        "imagename": "exercises/iteration/dashed_line.png",
+        "verticalspace": 1
+    },
+    {
+        "heading": "Exercises: Iteration",
+        "exercisetitle": "Nested Iteration: Checkers",
+        "descriptions": "Create a checkerboard using a nested loop. Recall that a checkerboard is an 8x8 grid of alternating black and white squares, starting with white in the top left corner.",
+        "imagename": "exercises/iteration/checkers.png",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Iteration",
         "exercisetitle": "Iteration with Functions",
-        "descriptions": "Write a function which encapsulates several drawing commands in order to render a simple element (a leaf, a face, etc). Give your function arguments that determine where the element will be positioned. Using iteration, call your function to display a grid of these elements.",
-        "imagename": "exercises/iteration/iterationWithFunctions.png",
+        "descriptions": "Write a function which encapsulates several drawing commands in order to render a simple visual element (a leaf, face, etc). Give your function arguments that determine where the element will be positioned. Using iteration, call your function to display a grid of these elements.",
+        "imagename": "exercises/iteration/iteration_with_functions.png",
+        "verticalspace": 1
+    },
+    {
+        "heading": "Exercises: Iteration",
+        "exercisetitle": "Iteration with Randomness I",
+        "descriptions": "Create an evocative composition, in which an iterative loop places small elements in random locations around the canvas. These elements might look like craters, potholes, pimples, raisins, Swiss cheese holes....",
+        "imagename": "exercises/iteration/iteration_with_randomness.png",
+        "verticalspace": 1
+    },
+    {
+        "heading": "Exercises: Iteration",
+        "exercisetitle": "Iteration with Randomness II",
+        "descriptions": "Use nested iteration to generate a grid of visual elements. Write code such that, with a small probability on each iteration, an alternative element is drawn instead. ",
+        "imagename": "exercises/iteration/grid_with_randomness.png",
+        "verticalspace": 1
+    },
+    {
+        "heading": "Exercises: Iteration",
+        "exercisetitle": "Geometric Progression",
+        "descriptions": "Use iteration to generate a series of visual elements whose dimensions exhibit a *geometric* progression. The size of each element should be computed by multiplying the size of its previous one by a fixed constant (or common ratio). For example, each circle might be 1.3 times as large as the one before it. ",
+        "imagename": "exercises/iteration/geometric_progression.png",
         "verticalspace": 1
     },
     {
@@ -64,21 +106,10 @@
     },
     {
         "heading": "Exercises: Iteration",
-        "exercisetitle": "Sine wave",
-        "descriptions": "Create a sine wave from a series of dots.",
-        "imagename": "exercises/iteration/sine.png"
-    },
-    {
-        "heading": "Exercises: Iteration",
         "exercisetitle": "Hexagonal Grid",
-        "descriptions": "Write a custom function that draws a hexagon. Put your function in a for loop and fill your sketch with a grid of hexagons.",
-        "imagename": "exercises/iteration/hexagon.png"
-    },
-    {
-        "heading": "Exercises: Iteration",
-        "exercisetitle": "String art",
-        "descriptions": "Consider some examples of string art and recreate one in code. ",
-        "imagename": "exercises/iteration/string_art.png"
+        "descriptions": "Write a custom function that draws a hexagon. Using iteration, call this function to fill your sketch with a grid of hexagons. For regular hexagons, you may need to consult some trigonometry. ",
+        "imagename": "exercises/iteration/hexagonal_grid.png",
+        "verticalspace": 1
     },
     {
         "heading": "Exercises: Color",
@@ -355,7 +386,7 @@
     {
         "heading": "Exercises: Curves",
         "exercisetitle": "A circle in three ways",
-        "descriptions": "Plot a circle in three different ways. For example, you might: use the trigonometric functions sin() and cos() to plot a series of points; approximate a circle with several Bézier \\xE1        &#225;        &aacute;        %E1        %C3%A1 curves; or construct a circle with so-called \\\\\"Turtle Graphics\\\", using a series of alternating forward steps and small rotations. (1)",
+        "descriptions": "Plot a circle in three different ways. For example, you might: use the trigonometric functions sin() and cos() to plot a series of points; approximate a circle with several Bézier curves; or construct a circle with so-called \"Turtle Graphics\", using a series of alternating forward steps and small rotations. (1)",
         "imagename": "exercises/curves/circle.png",
         "verticalspace": 1
     },
@@ -383,7 +414,7 @@
     {
         "heading": "Exercises: Curves",
         "exercisetitle": "Text along a curve",
-        "descriptions": "Write a program that displays a phrase, such that the text follows the curve of a line. You will need to treat each character individually. (4)",
+        "descriptions": "Write a program that displays a phrase, such that the text follows the curve of a line. You will probably need to position and rotate each character individually. (4)",
         "imagename": "exercises/curves/textcurve.png",
         "verticalspace": 1
     },
@@ -862,4 +893,3 @@
         "verticalspace": 1
     }
 ]
-

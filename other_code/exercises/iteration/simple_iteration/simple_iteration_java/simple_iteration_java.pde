@@ -3,7 +3,7 @@
 // With no setup() or draw() functions. 
 
 size(400, 400);
-background (255); 
+background (192); 
 
 stroke(0); 
 fill(255); 
@@ -14,4 +14,4 @@ for (int i=0; i<7; i++) {
   ellipse(x, 100, 30, 30);
 }
 
-// saveFrame("../simple_iteration.png"); 
+saveFrame("../simple_iteration.png"); 

@@ -1,5 +1,13 @@
 // Color Bar Gradient
 
+/*
+Using iteration, generate a gradient that interpolates 
+from one fill color to another across exactly 17 rectangles. 
+You may find it helpful to learn about your environment’s lerp() 
+function. Implement some code that randomizes the two end-colors 
+whenever the user clicks the mouse.
+*/
+
 int nRectangles = 17; 
 color colorA = color(255, 255, 0);
 color colorB = color(255, 0, 255);

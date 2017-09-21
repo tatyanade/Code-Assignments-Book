@@ -1,30 +1,31 @@
 // Hexagonal Grid
 
-float sqrt3 = sqrt(3);
+var sqrt3;
 
-void setup() {
-  size(800, 800);
+function setup() {
+  createCanvas(800, 800);
   smooth();
+  sqrt3 =  sqrt(3);
 }
 
-void draw() {
+function draw() {
   background(255); 
 
-  float side = 19.05; 
-  float nDown   = 2*height / (3*side*sqrt3)+1; 
-  float nAcross = width / (3 * side) +1; 
+  var side = 19.05; 
+  var nDown   = 2*height / (3*side*sqrt3)+1; 
+  var nAcross = width / (3 * side) +1; 
 
-  for (int j=0; j<=nAcross; j++) {
-    float offsetX = j * (3*side); 
+  for (var j=0; j<=nAcross; j++) {
+    var offsetX = j * (3*side); 
 
-    for (int i=0; i<=nDown; i++) {
-      float hx = offsetX + (i%2)*1.5*side; 
-      float hy = i * side * 1.5 * sqrt3;
+    for (var i=0; i<=nDown; i++) {
+      var hx = offsetX + (i%2)*1.5*side; 
+      var hy = i * side * 1.5 * sqrt3;
 
       stroke(0);
       strokeWeight(4.0); 
       
-      float gray = random(255);
+      var gray = random(255);
       fill (gray); 
       hexagon(hx, hy, side);
     }
@@ -32,8 +33,8 @@ void draw() {
 }
 
 
-void hexagon(float x, float y, float side) {
-  pushMatrix(); 
+function hexagon(x, y, side) {
+  push(); 
   translate(x, y); 
   beginShape();
   vertex ( 1.5 * side, 0.5 * sqrt3 * side); // SE
@@ -43,10 +44,10 @@ void hexagon(float x, float y, float side) {
   vertex ( 0.0 * side, -1.0 * sqrt3 * side); // N
   vertex ( 1.5 * side, -0.5 * sqrt3 * side); // NE
   endShape(CLOSE);
-  popMatrix();
+  pop();
 }
 
-void keyPressed(){
+function keyPressed(){
   if (key == 's'){
     saveFrame("../hexagonal_grid.png"); 
   }

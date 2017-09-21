@@ -5,21 +5,16 @@ void setup() {
   background(255);
   stroke(0, 200);
   img = loadImage("cursor1.png");
-
 }
+
 void draw() {
   strokeWeight(abs((pmouseX-mouseX)/2));
-  
   if (mousePressed) {
     line(pmouseX, pmouseY, mouseX, mouseY);
   }
-
-
-  
 }
 
 void mouseReleased() {
-
   image(img, mouseX, mouseY, 2*12, 2*19);
-  saveFrame();
+  saveFrame("output.png");
 }

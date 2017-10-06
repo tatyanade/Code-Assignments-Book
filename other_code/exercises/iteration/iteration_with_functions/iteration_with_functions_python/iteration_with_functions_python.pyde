@@ -9,18 +9,15 @@ def draw():
   background(255)
   smooth() 
   
-  i=0
-  while(i<5):
-    j = 0
-    while(j<5):
+  #draws 5 rows of 5 faces
+  for i int range(0, 5):
+    for j in range(0, 5):
         x = j*75 + 50
         y = i*75 + 50
         drawFace(x, y)
-        j+=1
-    i+=1
-
 
 def drawFace(x, y):
+  #constructs a face through arcs and circles
   stroke(0, 0, 0)
   strokeWeight(2.0) 
   pushMatrix()

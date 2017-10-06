@@ -7,15 +7,15 @@ def setup():
 
 def draw():
   background(160)
-  i=0
-  while(i<150):
+  #draws 50 craters of random diameter and location
+  for i in range(0, 150):
     rx = random(-20, width+20) 
     ry = random(-20, height+20) 
     rd = random(64)
     drawCrater(rx, ry, rd)
-    i+=1
 
 def drawCrater(rx, ry, rd):
+  #creates concentric, shaded circles to imitate a crater
   noFill()
 
   strokeWeight(7)

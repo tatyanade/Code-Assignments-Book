@@ -1,22 +1,22 @@
 // Iteration with Randomness
 
-void setup() {
-  size(400, 400); 
+function setup() {
+  createCanvas(400, 400); 
   noLoop();
 }
 
-void draw() {
+function draw() {
   background(160); 
   //draws 50 craters of random diameter and location
-  for (int i=0; i<50; i++) {
-    float rx = random(-20, width+20); 
-    float ry = random(-20, height+20); 
-    float rd = random(64); //64 * pow(random(1), 3.0); 
+  for (var i=0; i<50; i++) {
+    var rx = random(-20, width+20); 
+    var ry = random(-20, height+20); 
+    var rd = random(64); //64 * pow(random(1), 3.0); 
     drawCrater(rx, ry, rd);
   }
 }
 
-void drawCrater(float rx, float ry, float rd) {
+function drawCrater(rx, ry, rd) {
   //creates concentric, shaded circles to imitate a crater
   noFill();
 
@@ -52,13 +52,3 @@ void drawCrater(float rx, float ry, float rd) {
 }
 
 
-void keyPressed() {
-
-  if (key == 's') {
-    saveFrame("../iteration_with_randomness.png");
-  } else {
-    loop(); 
-    draw();
-    noLoop(); 
-  }
-}

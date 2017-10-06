@@ -14,6 +14,7 @@ void draw() {
 
   int nLines = 10;
   float margin = 50; 
+  //draws n lines from equidistant starting points to the cursor location
   for (int i=1; i<=nLines; i++) {
     float x0 = map(i, 1,nLines, margin, width-margin); 
     float y0 = margin; 

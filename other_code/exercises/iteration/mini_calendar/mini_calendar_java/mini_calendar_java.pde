@@ -19,11 +19,13 @@ void draw() {
   // Remember that days are usually counted from 1, not 0.
   for (int d=1; d<=numberOfDaysInMonth; d++) {
     float dayX = map(d,0,numberOfDaysInMonth+1, 0,width); 
-
+    
+    //draws a circle for the current day
     if (d == day()) {
       fill(250, 100, 100);
       ellipse(dayX, height/2, 15, 15);
       
+     //draws a bar representing all the other days
     } else {
       fill(#004BA5);
       rect(dayX, height/2, 5, 50);

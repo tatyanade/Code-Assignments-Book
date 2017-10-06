@@ -8,6 +8,9 @@ strokeWeight(3.0)
 stroke(0)
 smooth()
 i=0-100
+
+#iterativly draws lines, changing the angle and startpoint, but keeping the endpoint
+#this creates a perspective that recedes into the distance
 while (i<=width+100):
   xTop = width/2 + i*10 
   xBot = width/2 + i*55 

@@ -1,13 +1,7 @@
 
 void setup() {
   size(300, 300);
-background(255);
-
-
-
-
-
-
+  background(255);
   noStroke();
   fill(0);
   float angle = 0.0;
@@ -18,8 +12,6 @@ background(255);
   }
 }
 
-void draw(){
-}
 void keyPressed(){
  saveFrame();
  exit();

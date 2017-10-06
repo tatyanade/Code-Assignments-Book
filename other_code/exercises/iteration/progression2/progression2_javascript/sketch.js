@@ -1,8 +1,9 @@
-color c;
-color d;
-color p;
-void setup() {
-  size(430, 430);
+var c;
+var d;
+var p;
+
+function setup() {
+  createCanvas(430, 430);
   noFill();
   ellipseMode(CORNER);
   smooth();
@@ -12,25 +13,24 @@ void setup() {
   noLoop();
 }
 
-void draw() {
-  background(255);
-  float j=0.3;
-  for (int k=10; k<130; k=k+15)  {
-    float g= k/130.0;
-    p=lerpColor(c, d, g);
-    println(g);
-    stroke(p);
 
-    for (int i =0; i<15; i=i+3) { 
+
+function draw() {
+  background(255);
+  var j=0.3;
+  for (var k=10; k<130; k=k+15)  {
+    var g= k/130.0;
+    p=lerpColor(c, d, g);
+    stroke(p);
+    for (var i =0; i<15; i=i+3) { 
       j=j*2.2;
       arch(j, 0+i*31, 10+k*3.5);
     }
     j=1;
   }
-  save("progression2.jpg");
 }
 
-void arch(float curvature, float x, float y) {
+function arch(curvature, x, y) {
   strokeWeight(4);
   noFill();
   beginShape();

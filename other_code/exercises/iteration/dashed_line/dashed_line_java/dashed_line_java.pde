@@ -10,6 +10,7 @@ void setup() {
 void draw() {
   background(255); 
 
+  //these x and y values represent the line from the point to your cursor
   float x0 = width * 0.75;
   float y0 = height * 0.25;
   float x1 = mouseX;
@@ -23,6 +24,7 @@ void draw() {
   strokeWeight(3.0);
   ellipse(x0, y0, 5, 5); 
 
+  //splits the calculated line into multiple lines, making dashes
   for (int i=0; i<nDashesf; i++) {
     float percentA = map(i+0.0, 0, nDashesf, 0, 1);
     float percentB = map(min(i+0.6, nDashesf), 0, nDashesf, 0, 1);

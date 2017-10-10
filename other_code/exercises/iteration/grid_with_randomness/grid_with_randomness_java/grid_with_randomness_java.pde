@@ -16,7 +16,8 @@ void draw() {
     for (int x=0; x<8; x++) {
       float px = x * 50; 
       float py = y * 50; 
-      
+      //the chance of drawing a circle is 5%
+      //otherwise, it draws a square
       float chance = random(1); 
       if (chance < 0.05){
         ellipse(px+25, py+25, 25, 25);

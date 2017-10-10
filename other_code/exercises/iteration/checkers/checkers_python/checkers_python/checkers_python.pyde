@@ -1,24 +1,25 @@
 def setup() :
   size(401, 401)
 
-
-
-
 def draw():
   a = 1
+  #color of each individual square
   c = 0
-  i = 0
-  for x in range (0, 8): # in range(i=0; i<400; i=i+50):
-    i = x*50
+  #the board is 8 by 8
+  for i in range (0, 8):
+    x = i*50
+    #alternates fill between black and white
     a=a*-1
-    j = 0
-    while (j < 400):
-    #for (j=0; j<400; j=j+50):
+    for j in range (0, 8):
+      y = j*50
+      #alternates fill between black and white
       a=a*-1
       if (a<0):
+        #changes fill to black
         c=0
       if (a>0):
+        #changes fill to white
         c=255
       fill(c)
-      rect(i, j, 50, 50)
-      j+=50
+      #draws individual checkers squares
+      rect(x, y, 50, 50)

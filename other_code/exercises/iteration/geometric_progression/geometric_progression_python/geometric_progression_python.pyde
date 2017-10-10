@@ -8,14 +8,12 @@ def setup() :
 def draw():
   background(255)
   stroke(0) 
-  noFill()
-  
+  noFill()  
   constantFactor = 1.315
   circleSize = 20 
   
-  i = 1
-  while(i < 20):
+  for i in range(0,20):
+    #draws 20 concentric circles of decreasing diameter and decreasing lineWeight
     strokeWeight(circleSize/25.0) 
     ellipse(width/2,height, circleSize, circleSize)
     circleSize = circleSize * constantFactor 
-    i+=1

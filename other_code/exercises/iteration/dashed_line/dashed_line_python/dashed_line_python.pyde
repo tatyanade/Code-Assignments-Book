@@ -8,6 +8,7 @@ def setup() :
 def draw() :
   background(255) 
 
+  #these x and y values represent the line from the point to your cursor
   x0 = width * 0.75
   y0 = height * 0.25
   x1 = mouseX
@@ -21,8 +22,8 @@ def draw() :
   strokeWeight(3.0)
   ellipse(x0, y0, 5, 5) 
 
-  i = 0
-  while( i < nDashesf):
+  #splits the calculated line into multiple lines, making dashes
+  for i in range(0, nDashesf):
     percentA = map(i+0.0, 0, nDashesf, 0, 1)
     percentB = map(min(i+0.6, nDashesf), 0, nDashesf, 0, 1)
 
@@ -32,4 +33,3 @@ def draw() :
     dashYb = map(percentB, 0, 1, y0, y1)
 
     line (dashXa, dashYa, dashXb, dashYb)
-    i+=1

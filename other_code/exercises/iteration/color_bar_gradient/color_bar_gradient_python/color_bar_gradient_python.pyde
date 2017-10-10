@@ -15,24 +15,21 @@ colorB = color(255, 0, 255)
 def setup() :
   size(400, 400)
 
-
-
 def draw() :
   background(255)
   rectMode(CENTER) 
   noStroke() 
-  i = 0
-  while( i < nRectangles):
+  for i in range(0, nRectangles):
+    #finds the different color values for each rectangle in order to create an even gradient
     fraction = float(i)/(nRectangles-1)
     aBarColor = lerpColor(colorA, colorB, fraction)
     barX = map(i, 0,nRectangles-1, 25,width-25) 
     
+    #changes fill to the proper color and draws rectangle
     fill(aBarColor)
-    rect(barX, height/2, 20,360)
-    i+=1
+    rect(barX, height/2, height*.05, height*.9)
   
-
-
 def mousePressed() :
+  #changes colors when mouse is pressed
   colorA = color(random(0, 255), random(0, 255), random(0, 255))
   colorB = color(random(0, 255), random(0, 255), random(0, 255))

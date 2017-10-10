@@ -5,16 +5,15 @@ def setup():
 
 def draw():
   background(30)
-  x = 0
-  while(x < 7):
-    y = 0
-    while(y<8):
-      arrow(x*57+6, y*50+25)
-      y+=1
-    x+=1
+  for x in range (0, 7):
+    for y in range (0, 8):
+        #calls the arrow function that we have defined below
+        arrow(x*57+6, y*50+25)
 
 
+#this defines the arrow function
 def arrow(x, y):
+  #this draws an arrow, relative to any given x and y value
   strokeWeight(4)
   stroke(255, 0, 255)
   line(x+20, y+20, x, y) 

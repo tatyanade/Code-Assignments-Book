@@ -10,6 +10,7 @@ void draw() {
   background(255);
   smooth(); 
 
+  //draws 5 rows of 5 faces
   for (int i=0; i<5; i++) {
     for (int j=0; j<5; j++) {
       float y = i*75 + 50; 
@@ -21,6 +22,7 @@ void draw() {
 
 
 void drawFace(float x, float y) {
+  //constructs a face through arcs and circles
   stroke(0, 0, 0);
   strokeWeight(2.0); 
   pushMatrix();

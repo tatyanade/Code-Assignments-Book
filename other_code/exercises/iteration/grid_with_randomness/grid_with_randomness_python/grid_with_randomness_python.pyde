@@ -11,16 +11,14 @@ def draw()  :
   strokeWeight(2) 
   stroke(0)  
   noFill()  
-  y = 0
-  while (y<8):
-      x = 0
-      while (x < 8) :
+ for y in range(0, 8):
+     for x in range(0, 8):
           px = x*50
           py = y*50
+          #the chance of drawing a circle is 5%
+          #otherwise, it draws a square
           chance = random(1)
           if (chance < .05):
               ellipse(px + 25, py+25, 25, 25)
           else:
               rect(px+5, py+5, 40, 40)
-          x +=1
-      y += 1

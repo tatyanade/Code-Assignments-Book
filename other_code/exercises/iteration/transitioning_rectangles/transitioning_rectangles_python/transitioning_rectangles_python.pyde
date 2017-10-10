@@ -7,14 +7,16 @@ def setup() :
 def draw() :
   background (255) 
   strokeWeight (2)
-  stroke(0) 
 
   nRectangles = 14
-  i = 0
-  while (i < nRectangles):
+  for i in range(0, nRectangles):
+    #finds the x and y value of the current rectangle
     x0 = 25 + i * 25
     y0 = height-25
+	
+	#increases the rectangle height by 25
     rectH = (i+1) * 25
+	#creates a color gradient by making fill dependent on i
     fill(i* (255.0/nRectangles))
+	#draws the current rectangle
     rect(x0, y0, 25, -rectH)
-    i=i+1

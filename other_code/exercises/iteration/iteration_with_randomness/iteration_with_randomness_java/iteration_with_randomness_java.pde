@@ -7,6 +7,7 @@ void setup() {
 
 void draw() {
   background(160); 
+  //draws 50 craters of random diameter and location
   for (int i=0; i<50; i++) {
     float rx = random(-20, width+20); 
     float ry = random(-20, height+20); 
@@ -16,6 +17,7 @@ void draw() {
 }
 
 void drawCrater(float rx, float ry, float rd) {
+  //creates concentric, shaded circles to imitate a crater
   noFill();
 
   strokeWeight(7);

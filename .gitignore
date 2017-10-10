@@ -5,3 +5,4 @@
 *.json
 *.DS_Store
 resources/*
+assignmentText/data/data-exercises.json

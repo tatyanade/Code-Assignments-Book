@@ -47,6 +47,8 @@ var learnHeading = "Learning Objectives - Students will: ";
 
 var bVerbose = true;
 
+var graphSpace = 6;
+
 //-------------------------------------------------------------------
 /*
 IMAGE LAYOUTS (Do not delete):
@@ -246,6 +248,7 @@ var imageArray =[];
 var imageBorderArray =[];
 var indicesOfWordsToItalicize = [];
 
+
 //==========================================================
 function setup(){
 
@@ -257,6 +260,8 @@ function setup(){
   if (bVerbose) {b.println("jLength:"+jLength);}
   b.page(pCounter);
   b.textFont("Atlas Grotesk","Regular"); // set default font
+
+
 }
 
 
@@ -414,6 +419,7 @@ function draw() {
 
     // b.stroke(0,0,0);
     // b.fill(0,0,0);
+
 
     // IMAGE CAPTIONS FOR NOTEWORTHY EXAMPLE IMAGES
     assAspiration(jsonData[i].aspirationcaptions);
@@ -672,6 +678,7 @@ function assBrief(_brief){
 
     if (briefFrame != null){
       b.typo(briefFrame, "hyphenation", false);
+      //b.typo(briefFrame, "spaceAfter", 6); //need this to put in paragraph spacing eventually but its giving me trouble.
       italicizeWordsInFrame (briefFrame, 1);
     }
 
@@ -820,8 +827,9 @@ function assAspiration(_aspiration){
     if(_aspiration){_aspiration = _aspiration.replace("\r", "");}
     _aspiration = computeWordsToItalicize(_aspiration); // Do this first.
 
-    b.textSize(8);
-    b.textLeading(12);
+    //change font size here ******
+    b.textSize(7);
+    b.textLeading(11);
     b.textFont("Atlas Grotesk","Regular");
     b.textAlign(Justification.LEFT_ALIGN, VerticalJustification.TOP_ALIGN);
     var aspirationString = aspirationHeading+"\r"+_aspiration+"\n";
@@ -845,8 +853,8 @@ function assAdditionalReferences (_references){
       _references = _references.replace("\r", "");
       _references = computeWordsToItalicize(_references); // Do this first.
 
-      b.textSize(8);
-      b.textLeading(12);
+    b.textSize(7);
+    b.textLeading(11);
       b.textFont("Atlas Grotesk","Regular");
       b.textAlign(Justification.LEFT_ALIGN, VerticalJustification.TOP_ALIGN);
       var theReferencesStrings = referenceHeading +"\r"+_references+"\n";

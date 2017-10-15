@@ -9,7 +9,7 @@
     {
         "heading": "Exercises: Iteration",
         "exercisetitle": "Transitioning Rectangles",
-        "descriptions": "Remember that *any* visual property can be linked to a loop variable, not just position. Here, use iteration to generate a series of rectangles. Your code should simultaneously control *several* of the rectangles' visual properties, including their position, height, and fill-color.",
+        "descriptions": "Recall that *any* visual property can be linked to a loop variable, not just position. Use iteration to generate a series of rectangles. Your code should simultaneously control *several* of the rectangles' visual properties, including their position, height, and fill-color.",
         "imagename": "exercises/iteration/transitioning_rectangles.png",
         "verticalspace": 1
     },
@@ -23,28 +23,28 @@
     {
         "heading": "Exercises: Iteration",
         "exercisetitle": "A Mini-Calendar",
-        "descriptions": "Use iteration to render a row of visual elements: one for each of the days of the current month. All of the elements should be drawn identically, *except* for the one whose index corresponds to the current day. Differentiate this one in some way.",
+        "descriptions": "Use iteration to render a row of visual elements: one element for each of the days of the current month. All of the elements should be drawn identically, *except* for the one whose index corresponds to the current day. Differentiate this one in some way.",
         "imagename": "exercises/iteration/mini_calendar.png",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Iteration",
         "exercisetitle": "A Receding Landscape",
-        "descriptions": "Use iteration to create a series of vertical lines across the screen. Modify the values controlling the placement of the lines’ endpoints, shifting the lines so that they suggest the appearance of a receding landscape.",
+        "descriptions": "Use iteration to create a series of vertical lines across the screen. Create the illusion of a receding landscape by spacing the lines' endpoints more closely together at the top of the canvas.",
         "imagename": "exercises/iteration/receding_landscape.png",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Iteration",
         "exercisetitle": "Iteration + Interaction: Lines to the Cursor",
-        "descriptions": "Use iteration to create an interactive display featuring a series of 10 lines. Each of the lines should be drawn from the cursor, to a point whose location is a simple mathematical function of the iteration counting variable.",
+        "descriptions": "Use iteration to create an interactive display featuring a series of 10 lines. Each line should connect the cursor to one of a series of points distributed across the canvas.",
         "imagename": "exercises/iteration/lines_to_the_cursor.png",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Iteration",
         "exercisetitle": "Color-Bar Gradient ",
-        "descriptions": "Using iteration, generate a gradient that interpolates from one fill color to another across exactly 17 rectangles. You may find it helpful to learn about your environment’s lerp() function. Implement some code that randomizes the two end-colors whenever the user clicks the mouse. ",
+        "descriptions": "Using iteration, generate a gradient that 'lerps' (linearly interpolates) from one fill color to another across exactly 17 rectangles. Implement some code that randomizes the two end-colors whenever the user clicks a button.",
         "imagename": "exercises/iteration/color_bar_gradient.png",
         "verticalspace": 1
     },
@@ -72,35 +72,35 @@
     {
         "heading": "Exercises: Iteration",
         "exercisetitle": "Iteration with Randomness I",
-        "descriptions": "Create an evocative composition, in which an iterative loop places small elements in random locations around the canvas. These elements might look like craters, potholes, pimples, raisins, Swiss cheese holes....",
+        "descriptions": "Create an evocative composition, in which an iterative loop places small elements in random locations around the canvas. These elements might look like craters, potholes, pimples, ants, chocolate chips, holes in Swiss cheese....",
         "imagename": "exercises/iteration/iteration_with_randomness.png",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Iteration",
         "exercisetitle": "Iteration with Randomness II",
-        "descriptions": "Use nested iteration to generate a grid of visual elements. Write code such that, with a small probability on each iteration, an alternative element is drawn instead. ",
+        "descriptions": "Use nested iteration to generate a grid of visual elements. Write code such that, with a small probability for each iteration, an alternative element is occasionally drawn instead. ",
         "imagename": "exercises/iteration/grid_with_randomness.png",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Iteration",
         "exercisetitle": "Geometric Progression",
-        "descriptions": "Use iteration to generate a series of visual elements whose dimensions exhibit a *geometric* progression. The size of each element should be computed by multiplying the size of its previous one by a fixed constant (or common ratio). For example, each circle might be 1.3 times as large as the one before it. ",
+        "descriptions": "Generate a series of visual elements whose dimensions exhibit a *geometric* progression. The size of each element should be computed by multiplying the size of the one before it by a constant ratio. Here, each circle is 1.3 times larger than the previous one, inside it. ",
         "imagename": "exercises/iteration/geometric_progression.png",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Iteration",
-        "exercisetitle": "Recoding Schotter",
-        "descriptions": "*Schotter* is a classic computational artwork created by Georg Nees in 1965. Recode this work, paying attention to detail.",
+        "exercisetitle": "Recoding *Schotter*",
+        "descriptions": "*Schotter* (by Georg Nees, 1965) is a classic algorithmic artwork that depicts a gradient from order to chaos in a grid of squares. In it, the squares’ orientations become increasingly randomized towards the bottom of the page. Recode this work, paying attention to detail.",
         "imagename": "exercises/iteration/schotter.png",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Iteration",
         "exercisetitle": "Moiré Patterns",
-        "descriptions": "Generate a set of parallel lines or curves, spaced at narrow intervals. Overlap two such sets, distinguished by a small angular rotation, to create a Moiré pattern. Place some dimension of variability, such as the line separation or rotation angle, under interactive control. ",
+        "descriptions": "Generate a set of parallel lines or curves, spaced at narrow intervals. Overlap two copies of your line set, differing by a small rotation, to create a Moiré pattern. Place some dimension of variability, such as the line separation or rotation angle, under interactive control. ",
         "imagename": "exercises/iteration/moire.png",
         "verticalspace": 1
     },
@@ -114,21 +114,21 @@
     {
         "heading": "Exercises: Color",
         "exercisetitle": "Overlapping color",
-        "descriptions": "Overlap some semi-transparent shapes to create at least seven different colors on screen. Experiment with different *pixel transfer modes* (also called *blend modes*). Draw the shapes without outlines. ",
+        "descriptions": "Overlap three semi-transparent circles, each with a different color, to create regions of overlapping colors. Explore the effects of different colors and transparency values. Experiment with different *pixel transfer modes* (also called *blend modes*). Draw the circles without outlines. ",
         "imagename": "exercises/color/overlap.png",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Color",
         "exercisetitle": "Color and Iteration",
-        "descriptions": "Create a gradient from one color to another. *Hint:* use iteration and the *map()* function to render many thin parallel lines, each with subtly different colors.",
+        "descriptions": "Create a smooth gradient between two colors. *Hint*: use iteration to render many thin, adjacent parallel lines, each with subtly different colors.",
         "imagename": "exercises/color/twoColorGradient.png",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Color",
         "exercisetitle": "Every Color",
-        "descriptions": "Using the HSB color model, create a program where every hue is displayed on the screen.",
+        "descriptions": "Using the HSB color model, create a program which displays every hue on the screen.",
         "imagename": "exercises/color/HSBgradient.png",
         "verticalspace": 1
     },
@@ -143,7 +143,7 @@
         "heading": "Exercises: Color",
         "exercisetitle": "Color and Perception",
         "descriptions": "Create a composition showing the smallest interval between colors that you can distinguish. \n",
-        "imagename": "exercises/color/perception.png",
+        "imagename": "exercises/color/color_and_perception.png",
         "verticalspace": 1
     },
     {
@@ -156,7 +156,7 @@
     {
         "heading": "Exercises: Color",
         "exercisetitle": "Interactive Color II",
-        "descriptions": "Split the canvas into two equal-sized rectangles, side-by-side. Create an interaction such that one rectangle’s color is controlled by the cursor position, and the other contains its complement.\n",
+        "descriptions": "Split the canvas into two equal-sized rectangles, side-by-side. Create an interaction such that one rectangle’s color is controlled by the cursor position, and the other rectangle contains the complement of this color.",
         "imagename": "exercises/color/complement.png",
         "verticalspace": 1
     },
@@ -202,42 +202,42 @@
         "verticalspace": 1
     },
     {
-        "heading": "Exercises: Drawing",
+        "heading": "Exercises: Graphic Elements",
         "exercisetitle": "Draw your Initials",
         "descriptions": "Draw your initials with primitive shapes and lines. ",
         "imagename": "exercises/drawing/initials.png",
         "verticalspace": 1
     },
     {
-        "heading": "Exercises: Drawing",
+        "heading": "Exercises: Graphic Elements",
         "exercisetitle": "Coding Mondrian",
         "descriptions": "Convert a Mondrian painting into code. This is an exercise in observation, pay attention to detail.",
         "imagename": "exercises/drawing/mondrian.png",
         "verticalspace": 1
     },
     {
-        "heading": "Exercises: Drawing",
+        "heading": "Exercises: Graphic Elements",
         "exercisetitle": "Coding *Stadia II*",
         "descriptions": "Select and crop a small rectangular region from Julie Mehretu’s painting, *Stadia II*. Using a program such as Photoshop, read out the colors and coordinate data from this fragment. Use this to faithfully recreate it with shapes, lines, curves, and custom shape functions.",
         "imagename": "exercises/drawing/stadia.png",
         "verticalspace": 1
     },
     {
-        "heading": "Exercises: Drawing",
+        "heading": "Exercises: Graphic Elements",
         "exercisetitle": "Draw, then Code",
         "descriptions": "Spend at least 20 minutes creating a drawing on paper: a scene, a still life, a portrait or some other design. Take care to create this image with adequate care and detail. Now recreate your drawing using code. ",
         "imagename": "exercises/drawing/kyla.png",
         "verticalspace": 1
     },
     {
-        "heading": "Exercises: Drawing",
+        "heading": "Exercises: Graphic Elements",
         "exercisetitle": "Drawing with the Mouse I",
         "descriptions": "Create a sketch that draws a line along the path of the mouse. ",
         "imagename": "exercises/drawing/draw_mouse.png",
         "verticalspace": 1
     },
     {
-        "heading": "Exercises: Drawing",
+        "heading": "Exercises: Graphic Elements",
         "exercisetitle": "Drawing with the Mouse II",
         "descriptions": "Modify your sketch so that the thickness of the line is relative to the speed of the mouse.",
         "imagename": "exercises/drawing/draw_mouse2.png",
@@ -309,7 +309,7 @@
     {
         "heading": "Exercises: Arrays",
         "exercisetitle": "Living line",
-        "descriptions": "Create a line using the past 100 mouse positions. Bring your line to life by adding some randomness to each point. The randomness at each shoulder mouse positions.",
+        "descriptions": "Create a line using the past 100 mouse positions. Bring your line to life by adding some randomness to each point. The randomness should increase with older mouse positions.",
         "imagename": "exercises/arrays/draw_mouse4.png",
         "verticalspace": 1
     },
@@ -325,6 +325,13 @@
         "exercisetitle": "Place the flag",
         "descriptions": "Take the example of a Perlin noise landscape provided and plant a flag on the highest point. *Instructor: Provide students with a sketch of a landscape made up of adjacent vertical lines drawn from the bottom of the screen to y values generated using the Perlin noise function.*",
         "imagename": "exercises/arrays/flag.png",
+        "verticalspace": 1
+    },
+    {
+        "heading": "Exercises: Arrays",
+        "exercisetitle": "Longest line",
+        "descriptions": "Write a program that draws straight lines when the user clicks and drags. Color the longest line red.",
+        "imagename": "exercises/arrays/lines.png",
         "verticalspace": 1
     },
     {
@@ -699,7 +706,42 @@
         "verticalspace": 1
     },
     {
-        "heading": "Text and Language",
+        "heading": "Exercises: Text and Language",
+        "exercisetitle": "Nonsense words",
+        "descriptions": "Obtain some lists of common prefixes, word roots, and suffixes. Select and combine random items from each list, in order to generate plausible nonsense words. What might these words mean?",
+        "imagename": "exercises/text/nonsense_words.png",
+        "verticalspace": 1
+    },
+    {
+        "heading": "Exercises: Text and Language",
+        "exercisetitle": "Letter frequency",
+        "descriptions": "Write a program which calculates the frequencies of the letters in a provided text. (Be careful to make your program *case-insensitive*.) Write code to generate a bar chart of the letters' frequencies.  ",
+        "imagename": "exercises/text/letter_frequency.png",
+        "verticalspace": 1
+    },
+    {
+        "heading": "Exercises: Text and Language",
+        "exercisetitle": "Average word length",
+        "descriptions": "Write a program which calculates the average word length of a provided text. This is a useful approximation of a text's \"reading level\". Run your program on several different source materials.",
+        "imagename": "exercises/text/word_length.png",
+        "verticalspace": 1
+    },
+    {
+        "heading": "Exercises: Text and Language",
+        "exercisetitle": "Translator I: Pig Latin",
+        "descriptions": "Create a program which translates provided text into *Pig Latin*. In this playful scheme, the initial consonant (or consonant cluster) of each word is transferred to the end of that word, after which the syllable \"ay\" is added. ",
+        "imagename": "exercises/text/pig_latin.png",
+        "verticalspace": 1
+    },
+    {
+        "heading": "Exercises: Text and Language",
+        "exercisetitle": "Translator II: Argots and language games",
+        "descriptions": "Investigate argots, secret languages, and word games like Ubbi Dubbi, Dizzouble Dizzutch, Tutnese, and Pirate English. Select one, and write a program that translates a provided text into it. ",
+        "imagename": "exercises/text/translator.png",
+        "verticalspace": 1
+    },
+    {
+        "heading": "Exercises: Text and Language",
         "exercisetitle": "Cut up text I",
         "descriptions": "Choose an existing text and make a Dada style poem randomizing its words or lines. ",
         "imagename": "exercises/text/cutup1.jpg",
@@ -707,84 +749,77 @@
         "attribution": "With contributions from Allison Parrish"
     },
     {
-        "heading": "Text and Language",
+        "heading": "Exercises: Text and Language",
         "exercisetitle": "Cut up text II",
         "descriptions": "Chose multiple source texts and generate a poem by recombining their words or lines.",
         "imagename": "exercises/text/cutup2.jpg",
         "verticalspace": 1
     },
     {
-        "heading": "Text and Language",
+        "heading": "Exercises: Text and Language",
         "exercisetitle": "Cut up text III",
         "descriptions": "Devise and implement a procedure to cut up and creatively re-arrange text appropriated from a network-based source (e.g., Wordnik, the New York Times API, etc.). To consider: How does the presence of data appropriated from the network change the nature of your process and your output? (1, 2)",
         "imagename": "exercises/text/cutup3.jpg",
         "verticalspace": 1
     },
     {
-        "heading": "Text and Language",
+        "heading": "Exercises: Text and Language",
         "exercisetitle": "Sorting words",
         "descriptions": "Read in a text file and print out the words (a) in alphabetical order, (b) in order dermined by length and (c) determined by their frequency in the text.",
         "imagename": "exercises/text/sorting.jpg",
         "verticalspace": 1
     },
     {
-        "heading": "Text and Language",
-        "exercisetitle": "Translator",
-        "descriptions": "Write a program that changes the style of a text by performing search and replace on words or characters. For example make a Pig Latin or Pirate English translator.",
-        "imagename": "exercises/text/translator.jpg",
-        "verticalspace": 1
-    },
-    {
-        "heading": "Text and Language",
+        "heading": "Exercises: Text and Language",
         "exercisetitle": "People, places, things",
         "descriptions": "Read in a text and replace each noun with a randomly selected noun taken from a second text. You will need to use an additional library to identify parts of speech (3).",
         "imagename": "exercises/text/people.jpg",
         "verticalspace": 1
     },
     {
-        "heading": "Text and Language",
+        "heading": "Exercises: Text and Language",
         "exercisetitle": "Haiku Finder (after Jonathan Feinberg)",
         "descriptions": "Write a program which automatically discovers \"inadvertent haikus\"—sentences in a chosen text whose words happen to fall in groups of 5, 7, and 5 syllables. Advanced students: a naive solution will discover haikus with awkward breaks; add heuristics to improve the quality of your results. ",
         "imagename": "exercises/text/syllable.jpg",
         "verticalspace": 1
     },
     {
-        "heading": "Text and Language",
+        "heading": "Exercises: Text and Language",
         "exercisetitle": "Joke generator",
         "descriptions": "Create a program that generates knock knock jokes. At a miminum your program should generate a random reply to \"Who's there?\" and add to this word to create the final line of the joke. Generate 10 jokes.",
         "imagename": "exercises/text/joke.jpg",
         "verticalspace": 1
     },
     {
-        "heading": "Text and Language",
+        "heading": "Exercises: Text and Language",
         "exercisetitle": "Grammar",
         "descriptions": "Make a program with a grammar that produces sentences in the format “Dammit Jim, I’m a X, not a Y!” popularized by the ground-breaking science fiction program, Star Trek. (2)  ",
         "imagename": "exercises/text/grammar.jpg",
         "verticalspace": 1
     },
     {
-        "heading": "Text and Language",
+        "heading": "Exercises: Text and Language",
         "exercisetitle": "Rhyming couplets",
         "descriptions": "Choose a source text such as text from a book, Twitter's public timeline etc. and create a program that finds rhyming couplets to produce poems. You will need to use an additional library to tell you what the words sound like (3).",
         "imagename": "exercises/text/rhyme.jpg",
         "verticalspace": 1
     },
     {
-        "heading": "Text and Language",
+        "heading": "Exercises: Text and Language",
         "exercisetitle": "Comparing Texts",
         "descriptions": "Develop a program that compares two text files based on how similar their n-grams are.",
         "imagename": "exercises/text/ngram.png",
         "verticalspace": 1
     },
     {
-        "heading": "Text and Language",
+        "heading": "Exercises: Text and Language",
         "exercisetitle": "Markov chain",
         "descriptions": "Create a text by feeding an existing text into a Markov chain algorithm. Justify your source text—what text did you use, and why? What effect does the value of n (the “order” of the n-gram) have on the resulting text? (4)",
         "imagename": "exercises/text/markov.jpg",
         "verticalspace": 1
     },
     {
-        "heading": "Text and Language",
+        "heading": "Exercises: Text and Language",
         "exercisetitle": "References",
         "descriptions": "(1) For Python see the lxml library\n(2) For python see nltk, the natural language tool kit\n(3) See the CMU Pronouncing dictionary http://www.speech.cs.cmu.edu/cgi-bin/cmudict or for  Python see the Pronouncing library, http://www.speech.cs.cmu.edu/cgi-bin/cmudict) or for Javascript see Rita.js\n(4) For python see Markovify. For javasript see Rita.js\n \nAlso consider libraries such as Tracery to produce grammar structures. Online: http://www.crystalcodepalace.com/tracery.html For lists of nouns in JSON format, see Darius Kazemi’s repository of structured corpora. Online: https://github.com/dariusk/corpora ",
         "verticalspace": 2
@@ -825,71 +860,76 @@
     },
     {
         "heading": "Exercises: Typography",
+        "exercisetitle": "Type and pixels",
+        "descriptions": "Choose a text that fills the screen, modify either the size or color of each letter based on the pixel values behind it. "
+    },
+    {
+        "heading": "Exercises: Typography",
         "exercisetitle": "References",
         "descriptions": "https://processing.org/tutorials/typography/\nhttp://printingcode.runemadsen.com/lecture-typography/",
         "verticalspace": 1
     },
     {
-        "heading": "Exercises: Unpredicability",
+        "heading": "Exercises: Unpredictability",
         "exercisetitle": "Programming drunken walk",
-        "descriptions": "Program a spot to randomly move from one point to the next. It should have a 1/4 change of moving up, down, left or right. Following this, adjust it to so that it has 1/2 chance of moving down, a 1/4 chance of moving left or right and no chance of moving up.",
+        "descriptions": "Program a spot that randomly moves from one point to the next. It should have a 1 in 4 chance of moving up, down, left or right. Following this, adjust it to so that it has a 1 in 2 chance of moving down, a 1 in 4 chance of moving left or right and no chance of moving up.",
         "imagename": "/exercises/unpredictability/drunken_walk.png",
         "verticalspace": 1
     },
     {
-        "heading": "Exercises: Unpredicability",
-        "exercisetitle": "Noise mountains",
-        "descriptions": "Use a Perlin noise function to generate simple mountains. ",
-        "imagename": "/exercises/unpredictability/noise_mountains.png",
-        "verticalspace": 1
-    },
-    {
-        "heading": "Exercises: Unpredicability",
-        "exercisetitle": "Cloud generation",
-        "descriptions": "Use a 2 dimenional Perlin noise function to create the appearance of clouds.",
-        "imagename": "/exercises/unpredictability/cloud_generation.png",
-        "verticalspace": 1
-    },
-    {
-        "heading": "Exercises: Unpredicability",
-        "exercisetitle": "Chaos to order",
-        "descriptions": "Make an interactive composition which depicts 'order' when the mouseX is on the left of the canvas, and 'chaos' when it is on the right. The degree of order/chaos (entropy) should vary smoothly with the mouse position. The map(), and constrain() functions may be useful.",
-        "imagename": "/exercises/unpredictability/chaos_to_order.png",
-        "verticalspace": 1
-    },
-    {
-        "heading": "Exercises: Unpredicability",
-        "exercisetitle": "Dice roll II",
-        "descriptions": "Create a sketch of a dice that is 'rolled' every time the mouse is clicked. Your dice should be evenly weighted and each result should have an even 1/6 chances of appearing. Test your program over 18 clicks. How well does it perform? ",
-        "imagename": "/exercises/unpredictability/die_roll.png",
-        "verticalspace": 1
-    },
-    {
-        "heading": "Exercises: Unpredicability",
-        "exercisetitle": "Dice roll II",
-        "descriptions": "Take the previous dice exercise and create a sketch that rolls 6 dice everytime the mouse is clicked.",
-        "imagename": "/exercises/unpredictability/dice_roll.png",
-        "verticalspace": 1
-    },
-    {
-        "heading": "Exercises: Unpredicability",
-        "exercisetitle": "Exquisite Corpse",
-        "descriptions": "Recreate the surrealist game exquisite corpse, where the legs, torso and head of a figure are recombined randomly from different options every time the mouse is clicked.",
-        "imagename": "/exercises/unpredictability/exquisite_corpse.png",
-        "verticalspace": 1
-    },
-    {
-        "heading": "Exercises: Unpredicability",
+        "heading": "Exercises: Unpredictability",
         "exercisetitle": "Noise animations",
         "descriptions": "Use the noise function to control the scale and motion of an ellipse. ",
         "imagename": "/exercises/unpredictability/noise_animations.png",
         "verticalspace": 1
     },
     {
-        "heading": "Exercises: Unpredicability",
+        "heading": "Exercises: Unpredictability",
+        "exercisetitle": "Noise mountains",
+        "descriptions": "Create some simple mountains by creating a series of parallel lines that span from the bottom of the screen to an unpredicable height. Use the noise function to detirmine the height of each line.",
+        "imagename": "/exercises/unpredictability/noise_mountains.png",
+        "verticalspace": 1
+    },
+    {
+        "heading": "Exercises: Unpredictability",
+        "exercisetitle": "Cloud generation",
+        "descriptions": "Use a 2 dimenional Perlin noise function to create the appearance of clouds.",
+        "imagename": "/exercises/unpredictability/cloud_generation.png",
+        "verticalspace": 1
+    },
+    {
+        "heading": "Exercises: Unpredictability",
+        "exercisetitle": "Chaos to order",
+        "descriptions": "Make an interactive composition which depicts 'order' when the mouseX is on the left of the canvas, and 'chaos' when it is on the right. The degree of order/chaos (entropy) should vary smoothly with the mouse position. The map(), and constrain() functions may be useful.",
+        "imagename": "/exercises/unpredictability/chaos_to_order.png",
+        "verticalspace": 1
+    },
+    {
+        "heading": "Exercises: Unpredictability",
         "exercisetitle": "Coin toss",
         "descriptions": "Create a sketch of coin that is tossed every time the mouse is clicked. Your coin should be evenly weighted and heads and tails should have an even chance of appearing. Test your program over 20 tosses, how well does it perform?",
         "imagename": "/exercises/unpredictability/coin_toss.png",
+        "verticalspace": 1
+    },
+    {
+        "heading": "Exercises: Unpredictability",
+        "exercisetitle": "Dice roll I",
+        "descriptions": "Create a sketch of a dice that is 'rolled' every time the mouse is clicked. Your dice should be evenly weighted and each result should have an even 1 in 6 chances of appearing. Test your program over 18 clicks. How well does it perform? ",
+        "imagename": "/exercises/unpredictability/die_roll.png",
+        "verticalspace": 1
+    },
+    {
+        "heading": "Exercises: Unpredictability",
+        "exercisetitle": "Dice roll II",
+        "descriptions": "Take the previous dice exercise and create a sketch that rolls 6 dice everytime the mouse is clicked. Can you rig your dice so that you get more sixes than other results.",
+        "imagename": "/exercises/unpredictability/dice_roll.png",
+        "verticalspace": 1
+    },
+    {
+        "heading": "Exercises: Unpredictability",
+        "exercisetitle": "Exquisite Corpse",
+        "descriptions": "Recreate the surrealist game exquisite corpse, where the legs, torso and head of a figure are recombined randomly from different options every time the mouse is clicked.",
+        "imagename": "/exercises/unpredictability/exquisite_corpse.png",
         "verticalspace": 1
     }
 ]

@@ -1,11 +1,4 @@
 [
-<<<<<<< HEAD
-{
-        "heading": "Exercises: Unpredictability",
-        "exercisetitle": "Coin toss",
-        "descriptions": "Create a sketch of coin that is 'tossed' every time the mouse is clicked. Your coin should be evenly weighted so that heads and tails have an even chance of appearing. Test your program over 20 tosses, how well does it perform?",
-        "imagename": "/exercises/unpredictability/coin_toss.png",
-=======
     {
         "heading": "Exercises: Iteration",
         "exercisetitle": "Simple Iteration: Seven Circles",
@@ -315,7 +308,17 @@
     },
     {
         "heading": "Exercises: Arrays",
-        "exercisetitle": "Living line",
+        "exercisetitle": "Living line I",
+        "descriptions": "Create a line using the past 100 mouse positions."
+    },
+    {
+        "heading": "Exercises: Arrays",
+        "exercisetitle": "Living line II",
+        "descriptions": "Create a line using the past 100 mouse positions and move an ellipse over your line in cycles. Scott Snibbe?"
+    },
+    {
+        "heading": "Exercises: Arrays",
+        "exercisetitle": "Living line III",
         "descriptions": "Create a line using the past 100 mouse positions. Bring your line to life by adding some randomness to each point. The randomness should increase with older mouse positions.",
         "imagename": "exercises/arrays/draw_mouse4.png",
         "verticalspace": 1
@@ -343,51 +346,44 @@
     },
     {
         "heading": "Exercises: Time and Interactivity",
-        "exercisetitle": "Typewriter",
-        "descriptions": "Create an expressive typewriter. Each key should trigger, an animation, image, sound or characters. Consider the aesthetic experience of playing your response.",
-        "imagename": "exercises/interactivity/typewriter.png",
-        "verticalspace": 1
-    },
-    {
-        "heading": "Exercises: Time and Interactivity",
-        "exercisetitle": "Fuse or Progress Bar",
-        "descriptions": "Make a fuse on screen that takes exactly 5 seconds to complete its timer. Trigger an interesting event when it finishes eg. fireworks, a volcano erupting. Think laterally, your fuse could be a progress bar, or an ice cube melting, a balloon inflating etc. etc.",
-        "imagename": "exercises/interactivity/fuse.png",
-        "verticalspace": 1
-    },
-    {
-        "heading": "Exercises: Time and Interactivity",
-        "exercisetitle": "Eyes Following Mouse",
-        "descriptions": "Draw one or more eyes with pupils that follow the mouse. Constrain each pupil to stay within its eyeball.",
+        "exercisetitle": "Eyes Following Cursor",
+        "descriptions": "Draw one or more eyes with pupils that follow the cursor. If you can, constrain each pupil to stay within its eyeball.",
         "imagename": "exercises/interactivity/eyes.png",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Time and Interactivity",
-        "exercisetitle": "Audio-Sensitive Animation",
-        "descriptions": "Create a sound responsive animation. Your visuals may respond to amplitude and/or frequency of sound.",
-        "imagename": "exercises/interactivity/visualizer.png",
+        "exercisetitle": "Typewriter",
+        "descriptions": "Create an expressive typewriter. Each key should trigger a different animation, image, sound or text. Carefully consider the aesthetics of the experience of playing your system. For inspiration, explore *Patatap*, an audiovisual computer keyboard by Jono Brandel. ",
+        "imagename": "exercises/interactivity/typewriter.png",
+        "verticalspace": 1
+    },
+    {
+        "heading": "Exercises: Time and Interactivity",
+        "exercisetitle": "Fuse (or Progress Bar)",
+        "descriptions": "Program a virtual fuse that takes precisely five seconds to complete. Trigger an interesting event when it finishes, such as fireworks, or a volcanic eruption. Consider alternate “skins” to tell a different story with your fuse: a progress bar, a balloon inflating (and bursting).",
+        "imagename": "exercises/interactivity/fuse.png",
+        "verticalspace": 1
+    },
+    {
+        "heading": "Exercises: Time and Interactivity",
+        "exercisetitle": "Easing: Filtering a Variable",
+        "descriptions": "Objects rarely move at a constant speed in the real world. Create a sketch in which an ellipse follows the position of the cursor, but decelerates on approach. This requires an easing function or a filter for the mouse x and y variables.",
+        "imagename": "exercises/interactivity/easing.png",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Time and Interactivity",
         "exercisetitle": "Ripples in a Pond",
-        "descriptions": "Create a an animated ripple that emanates outwards from the cursor everytime the mouse is clicked. Consider the speed at which your ripples expand. You will likely need to create a ripple class.",
+        "descriptions": "Create an animated “ripple” that emanates outwards from the cursor each time the mouse button is clicked. Consider the speed at which your ripples expand. You will likely need to create a ripple class.",
         "imagename": "exercises/interactivity/ripple.png",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Time and Interactivity",
         "exercisetitle": "Raindrops",
-        "descriptions": "Animate a rainy day. Make a sketch where numerous drops appear at the top of your screen and fall at a random interval. You will need to create a raindrop and timer class.",
+        "descriptions": "Using code, animate a rainy day. Make a sketch where numerous drops appear at the top of your screen and fall at random intervals. It may be helpful to create a raindrop class (with a timer).",
         "imagename": "exercises/interactivity/rain.png",
-        "verticalspace": 1
-    },
-    {
-        "heading": "Exercises: Time and Interactivity",
-        "exercisetitle": "Easing: Filtering a variable",
-        "descriptions": "Objects rarely move at a constant speed in the real world. Create a sketch in which an ellipse follows the position of the mouse, but decelerates on approach. This requires an easing function or a filter for the mouse x and y variables.",
-        "imagename": "exercises/interactivity/easing.png",
         "verticalspace": 1
     },
     {
@@ -398,10 +394,17 @@
         "verticalspace": 1
     },
     {
+        "heading": "Exercises: Time and Interactivity",
+        "exercisetitle": "Audio-Sensitive Animation",
+        "descriptions": "Create graphics that respond to the amplitude of microphone sounds. For example, you might illustrate the sound with a sleeping animal that is woken by loud noises, or a face which appears to be voicing the microphone’s sound. Sound waveforms are a starting point, not an end.",
+        "imagename": "exercises/interactivity/audio_sensitive.png",
+        "verticalspace": 1
+    },
+    {
         "heading": "Exercises: Curves",
-        "exercisetitle": "A circle in three ways",
-        "descriptions": "Plot a circle in three different ways. For example, you might: use the trigonometric functions sin() and cos() to plot a series of points; approximate a circle with several Bézier curves; or construct a circle with so-called \"Turtle Graphics\", using a series of alternating forward steps and small rotations. (1)",
-        "imagename": "exercises/curves/circle.png",
+        "exercisetitle": "Parabola",
+        "descriptions": "A *parabola* is a curve whose formula is *y=ax²*, where *a* is some constant. Write a program to plot a parabola.",
+        "imagename": "exercises/curves/parabola.png",
         "verticalspace": 1
     },
     {
@@ -409,6 +412,27 @@
         "exercisetitle": "Butt Generator",
         "descriptions": "Write a program that uses arcs or Bézier curves to generate images of one or more butts.",
         "imagename": "exercises/curves/butt.png",
+        "verticalspace": 1
+    },
+    {
+        "heading": "Exercises: Curves",
+        "exercisetitle": "Continuity of Bézier Curves",
+        "descriptions": "Create a curve by joining two Bézier curves. Ensure that the combined curve is \"C2 Continuous\", with no interruptions or visual discontinuities at the point where its components are joined. In other words, there should be continuity of position, tangent slope, and curvature.",
+        "imagename": "exercises/curves/bezier.png",
+        "verticalspace": 1
+    },
+    {
+        "heading": "Exercises: Curves",
+        "exercisetitle": "Text along a curve",
+        "descriptions": "Write a program that displays a phrase, such that the text follows the curve of a line. You will probably need to position and rotate each character individually. (4)",
+        "imagename": "exercises/curves/textcurve.png",
+        "verticalspace": 1
+    },
+    {
+        "heading": "Exercises: Curves",
+        "exercisetitle": "One Circle, Three Ways",
+        "descriptions": "Plot a circle, “from scratch”, three different ways: use the trigonometric functions sin() and cos() to plot a series of points; approximate a circle with four Bézier curves; and construct a circle with “Turtle Graphics”, using a series of alternating forward steps and small rotations. (1)",
+        "imagename": "exercises/curves/circle.png",
         "verticalspace": 1
     },
     {
@@ -421,22 +445,8 @@
     {
         "heading": "Exercises: Curves",
         "exercisetitle": "Phyllotaxis",
-        "descriptions": "Use Turtle Graphics to generate a phyllotactic spiral comprised of small geometric elements. Have your turtle start drawing at the center of the canvas. At each step in the spiral, your turtle should draw a small regular polygon, such as a small hexagon. Be sure to have your turtle use the Golden Angle, ~137.507764, to reckon where to place the next element. (5)",
+        "descriptions": "Use Turtle Graphics to generate a phyllotactic spiral. Have your turtle start at the center of the canvas. At each step, your turtle should draw a small element; move outwards by a slowly increasing amount; and rotate its orientation by the “Golden Angle”, ~137.50776°. (5)",
         "imagename": "exercises/curves/phyll.png",
-        "verticalspace": 2
-    },
-    {
-        "heading": "Exercises: Curves",
-        "exercisetitle": "Text along a curve",
-        "descriptions": "Write a program that displays a phrase, such that the text follows the curve of a line. You will probably need to position and rotate each character individually. (4)",
-        "imagename": "exercises/curves/textcurve.png",
-        "verticalspace": 1
-    },
-    {
-        "heading": "Exercises: Curves",
-        "exercisetitle": "Continuity of Bézier Curves",
-        "descriptions": "Create a curve by joining two Bézier curves. Ensure that the combined curve is \"C2 Continuous\", with no interruptions or visual discontinuities at the point where its components are joined. In other words, there should be continuity of position, tangent slope, and curvature.",
-        "imagename": "exercises/curves/bezier.png",
         "verticalspace": 1
     },
     {
@@ -554,12 +564,14 @@
         "heading": "Exercises: Sound",
         "exercisetitle": "Modulation",
         "descriptions": "Create a project that uses oscillators and envelopes to continuously modify some parameter of a sound. For example, you might implement *tremolo* (periodic amplitude modulation), *vibrato* (periodic frequency modulation), or *wah-wah* (periodic modulation of a resonant filter). ",
+        "imagename": "exercises/sound/blank.png",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Sound",
         "exercisetitle": "Filter",
         "descriptions": "Create a simple interactive program which permits the user to filter a sound or noise source, using the x- and y-positions of a cursor to control the filter. Experiment with different types of filters and their parameters.",
+        "imagename": "exercises/sound/blank.png",
         "verticalspace": 1
     },
     {
@@ -580,25 +592,28 @@
         "heading": "Exercises: Sound",
         "exercisetitle": "Data Sonification",
         "descriptions": "Locate a real-time Internet data stream such as that published by a sensor or an API (weather, stock prices, satellite locations, tweets, seismic events). Create a program that sonifies this data. Consider whether the data, but could approach it as a compositional element.",
-        "imagename": "exercises/data/sonify.png",
+        "imagename": "exercises/sound/blank.png",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Sound",
         "exercisetitle": "Delay Line Effect",
         "descriptions": "Using a *delay line* (a collection of time-delayed copies of a sound), create a program which transforms a specific sound in a customized way. Popular delay line effects include echo and reverb, but also, when governed by an oscillator, effects like flangers, chorus, and harmonization.",
+        "imagename": "exercises/sound/blank.png",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Sound",
         "exercisetitle": "Physics-Based Modulation",
-        "descriptions": "Create or repurpose some code for a real-time physical simulation, such as a particle system or spring mesh. Use time-varying quantities from the physical simulation to govern continuous parameters of an audio synthesizer. Consider using statistical properties of the simulation, such as the standard deviation. Which mappings produce the most compelling or plausible results?",
+        "descriptions": "Create or repurpose some code for a real-time physical simulation, such as a particle system or spring mesh. Use time-varying quantities from the physical simulation to govern continuous parameters of an audio synthesizer. Consider using statistical properties of the simulation as the basis for audio mappings. For example, the average horizontal position of a collection of particles could be mapped to the stereo position of a sound, while the particles’ mean velocity could be mapped to pitch. Which mappings produce the most compelling results? Do you feel a tight connection between the visualization and sonification of the simulation?",
+        "imagename": "exercises/sound/physics_modulation.jpg",
         "verticalspace": 2
     },
     {
         "heading": "Exercises: Sound",
         "exercisetitle": "Synthetic Voice",
         "descriptions": "Build a \"DIY speech synthesizer\". You may use any audio materials or algorithms you prefer, *except* for actual speech samples or a preexisting text-to-speech system. For example, you could synthesize different vowels with \"formant synthesis\", and consonants with different types of gated noise. What word does your machine pronounce the best? Can it pronounce your name?",
+        "imagename": "exercises/sound/blank.png",
         "verticalspace": 2
     },
     {
@@ -611,7 +626,8 @@
     {
         "heading": "Exercises: Sound",
         "exercisetitle": "Parametric Control",
-        "descriptions": "Use one or more parameters derived from a live sound input (pitch, volume, or something else) to control an actuator (motor, light, etc.) in a physical sculpture, product-design prototype, or architectural installation. Give careful consideration to where you place your microphone, and the assumptions this entails about the sounds you collect. For example, you might collect door-knocking sounds with a contact microphone, and use these to control a solenoid actuator. (1)",
+        "descriptions": "Use one or more parameters derived from a live sound input (pitch, volume, or something else) to control an actuator (motor, light, etc.) in a physical sculpture, product-design prototype, or architectural installation. Give careful consideration to where you place your microphone, and the assumptions this entails about the sounds you’re likely to collect. For example, you might collect door-knocking sounds with a contact microphone, and use these to govern a solenoid that makes tapping sounds elsewhere.",
+        "imagename": "exercises/sound/physical.png",
         "verticalspace": 2
     },
     {
@@ -715,14 +731,14 @@
     {
         "heading": "Exercises: Text and Language",
         "exercisetitle": "Nonsense words",
-        "descriptions": "Obtain some lists of common prefixes, word roots, and suffixes. Select and combine random items from each list, in order to generate plausible nonsense words. What might these words mean?",
+        "descriptions": "Find some lists of common English prefixes, word roots, and suffixes. Select a random item from each list, and combine them in a simple syntax (prefix+root+suffix) to generate plausible nonsense words. What might these words mean?",
         "imagename": "exercises/text/nonsense_words.png",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Text and Language",
         "exercisetitle": "Letter frequency",
-        "descriptions": "Write a program which calculates the frequencies of the letters in a provided text. (Be careful to make your program *case-insensitive*.) Write code to generate a bar chart of the letters' frequencies.  ",
+        "descriptions": "Write a program to calculate the frequencies of the letters in a provided text. (Be careful to make your program *case-insensitive*.) Write code to generate a visualization (such as a bar chart or pie chart) of the letters’ frequencies. ",
         "imagename": "exercises/text/letter_frequency.png",
         "verticalspace": 1
     },
@@ -743,14 +759,14 @@
     {
         "heading": "Exercises: Text and Language",
         "exercisetitle": "Translator II: Argots and language games",
-        "descriptions": "Investigate argots, secret languages, and word games like Ubbi Dubbi, Dizzouble Dizzutch, Tutnese, and Pirate English. Select one, and write a program that translates a provided text into it. ",
+        "descriptions": "Investigate \"argots\", secret languages, and word games like *Ubbi Dubbi*, *Tutnese*, *Pirate English*, and *Dizzouble Dizzutch*. Select one, and write a program that translates a provided text into it. ",
         "imagename": "exercises/text/translator.png",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Text and Language",
         "exercisetitle": "Cut up text I",
-        "descriptions": "Choose an existing text and make a Dada style poem randomizing its words or lines. ",
+        "descriptions": "In the *Dada Manifesto*, Tristan Tzara describes using a newspaper, scissors, and some gentle shaking to generate irrational poetry. We shall do the same with code. Write a program that randomizes the words or lines of a newspaper article, in order to make a Dada-style poem.",
         "imagename": "exercises/text/cutup1.jpg",
         "verticalspace": 1,
         "attribution": "With contributions from Allison Parrish"
@@ -856,14 +872,38 @@
         "exercisetitle": "Typewriter",
         "descriptions": "Create a sketch that displays letters as they are typed. For an extra challenge, program it so that letters are deleted when the backspace key is pressed.",
         "imagename": "exercises/typography/typewriter.png",
->>>>>>> 8d4a8a4b7ec698024d350347f0dfad0a54b28da7
+        "verticalspace": 1
+    },
+    {
+        "heading": "Exercises: Typography",
+        "exercisetitle": "Text with feeling",
+        "descriptions": "Choose a word describing a bodily action such as grow, shiver or jump. Animate this word on your screen in way that represents its meaning. For example the word grow, could get larger over time.",
+        "imagename": "exercises/typography/text_with_feeling.png",
+        "verticalspace": 1
+    },
+    {
+        "heading": "Exercises: Typography",
+        "exercisetitle": "Type and pixels",
+        "descriptions": "Choose a text that fills the screen, modify either the size or color of each letter based on the pixel values behind it. "
+    },
+    {
+        "heading": "Exercises: Typography",
+        "exercisetitle": "References",
+        "descriptions": "https://processing.org/tutorials/typography/\nhttp://printingcode.runemadsen.com/lecture-typography/",
+        "verticalspace": 1
+    },
+    {
+        "heading": "Exercises: Unpredictability",
+        "exercisetitle": "Coin toss",
+        "descriptions": "Create a sketch of coin that is 'tossed' every time the mouse is clicked. Your coin should be evenly weighted so that heads and tails have an even chance of appearing. Test your program over 20 tosses, how well does it perform?",
+        "imagename": "/exercises/unpredictability/coin_toss.png",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Unpredictability",
         "exercisetitle": "Dice roll I",
         "descriptions": "Create a sketch of a dice that is 'rolled' every time the mouse is clicked. Your dice should be evenly weighted and each result should have an even 1 in 6 chances of appearing. Test your program over 18 clicks. How well does it perform? Modify your code so that it rolls 6 dice.",
-        "imagename": "/exercises/unpredictability/die_roll.png",
+        "imagename": "/exercises/unpredictability/dice_roll.png",
         "verticalspace": 1
     },
     {
@@ -876,7 +916,7 @@
     {
         "heading": "Exercises: Unpredictability",
         "exercisetitle": "Exquisite Corpse",
-        "descriptions": "Recreate the surrealist game exquisite corpse, where the legs, torso and head of a figure are recombined randomly every time the mouse is clicked.",
+        "descriptions": "Recreate the \"Exquisite Corpse\" surrealist game, where the legs, torso and head of a figure are recombined randomly every time the mouse is clicked.",
         "imagename": "/exercises/unpredictability/exquisite_corpse.png",
         "verticalspace": 1
     },

@@ -3,10 +3,11 @@ var y;
 
 function setup() {
 	createCanvas(300,300)
+
 	x = 150;
 	y = 150;
 	noStroke();
-	fill(151, 168, 196);
+	fill(255);
 
 }
 
@@ -27,7 +28,9 @@ function movePoint(){
 }
 
 function draw() {
-  background(255)
+	fill(251,128,114,10);
+  rect(0,0,width,height);
   movePoint()
+  fill(255);
   ellipse(x,y,10);
 }

@@ -5,10 +5,11 @@ int num_dice;
 void drawDie(int x, int y){
   int number = int(random(1,6));
   int d = int(dice_width/7);
-  fill(198,182,127);
-  rect(x,y,dice_width,dice_width);
+  //fill(231,29,54);
+  fill(200);
+  rect(x,y,dice_width,dice_width, 10);
   
-  fill(0);
+  fill(255);
   if(number == 1){
     ellipse(x+d*3.5, y+d*3.5,d,d);
   }  
@@ -128,4 +129,8 @@ void keyPressed() {
 
 
 void draw(){
+}
+
+void mousePressed(){
+ saveFrame(); 
 }

@@ -5,7 +5,7 @@ function setup() {
 
 function draw() {
   var highestPoint = 0;
-  background(222,184,135);
+  background(1,22,39);
   noFill();
   noStroke();
 

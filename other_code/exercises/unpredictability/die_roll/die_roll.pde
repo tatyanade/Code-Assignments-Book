@@ -7,8 +7,8 @@ void drawDie(){
   int y = x;
   int number = int(random(1,6));
   int d = int(dice_width/7);
-  fill(198,182,127);
-  rect(x,y,dice_width,dice_width);
+  fill(231,29,54);
+  rect(x,y,dice_width,dice_width, 10);
   
   fill(0);
   if(number == 1){
@@ -81,6 +81,10 @@ void drawDice(){
 
 void mousePressed() {
   drawDice();
+}
+
+void keyPressed(){
+ saveFrame(); 
 }
 
   

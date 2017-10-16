@@ -9,7 +9,7 @@ void setup(){
 
 
 void draw() {
-  background(70,70,100);
+  background(1,22,39);
   for (int i = 40; i < width-40 ; i+=1){
     n = noise(noise_offset) * height;
     for (int j = 0; j < height; j+=2){
@@ -21,4 +21,9 @@ void draw() {
       }
     }
   }
+}
+
+void mousePressed(){
+    saveFrame();
+  
 }

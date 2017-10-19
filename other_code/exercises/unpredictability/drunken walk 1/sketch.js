@@ -28,9 +28,9 @@ function movePoint(){
 }
 
 function draw() {
-	fill(251,128,114,10);
-  rect(0,0,width,height);
+//	fill(251,128,114,10);
+//  rect(0,0,width,height);
   movePoint()
-  fill(255);
-  ellipse(x,y,10);
+  fill(0);
+  ellipse(x,y,1,1);
 }

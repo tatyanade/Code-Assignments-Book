@@ -2,7 +2,7 @@ float a=0;
 PImage mouse;
 void setup(){
  size(400,400);
- background(100);
+ background(150);
  smooth();
  strokeWeight(2);
  stroke(255);
@@ -18,7 +18,7 @@ void draw(){
 }
 
 void mousePressed(){
-  background(100);
+  background(200);
   a=mouseX;
   float b = a/width*PI;
   println(b);

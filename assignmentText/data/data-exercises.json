@@ -37,7 +37,7 @@
     {
         "heading": "Exercises: Iteration",
         "exercisetitle": "Iteration + Interaction: Lines to the Cursor",
-        "descriptions": "Use iteration to create an interactive display featuring a series of 10 lines. Each line should connect the cursor to one of a series of points distributed across the canvas.",
+        "descriptions": "Use iteration to create an interactive display featuring a series of 10 lines. Each line should connect the cursor to one of a series of points distributed evenly across the canvas.",
         "imagename": "exercises/iteration/lines_to_the_cursor.png",
         "verticalspace": 1
     },
@@ -79,21 +79,21 @@
     {
         "heading": "Exercises: Iteration",
         "exercisetitle": "Iteration with Randomness II",
-        "descriptions": "Use nested iteration to generate a grid of visual elements. Write code such that, with a small probability for each iteration, an alternative element is occasionally drawn instead. ",
+        "descriptions": "Use nested iteration to generate a grid of visual elements. Write code such that, with a small random probability for each iteration, an alternative element is occasionally drawn instead. ",
         "imagename": "exercises/iteration/grid_with_randomness.png",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Iteration",
         "exercisetitle": "Geometric Progression",
-        "descriptions": "Generate a series of visual elements whose dimensions exhibit a *geometric* progression. The size of each element should be computed by multiplying the size of the one before it by a constant ratio. Here, each circle is 1.3 times larger than the previous one, inside it. ",
+        "descriptions": "Generate a series of visual elements whose dimensions exhibit a *geometric* progression. The size of each element should be computed by multiplying the size of the one before it by a constant ratio. In the design at left, each circle is 1.3 times larger than the previous one, inside it. ",
         "imagename": "exercises/iteration/geometric_progression.png",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Iteration",
         "exercisetitle": "Recoding *Schotter*",
-        "descriptions": "*Schotter* (by Georg Nees, 1965) is a classic algorithmic artwork that depicts a gradient from order to chaos in a grid of squares. In it, the squares’ orientations become increasingly randomized towards the bottom of the page. Recode this work, paying attention to detail.",
+        "descriptions": "*Schotter* (by Georg Nees, 1965) is a classic algorithmic artwork that depicts a gradient from order to chaos in a grid of squares. In it, the squares’ orientations become increasingly randomized towards the bottom of the page. Re-code this work, paying attention to detail.",
         "imagename": "exercises/iteration/schotter.png",
         "verticalspace": 1
     },
@@ -211,15 +211,8 @@
     {
         "heading": "Exercises: Graphic Elements",
         "exercisetitle": "Coding Mondrian",
-        "descriptions": "Convert a Mondrian painting into code. This is an exercise in observation, pay attention to detail.",
+        "descriptions": "Using code, reproduce a Mondrian painting, such as *Composition no. III, with Red, Blue, Yellow and Black* (1929). Pay attention to detail.",
         "imagename": "exercises/drawing/mondrian.png",
-        "verticalspace": 1
-    },
-    {
-        "heading": "Exercises: Graphic Elements",
-        "exercisetitle": "Coding *Stadia II*",
-        "descriptions": "Select and crop a small rectangular region from Julie Mehretu’s painting, *Stadia II*. Using a program such as Photoshop, read out the colors and coordinate data from this fragment. Use this to faithfully recreate it with shapes, lines, curves, and custom shape functions.",
-        "imagename": "exercises/drawing/stadia.png",
         "verticalspace": 1
     },
     {
@@ -227,6 +220,13 @@
         "exercisetitle": "Draw, then Code",
         "descriptions": "Spend at least 20 minutes creating a drawing on paper: a scene, a still life, a portrait or some other design. Take care to create this image with adequate care and detail. Now recreate your drawing using code. ",
         "imagename": "exercises/drawing/kyla.png",
+        "verticalspace": 1
+    },
+    {
+        "heading": "Exercises: Graphic Elements",
+        "exercisetitle": "Coding *Stadia II*",
+        "descriptions": "Select and crop a small rectangular region from Julie Mehretu’s painting, *Stadia II*. Using a program such as Photoshop, read out the colors and coordinate data from this fragment. Use this to faithfully recreate it with shapes, lines, curves, and custom shape functions.",
+        "imagename": "exercises/drawing/stadia.png",
         "verticalspace": 1
     },
     {
@@ -246,49 +246,49 @@
     {
         "heading": "Exercises: Conditional Testing",
         "exercisetitle": "Conditional background",
-        "descriptions": "Create a sketch where the background changes color when the mouse moves into the right half of the screen.",
+        "descriptions": "Create a sketch where the background changes color when the cursor moves into the right half of the screen.",
         "imagename": "exercises/conditional/cond-1.png",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Conditional Testing",
-        "exercisetitle": "A Button using IF",
-        "descriptions": "Place a white square on a grey background. Create an interaction where a click in the square turns it black, and it stays that way.",
+        "exercisetitle": "State Machine I",
+        "descriptions": "Place a white square on a grey background. Create an interaction such that a click in the square turns it black, after which it stays that way. (In this exercise and those that follow, make sure that clicks *outside* the square have no effect.)",
         "imagename": "exercises/conditional/button1.png",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Conditional Testing",
-        "exercisetitle": "State machine I",
-        "descriptions": "Place a white square on a grey background. Create an interaction where each click in the square flips its color. It should flip from white to black (if it is white), or from black to white (if it is black).",
+        "exercisetitle": "State Machine II",
+        "descriptions": "Place a white square on a grey background. Create an interaction wherein each click in the square flips its color. It should flip from white to black (if it is white), or from black to white (if it is black).",
         "imagename": "exercises/conditional/state1.png",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Conditional Testing",
-        "exercisetitle": "State machine II",
-        "descriptions": "Place a white square on a grey background. Create an interaction where two clicks in the square are required to turn it from white to black, but three clicks are required to turn it from black to white.",
+        "exercisetitle": "State Machine III",
+        "descriptions": "Place a white square on a grey background. Develop an interaction such that *two* clicks in the square are required to turn it from white to black, but *three* clicks are required to turn it from black to white.",
         "imagename": "exercises/conditional/state2.png",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Conditional Testing",
-        "exercisetitle": "State machine III",
-        "descriptions": "Place a white square on a grey background. Create an interaction where the square turns black only the mousebutton is down, AND the cursor is inside the square. If the cursor exits the area or the button is released, the square reverts to white. Does it feel better if the initial click is inside the square or anywhere in the frame.",
+        "exercisetitle": "State Machine IV",
+        "descriptions": "Place a white square on a grey background. Create an interaction where the square turns black only if the mouse button is down, *and* the cursor is inside it. If the cursor exits the square or the button is released, the square should revert to white. (Where should the initial click be?)",
         "imagename": "exercises/conditional/state3.png",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Conditional Testing",
-        "exercisetitle": "State machine IV",
-        "descriptions": "Place a white square on a grey background. Turn the square into a button with a “hover” state: Make it white when inactive; Yellow when the user is hovering over it (mouseDown is false); Black when the user is holding the mouse down inside of it; and turn it back to white thereafter.",
+        "exercisetitle": "State Machine V",
+        "descriptions": "Place a white square on a grey background. Turn the square into a button with a “hover” state: Make it *white* when inactive; *yellow* when the user is hovering over it (without having clicked); and *black* when the user is actively holding the mouse button down inside of it.",
         "imagename": "exercises/conditional/state4.png",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Conditional Testing",
         "exercisetitle": "Bouncing Ball",
-        "descriptions": "Create a sketch with moving ball that bounces off the edges of the canvas. How would you develop your solution so that the ball loses some energy with each bounce and gradually comes to a halt.",
+        "descriptions": "Create a sketch with moving ball that bounces off the edges of the canvas. Take care that the ball never appears to overlap the edge of the canvas. ",
         "imagename": "exercises/conditional/ball.png",
         "verticalspace": 1
     },
@@ -314,7 +314,7 @@
     {
         "heading": "Exercises: Arrays",
         "exercisetitle": "Living line II",
-        "descriptions": "Create a line using the past 100 mouse positions and move an ellipse over your line in cycles. Scott Snibbe?"
+        "descriptions": "Create a line using the past 100 mouse positions and move an ellipse over your line in cycles."
     },
     {
         "heading": "Exercises: Arrays",
@@ -361,7 +361,7 @@
     {
         "heading": "Exercises: Time and Interactivity",
         "exercisetitle": "Fuse (or Progress Bar)",
-        "descriptions": "Program a virtual fuse that takes precisely five seconds to complete. Trigger an interesting event when it finishes, such as fireworks, or a volcanic eruption. Consider alternate “skins” to tell a different story with your fuse: a progress bar, a balloon inflating (and bursting).",
+        "descriptions": "Program a virtual fuse that takes precisely five seconds to complete. Trigger an interesting event when it finishes, such as fireworks, or a volcanic eruption. Consider alternate “skins” to tell a different story with your fuse: a progress bar; a balloon inflating (and bursting).",
         "imagename": "exercises/interactivity/fuse.png",
         "verticalspace": 1
     },
@@ -389,7 +389,7 @@
     {
         "heading": "Exercises: Time and Interactivity",
         "exercisetitle": "Smoothing Data",
-        "descriptions": "Create a line from stored mouse positions then smooth it by progressively averaging each point along the line with its neighbours. Pay attention to the end values of the array. ",
+        "descriptions": "Create a polyline by storing and displaying a sequence of cursor positions. Now smooth it, by progressively averaging each point along the line with its neighbours. Give consideration to how you handle the line’s terminal points.",
         "imagename": "exercises/interactivity/smoothing.png",
         "verticalspace": 1
     },
@@ -402,36 +402,36 @@
     },
     {
         "heading": "Exercises: Curves",
-        "exercisetitle": "Parabola",
-        "descriptions": "A *parabola* is a curve whose formula is *y=ax²*, where *a* is some constant. Write a program to plot a parabola.",
-        "imagename": "exercises/curves/parabola.png",
-        "verticalspace": 1
-    },
-    {
-        "heading": "Exercises: Curves",
         "exercisetitle": "Butt Generator",
-        "descriptions": "Write a program that uses arcs or Bézier curves to generate images of one or more butts.",
+        "descriptions": "Write a program that uses arcs or Bézier curves to generate images of one or more butts. (1)",
         "imagename": "exercises/curves/butt.png",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Curves",
+        "exercisetitle": "Parabola",
+        "descriptions": "A *parabola* is a curve whose formula is *y=ax²*, where the variable \"a\" is some constant of your choice. Write a program that plots a parabola.",
+        "imagename": "exercises/curves/parabola.png",
+        "verticalspace": 1
+    },
+    {
+        "heading": "Exercises: Curves",
         "exercisetitle": "Continuity of Bézier Curves",
-        "descriptions": "Create a curve by joining two Bézier curves. Ensure that the combined curve is \"C2 Continuous\", with no interruptions or visual discontinuities at the point where its components are joined. In other words, there should be continuity of position, tangent slope, and curvature.",
+        "descriptions": "Create a curve by joining two Bézier curves. Now ensure that the combined curve is \"C2 continuous\", with no visual discontinuities at the point where its components are joined. In other words, there should be continuity of position, tangent slope, and curvature.",
         "imagename": "exercises/curves/bezier.png",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Curves",
         "exercisetitle": "Text along a curve",
-        "descriptions": "Write a program that displays a phrase, such that the text follows the curve of a line. You will probably need to position and rotate each character individually. (4)",
+        "descriptions": "Write a program that displays a phrase, such that the text follows the curve of a line. You may need to position and rotate each character individually. (2)",
         "imagename": "exercises/curves/textcurve.png",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Curves",
         "exercisetitle": "One Circle, Three Ways",
-        "descriptions": "Plot a circle, “from scratch”, three different ways: use the trigonometric functions sin() and cos() to plot a series of points; approximate a circle with four Bézier curves; and construct a circle with “Turtle Graphics”, using a series of alternating forward steps and small rotations. (1)",
+        "descriptions": "Plot a circle, “from scratch”, three different ways: use the trigonometric functions sin() and cos() to plot a series of points; approximate a circle with four Bézier curves; and construct a circle with “Turtle Graphics”, using a series of alternating forward steps and small rotations. (3)",
         "imagename": "exercises/curves/circle.png",
         "verticalspace": 1
     },
@@ -445,14 +445,14 @@
     {
         "heading": "Exercises: Curves",
         "exercisetitle": "Phyllotaxis",
-        "descriptions": "Use Turtle Graphics to generate a phyllotactic spiral. Have your turtle start at the center of the canvas. At each step, your turtle should draw a small element; move outwards by a slowly increasing amount; and rotate its orientation by the “Golden Angle”, ~137.50776°. (5)",
+        "descriptions": "Use Turtle Graphics to generate a *phyllotactic spiral.* Have your turtle start at the center of the canvas. At each step, your turtle should draw a small element; move outwards by a slowly increasing amount; and rotate its orientation by the “Golden Angle”, ~137.50776°. (4)",
         "imagename": "exercises/curves/phyll.png",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Curves",
         "exercisetitle": "Mathworld curves.",
-        "descriptions": "Browse the different curves on the Mathworld website (2) and select one to recreate in code. We recommend selecting curves whose equations take one of the following standard forms: the standard explicit form y = f(x), or curves which take the parametric form y = f(t), x = g(t), or curves with the polar form r = f(theta). Create a simple interaction in which the mouseX and mouseY are used to continuously govern at least one (and preferably at least two) parameters of the curve.",
+        "descriptions": "Browse the different curves on the Mathworld website (5) and select one to recreate in code. We recommend selecting curves whose equations take one of the following standard forms: the standard explicit form *y = f(x)*; the parametric form *y = f(t), x = g(t)*, or curves with the polar form *r = f(θ)*. Create a simple interaction in which the mouseX and mouseY are used to continuously govern at least one (and preferably at least two) parameters of the curve.",
         "imagename": "exercises/curves/mathworld.png",
         "verticalspace": 2
     },
@@ -466,7 +466,7 @@
     {
         "heading": "Exercises: Curves",
         "exercisetitle": "References",
-        "descriptions": "1. Yuki Yoshida, Drawing a Circle Code Repository. Online: https://github.com/yukiy/drawCircle\n2. See the mathworld website: http://mathworld.wolfram.com/topics/Curves.html\n3. See http://www.buttgenerator.com/ \n4. See the Daniel Shiffman tutorial, Strings and Drawing Text on the Processing website: https://processing.org/tutorials/text/\n5. See Assignment 90-B: Turtle’s Phyllotactic Spiral from Golan Levin's Compuation for Creative Practices syllabus. Online: http://cmuems.com/2015c/deliverables/deliverables-09/#spiral",
+        "descriptions": "1. See http://www.buttgenerator.com/ \n2. Daniel Shiffman, *Strings and Drawing Text*, https://processing.org/tutorials/text/\n3. Yuki Yoshida, *Drawing a Circle Code Repository*. https://github.com/yukiy/drawCircle\n4. Golan Levin. *Turtle’s Phyllotactic Spiral*. http://cmuems.com/2015c/deliverables/deliverables-09/#spiral\n5. Mathworld. http://mathworld.wolfram.com/topics/Curves.html\n",
         "verticalspace": 2
     },
     {
@@ -619,7 +619,7 @@
     {
         "heading": "Exercises: Sound",
         "exercisetitle": "Whistle Cursor",
-        "descriptions": "Find a tool to estimate the pitch of a real-time monophonic audio signal, such as the *fzero~* object in Max/MSP, *sigmund~* in Pure Data, or the *ofxAubio* addon for openFrameworks. Create an interactive game in which the pitch of the user's whistling is used to steer a spaceship up or down.",
+        "descriptions": "Find a tool to estimate the pitch of a real-time monophonic audio signal, such as the *fzero~* object (Max/MSP), *sigmund~* (Pure Data), or *ofxAubio* (openFrameworks). Create an interactive game in which the pitch of the user’s whistling is used to steer a spaceship up or down.",
         "imagename": "exercises/sound/whistle_cursor.jpg",
         "verticalspace": 1
     },
@@ -669,7 +669,7 @@
         "heading": "Exercises: Visualization",
         "exercisetitle": "Sonification",
         "descriptions": "Using a real time data stream like that published from a sensor or an API (weather, stock prices, satellite locations), create a program that sonifies this data. Note that your program does not need to be a linear mapping of this data, but could approach it as a compositional element.",
-        "imagename": "exercises/data/sonify.png",
+        "imagename": "exercises/sound/blank.png",
         "verticalspace": 1
     },
     {
@@ -894,57 +894,57 @@
     },
     {
         "heading": "Exercises: Unpredictability",
-        "exercisetitle": "Coin toss",
-        "descriptions": "Create a sketch of coin that is 'tossed' every time the mouse is clicked. Your coin should be evenly weighted so that heads and tails have an even chance of appearing. Test your program over 20 tosses, how well does it perform?",
+        "exercisetitle": "Coin Toss",
+        "descriptions": "Create a sketch for a coin that is ‘tossed’ every time the mouse button is clicked. Your coin should be evenly weighted so that heads and tails have an even chance of appearing. Test your program over 10 tosses. What were the observed frequencies of heads and tails?",
         "imagename": "/exercises/unpredictability/coin_toss.png",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Unpredictability",
-        "exercisetitle": "Dice roll I",
-        "descriptions": "Create a sketch of a dice that is 'rolled' every time the mouse is clicked. Your dice should be evenly weighted and each result should have an even 1 in 6 chances of appearing. Test your program over 18 clicks. How well does it perform? Modify your code so that it rolls 6 dice.",
+        "exercisetitle": "Die Roll",
+        "descriptions": "Create a sketch of for a die that is 'rolled' every time the mouse is clicked. Your die should be evenly weighted and each result should have an even 1 in 6 chances of appearing. Test your program over 18 clicks. How well does it perform? Modify your code so that it rolls 6 dice.",
         "imagename": "/exercises/unpredictability/dice_roll.png",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Unpredictability",
-        "exercisetitle": "Programming drunken walk",
-        "descriptions": "Program a spot that randomly moves from one point to the next. It should have a 1 in 4 chance of moving up, down, left or right. Following this, adjust it to so that it has a 1 in 2 chance of moving down, a 1 in 4 chance of moving left or right and no chance of moving up.",
-        "imagename": "/exercises/unpredictability/drunken_walk1.png",
+        "exercisetitle": "Lattice Random Walk (Drunk Walk)",
+        "descriptions": "Create a sketch in which a small element travels erratically from one moment to the next, leaving a trail as it moves. It should have a 1-in-4 chance of moving up, down, left or right.",
+        "imagename": "/exercises/unpredictability/lattice_random_walk.png",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Unpredictability",
-        "exercisetitle": "Exquisite Corpse",
-        "descriptions": "Recreate the \"Exquisite Corpse\" surrealist game, where the legs, torso and head of a figure are recombined randomly every time the mouse is clicked.",
+        "exercisetitle": "Exquisite Corpse Machine",
+        "descriptions": "Ask some friends to prepare drawings of heads, torsos, and legs, Make sure that these parts are able to line up interchangeably at the neck and waist. Create an “Exquisite Corpse” generator, in which these parts are randomly recombined whenever a button is clicked.",
         "imagename": "/exercises/unpredictability/exquisite_corpse.png",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Unpredictability",
-        "exercisetitle": "Noise animations",
-        "descriptions": "Use the noise function to control the scale and motion of an ellipse. ",
+        "exercisetitle": "Animation with Smoothed Noise",
+        "descriptions": "The smoothed quality of *Perlin noise* allows you to make an animation which is unpredictable, but also has temporal coherence. Use Perlin noise to dynamically regulate the size and 2D position of a circle. Experiment with different time-constants to slow down its movement.",
         "imagename": "/exercises/unpredictability/noise_animations.png",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Unpredictability",
-        "exercisetitle": "Noise mountains",
-        "descriptions": "Create some simple mountains by creating a series of parallel lines with no spacing between them, that span from the bottom of the screen to an unpredicable height. Use the noise function to detirmine the height of each line.",
+        "exercisetitle": "Noise Mountains",
+        "descriptions": "Create some mountains by creating a series of parallel lines with no spacing between them, that span from the bottom of the screen to an unpredicable height. Use Perlin noise function to determine the height of each line.",
         "imagename": "/exercises/unpredictability/noise_mountains1.png",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Unpredictability",
-        "exercisetitle": "Cloud generation",
+        "exercisetitle": "Cloud Generation",
         "descriptions": "Use a 2 dimenional Perlin noise function to create the appearance of clouds.",
         "imagename": "/exercises/unpredictability/cloud_generation1.png",
         "verticalspace": 1
     },
     {
         "heading": "Exercises: Unpredictability",
-        "exercisetitle": "Chaos to order",
-        "descriptions": "Make an interactive composition which depicts 'order' when the mouseX is on the left of the canvas, and 'chaos' when it is on the right. The degree of order/chaos (entropy) should vary smoothly with the mouse position. The map(), and constrain() functions may be useful.",
+        "exercisetitle": "Chaos to Order",
+        "descriptions": "Make an interactive composition which depicts ‘order’ when the cursor is on the left side of the canvas, and ‘chaos’ when it is on the right. The amount of order or chaos (entropy) should vary smoothly according to the cursor position. The map() and constrain() functions may be helpful.",
         "imagename": "/exercises/unpredictability/chaos_to_order2.png",
         "verticalspace": 1
     }

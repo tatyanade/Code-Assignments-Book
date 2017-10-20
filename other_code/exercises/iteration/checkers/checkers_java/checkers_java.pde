@@ -6,8 +6,6 @@ void setup() {
 }
 
 void draw() {
-
-  //
   int a=1;
   //color of each individual square
   int c=0;

@@ -1,3 +1,6 @@
+// Exercises: Color
+// Split Complementary 
+
 void setup() {
   size(400, 400);
 }
@@ -12,7 +15,6 @@ void draw() {
 
   for (int i=0; i<nPieces; i++) {
     float frac = ((float)i / (float)nPieces);
-
     float h = 255 * getHue(frac); 
     fill(h, 255, 255); 
     float ang0 = (float)(i+0) / (float)nPieces * TWO_PI; 

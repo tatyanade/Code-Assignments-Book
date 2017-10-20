@@ -1,3 +1,6 @@
+//Exercises: Color
+//Analogous Colors
+
 color baseColor;
 color color2;
 color color3;
@@ -121,4 +124,8 @@ void draw() {
   drawColors();
   stroke(255);
   strokeWeight(2);
+}
+
+void mousePressed(){
+ saveFrame("../analogous.png"); 
 }

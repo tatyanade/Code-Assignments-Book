@@ -1,4 +1,8 @@
-// Plant flags on the peaks in a (provided) Perlin-noise terrain.
+// A bumpy "landscape" or terrain, 
+// consisting of an array of height values, 
+// has been provided to you. 
+// Write code which searches through this array, 
+// and draws "flags" on the peaks (i.e. local maxima).
 
 float terrain[];
 

@@ -1,3 +1,6 @@
+// Exercises: Array
+// Plant the Flag
+
 // A bumpy "landscape" or terrain, 
 // consisting of an array of height values, 
 // has been provided to you. 
@@ -5,6 +8,7 @@
 // and draws "flags" on the peaks (i.e. local maxima).
 
 float terrain[];
+PImage img;
 
 void placeFlagsOnTerrain() {
   // PLACE YOUR CODE HERE
@@ -24,7 +28,8 @@ void drawFlag (float flagx, float flagy) {
   // For example...
   stroke (0, 0, 0); 
   line(flagx, flagy, flagx, flagy - 60);
-  triangle(flagx, flagy - 60, flagx, flagy - 50, flagx + 20, flagy - 55);
+  //rect(flagx, flagy-60, 20, 10);
+  image(img, flagx, flagy-60, 30, 20);
 }
 
 //----------------------------------------------------------------------
@@ -32,6 +37,7 @@ void drawFlag (float flagx, float flagy) {
 void setup() {
   size(300, 300);
   terrain = new float[width];
+  img = loadImage("flag.png");
 }
 
 void draw() {

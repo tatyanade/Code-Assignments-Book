@@ -1,3 +1,6 @@
+// Exercises: Arrays
+// Animated walk cycle
+
 PImage frames[] = new PImage[15]; //array for image frames
 int f=0;
 

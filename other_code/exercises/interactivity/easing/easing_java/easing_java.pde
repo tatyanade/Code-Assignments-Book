@@ -16,5 +16,5 @@ void draw() {
 }
 
 void keyPressed(){
- saveFrame(); 
+ saveFrame("../easing.png"); 
 }

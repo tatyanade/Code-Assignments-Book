@@ -11,7 +11,7 @@ float terrain[];
 PImage img;
 
 void placeFlagsOnTerrain() {
-  // PLACE YOUR CODE HERE
+  // PLACE YOUR CODE HERE TO DETECT HILLS
   
   for (int i=1; i<(width-1); i++) {
     float yA = terrain[i - 1]; 
@@ -19,7 +19,7 @@ void placeFlagsOnTerrain() {
     float yC = terrain[i + 1];
 
     if ((yA > yB) && (yC > yB)) { 
-      drawFlag(i, yB); // Found a peak, draw a flag!
+      drawFlag(i, yB); // We found a peak... draw a flag!
     }
   }
 }
@@ -28,8 +28,7 @@ void drawFlag (float flagx, float flagy) {
   // For example...
   stroke (0, 0, 0); 
   line(flagx, flagy, flagx, flagy - 60);
-  //rect(flagx, flagy-60, 20, 10);
-  image(img, flagx, flagy-60, 30, 20);
+  rect(flagx, flagy-60, 25, 15);
 }
 
 //----------------------------------------------------------------------
@@ -48,9 +47,11 @@ void draw() {
 }
 
 void calculateTerrain() {
+  noiseDetail(2,0.2); 
+  noiseSeed(12345); 
   for (int i=0; i<width; i++) {
-    float val = noise(i/180.0 + millis()/2000.0);
-    float y = map(val, 0, 1, height*0.20, height*0.95); 
+    float val = noise(i/40.0 + frameCount/50.0);
+    float y = map(val, 0, 1, height*0.25, height*0.98); 
     terrain[i] = y;
   }
 }
